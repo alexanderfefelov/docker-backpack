@@ -17,6 +17,7 @@ build() {
 
 build_all() {
   build dnsmasq
+  build netdata
 
   echo -e "\nOK, all done."
 }
