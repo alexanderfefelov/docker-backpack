@@ -8,6 +8,6 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
-for COMPONENT in $(< components); do
-  (cd ../../$COMPONENT && ./clear-logs.sh)
+for component in $(< components); do
+  (cd ../../$component && ./clear-logs.sh)
 done

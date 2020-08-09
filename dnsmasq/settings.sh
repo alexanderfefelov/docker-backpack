@@ -1,8 +1,8 @@
-BASE_NAME=backpack-dnsmasq
-IMAGE_NAME=alexanderfefelov/$BASE_NAME
-CONTAINER_NAME=$BASE_NAME
-HOST_NAME=$BASE_NAME
-WAIT_TIMEOUT=600
+readonly BASE_NAME=backpack-dnsmasq
+readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
+readonly CONTAINER_NAME=$BASE_NAME
+readonly HOST_NAME=$BASE_NAME
+readonly WAIT_TIMEOUT=600
 
 . ../common-settings/health.sh
 . ../common-settings/log.sh

@@ -4,4 +4,4 @@
 
 . settings.sh
 
-echo > $(docker inspect --format='{{.LogPath}}' $CONTAINER_NAME)
+> $(docker inspect --format='{{.LogPath}}' $CONTAINER_NAME)

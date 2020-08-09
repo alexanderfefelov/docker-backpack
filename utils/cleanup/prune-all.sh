@@ -8,6 +8,6 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
-for COMPONENT in $(< components); do
-  (cd ../../$COMPONENT && yes Y | ./prune.sh)
+for component in $(< components); do
+  (cd ../../$component && yes Y | ./prune.sh)
 done

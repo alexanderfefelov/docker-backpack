@@ -8,6 +8,6 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
-for CONTAINER in $(tac containers); do
-  docker stop $CONTAINER
+for container in $(tac containers); do
+  docker stop $container
 done

@@ -8,6 +8,6 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
-for CONTAINER in $(< containers); do
-  docker start $CONTAINER
+for container in $(< containers); do
+  docker start $container
 done
