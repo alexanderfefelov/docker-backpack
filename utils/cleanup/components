@@ -1,4 +1,5 @@
 dnsmasq
 elasticsearch/elasticsearch
+elasticsearch/kibana
 netdata
 portainer

@@ -1,4 +1,5 @@
 backpack-dnsmasq
 backpack-elasticsearch
+backpack-kibana
 backpack-netdata
 backpack-portainer
