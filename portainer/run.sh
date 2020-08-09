@@ -17,7 +17,7 @@ run() {
     --publish 9000:9000 \
     --log-opt max-size=$MAX_SIZE --log-opt max-file=$MAX_FILE \
     $IMAGE_NAME \
-      --admin-password=$(htpasswd -B -C 13 -nb admin defulobitusc | cut -d ":" -f 2)
+      --admin-password=$(htpasswd -B -C 13 -nb $ADMIN_USERNAME $ADMIN_PASSWORD | cut -d ":" -f 2)
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 

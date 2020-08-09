@@ -15,8 +15,8 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 53:53/udp \
     --publish 5380:8080 \
-    --env HTTP_USER=admin_inestorasyno \
-    --env HTTP_PASS=impardalwina \
+    --env HTTP_USER=$ADMIN_USERNAME \
+    --env HTTP_PASS=$ADMIN_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$MAX_SIZE --log-opt max-file=$MAX_FILE \
     $IMAGE_NAME
