@@ -6,6 +6,16 @@ set -e
 
 . settings.sh
 
+print_sse_info() {
+  echo Elasticsearch Machine Learning requires CPUs with SSE4.2 support
+  sse_support=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' - - -)
+  if [ -z "$sse_support" ]; then
+    echo No SSE support detected
+  else
+    echo Detected CPU support for: $sse_support
+  fi
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -22,5 +32,6 @@ run() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 
+print_sse_info
 run
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME
