@@ -19,6 +19,7 @@ build_all() {
   build dnsmasq
   build elasticsearch/elasticsearch
   build elasticsearch/kibana
+  build elasticsearch/logstash
   build netdata
   build portainer
 
