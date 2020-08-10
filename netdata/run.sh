@@ -22,7 +22,7 @@ run() {
     --volume /etc/os-release:/host/etc/os-release:ro \
     --publish 19999:19999 \
     --env DOCKER_USR=root \
-    --log-opt max-size=$MAX_SIZE --log-opt max-file=$MAX_FILE \
+    --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME \
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }

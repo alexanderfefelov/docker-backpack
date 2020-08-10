@@ -18,7 +18,7 @@ run() {
     --env HTTP_USER=$ADMIN_USERNAME \
     --env HTTP_PASS=$ADMIN_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
-    --log-opt max-size=$MAX_SIZE --log-opt max-file=$MAX_FILE \
+    --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
