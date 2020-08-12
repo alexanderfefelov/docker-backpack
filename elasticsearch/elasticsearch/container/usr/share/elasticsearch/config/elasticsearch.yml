@@ -14,7 +14,7 @@
 #
 # Use a descriptive name for your cluster:
 #
-#cluster.name: my-application
+cluster.name: backpack
 #
 # ------------------------------------ Node ------------------------------------
 #
@@ -52,7 +52,7 @@
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-#network.host: 192.168.0.1
+network.host: 0.0.0.0
 #
 # Set a custom port for HTTP:
 #
@@ -86,3 +86,27 @@
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
+
+# --------------------------------- Discovery ----------------------------------
+#
+# https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-settings.html
+#
+
+# Specifies whether Elasticsearch should form a multiple-node cluster. By default,
+# Elasticsearch discovers other nodes when forming a cluster and allows other nodes
+# to join the cluster later. If discovery.type is set to single-node, Elasticsearch
+# forms a single-node cluster and suppresses the timeouts set by cluster.publish.timeout
+# and cluster.join.timeout.
+#
+discovery.type: single-node
+
+# -------------------------------- Monitoring ----------------------------------
+#
+# https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-settings.html
+#
+
+# [6.3.0] Set to true to enable the collection of monitoring data. When this setting is
+# false (default), Elasticsearch monitoring data is not collected and all monitoring data
+# from other sources such as Kibana, Beats, and Logstash is ignored.
+#
+xpack.monitoring.collection.enabled: true
