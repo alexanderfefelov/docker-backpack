@@ -8,7 +8,7 @@ set -e
 
 print_sse_info() {
   echo Elasticsearch Machine Learning requires CPU with SSE4.2 support
-  sse_support=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' - - -)
+  sse_support=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' --serial -)
   if [ -z "$sse_support" ]; then
     echo No SSE support detected
   else
