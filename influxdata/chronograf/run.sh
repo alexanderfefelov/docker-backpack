@@ -14,6 +14,8 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/var/lib/chronograf \
     --publish 8888:8888 \
+    --env INFLUXDB_URL=http://influxdb.backpack.test:8086 \
+    --env KAPACITOR_URL=http://kapacitor.backpack.test:9092 \
     --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
