@@ -5,4 +5,5 @@ backpack-elasticsearch
 backpack-logstash
 backpack-kibana
 backpack-influxdb
+backpack-telegraf
 backpack-kapacitor

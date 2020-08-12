@@ -22,6 +22,7 @@ build_all() {
   build elasticsearch/logstash
   build influxdata/influxdb
   build influxdata/kapacitor
+  build influxdata/telegraf
   build netdata
   build portainer
 

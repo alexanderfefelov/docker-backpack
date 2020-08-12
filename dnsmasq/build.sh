@@ -21,6 +21,7 @@ address=/kibana.backpack.test/$1
 address=/logstash.backpack.test/$1
 address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1
+address=/telegraf.backpack.test/$1
 
 EOF
 }
