@@ -20,6 +20,7 @@ build_all() {
   build elasticsearch/elasticsearch
   build elasticsearch/kibana
   build elasticsearch/logstash
+  build influxdata/influxdb
   build netdata
   build portainer
 

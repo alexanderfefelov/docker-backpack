@@ -2,5 +2,6 @@ dnsmasq
 elasticsearch/elasticsearch
 elasticsearch/kibana
 elasticsearch/logstash
+influxdata/influxdb
 netdata
 portainer

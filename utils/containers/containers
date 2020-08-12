@@ -4,3 +4,4 @@ backpack-portainer
 backpack-elasticsearch
 backpack-logstash
 backpack-kibana
+backpack-influxdb
