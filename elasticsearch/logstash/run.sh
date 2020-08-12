@@ -12,10 +12,12 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --publish 5514:5514 \
-    --publish 5514:5514/udp \
+    --publish 5514:5514 `# syslog` \
+    --publish 5514:5514/udp `# syslog` \
+    --publish 9600:9600 `# REST API` \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
+  docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 5514,9600 -t $WAIT_TIMEOUT
 }
 
 run

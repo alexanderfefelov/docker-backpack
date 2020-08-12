@@ -75,3 +75,7 @@
 #   Default is path.data/dead_letter_queue
 #
 #   path.dead_letter_queue:
+
+- pipeline.id: syslog
+  path.config: "/usr/share/logstash/pipelines/syslog/syslog.conf"
+  pipeline.workers: 1
