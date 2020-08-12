@@ -8,6 +8,7 @@ set -e
 
 generate_config() {
   cat > container/etc/dnsmasq.conf.generated << EOF
+# GENERATED. DO NOT EDIT!
 
 server=8.8.8.8
 
@@ -27,7 +28,7 @@ address=/telegraf.backpack.test/$1
 EOF
 }
 
-IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
+readonly IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
 if [ -z $IP_ADDRESS ]; then
   echo Failed to detect IP address >&2
   exit 1

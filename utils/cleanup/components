@@ -1,10 +1,13 @@
 dnsmasq
+
 elasticsearch/elasticsearch
 elasticsearch/kibana
 elasticsearch/logstash
+
 influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf
 influxdata/telegraf
+
 netdata
 portainer

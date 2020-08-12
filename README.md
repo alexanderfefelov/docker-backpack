@@ -1,6 +1,6 @@
 # docker-backpack
 
-`TBD`
+![Backpack](assets/backpack_2551.png)
 
 ## Appendix A: Best practices and style guides
 

@@ -4,6 +4,7 @@
 # The default is GOGC=100. Setting GOGC=off disables the garbage collector
 # entirely
 readonly GO_GOGC=40
+
 # The GOMAXPROCS variable limits the number of operating system threads
 # that can execute user-level Go code simultaneously. There is no limit
 # to the number of threads that can be blocked in system calls on behalf
