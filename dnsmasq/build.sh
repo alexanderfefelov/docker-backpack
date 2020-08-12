@@ -13,6 +13,7 @@ server=8.8.8.8
 
 address=/host.backpack.test/$1
 
+address=/chronograf.backpack.test/$1
 address=/dnsmasq.backpack.test/$1
 address=/elasticsearch.backpack.test/$1
 address=/influxdb.backpack.test/$1

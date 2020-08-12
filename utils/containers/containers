@@ -7,3 +7,4 @@ backpack-kibana
 backpack-influxdb
 backpack-telegraf
 backpack-kapacitor
+backpack-chronograf
