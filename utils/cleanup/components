@@ -3,5 +3,6 @@ elasticsearch/elasticsearch
 elasticsearch/kibana
 elasticsearch/logstash
 influxdata/influxdb
+influxdata/kapacitor
 netdata
 portainer

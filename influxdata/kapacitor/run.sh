@@ -12,8 +12,8 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-data:/var/lib/influxdb \
-    --publish 8086:8086 \
+    --volume $CONTAINER_NAME-data:/var/lib/kapacitor \
+    --publish 9092:9092 \
     --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
