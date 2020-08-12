@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-readonly OUTPUT_DIR=generated/sections
+readonly OUTPUT_DIR=generated/sample-sections
 readonly SECTIONS=(agent aggregators global_tags inputs outputs processors)
 
 mkdir --parents $OUTPUT_DIR
