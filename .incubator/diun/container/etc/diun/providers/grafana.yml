@@ -1,0 +1,8 @@
+- name: grafana/grafana
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^7\..*
+  max_tags: 10

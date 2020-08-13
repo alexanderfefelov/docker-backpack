@@ -1,0 +1,35 @@
+- name: chronograf
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^1\..*
+  max_tags: 10
+
+- name: influxdb
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^1\..*
+  max_tags: 10
+
+- name: kapacitor
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^1\..*
+  max_tags: 10
+
+- name: telegraf
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^1\.1.*
+  max_tags: 10

@@ -1,0 +1,8 @@
+- name: crazymax/diun
+  watch_repo: true
+  platform:
+    os: linux
+    arch: amd64
+  include_tags:
+    - ^latest|^4\..*
+  max_tags: 10

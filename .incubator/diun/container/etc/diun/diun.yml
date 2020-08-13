@@ -1,0 +1,15 @@
+providers:
+  file:
+    directory: /etc/diun/providers
+
+notif:
+  script:
+    cmd: /simple-log-notifier.sh
+
+regopts:
+  - name: docker.io
+
+watch:
+  workers: 10
+  schedule: "42 * * * *"
+  firstCheckNotif: true
