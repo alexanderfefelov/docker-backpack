@@ -11,5 +11,5 @@ regopts:
 
 watch:
   workers: 10
-  schedule: "42 * * * *"
+  schedule: 42 * * * *
   firstCheckNotif: true

@@ -1,8 +1,8 @@
-- name: crazymax/diun
+- name: debian
   watch_repo: true
   platform:
     os: linux
     arch: amd64
   include_tags:
-    - ^latest|^4\.
+    - ^buster$|^stretch$
   max_tags: 10

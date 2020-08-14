@@ -4,5 +4,5 @@
     os: linux
     arch: amd64
   include_tags:
-    - ^latest|^7\..*
+    - ^latest|^7\.
   max_tags: 10
