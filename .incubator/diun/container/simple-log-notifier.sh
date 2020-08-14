@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readonly LOG=/var/lib/diun/notifications.log
+readonly LOG=/data/notifications.log
 
 echo "Image:    $DIUN_ENTRY_IMAGE"    >> $LOG
 echo "Platform: $DIUN_ENTRY_PLATFORM" >> $LOG

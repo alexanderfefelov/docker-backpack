@@ -12,9 +12,8 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-data:/var/lib/diun \
+    --volume $CONTAINER_NAME-data:/data \
     --env TZ=Europe/Moscow \
-    --env DIUN_DB_PATH=/var/lib/diun/diun.db \
     --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
