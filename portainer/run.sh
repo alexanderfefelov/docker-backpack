@@ -14,6 +14,7 @@ run() {
     --restart unless-stopped \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume /var/run/docker.sock:/var/run/docker.sock \
+    --volume $CONTAINER_NAME-data:/data \
     --publish 9000:9000 \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME \
