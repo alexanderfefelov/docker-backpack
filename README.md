@@ -16,3 +16,7 @@
     - [Telegraf](influxdata/telegraf)
 - [Netdata](netdata)
 - [Portainer](portainer)
+
+---
+
+Copyright (c) 2020 Alexander Fefelov, MIT license (see [LICENSE](LICENSE))
