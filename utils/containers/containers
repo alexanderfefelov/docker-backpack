@@ -15,3 +15,4 @@ backpack-chronograf
 backpack-mysql-main-master
 backpack-mysql-main-backup
 backpack-mysql-main-slave
+backpack-mysql-main-test

@@ -30,6 +30,7 @@ build_all() {
   build influxdata/telegraf
 
   build mysql/main
+  build mysql/test
 
   echo -e "\nOK, all done."
 }

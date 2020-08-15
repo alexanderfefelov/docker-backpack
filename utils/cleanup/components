@@ -13,3 +13,4 @@ influxdata/chronograf
 influxdata/telegraf
 
 mysql/main
+mysql/test

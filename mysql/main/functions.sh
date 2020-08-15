@@ -3,7 +3,7 @@ run_master() {
     --name $1 \
     --hostname $2 \
     --detach \
-    --volume /etc/localtime:/etc/localtime:ro \
+    --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-data:/var/lib/mysql \
     --publish 3306:3306 \
     --env SERVER_ID=$3 \
@@ -26,7 +26,7 @@ run_slave() {
     --name $1 \
     --hostname $2 \
     --detach \
-    --volume /etc/localtime:/etc/localtime:ro \
+    --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-data:/var/lib/mysql \
     --publish 1000$3:3306 \
     --env SERVER_ID=$3 \

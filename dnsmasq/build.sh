@@ -40,6 +40,7 @@ address=/telegraf.backpack.test/$1
 address=/backup.mysql.backpack.test/$1
 address=/master.mysql.backpack.test/$1
 address=/slave.mysql.backpack.test/$1
+address=/test.mysql.backpack.test/$1
 
 EOF
 }
