@@ -2,8 +2,6 @@
 
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-. settings.sh
-
 read -p "Press Y to continue: " -n 1 -r
 echo
 if [ "$REPLY" != "Y" ]; then
