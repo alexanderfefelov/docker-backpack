@@ -17,15 +17,17 @@ build() {
 
 build_all() {
   build dnsmasq
-  build elasticsearch/elasticsearch
-  build elasticsearch/kibana
-  build elasticsearch/logstash
+  build netdata
+  build portainer
+
+  build elastic/elasticsearch
+  build elastic/kibana
+  build elastic/logstash
+
   build influxdata/chronograf
   build influxdata/influxdb
   build influxdata/kapacitor
   build influxdata/telegraf
-  build netdata
-  build portainer
 
   echo -e "\nOK, all done."
 }

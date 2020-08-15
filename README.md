@@ -5,10 +5,10 @@
 ## Components
 
 - [dnsmasq](dnsmasq)
-- Elasticsearch stack
-    - [Elasticsearch](elasticsearch/elasticsearch)
-    - [Kibana](elasticsearch/kibana)
-    - [Logstash](elasticsearch/logstash)
+- Elastic stack
+    - [Elasticsearch](elastic/elasticsearch)
+    - [Kibana](elastic/kibana)
+    - [Logstash](elastic/logstash)
 - InfluxData stack
     - [Chronograf](influxdata/chronograf)
     - [InfluxDB](influxdata/influxdb)

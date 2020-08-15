@@ -2,4 +2,4 @@
 
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-(cd ../elasticsearch/logstash && ./run.sh)
+(cd ../elastic/logstash && ./run.sh)

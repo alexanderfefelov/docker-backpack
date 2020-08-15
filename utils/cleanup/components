@@ -1,13 +1,13 @@
 dnsmasq
 
-elasticsearch/elasticsearch
-elasticsearch/kibana
-elasticsearch/logstash
+netdata
+portainer
+
+elastic/elasticsearch
+elastic/kibana
+elastic/logstash
 
 influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf
 influxdata/telegraf
-
-netdata
-portainer
