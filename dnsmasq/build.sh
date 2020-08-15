@@ -10,6 +10,7 @@ generate_config() {
   cat > container/etc/dnsmasq.conf.generated << EOF
 # GENERATED. DO NOT EDIT!
 
+no-hosts
 no-resolv
 
 server=8.8.8.8
