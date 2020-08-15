@@ -7,4 +7,4 @@ Hostname `dnsmasq.backpack.test`
 | Port | Service | Credentials
 | ---- | ------- | -----------
 | 53/udp | DNS server | - 
-| [5380](httpd://dnsmasq.backpack.test:5380) | Management console | `admin_inestorasyno` / `impardalwina`
+| [5380](http://dnsmasq.backpack.test:5380) | Management console | `admin_inestorasyno` / `impardalwina`

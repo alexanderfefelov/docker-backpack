@@ -6,4 +6,4 @@ Hostname `netdata.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| [19999](httpd://netdata.backpack.test:19999) | Management console | -
+| [19999](http://netdata.backpack.test:19999) | Management console | -

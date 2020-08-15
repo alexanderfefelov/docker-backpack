@@ -6,4 +6,4 @@ Hostname `chronograf.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| [8888](httpd://chronograf.backpack.test:8888) | Management console | -
+| [8888](http://chronograf.backpack.test:8888) | Management console | -

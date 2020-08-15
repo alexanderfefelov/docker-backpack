@@ -6,4 +6,4 @@ Hostname `kibana.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| [5601](httpd://kibana.backpack.test:5601) | Management console | -
+| [5601](http://kibana.backpack.test:5601) | Management console | -

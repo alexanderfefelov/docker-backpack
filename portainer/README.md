@@ -6,4 +6,4 @@ Hostname `portainer.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| [9000](httpd://portainer.backpack.test:9000) | Management console | `admin` / `defulobitusc`
+| [9000](http://portainer.backpack.test:9000) | Management console | `admin` / `defulobitusc`
