@@ -10,6 +10,8 @@ generate_config() {
   cat > container/etc/dnsmasq.conf.generated << EOF
 # GENERATED. DO NOT EDIT!
 
+no-resolv
+
 server=8.8.8.8
 
 address=/host.backpack.test/$1
