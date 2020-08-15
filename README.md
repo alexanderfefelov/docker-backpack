@@ -14,6 +14,8 @@
     - [InfluxDB](influxdata/influxdb)
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
+- MySQL
+    - [main](mysql/main)
 - [Netdata](netdata)
 - [Portainer](portainer)
 

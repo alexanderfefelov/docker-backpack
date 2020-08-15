@@ -11,3 +11,7 @@ backpack-influxdb
 backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
+
+backpack-mysql-main-master
+backpack-mysql-main-backup
+backpack-mysql-main-slave

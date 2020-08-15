@@ -29,6 +29,8 @@ build_all() {
   build influxdata/kapacitor
   build influxdata/telegraf
 
+  build mysql/main
+
   echo -e "\nOK, all done."
 }
 

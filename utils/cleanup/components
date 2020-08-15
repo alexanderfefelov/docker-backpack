@@ -11,3 +11,5 @@ influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf
 influxdata/telegraf
+
+mysql/main

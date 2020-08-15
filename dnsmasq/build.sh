@@ -32,6 +32,12 @@ address=/influxdb.backpack.test/$1
 address=/kapacitor.backpack.test/$1
 address=/telegraf.backpack.test/$1
 
+# MySQL
+#
+address=/backup.mysql.backpack.test/$1
+address=/master.mysql.backpack.test/$1
+address=/slave.mysql.backpack.test/$1
+
 EOF
 }
 
