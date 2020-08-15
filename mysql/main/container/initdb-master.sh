@@ -2,9 +2,9 @@
 
 . /functions.sh
 
-create_replication_user
+create_replication_account
 
 . /backpack-functions.sh
 
-create_healthcheck_user
-create_backup_user
+create_healthcheck_account
+create_backup_account

@@ -1,14 +1,16 @@
-create_healthcheck_user() {
-  echo Creating healthcheck user
+create_healthcheck_account() {
+  echo Creating healthcheck account...
   mysql --user=root --password=$MYSQL_ROOT_PASSWORD --execute=" \
-    CREATE USER 'healthcheck_tutedojobu'@'localhost' IDENTIFIED WITH mysql_native_password BY 'adqafzubjutk'; \
+    CREATE USER '$HEALTHCHECK_USERNAME'@'localhost' IDENTIFIED WITH mysql_native_password BY '$HEALTHCHECK_PASSWORD'; \
   "
+  echo ...healthcheck account created
 }
 
-create_backup_user() {
-  echo Creating backup user
+create_backup_account() {
+  echo Creating backup account...
   mysql --user=root --password=$MYSQL_ROOT_PASSWORD --execute=" \
-    CREATE USER 'backup_letocryloite'@'%' IDENTIFIED WITH mysql_native_password BY 'almatramushi'; \
-    GRANT EVENT, LOCK TABLES, PROCESS, RELOAD, REPLICATION CLIENT, SELECT, SHOW VIEW, TRIGGER ON *.* TO 'backup_letocryloite'@'%'; \
+    CREATE USER '$BACKUP_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$BACKUP_PASSWORD'; \
+    GRANT EVENT, LOCK TABLES, PROCESS, RELOAD, REPLICATION CLIENT, SELECT, SHOW VIEW, TRIGGER ON *.* TO '$BACKUP_USERNAME'@'%'; \
   "
+  echo ...backup account created
 }

@@ -15,7 +15,7 @@
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - MySQL
-    - [main](mysql/main)
+    - [main](mysql/main) instance with replication
 - [Netdata](netdata)
 - [Portainer](portainer)
 

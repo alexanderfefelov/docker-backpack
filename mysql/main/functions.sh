@@ -8,9 +8,13 @@ run_master() {
     --publish 3306:3306 \
     --env SERVER_ID=$3 \
     --env MODE=master \
-    --env MYSQL_ROOT_PASSWORD=camycorymicu \
-    --env REPLICATOR_USERNAME=replicator_avaternetrai \
-    --env REPLICATOR_PASSWORD=ergatecuserb \
+    --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
+    --env REPLICATOR_USERNAME=$REPLICATOR_USERNAME \
+    --env REPLICATOR_PASSWORD=$REPLICATOR_PASSWORD \
+    --env HEALTHCHECK_USERNAME=$HEALTHCHECK_USERNAME \
+    --env HEALTHCHECK_PASSWORD=$HEALTHCHECK_PASSWORD \
+    --env BACKUP_USERNAME=$BACKUP_USERNAME \
+    --env BACKUP_PASSWORD=$BACKUP_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
@@ -27,10 +31,12 @@ run_slave() {
     --publish 1000$3:3306 \
     --env SERVER_ID=$3 \
     --env MODE=slave \
-    --env MYSQL_ROOT_PASSWORD=camycorymicu \
+    --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
     --env MASTER_HOST=master.mysql.backpack.test \
-    --env REPLICATOR_USERNAME=replicator_avaternetrai \
-    --env REPLICATOR_PASSWORD=ergatecuserb \
+    --env REPLICATOR_USERNAME=$REPLICATOR_USERNAME \
+    --env REPLICATOR_PASSWORD=$REPLICATOR_PASSWORD \
+    --env HEALTHCHECK_USERNAME=$HEALTHCHECK_USERNAME \
+    --env HEALTHCHECK_PASSWORD=$HEALTHCHECK_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
