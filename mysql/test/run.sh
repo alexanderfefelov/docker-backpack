@@ -15,6 +15,9 @@ run() {
     --volume $CONTAINER_NAME-data:/var/lib/mysql \
     --publish 10001:3306 \
     --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
+    --env HEALTHCHECK_USERNAME=$HEALTHCHECK_USERNAME \
+    --env HEALTHCHECK_PASSWORD=$HEALTHCHECK_PASSWORD \
+    --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 3306 -t $WAIT_TIMEOUT

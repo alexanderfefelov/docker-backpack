@@ -4,6 +4,9 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$BASE_NAME
 readonly WAIT_TIMEOUT=600
 
+. ../../common-settings/health.sh
 . ../../common-settings/log.sh
 
 readonly MYSQL_ROOT_PASSWORD=ickyligholro
+readonly HEALTHCHECK_USERNAME=healthcheck_coloncieurgo
+readonly HEALTHCHECK_PASSWORD=roladynorbas
