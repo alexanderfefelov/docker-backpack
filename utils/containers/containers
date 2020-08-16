@@ -1,5 +1,6 @@
 backpack-dnsmasq
 
+backpack-grafana
 backpack-netdata
 backpack-portainer
 

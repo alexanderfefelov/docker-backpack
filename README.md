@@ -14,6 +14,7 @@
     - [InfluxDB](influxdata/influxdb)
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
+- [Grafana](grafana)
 - MySQL
     - [main instance](mysql/main) with replication
     - [test instance](mysql/test)
