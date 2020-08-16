@@ -11,3 +11,4 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 | | | `healthcheck_tutedojobu` / `adqafzubjutk`
 | | | `backup_letocryloite` / `almatramushi`
 | | | `telegraf_resterfigral` / `mpyrismelort`
+| | | `grafana_solenstgalog` / `peritypindol`

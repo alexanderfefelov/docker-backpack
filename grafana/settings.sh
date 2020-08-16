@@ -6,3 +6,10 @@ readonly WAIT_TIMEOUT=600
 
 . ../common-settings/health.sh
 . ../common-settings/log.sh
+
+DB_HOST=master.mysql.backpack.test
+DB_DATABASE=grafana
+DB_ROOT_USERNAME=root
+DB_ROOT_PASSWORD=camycorymicu
+DB_GRAFANA_USERNAME=grafana_solenstgalog
+DB_GRAFANA_PASSWORD=peritypindol
