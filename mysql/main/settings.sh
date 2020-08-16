@@ -21,3 +21,5 @@ readonly HEALTHCHECK_USERNAME=healthcheck_tutedojobu
 readonly HEALTHCHECK_PASSWORD=adqafzubjutk
 readonly BACKUP_USERNAME=backup_letocryloite
 readonly BACKUP_PASSWORD=almatramushi
+readonly TELEGRAF_USERNAME=telegraf_resterfigral
+readonly TELEGRAF_PASSWORD=mpyrismelort

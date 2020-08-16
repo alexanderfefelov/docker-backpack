@@ -15,6 +15,8 @@ run_master() {
     --env HEALTHCHECK_PASSWORD=$HEALTHCHECK_PASSWORD \
     --env BACKUP_USERNAME=$BACKUP_USERNAME \
     --env BACKUP_PASSWORD=$BACKUP_PASSWORD \
+    --env TELEGRAF_USERNAME=$TELEGRAF_USERNAME \
+    --env TELEGRAF_PASSWORD=$TELEGRAF_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME

@@ -8,3 +8,4 @@ create_replication_account
 
 create_healthcheck_account
 create_backup_account
+create_telegraf_account

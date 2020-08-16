@@ -4,6 +4,8 @@ ENV \
   HEALTHCHECK_USERNAME=healthcheck \
   HEALTHCHECK_PASSWORD=password \
   BACKUP_USERNAME=backup \
-  BACKUP_PASSWORD=password
+  BACKUP_PASSWORD=password \
+  TELEGRAF_USERNAME=telegraf \
+  TELEGRAF_PASSWORD=password
 
 COPY container/ /

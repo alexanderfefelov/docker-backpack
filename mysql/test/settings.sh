@@ -10,3 +10,5 @@ readonly WAIT_TIMEOUT=600
 readonly MYSQL_ROOT_PASSWORD=ickyligholro
 readonly HEALTHCHECK_USERNAME=healthcheck_coloncieurgo
 readonly HEALTHCHECK_PASSWORD=roladynorbas
+readonly TELEGRAF_USERNAME=telegraf_husaughbleak
+readonly TELEGRAF_PASSWORD=siblecitewar
