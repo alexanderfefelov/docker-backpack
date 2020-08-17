@@ -1,4 +1,8 @@
 #!/bin/sh
 
-nc -z -u -w 2 localhost 53 \
-&& curl --head --fail --silent --user-agent backpack-healthcheck --user admin_inestorasyno:impardalwina http://localhost:8080/ > /dev/null
+set -e
+
+readonly WAIT_TIMEOUT=2
+
+nc -z -w $WAIT_TIMEOUT -u localhost 53
+curl --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent backpack-healthcheck --user admin_inestorasyno:impardalwina http://localhost:8080/ > /dev/null
