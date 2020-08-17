@@ -15,6 +15,7 @@
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Grafana](grafana)
+- [Graphite/StatsD](graphite-statsd)
 - MySQL
     - [main instance](mysql/main) with replication
     - [test instance](mysql/test)

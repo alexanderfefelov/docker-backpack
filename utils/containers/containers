@@ -1,6 +1,7 @@
 backpack-dnsmasq
 
 backpack-grafana
+backpack-graphite-statsd
 backpack-netdata
 backpack-portainer
 

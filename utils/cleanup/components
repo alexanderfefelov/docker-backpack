@@ -1,6 +1,7 @@
 dnsmasq
 
 grafana
+graphite-statsd
 netdata
 portainer
 

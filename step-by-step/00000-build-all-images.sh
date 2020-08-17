@@ -18,6 +18,7 @@ build() {
 build_all() {
   build dnsmasq
   build grafana
+  build graphite-statsd
   build netdata
   build portainer
 

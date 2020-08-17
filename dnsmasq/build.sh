@@ -43,6 +43,11 @@ address=/master.mysql.backpack.test/$1
 address=/slave.mysql.backpack.test/$1
 address=/test.mysql.backpack.test/$1
 
+# Graphite
+#
+address=/graphite.backpack.test/$1
+address=/statsd.backpack.test/$1
+
 EOF
 }
 
