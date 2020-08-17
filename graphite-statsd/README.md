@@ -13,4 +13,4 @@ Hostnames: `graphite.backpack.test`, `statsd.backpack.test`
 | 2023 | Carbon aggregator, plaintext | -
 | 2024 | Carbon aggregator, pickle | -
 | 8125/udp | StatsD | -
-| 8126 | [StatsD management](https://github.com/statsd/statsd/blob/master/docs/admin_interface.md) | -
+| 8126 | [StatsD management interface](https://github.com/statsd/statsd/blob/master/docs/admin_interface.md) | -
