@@ -1,0 +1,10 @@
+/var/log/*.log /var/log/*/*.log {
+  daily
+  size 50M
+  missingok
+  rotate 14
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
