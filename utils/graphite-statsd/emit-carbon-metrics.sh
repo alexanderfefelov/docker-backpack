@@ -7,5 +7,5 @@ for i in {1..7}; do
   message="$metric $value $timestamp"
   echo $message
   echo $message | nc -N graphite.backpack.test 2003
-  sleep 1s
+  sleep 30s
 done

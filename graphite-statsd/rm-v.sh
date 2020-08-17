@@ -4,6 +4,5 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-data-graphite
-docker volume rm $CONTAINER_NAME-data-redis
+docker volume rm $CONTAINER_NAME-data
 docker volume rm $CONTAINER_NAME-log
