@@ -44,4 +44,4 @@ run() {
 check_vm_max_map_count
 print_sse_info
 run
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME
+echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)

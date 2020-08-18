@@ -20,5 +20,11 @@ run() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 
+test() {
+  docker exec $CONTAINER_NAME /usr/share/apm-server/apm-server test config
+  docker exec $CONTAINER_NAME /usr/share/apm-server/apm-server test output
+}
+
 run
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME
+test
+echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)

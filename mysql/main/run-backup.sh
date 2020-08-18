@@ -8,4 +8,4 @@ set -e
 . functions.sh
 
 run_slave $BACKUP_CONTAINER_NAME $BACKUP_HOST_NAME $BACKUP_MYSQL_SERVER_ID
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' $BACKUP_CONTAINER_NAME
+echo $BACKUP_CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $BACKUP_CONTAINER_NAME)

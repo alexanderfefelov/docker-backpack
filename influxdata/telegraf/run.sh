@@ -26,4 +26,4 @@ run() {
 }
 
 run
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME
+echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
