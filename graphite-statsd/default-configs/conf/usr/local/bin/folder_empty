@@ -1,3 +1,0 @@
-#!/bin/sh
-
-[ -z "$(find "${1}" -mindepth 1 -not -name "lost+found" -print -quit)" ]

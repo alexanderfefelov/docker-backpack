@@ -1,5 +1,0 @@
-#!/bin/sh
-
-[[ -f "./down" ]] && exit 1
-
-exec /usr/sbin/crond -f
