@@ -32,16 +32,16 @@ apm-server:
   #capture_personal_data: true
 
   # Enable APM Server Golang expvar support (https://golang.org/pkg/expvar/).
-  #expvar:
-    #enabled: false
+  expvar:
+    enabled: true
 
     # Url to expose expvar.
-    #url: "/debug/vars"
+    url: "/debug/vars"
 
   # Instrumentation support for the server's HTTP endpoints and event publisher.
-  #instrumentation:
+  instrumentation:
     # Set to true to enable instrumentation of the APM Server itself.
-    #enabled: false
+    enabled: true
 
     # Environment in which the APM Server is running on (eg: staging, production, etc.)
     #environment: ""
@@ -295,14 +295,14 @@ apm-server:
   # Specify cache key expiration via this setting. Default is 30 seconds.
   #agent.config.cache.expiration: 30s
 
-  #kibana:
+  kibana:
     # For APM Agent configuration in Kibana, enabled must be true.
-    #enabled: false
+    enabled: true
 
     # Scheme and port can be left out and will be set to the default (`http` and `5601`).
     # In case you specify an additional path, the scheme is required: `http://localhost:5601/path`.
     # IPv6 addresses should always be defined as: `https://[2001:db8::1]:5601`.
-    #host: "localhost:5601"
+    host: "kibana.backpack.test:5601"
 
     # Optional protocol and basic auth credentials.
     #protocol: "https"
@@ -529,7 +529,7 @@ output.elasticsearch:
   # Scheme and port can be left out and will be set to the default (`http` and `9200`).
   # In case you specify and additional path, the scheme is required: `http://localhost:9200/path`.
   # IPv6 addresses should always be defined as: `https://[2001:db8::1]:9200`.
-  hosts: ["elasticsearch.backpack.test:9200"]
+  hosts: [ "elasticsearch.backpack.test:9200" ]
 
   # Boolean flag to enable or disable the output module.
   #enabled: true
@@ -1081,14 +1081,14 @@ output.elasticsearch:
 # reporting is disabled by default.
 
 # Set to true to enable the monitoring reporter.
-#monitoring.enabled: false
+monitoring.enabled: false
 
 # Most settings from the Elasticsearch output are accepted here as well.
 # Note that these settings should be configured to point to your Elasticsearch *monitoring* cluster.
 # Any setting that is not set is automatically inherited from the Elasticsearch
 # output configuration. This means that if you have the Elasticsearch output configured,
 # you can simply uncomment the following line.
-#monitoring.elasticsearch:
+monitoring.elasticsearch:
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
