@@ -16,6 +16,7 @@ run() {
     --volume /var/run/docker.sock:/var/run/docker.sock \
     --volume $CONTAINER_NAME-data:/data \
     --publish 9000:9000 \
+    --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME \
       --admin-password=$(htpasswd -B -C 13 -nb $ADMIN_USERNAME $ADMIN_PASSWORD | cut --delimiter=: --fields=2)

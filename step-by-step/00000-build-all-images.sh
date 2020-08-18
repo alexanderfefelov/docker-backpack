@@ -4,6 +4,16 @@ set -e
 
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
+readonly BACKPACK_HOME=$(dirname "$(dirname "$(realpath "$0")")")
+
+pushd() {
+  command pushd "$@" > /dev/null
+}
+
+popd() {
+  command popd "$@" > /dev/null
+}
+
 build() {
   echo
   echo ----------------------------------------------------------------------
@@ -12,7 +22,10 @@ build() {
   echo
   echo ----------------------------------------------------------------------
   echo
-  (cd ../$1 && ./build.sh)
+  local -r COMPONENT_HOME=$BACKPACK_HOME/$1
+  pushd $COMPONENT_HOME
+  ./build.sh
+  popd
 }
 
 build_all() {

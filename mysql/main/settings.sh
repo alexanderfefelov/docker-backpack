@@ -11,6 +11,7 @@ readonly WAIT_TIMEOUT=600
 readonly MASTER_MYSQL_SERVER_ID=1
 readonly BACKUP_MYSQL_SERVER_ID=2
 readonly SLAVE_MYSQL_SERVER_ID=3
+
 readonly MYSQL_ROOT_PASSWORD=camycorymicu
 readonly REPLICATOR_USERNAME=replicator_avaternetrai
 readonly REPLICATOR_PASSWORD=ergatecuserb
@@ -23,4 +24,3 @@ readonly TELEGRAF_PASSWORD=mpyrismelort
 
 . ../../common-settings/health.sh
 . ../../common-settings/log.sh
-
