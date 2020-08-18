@@ -4,6 +4,7 @@ grafana
 graphite-statsd
 netdata
 portainer
+samba
 
 elastic/elasticsearch
 elastic/kibana

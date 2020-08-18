@@ -21,6 +21,7 @@ build_all() {
   build graphite-statsd
   build netdata
   build portainer
+  build samba
 
   build elastic/elasticsearch
   build elastic/kibana

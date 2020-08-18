@@ -22,6 +22,7 @@ address=/dnsmasq.backpack.test/$1
 address=/grafana.backpack.test/$1
 address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1
+address=/samba.backpack.test/$1
 
 # Elastic stack
 #
