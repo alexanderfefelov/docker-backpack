@@ -26,6 +26,7 @@ address=/samba.backpack.test/$1
 
 # Elastic stack
 #
+address=/apm.backpack.test/$1
 address=/elasticsearch.backpack.test/$1
 address=/kibana.backpack.test/$1
 address=/logstash.backpack.test/$1

@@ -8,6 +8,7 @@ backpack-samba
 
 backpack-elasticsearch
 backpack-logstash
+backpack-apm
 backpack-kibana
 
 backpack-influxdb

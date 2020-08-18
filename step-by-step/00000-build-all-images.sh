@@ -23,6 +23,7 @@ build_all() {
   build portainer
   build samba
 
+  build elastic/apm
   build elastic/elasticsearch
   build elastic/kibana
   build elastic/logstash

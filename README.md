@@ -6,6 +6,7 @@
 
 - [dnsmasq](dnsmasq)
 - Elastic stack
+    - [APM](elastic/apm)
     - [Elasticsearch](elastic/elasticsearch)
     - [Kibana](elastic/kibana)
     - [Logstash](elastic/logstash)
