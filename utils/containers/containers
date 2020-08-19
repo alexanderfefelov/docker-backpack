@@ -3,6 +3,7 @@ backpack-dnsmasq
 backpack-grafana
 backpack-graphite-statsd
 backpack-netdata
+backpack-ofelia
 backpack-portainer
 backpack-proftpd
 backpack-samba

@@ -33,6 +33,7 @@ build_all() {
   build grafana
   build graphite-statsd
   build netdata
+  build ofelia
   build portainer
   build proftpd
   build samba

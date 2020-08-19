@@ -21,6 +21,7 @@
     - [main instance](mysql/main) with replication
     - [test instance](mysql/test)
 - [Netdata](netdata)
+- [Ofelia](ofelia)
 - [Portainer](portainer)
 - [proftpd](proftpd)
 - [Samba](samba)

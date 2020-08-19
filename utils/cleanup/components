@@ -3,6 +3,7 @@ dnsmasq
 grafana
 graphite-statsd
 netdata
+ofelia
 portainer
 proftpd
 samba
