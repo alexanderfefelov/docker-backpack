@@ -22,6 +22,7 @@
     - [test instance](mysql/test)
 - [Netdata](netdata)
 - [Portainer](portainer)
+- [proftpd](proftpd)
 - [Samba](samba)
 
 ---

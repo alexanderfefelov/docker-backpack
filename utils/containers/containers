@@ -4,6 +4,7 @@ backpack-grafana
 backpack-graphite-statsd
 backpack-netdata
 backpack-portainer
+backpack-proftpd
 backpack-samba
 
 backpack-elasticsearch

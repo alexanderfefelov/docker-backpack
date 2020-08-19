@@ -34,6 +34,7 @@ build_all() {
   build graphite-statsd
   build netdata
   build portainer
+  build proftpd
   build samba
 
   build elastic/apm
