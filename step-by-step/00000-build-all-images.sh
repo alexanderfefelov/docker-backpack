@@ -38,6 +38,7 @@ build_all() {
   build proftpd
   build samba
 
+  build business-intelligence/cubes
   build business-intelligence/metabase
 
   build elastic/apm

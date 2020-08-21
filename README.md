@@ -5,6 +5,7 @@
 ## Components
 
 - Business intelligence
+    - [Cubes][business-intelligence/cubes)
     - [Metabase](business-intelligence/metabase)
 - [dnsmasq](dnsmasq)
 - Elastic stack

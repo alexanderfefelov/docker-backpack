@@ -8,6 +8,7 @@ backpack-portainer
 backpack-proftpd
 backpack-samba
 
+backpack-cubes
 backpack-metabase
 
 backpack-elasticsearch

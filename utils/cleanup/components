@@ -8,6 +8,7 @@ portainer
 proftpd
 samba
 
+business-intelligence/cubes
 business-intelligence/metabase
 
 elastic/apm
