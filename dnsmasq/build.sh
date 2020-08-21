@@ -57,6 +57,8 @@ address=/test.mysql.backpack.test/$1
 address=/graphite.backpack.test/$1
 address=/statsd.backpack.test/$1
 
+conf-dir=/etc/dnsmasq.d
+
 EOF
 }
 
