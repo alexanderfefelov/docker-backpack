@@ -38,6 +38,8 @@ build_all() {
   build proftpd
   build samba
 
+  build business-intelligence/metabase
+
   build elastic/apm
   build elastic/elasticsearch
   build elastic/kibana

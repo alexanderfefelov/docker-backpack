@@ -8,6 +8,8 @@ portainer
 proftpd
 samba
 
+business-intelligence/metabase
+
 elastic/apm
 elastic/elasticsearch
 elastic/kibana

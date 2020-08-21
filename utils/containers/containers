@@ -8,6 +8,8 @@ backpack-portainer
 backpack-proftpd
 backpack-samba
 
+backpack-metabase
+
 backpack-elasticsearch
 backpack-logstash
 backpack-apm

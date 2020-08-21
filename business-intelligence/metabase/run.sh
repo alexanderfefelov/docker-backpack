@@ -22,9 +22,13 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-data:/var/lib/grafana \
-    --publish 3000:3000 \
-    --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
+    --publish 3042:3000 \
+    --env MB_DB_TYPE=mysql \
+    --env MB_DB_HOST=$DB_HOST \
+    --env MB_DB_PORT=3306 \
+    --env MB_DB_DBNAME=$DB_DATABASE \
+    --env MB_DB_USER=$DB_USERNAME \
+    --env MB_DB_PASS=$DB_PASSWORD \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
     $IMAGE_NAME

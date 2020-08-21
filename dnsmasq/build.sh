@@ -26,6 +26,10 @@ address=/portainer.backpack.test/$1
 address=/proftpd.backpack.test/$1
 address=/samba.backpack.test/$1
 
+# Business intelligence
+#
+address=/metabase.backpack.test/$1
+
 # Elastic stack
 #
 address=/apm.backpack.test/$1
