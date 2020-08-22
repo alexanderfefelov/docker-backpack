@@ -29,6 +29,7 @@ address=/samba.backpack.test/$1
 # Business intelligence
 #
 address=/cubes.backpack.test/$1
+address=/cubesviewer-server.backpack.test/$1
 address=/metabase.backpack.test/$1
 
 # Elastic stack

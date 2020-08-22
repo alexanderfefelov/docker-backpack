@@ -9,6 +9,7 @@ proftpd
 samba
 
 business-intelligence/cubes
+business-intelligence/cubesviewer-server
 business-intelligence/metabase
 
 elastic/apm

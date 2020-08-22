@@ -9,6 +9,7 @@ backpack-proftpd
 backpack-samba
 
 backpack-cubes
+backpack-cubesviewer-server
 backpack-metabase
 
 backpack-elasticsearch

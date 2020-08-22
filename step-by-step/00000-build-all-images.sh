@@ -39,6 +39,7 @@ build_all() {
   build samba
 
   build business-intelligence/cubes
+  build business-intelligence/cubesviewer-server
   build business-intelligence/metabase
 
   build elastic/apm

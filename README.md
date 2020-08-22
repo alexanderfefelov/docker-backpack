@@ -6,6 +6,7 @@
 
 - Business intelligence
     - [Cubes](business-intelligence/cubes)
+    - [CubesViewer Server](business-intelligence/cubesviewer-server)
     - [Metabase](business-intelligence/metabase)
 - [dnsmasq](dnsmasq)
 - Elastic stack
