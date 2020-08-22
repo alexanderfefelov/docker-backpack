@@ -16,13 +16,14 @@ check_vm_max_map_count() {
   fi
 }
 
+readonly SSE_SUPPORT=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' --serial -)
+
 print_sse_info() {
   echo Elasticsearch Machine Learning requires CPU with SSE4.2 support
-  sse_support=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' --serial -)
-  if [ -z "$sse_support" ]; then
+  if [ -z "$SSE_SUPPORT" ]; then
     echo No SSE support detected
   else
-    echo Detected CPU with support for $sse_support
+    echo Detected CPU with support for $SSE_SUPPORT
   fi
 }
 
@@ -33,6 +34,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/usr/share/elasticsearch/data \
+    $([[ $SSE_SUPPORT != *sse4_2* ]] && echo Machine Learning disabled >&2 && echo --env xpack.ml.enabled=false) \
     --publish 9200:9200 \
     --publish 9300:9300 \
     --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
