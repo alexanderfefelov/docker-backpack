@@ -56,6 +56,8 @@ build_all() {
   build mysql/main
   build mysql/test
 
+  build postgresql/main
+
   echo -e "\nOK, all done."
 }
 

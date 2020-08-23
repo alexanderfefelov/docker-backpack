@@ -40,6 +40,11 @@ address=/elasticsearch.backpack.test/$1
 address=/kibana.backpack.test/$1
 address=/logstash.backpack.test/$1
 
+# Graphite
+#
+address=/graphite.backpack.test/$1
+address=/statsd.backpack.test/$1
+
 # InfluxData stack
 #
 address=/chronograf.backpack.test/$1
@@ -54,10 +59,9 @@ address=/master.mysql.backpack.test/$1
 address=/slave.mysql.backpack.test/$1
 address=/test.mysql.backpack.test/$1
 
-# Graphite
+# PostgreSQL
 #
-address=/graphite.backpack.test/$1
-address=/statsd.backpack.test/$1
+address=/main.postgresql.backpack.test/$1
 
 conf-dir=/etc/dnsmasq.d
 

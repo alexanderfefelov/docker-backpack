@@ -25,3 +25,5 @@ influxdata/telegraf
 
 mysql/main
 mysql/test
+
+postgresql/main

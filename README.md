@@ -27,6 +27,8 @@
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)
+- PostgreSQL
+    - [main instance](postgresql/main)
 - [proftpd](proftpd)
 - [Redis](redis)
 - [Samba](samba)

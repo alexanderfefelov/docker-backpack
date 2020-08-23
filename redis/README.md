@@ -6,4 +6,4 @@ Hostname `redis.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| 6379 | API | -
+| 6379 | Redis | -
