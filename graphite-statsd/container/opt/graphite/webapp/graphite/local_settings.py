@@ -242,17 +242,16 @@ URL_PREFIX = str(os.environ.get('GRAPHITE_URL_ROOT', ''))
 # The default is 'django.db.backends.sqlite3' with file 'graphite.db'
 # located in STORAGE_DIR
 #
-#DATABASES = {
-#    'default': {
-#        'NAME': '/opt/graphite/storage/graphite.db',
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'USER': '',
-#        'PASSWORD': '',
-#        'HOST': '',
-#        'PORT': ''
-#    }
-#}
-#
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'master.mysql.backpack.test',
+        'PORT': '3306',
+        'NAME': 'graphite',
+        'USER': 'graphite_comoneigalky',
+        'PASSWORD': 'strignenecoi'
+    }
+}
 
 
 #########################
