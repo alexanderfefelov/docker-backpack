@@ -24,6 +24,7 @@ address=/netdata.backpack.test/$1
 address=/ofelia.backpack.test/$1
 address=/portainer.backpack.test/$1
 address=/proftpd.backpack.test/$1
+address=/redis.backpack.test/$1
 address=/samba.backpack.test/$1
 
 # Business intelligence

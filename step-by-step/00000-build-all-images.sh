@@ -36,6 +36,7 @@ build_all() {
   build ofelia
   build portainer
   build proftpd
+  build redis
   build samba
 
   build business-intelligence/cubes

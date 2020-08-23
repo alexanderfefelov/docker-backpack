@@ -6,6 +6,7 @@ netdata
 ofelia
 portainer
 proftpd
+redis
 samba
 
 business-intelligence/cubes

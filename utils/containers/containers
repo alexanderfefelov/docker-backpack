@@ -6,6 +6,7 @@ backpack-netdata
 backpack-ofelia
 backpack-portainer
 backpack-proftpd
+backpack-redis
 backpack-samba
 
 backpack-cubes

@@ -28,6 +28,7 @@
 - [Ofelia](ofelia)
 - [Portainer](portainer)
 - [proftpd](proftpd)
+- [Redis](redis)
 - [Samba](samba)
 
 ---
