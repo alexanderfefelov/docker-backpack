@@ -6,11 +6,19 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| 3306 (master), 10002 (backup), 10003 (slave) | MySQL classic protocol | `root` / `camycorymicu`
-| | | `replicator_avaternetrai` / `ergatecuserb`
-| | | `healthcheck_tutedojobu` / `adqafzubjutk`
-| | | `backup_letocryloite` / `almatramushi`
-| | | `telegraf_resterfigral` / `mpyrismelort`
-| | | `grafana_solenstgalog` / `peritypindol`
-| | | `metabase_licideophaig` / `msorphorylac`
+| 3306 (master), 10002 (backup), 10003 (slave) | MySQL classic protocol | `backup_letocryloite` / `almatramushi`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
+| | | `grafana_solenstgalog` / `peritypindol`
+| | | `healthcheck_tutedojobu` / `adqafzubjutk`
+| | | `metabase_licideophaig` / `msorphorylac`
+| | | `replicator_avaternetrai` / `ergatecuserb`
+| | | `root` / `camycorymicu`
+| | | `telegraf_resterfigral` / `mpyrismelort`
+
+## Databases
+
+| Name | Description
+| ---- | -----------
+| `cubesviewer_server` | [CubesViewer Server](../../business-intelligence/cubesviewer-server) backend
+| `grafana` | [Grafana](../../grafana) backend
+| `metabase` | [Metabase](../../business-intelligence/metabase) backend
