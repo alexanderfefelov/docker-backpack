@@ -5,3 +5,11 @@ create_healthcheck_account() {
   " $POSTGRES_DB
   echo ...healthcheck account created
 }
+
+create_telegraf_account() {
+  echo Creating telegraf account...
+  PGPASSWORD=$POSTGRES_PASSWORD psql --username=$POSTGRES_USER --command=" \
+    CREATE USER $TELEGRAF_USERNAME PASSWORD '$TELEGRAF_PASSWORD'; \
+  " $POSTGRES_DB
+  echo ...healthcheck account created
+}
