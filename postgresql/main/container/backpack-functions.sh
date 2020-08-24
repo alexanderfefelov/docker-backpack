@@ -11,5 +11,5 @@ create_telegraf_account() {
   PGPASSWORD=$POSTGRES_PASSWORD psql --username=$POSTGRES_USER --command=" \
     CREATE USER $TELEGRAF_USERNAME PASSWORD '$TELEGRAF_PASSWORD'; \
   " $POSTGRES_DB
-  echo ...healthcheck account created
+  echo ...telegraf account created
 }
