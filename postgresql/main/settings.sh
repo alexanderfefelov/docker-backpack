@@ -7,6 +7,8 @@ readonly WAIT_TIMEOUT=600
 readonly POSTGRES_USERNAME=postgres_ibleabaldine
 readonly POSTGRES_PASSWORD=undestrokend
 readonly POSTGRES_DATABASE=postgres
+readonly HEALTHCHECK_USERNAME=healthcheck_phocincergeo
+readonly HEALTHCHECK_PASSWORD=tanionetedio
 
 . ../../common-settings/health.sh
 . ../../common-settings/log.sh
