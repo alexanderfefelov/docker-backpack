@@ -2,4 +2,4 @@
 
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-(cd ../samba && ./run.sh)
+(cd ../file-sharing/samba && ./run.sh)

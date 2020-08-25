@@ -8,12 +8,21 @@
     - [Cubes](business-intelligence/cubes)
     - [CubesViewer Server](business-intelligence/cubesviewer-server)
     - [Metabase](business-intelligence/metabase)
+- Databases
+    - MySQL
+        - [main instance](databases/mysql/main) with replication
+        - [test instance](databases/mysql/test)
+    - PostgreSQL
+        - [main instance](databases/postgresql/main)
 - [dnsmasq](dnsmasq)
 - Elastic stack
     - [APM](elastic/apm)
     - [Elasticsearch](elastic/elasticsearch)
     - [Kibana](elastic/kibana)
     - [Logstash](elastic/logstash)
+- File sharing
+    - [proftpd](file-sharing/proftpd)
+    - [Samba](file-sharing/samba)
 - InfluxData stack
     - [Chronograf](influxdata/chronograf)
     - [InfluxDB](influxdata/influxdb)
@@ -21,17 +30,10 @@
     - [Telegraf](influxdata/telegraf)
 - [Grafana](grafana)
 - [Graphite/StatsD](graphite-statsd)
-- MySQL
-    - [main instance](mysql/main) with replication
-    - [test instance](mysql/test)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)
-- PostgreSQL
-    - [main instance](postgresql/main)
-- [proftpd](proftpd)
 - [Redis](redis)
-- [Samba](samba)
 
 ---
 

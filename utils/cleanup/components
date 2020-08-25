@@ -1,29 +1,29 @@
 dnsmasq
+netdata
+portainer
 
 grafana
 graphite-statsd
-netdata
 ofelia
-portainer
-proftpd
 redis
-samba
 
 business-intelligence/cubes
 business-intelligence/cubesviewer-server
 business-intelligence/metabase
+
+databases/mysql/main
+databases/mysql/test
+databases/postgresql/main
 
 elastic/apm
 elastic/elasticsearch
 elastic/kibana
 elastic/logstash
 
+file-sharing/proftpd
+file-sharing/samba
+
 influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf
 influxdata/telegraf
-
-mysql/main
-mysql/test
-
-postgresql/main

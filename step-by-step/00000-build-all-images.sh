@@ -35,28 +35,28 @@ build_all() {
   build netdata
   build ofelia
   build portainer
-  build proftpd
   build redis
-  build samba
 
   build business-intelligence/cubes
   build business-intelligence/cubesviewer-server
   build business-intelligence/metabase
+
+  build databases/mysql/main
+  build databases/mysql/test
+  build databases/postgresql/main
 
   build elastic/apm
   build elastic/elasticsearch
   build elastic/kibana
   build elastic/logstash
 
+  build file-sharing/proftpd
+  build file-sharing/samba
+
   build influxdata/chronograf
   build influxdata/influxdb
   build influxdata/kapacitor
   build influxdata/telegraf
-
-  build mysql/main
-  build mysql/test
-
-  build postgresql/main
 
   echo -e "\nOK, all done."
 }

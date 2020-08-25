@@ -7,5 +7,5 @@ readonly WAIT_TIMEOUT=600
 export FTP_USERNAME=ftp_arditerminet
 export FTP_PASSWORD=tracdoweigme
 
-. ../common-settings/health.sh
-. ../common-settings/log.sh
+. ../../common-settings/health.sh
+. ../../common-settings/log.sh

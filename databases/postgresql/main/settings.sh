@@ -12,5 +12,5 @@ readonly HEALTHCHECK_PASSWORD=tanionetedio
 readonly TELEGRAF_USERNAME=telegraf_viledahloger
 readonly TELEGRAF_PASSWORD=atiolusethil
 
-. ../../common-settings/health.sh
-. ../../common-settings/log.sh
+. ../../../common-settings/health.sh
+. ../../../common-settings/log.sh

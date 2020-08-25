@@ -2,4 +2,4 @@
 
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-(cd ../mysql/main && ./run-master.sh)
+(cd ../databases/mysql/main && ./run-master.sh)

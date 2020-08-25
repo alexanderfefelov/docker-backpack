@@ -9,5 +9,5 @@ export SAMBA_PASSWORD=atherfrustra
 export SAMBA_GID=128
 export SAMBA_GROUP=samba
 
-. ../common-settings/health.sh
-. ../common-settings/log.sh
+. ../../common-settings/health.sh
+. ../../common-settings/log.sh

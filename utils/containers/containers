@@ -5,27 +5,27 @@ backpack-graphite-statsd
 backpack-netdata
 backpack-ofelia
 backpack-portainer
-backpack-proftpd
 backpack-redis
-backpack-samba
 
 backpack-cubes
 backpack-cubesviewer-server
 backpack-metabase
+
+backpack-mysql-main-master
+backpack-mysql-main-backup
+backpack-mysql-main-slave
+backpack-mysql-main-test
+backpack-postgresql-main
 
 backpack-elasticsearch
 backpack-logstash
 backpack-apm
 backpack-kibana
 
+backpack-proftpd
+backpack-samba
+
 backpack-influxdb
 backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
-
-backpack-mysql-main-master
-backpack-mysql-main-backup
-backpack-mysql-main-slave
-backpack-mysql-main-test
-
-backpack-postgresql-main
