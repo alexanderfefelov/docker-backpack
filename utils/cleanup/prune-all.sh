@@ -8,6 +8,8 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
+IFS=$'\n'
 for component in $(< components); do
+  [[ "$component" =~ ^#.*$ ]] && continue
   (cd ../../$component && yes Y | ./prune.sh)
 done

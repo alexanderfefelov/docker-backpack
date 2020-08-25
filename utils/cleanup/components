@@ -7,22 +7,32 @@ graphite-statsd
 ofelia
 redis
 
+# Business intelligence
+#
 business-intelligence/cubes
 business-intelligence/cubesviewer-server
 business-intelligence/metabase
 
+# Databases
+#
 databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 
+# Elastic stack
+#
 elastic/apm
 elastic/elasticsearch
 elastic/kibana
 elastic/logstash
 
+# File sharing
+#
 file-sharing/proftpd
 file-sharing/samba
 
+# InfluxData stack
+#
 influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf

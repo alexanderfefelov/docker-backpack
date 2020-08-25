@@ -1,30 +1,40 @@
 backpack-dnsmasq
+backpack-netdata
+backpack-portainer
 
 backpack-grafana
 backpack-graphite-statsd
-backpack-netdata
 backpack-ofelia
-backpack-portainer
 backpack-redis
 
+# Business intelligence
+#
 backpack-cubes
 backpack-cubesviewer-server
 backpack-metabase
 
+# Databases
+#
 backpack-mysql-main-master
 backpack-mysql-main-backup
 backpack-mysql-main-slave
 backpack-mysql-main-test
 backpack-postgresql-main
 
+# Elastic stack
+#
 backpack-elasticsearch
 backpack-logstash
 backpack-apm
 backpack-kibana
 
+# File sharing
+#
 backpack-proftpd
 backpack-samba
 
+# InfluxData stack
+#
 backpack-influxdb
 backpack-telegraf
 backpack-kapacitor

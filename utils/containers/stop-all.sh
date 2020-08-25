@@ -8,6 +8,8 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
+IFS=$'\n'
 for container in $(tac containers); do
+  [[ "$container" =~ ^#.*$ ]] && continue
   docker stop $container
 done
