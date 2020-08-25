@@ -5,7 +5,7 @@ run_master() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-data:/var/lib/mysql \
-    --publish 3306:3306 \
+    --publish $4:3306 \
     --env SERVER_ID=$3 \
     --env MODE=master \
     --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
@@ -30,11 +30,12 @@ run_slave() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-data:/var/lib/mysql \
-    --publish 1000$3:3306 \
+    --publish $4:3306 \
     --env SERVER_ID=$3 \
     --env MODE=slave \
     --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
     --env MASTER_HOST=master.mysql.backpack.test \
+    --env MASTER_PORT=$5 \
     --env REPLICATOR_USERNAME=$REPLICATOR_USERNAME \
     --env REPLICATOR_PASSWORD=$REPLICATOR_PASSWORD \
     --env HEALTHCHECK_USERNAME=$HEALTHCHECK_USERNAME \
