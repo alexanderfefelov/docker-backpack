@@ -13,7 +13,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/var/lib/postgresql/data \
-    --publish 5432:5432 \
+    --publish 5433:5432 \
     --env POSTGRES_USER=$POSTGRES_USERNAME \
     --env POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
     --env POSTGRES_DB=$POSTGRES_DATABASE \

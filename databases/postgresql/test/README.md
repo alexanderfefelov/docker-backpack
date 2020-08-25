@@ -6,6 +6,6 @@ Hostname `test.postgresql.backpack.test`
 
 | Port | Service | Credentials
 | ---- | ------- | -----------
-| 5432 | PostgreSQL | `postgres_nfursongence` / `vitablestudi`
+| 5433 | PostgreSQL | `postgres_nfursongence` / `vitablestudi`
 | | | `healthcheck_nutchurcente` / `ltatintermfu`
 | | | `telegraf_orandstristi` / `erberanitewi`
