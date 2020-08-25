@@ -40,3 +40,7 @@ backpack-influxdb
 backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
+
+# Messaging
+#
+backpack-activemq

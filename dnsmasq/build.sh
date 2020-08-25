@@ -31,6 +31,15 @@ address=/cubes.backpack.test/$1
 address=/cubesviewer-server.backpack.test/$1
 address=/metabase.backpack.test/$1
 
+# Databases
+#
+address=/backup.mysql.backpack.test/$1
+address=/master.mysql.backpack.test/$1
+address=/slave.mysql.backpack.test/$1
+address=/test.mysql.backpack.test/$1
+address=/main.postgresql.backpack.test/$1
+address=/test.postgresql.backpack.test/$1
+
 # Elastic stack
 #
 address=/apm.backpack.test/$1
@@ -55,14 +64,9 @@ address=/influxdb.backpack.test/$1
 address=/kapacitor.backpack.test/$1
 address=/telegraf.backpack.test/$1
 
-# Databases
+# Messaging
 #
-address=/backup.mysql.backpack.test/$1
-address=/master.mysql.backpack.test/$1
-address=/slave.mysql.backpack.test/$1
-address=/test.mysql.backpack.test/$1
-address=/main.postgresql.backpack.test/$1
-address=/test.postgresql.backpack.test/$1
+address=/activemq.backpack.test/$1
 
 conf-dir=/etc/dnsmasq.d
 

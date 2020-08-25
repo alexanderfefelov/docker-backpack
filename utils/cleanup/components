@@ -38,3 +38,7 @@ influxdata/influxdb
 influxdata/kapacitor
 influxdata/chronograf
 influxdata/telegraf
+
+# Messaging
+#
+messaging/activemq

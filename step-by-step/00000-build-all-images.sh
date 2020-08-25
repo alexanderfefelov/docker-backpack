@@ -60,6 +60,8 @@ build_all() {
   build influxdata/kapacitor
   build influxdata/telegraf
 
+  build messaging/activemq
+
   echo -e "\nOK, all done."
 }
 
