@@ -30,11 +30,12 @@ build() {
 
 build_all() {
   build dnsmasq
+  build netdata
+  build portainer
+
   build grafana
   build graphite-statsd
-  build netdata
   build ofelia
-  build portainer
   build redis
 
   build business-intelligence/cubes
