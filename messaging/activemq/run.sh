@@ -10,6 +10,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/activemq/data \
     --publish 1883:1883 \
     --publish 5672:5672 \
     --publish 8161:8161 \
