@@ -14,6 +14,7 @@
         - [test instance](databases/mysql/test)
     - PostgreSQL
         - [main instance](databases/postgresql/main)
+        - [test instance](databases/postgresql/test)
 - [dnsmasq](dnsmasq)
 - Elastic stack
     - [APM](elastic/apm)

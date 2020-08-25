@@ -1,4 +1,4 @@
-# backpack-postgresql
+# backpack-postgresql-main
 
 Hostname `main.postgresql.backpack.test`
 
@@ -7,3 +7,5 @@ Hostname `main.postgresql.backpack.test`
 | Port | Service | Credentials
 | ---- | ------- | -----------
 | 5432 | PostgreSQL | `postgres_ibleabaldine` / `undestrokend`
+| | | `healthcheck_phocincergeo` / `tanionetedio`
+| | | `telegraf_viledahloger` / `atiolusethil`

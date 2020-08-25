@@ -18,14 +18,12 @@ server=8.8.8.8
 address=/host.backpack.test/$1
 
 address=/dnsmasq.backpack.test/$1
+address=/netdata.backpack.test/$1
+address=/portainer.backpack.test/$1
 
 address=/grafana.backpack.test/$1
-address=/netdata.backpack.test/$1
 address=/ofelia.backpack.test/$1
-address=/portainer.backpack.test/$1
-address=/proftpd.backpack.test/$1
 address=/redis.backpack.test/$1
-address=/samba.backpack.test/$1
 
 # Business intelligence
 #
@@ -40,6 +38,11 @@ address=/elasticsearch.backpack.test/$1
 address=/kibana.backpack.test/$1
 address=/logstash.backpack.test/$1
 
+# File sharing
+#
+address=/proftpd.backpack.test/$1
+address=/samba.backpack.test/$1
+
 # Graphite
 #
 address=/graphite.backpack.test/$1
@@ -52,16 +55,14 @@ address=/influxdb.backpack.test/$1
 address=/kapacitor.backpack.test/$1
 address=/telegraf.backpack.test/$1
 
-# MySQL
+# Databases
 #
 address=/backup.mysql.backpack.test/$1
 address=/master.mysql.backpack.test/$1
 address=/slave.mysql.backpack.test/$1
 address=/test.mysql.backpack.test/$1
-
-# PostgreSQL
-#
 address=/main.postgresql.backpack.test/$1
+address=/test.postgresql.backpack.test/$1
 
 conf-dir=/etc/dnsmasq.d
 

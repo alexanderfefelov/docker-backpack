@@ -20,6 +20,7 @@ backpack-mysql-main-backup
 backpack-mysql-main-slave
 backpack-mysql-main-test
 backpack-postgresql-main
+backpack-postgresql-test
 
 # Elastic stack
 #

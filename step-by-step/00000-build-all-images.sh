@@ -44,6 +44,7 @@ build_all() {
   build databases/mysql/main
   build databases/mysql/test
   build databases/postgresql/main
+  build databases/postgresql/test
 
   build elastic/apm
   build elastic/elasticsearch
