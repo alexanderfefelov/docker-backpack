@@ -5,6 +5,8 @@ USER root
 ADD container/ /
 
 RUN apk add --quiet \
-      curl `# For health checks`
+      curl `# For health checks` \
+  && grafana-cli plugins install \
+       redis-datasource
 
 USER grafana
