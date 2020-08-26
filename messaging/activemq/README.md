@@ -12,5 +12,5 @@ Hostname `activemq.backpack.test`
 | | | `api_manostinerat` / `ombelervolpi`
 | | | `telegraf_guaduquainti` / `moncentivenv`
 | 61613 | STOMP | -
-| 61614 | WS | -
-| 61616 | JMS | -
+| 61614 | WebSocket | -
+| 61616 | OpenWire | -
