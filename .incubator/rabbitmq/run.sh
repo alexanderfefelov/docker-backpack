@@ -16,11 +16,12 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/var/lib/rabbitmq \
     "$DEFAULT_HEALTH_SETTINGS" \
     "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME
 }
 
 run
-wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+wait_for_container_ports $CONTAINER_NAME 5672 $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
