@@ -26,5 +26,5 @@ readonly BACKUP_PASSWORD=almatramushi
 readonly TELEGRAF_USERNAME=telegraf_resterfigral
 readonly TELEGRAF_PASSWORD=mpyrismelort
 
-. ../../../common-settings/health.sh
-. ../../../common-settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh

@@ -13,4 +13,7 @@ readonly GO_GOGC=40
 #
 readonly GO_GOMAXPROCS=2
 
-readonly DEFAULT_GO_SETTINGS="--env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS"
+readonly DEFAULT_GO_SETTINGS=" \
+  --env GOGC=$GO_GOGC \
+  --env GOMAXPROCS=$GO_GOMAXPROCS \
+"

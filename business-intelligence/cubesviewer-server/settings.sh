@@ -11,5 +11,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=cubesviewer_server_odogymahouli
 readonly DB_PASSWORD=inceadeavoca
 
-. ../../common-settings/health.sh
-. ../../common-settings/log.sh
+. ../../lib/settings/health.sh
+. ../../lib/settings/log.sh

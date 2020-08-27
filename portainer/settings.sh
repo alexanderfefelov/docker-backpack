@@ -7,5 +7,5 @@ readonly WAIT_TIMEOUT=600
 readonly ADMIN_USERNAME=admin
 readonly ADMIN_PASSWORD=defulobitusc
 
-. ../common-settings/go.sh
-. ../common-settings/log.sh
+. ../lib/settings/go.sh
+. ../lib/settings/log.sh

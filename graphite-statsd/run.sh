@@ -40,7 +40,7 @@ wait_for_ports() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 2003,8080 -t $WAIT_TIMEOUT
 }
 
-print_info() {
+print_container_info() {
   echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
 }
 
@@ -51,4 +51,4 @@ fi
 
 run
 wait_for_ports
-print_info
+print_container_info

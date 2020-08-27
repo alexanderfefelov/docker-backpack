@@ -11,5 +11,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=metabase_licideophaig
 readonly DB_PASSWORD=msorphorylac
 
-. ../../common-settings/health.sh
-. ../../common-settings/log.sh
+. ../../lib/settings/health.sh
+. ../../lib/settings/log.sh

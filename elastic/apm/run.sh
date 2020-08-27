@@ -31,11 +31,11 @@ run_tests() {
   docker exec $CONTAINER_NAME /usr/share/apm-server/apm-server test output
 }
 
-print_info() {
+print_container_info() {
   echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
 }
 
 run
 wait_for_ports
 run_tests
-print_info
+print_container_info

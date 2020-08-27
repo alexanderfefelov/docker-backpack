@@ -23,9 +23,9 @@ run() {
     $IMAGE_NAME
 }
 
-print_info() {
+print_container_info() {
   echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
 }
 
 run
-print_info
+print_container_info

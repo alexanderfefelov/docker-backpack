@@ -11,6 +11,6 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=grafana_solenstgalog
 readonly DB_PASSWORD=peritypindol
 
-. ../common-settings/go.sh
-. ../common-settings/health.sh
-. ../common-settings/log.sh
+. ../lib/settings/go.sh
+. ../lib/settings/health.sh
+. ../lib/settings/log.sh

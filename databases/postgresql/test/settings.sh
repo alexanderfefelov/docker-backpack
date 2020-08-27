@@ -12,5 +12,5 @@ readonly HEALTHCHECK_PASSWORD=ltatintermfu
 readonly TELEGRAF_USERNAME=telegraf_orandstristi
 readonly TELEGRAF_PASSWORD=erberanitewi
 
-. ../../../common-settings/health.sh
-. ../../../common-settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh

@@ -10,5 +10,5 @@ readonly HEALTHCHECK_PASSWORD=roladynorbas
 readonly TELEGRAF_USERNAME=telegraf_husaughbleak
 readonly TELEGRAF_PASSWORD=siblecitewar
 
-. ../../../common-settings/health.sh
-. ../../../common-settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh
