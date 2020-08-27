@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a pipeline, which may consist of a single simple command,
+# a list, or a compound command returns a non-zero status
 set -e
 
+# Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
@@ -13,18 +16,26 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 8200:8200 \
-    --env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS \
-    --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
-    --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
+    "$DEFAULT_GO_SETTINGS" \
+    "$DEFAULT_HEALTH_SETTINGS" \
+    "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME
+}
+
+wait_for_ports() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 
-test() {
+run_tests() {
   docker exec $CONTAINER_NAME /usr/share/apm-server/apm-server test config
   docker exec $CONTAINER_NAME /usr/share/apm-server/apm-server test output
 }
 
+print_info() {
+  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+}
+
 run
-test
-echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+wait_for_ports
+run_tests
+print_info

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
@@ -17,11 +18,19 @@ run() {
     --publish 61613:61613 \
     --publish 61614:61614 \
     --publish 61616:61616 \
-    --health-cmd $HEALTH_CMD --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
-    --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
+    "$DEFAULT_HEALTH_SETTINGS" \
+    "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME
+}
+
+wait_for_ports() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 
+print_info() {
+  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+}
+
 run
-echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+wait_for_ports
+print_info

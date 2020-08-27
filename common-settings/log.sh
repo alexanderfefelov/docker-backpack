@@ -7,3 +7,5 @@ readonly LOG_MAX_SIZE=10m
 # creates excess files, the oldest file is removed
 #
 readonly LOG_MAX_FILE=10
+
+readonly DEFAULT_LOG_SETTINGS="--log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE"

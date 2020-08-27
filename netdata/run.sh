@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a pipeline, which may consist of a single simple command,
+# a list, or a compound command returns a non-zero status
 set -e
 
+# Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
@@ -22,10 +25,18 @@ run() {
     --volume /etc/os-release:/host/etc/os-release:ro \
     --publish 19999:19999 \
     --env DOCKER_USR=root \
-    --log-opt max-size=$LOG_MAX_SIZE --log-opt max-file=$LOG_MAX_FILE \
+    "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME \
+}
+
+wait_for_ports() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
 }
 
+print_info() {
+  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+}
+
 run
-echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
+wait_for_ports
+print_info

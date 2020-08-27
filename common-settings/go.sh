@@ -12,3 +12,5 @@ readonly GO_GOGC=40
 # of Go code; those do not count against the GOMAXPROCS limit
 #
 readonly GO_GOMAXPROCS=2
+
+readonly DEFAULT_GO_SETTINGS="--env GOGC=$GO_GOGC --env GOMAXPROCS=$GO_GOMAXPROCS"
