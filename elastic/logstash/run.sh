@@ -19,8 +19,8 @@ run() {
     --publish 5514:5514 \
     --publish 5514:5514/udp \
     --publish 9600:9600 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

@@ -21,8 +21,8 @@ run() {
     --publish 20:20 \
     --publish 21:21 \
     --publish 65021-65042:65021-65042 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

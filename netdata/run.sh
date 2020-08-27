@@ -26,7 +26,7 @@ run() {
     --volume /etc/os-release:/host/etc/os-release:ro \
     --publish 19999:19999 \
     --env DOCKER_USR=root \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME \
 }
 

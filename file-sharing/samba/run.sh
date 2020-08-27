@@ -20,8 +20,8 @@ run() {
     --volume $CONTAINER_NAME-log:/var/log/samba \
     --publish 139:139 \
     --publish 445:445 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

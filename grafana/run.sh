@@ -26,9 +26,9 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/var/lib/grafana \
     --publish 3000:3000 \
-    "$DEFAULT_GO_SETTINGS" \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_GO_SETTINGS \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

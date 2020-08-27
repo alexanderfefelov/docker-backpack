@@ -41,8 +41,8 @@ run() {
     $([[ $SSE_SUPPORT != *sse4_2* ]] && echo Machine Learning disabled >&2 && echo --env xpack.ml.enabled=false) \
     --publish 9200:9200 \
     --publish 9300:9300 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

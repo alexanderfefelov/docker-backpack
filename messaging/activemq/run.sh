@@ -19,8 +19,8 @@ run() {
     --publish 61613:61613 \
     --publish 61614:61614 \
     --publish 61616:61616 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

@@ -24,8 +24,8 @@ run() {
     --env HOST_SYS=/host/sys \
     --env HOST_VAR=/host/var \
     --env HOST_MOUNT_PREFIX=/host \
-    "$DEFAULT_GO_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_GO_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 

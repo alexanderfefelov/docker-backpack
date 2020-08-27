@@ -32,8 +32,8 @@ run() {
     --publish 2023-2024:2023-2024 \
     --publish 8125:8125/udp \
     --publish 8126:8126 \
-    "$DEFAULT_HEALTH_SETTINGS" \
-    "$DEFAULT_LOG_SETTINGS" \
+    $DEFAULT_HEALTH_SETTINGS \
+    $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 
