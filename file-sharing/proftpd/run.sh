@@ -26,10 +26,6 @@ run() {
     $IMAGE_NAME
 }
 
-wait_for_container_ports() {
-  docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 21 -t $WAIT_TIMEOUT
-}
-
 run
-wait_for_container_ports
+wait_for_container_ports $CONTAINER_NAME 21 $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME

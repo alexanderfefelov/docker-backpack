@@ -5,3 +5,7 @@ print_container_info() {
 wait_for_all_container_ports() {
   docker run --rm --link $1:foobar martin/wait -t $2
 }
+
+wait_for_container_ports() {
+  docker run --rm --link $1:foobar martin/wait -p $2 -t $3
+}

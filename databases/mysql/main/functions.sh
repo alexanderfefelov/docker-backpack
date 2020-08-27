@@ -20,7 +20,6 @@ run_master() {
     "$DEFAULT_HEALTH_SETTINGS" \
     "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME
-  docker run --rm --link $1:foobar martin/wait -p 3306 -t $WAIT_TIMEOUT
 }
 
 run_slave() {
@@ -43,8 +42,4 @@ run_slave() {
     "$DEFAULT_HEALTH_SETTINGS" \
     "$DEFAULT_LOG_SETTINGS" \
     $IMAGE_NAME
-  docker run --rm --link $1:foobar martin/wait -p 3306 -t $WAIT_TIMEOUT
-  docker exec $1 cp /read-only.cnf /etc/mysql/mysql.conf.d/
-  docker restart $1
-  docker run --rm --link $1:foobar martin/wait -p 3306 -t $WAIT_TIMEOUT
 }

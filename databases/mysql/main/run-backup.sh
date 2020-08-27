@@ -8,7 +8,12 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
+. ../../../lib/lib.sh
 . functions.sh
 
 run_slave $BACKUP_CONTAINER_NAME $BACKUP_HOST_NAME $BACKUP_MYSQL_SERVER_ID $BACKUP_PORT $MASTER_PORT
-echo $BACKUP_CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $BACKUP_CONTAINER_NAME)
+wait_for_container_ports $BACKUP_CONTAINER_NAME 3306 $WAIT_TIMEOUT
+docker exec $BACKUP_CONTAINER_NAME cp /read-only.cnf /etc/mysql/mysql.conf.d/
+docker restart $BACKUP_CONTAINER_NAME
+wait_for_container_ports $BACKUP_CONTAINER_NAME 3306 $WAIT_TIMEOUT
+print_container_info $BACKUP_CONTAINER_NAME

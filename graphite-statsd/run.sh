@@ -37,15 +37,11 @@ run() {
     $IMAGE_NAME
 }
 
-wait_for_container_ports() {
-  docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 2003,8080 -t $WAIT_TIMEOUT
-}
-
 $MYSQL --execute="use $DB_DATABASE;"
 if [ $? -ne 0 ]; then
   initialize_database
 fi
 
 run
-wait_for_container_ports
+wait_for_container_ports $CONTAINER_NAME 2003,8080 $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
