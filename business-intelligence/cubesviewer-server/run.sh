@@ -4,6 +4,7 @@
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
+. ../../lib/lib.sh
 
 readonly MYSQL="mysql --host=$DB_HOST --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
 
@@ -29,19 +30,11 @@ run() {
     $IMAGE_NAME
 }
 
-wait_for_ports() {
-  docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
-}
-
-print_container_info() {
-  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
-}
-
 $MYSQL --execute="use $DB_DATABASE;"
 if [ $? -ne 0 ]; then
   initialize_database
 fi
 
 run
-wait_for_ports
-print_container_info
+wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+print_container_info $CONTAINER_NAME

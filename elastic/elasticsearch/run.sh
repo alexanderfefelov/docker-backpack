@@ -8,6 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
+. ../../lib/lib.sh
 
 check_vm_max_map_count() {
   local -r PARAM=vm.max_map_count
@@ -45,16 +46,8 @@ run() {
     $IMAGE_NAME
 }
 
-wait_for_ports() {
-  docker run --rm --link $CONTAINER_NAME:foobar martin/wait -t $WAIT_TIMEOUT
-}
-
-print_container_info() {
-  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
-}
-
 check_vm_max_map_count
 print_sse_info
 run
-wait_for_ports
-print_container_info
+wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+print_container_info $CONTAINER_NAME

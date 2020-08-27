@@ -8,6 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
+. ../../lib/lib.sh
 
 run() {
   docker run \
@@ -28,9 +29,5 @@ run() {
     $IMAGE_NAME
 }
 
-print_container_info() {
-  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
-}
-
 run
-print_container_info
+print_container_info $CONTAINER_NAME

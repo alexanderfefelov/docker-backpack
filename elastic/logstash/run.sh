@@ -8,6 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
+. ../../lib/lib.sh
 
 run() {
   docker run \
@@ -23,14 +24,10 @@ run() {
     $IMAGE_NAME
 }
 
-wait_for_ports() {
+wait_for_container_ports() {
   docker run --rm --link $CONTAINER_NAME:foobar martin/wait -p 5514,9600 -t $WAIT_TIMEOUT
 }
 
-print_container_info() {
-  echo $CONTAINER_NAME is ready at $(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $CONTAINER_NAME)
-}
-
 run
-wait_for_ports
-print_container_info
+wait_for_container_ports
+print_container_info $CONTAINER_NAME
