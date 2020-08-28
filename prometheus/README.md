@@ -1,6 +1,6 @@
 # backpack-prometheus
 
-Hostname `influxdb.backpack.test`
+Hostname `prometheus.backpack.test`
 
 ## Services
 
