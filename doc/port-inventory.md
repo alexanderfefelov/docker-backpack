@@ -41,6 +41,7 @@
 | 8888 | [backpack-chronograf](../influxdata/chronograf/run.sh)
 | 9000 | [backpack-portainer](../portainer/run.sh)
 | 9092 | [backpack-kapacitor](../influxdata/kapacitor/run.sh)
+| 9090 | [backpack-prometheus](../prometheus/run.sh)
 | 9200 | [backpack-elasticsearch](../elastic/elasticsearch/run.sh)
 | 9300 | [backpack-elasticsearch](../elastic/elasticsearch/run.sh)
 | 9600 | [backpack-logstash](../elastic/logstash/run.sh)

@@ -5,6 +5,7 @@ portainer
 grafana
 graphite-statsd
 ofelia
+prometheus
 redis
 
 # Business intelligence

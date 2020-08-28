@@ -5,6 +5,7 @@ backpack-portainer
 backpack-grafana
 backpack-graphite-statsd
 backpack-ofelia
+backpack-prometheus
 backpack-redis
 
 # Business intelligence

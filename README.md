@@ -37,6 +37,7 @@
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)
+- [Prometheus](prometheus)
 - [Redis](redis)
 
 ---
