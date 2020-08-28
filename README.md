@@ -1,6 +1,6 @@
 # docker-backpack
 
-![Backpack](assets/backpack_2551.png)
+![Backpack](doc/assets/backpack_2551.png)
 
 ## Components
 

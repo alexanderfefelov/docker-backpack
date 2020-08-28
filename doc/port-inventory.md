@@ -1,0 +1,55 @@
+# Port inventory
+
+## TCP
+
+| Port | Container
+| ---: | ---------
+| 20 | [backpack-proftpd](../file-sharing/proftpd/run.sh)
+| 21 | [backpack-proftpd](../file-sharing/proftpd/run.sh)
+| 81 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 82 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 139 | [backpack-samba](../file-sharing/samba/run.sh)
+| 445 | [backpack-samba](../file-sharing/samba/run.sh)
+| 1833 | [backpack-activemq](../messaging/activemq/run.sh)
+| 2003 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 2004 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 2023 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 2024 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 3000 | [backpack-grafana](../grafana/run.sh)
+| 3042 | [backpack-metabase](../business-intelligence/metabase/run.sh)
+| 3306 | [backpack-mysql-main-master](../databases/mysql/main/run-master.sh)
+| 3307 | [backpack-mysql-test](../databases/mysql/test/run.sh)
+| 3308 | [backpack-mysql-main-backup](../databases/mysql/main/run-backup.sh)
+| 3309 | [backpack-mysql-main-slave](../databases/mysql/main/run-slave.sh)
+| 5000 | [backpack-cubes](../business-intelligence/cubes/run.sh)
+| 5380 | [backpack-dnsmasq](../dnsmasq/run.sh)
+| 5432 | [backpack-postgresql-main](../databases/postgresql/main/run.sh)
+| 5433 | [backpack-postgresql-test](../databases/postgresql/test/run.sh)
+| 5514 | [backpack-logstash](../elastic/logstash/run.sh)
+| 5601 | [backpack-kibana](../elastic/kibana/run.sh)
+| 5672 | [backpack-activemq](../messaging/activemq/run.sh)
+| 6379 | [backpack-redis](../redis/run.sh)
+| 8000 | [backpack-cubesviewer-server](../business-intelligence/cubesviewer-server/run.sh)
+| 8086 | [backpack-influxdb](../influxdata/influxdb/run.sh)
+| 8126 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
+| 8161 | [backpack-activemq](../messaging/activemq/run.sh)
+| 8200 | [backpack-apm](../elastic/apm/run.sh)
+| 8888 | [backpack-chronograf](../influxdata/chronograf/run.sh)
+| 9000 | [backpack-portainer](../portainer/run.sh)
+| 9092 | [backpack-kapacitor](../influxdata/kapacitor/run.sh)
+| 9200 | [backpack-elasticsearch](../elastic/elasticsearch/run.sh)
+| 9300 | [backpack-elasticsearch](../elastic/elasticsearch/run.sh)
+| 9600 | [backpack-logstash](../elastic/logstash/run.sh)
+| 19999 | [backpack-netdata](../netdata/run.sh)
+| 61613 | [backpack-activemq](../messaging/activemq/run.sh)
+| 61614 | [backpack-activemq](../messaging/activemq/run.sh)
+| 61616 | [backpack-activemq](../messaging/activemq/run.sh)
+| 65021-65042 | [backpack-proftpd](../file-sharing/proftpd/run.sh)
+
+## UDP
+
+| Port | Container
+| ---: | ---------
+| 53 | [backpack-dnsmasq](../dnsmasq/run.sh)
+| 5514 | [backpack-logstash](../elastic/logstash/run.sh)
+| 8125 | [backpack-graphite-statsd](../graphite-statsd/run.sh)
