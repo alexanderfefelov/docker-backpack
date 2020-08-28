@@ -42,3 +42,4 @@ influxdata/telegraf
 # Messaging
 #
 messaging/activemq
+messaging/rabbitmq

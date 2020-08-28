@@ -44,3 +44,4 @@ backpack-chronograf
 # Messaging
 #
 backpack-activemq
+backpack-rabbitmq

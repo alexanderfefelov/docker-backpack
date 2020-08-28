@@ -70,6 +70,7 @@ address=/telegraf.backpack.test/$1
 # Messaging
 #
 address=/activemq.backpack.test/$1
+address=/rabbitmq.backpack.test/$1
 
 conf-dir=/etc/dnsmasq.d
 

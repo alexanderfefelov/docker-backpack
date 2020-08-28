@@ -1,0 +1,7 @@
+[
+  rabbitmq_management, % https://www.rabbitmq.com/management.html
+  rabbitmq_mqtt,       % https://www.rabbitmq.com/mqtt.html
+  rabbitmq_stomp,      % https://www.rabbitmq.com/stomp.html
+  rabbitmq_web_mqtt,   % https://www.rabbitmq.com/web-mqtt.html
+  rabbitmq_web_stomp   % https://www.rabbitmq.com/web-stomp.html
+].

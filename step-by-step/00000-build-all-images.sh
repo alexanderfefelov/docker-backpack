@@ -64,6 +64,7 @@ build_all() {
   build influxdata/telegraf
 
   build messaging/activemq
+  build messaging/rabbitmq
 
   echo -e "\nOK, all done."
 }
