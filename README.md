@@ -33,6 +33,7 @@
 - [Graphite/StatsD](graphite-statsd)
 - Messaging
     - [ActiveMQ](messaging/activemq)
+    - [RabbitMQ](messaging/rabbitmq)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)
