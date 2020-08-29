@@ -6,6 +6,8 @@ readonly PREREQUISITES="\
   lorem \
   mkpasswd \
   mysql \
+  nc \
+  redis-cli \
   smbpasswd \
 "
 
