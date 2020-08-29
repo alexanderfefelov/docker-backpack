@@ -5,7 +5,7 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 ## Services
 
 | Port | Service | Credentials
-| ---- | ------- | -----------
+| ---: | ------- | -----------
 | 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `backup_letocryloite` / `almatramushi`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
 | | | `grafana_solenstgalog` / `peritypindol`
