@@ -1,25 +1,29 @@
 #!/usr/bin/env bash
 
-readonly PREREQUISITES="\
-  htpasswd \
-  http \
-  lorem \
-  mkpasswd \
-  mysql \
-  nc \
-  redis-cli \
-  smbpasswd \
-"
+. lib/ansi-escape-codes.sh
 
-readonly RED='\033[0;31m'
-readonly GREEN='\033[0;32m'
-readonly NO_COLOR='\033[0m'
+readonly PREREQUISITES="
+  awk
+  docker
+  htpasswd
+  http
+  ip
+  logger
+  lorem
+  mkpasswd
+  mysql
+  nc
+  redis-cli
+  smbpasswd
+  sysctl
+  tac
+"
 
 for x in $PREREQUISITES; do
   echo -n $x...
   if command -v $x > /dev/null; then
-    echo -e ${GREEN}found${NO_COLOR}
+    echo -e ${COLOR_FG_GREEN}found${COLOR_RESET}
   else
-    echo -e ${RED}not found${NO_COLOR}
+    echo -e ${COLOR_FG_RED}not found${COLOR_RESET}
   fi
 done

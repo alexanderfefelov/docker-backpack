@@ -19,7 +19,7 @@ backpack-metabase
 backpack-mysql-main-master
 backpack-mysql-main-backup
 backpack-mysql-main-slave
-backpack-mysql-main-test
+backpack-mysql-test
 backpack-postgresql-main
 backpack-postgresql-test
 

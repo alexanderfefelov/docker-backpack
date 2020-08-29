@@ -10,7 +10,7 @@ if [ "$REPLY" != "Y" ]; then
 fi
 
 IFS=$'\n'
-for container in $(tac containers); do
+for container in $(< containers); do
   [[ "$container" =~ ^#.*$ ]] && continue
   docker start $container
 done
