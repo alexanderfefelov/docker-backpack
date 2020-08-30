@@ -8,7 +8,7 @@ readonly LOG_MAX_SIZE=10m
 #
 readonly LOG_MAX_FILE=10
 
-readonly DEFAULT_LOG_SETTINGS=" \
-  --log-opt max-size=$LOG_MAX_SIZE \
-  --log-opt max-file=$LOG_MAX_FILE \
+readonly DEFAULT_LOG_SETTINGS="
+  --log-opt max-size=$LOG_MAX_SIZE
+  --log-opt max-file=$LOG_MAX_FILE
 "

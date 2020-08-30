@@ -19,10 +19,10 @@ readonly HEALTH_TIMEOUT=2s
 #
 readonly HEALTH_RETRIES=3
 
-readonly DEFAULT_HEALTH_SETTINGS=" \
-  --health-cmd $HEALTH_CMD \
-  --health-start-period $HEALTH_START_PERIOD \
-  --health-interval $HEALTH_INTERVAL \
-  --health-timeout $HEALTH_TIMEOUT \
-  --health-retries $HEALTH_RETRIES \
+readonly DEFAULT_HEALTH_SETTINGS="
+  --health-cmd $HEALTH_CMD
+  --health-start-period $HEALTH_START_PERIOD
+  --health-interval $HEALTH_INTERVAL
+  --health-timeout $HEALTH_TIMEOUT
+  --health-retries $HEALTH_RETRIES
 "

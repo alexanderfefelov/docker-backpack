@@ -10,10 +10,10 @@ readonly MYSQL="mysql --host=$DB_HOST --user=$DB_ROOT_USERNAME --password=$DB_RO
 
 initialize_database() {
   echo Initializing database...
-  $MYSQL --execute=" \
-    CREATE DATABASE $DB_DATABASE; \
-    CREATE USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD'; \
-    GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%'; \
+  $MYSQL --execute="
+    CREATE DATABASE $DB_DATABASE;
+    CREATE USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
+    GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%';
   "
   echo ...database initialized
 }
