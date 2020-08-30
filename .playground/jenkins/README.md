@@ -1,9 +1,10 @@
-# backpack-dkron
+# backpack-jenkins
 
-Hostname `dkron.backpack.test`
+Hostname `jenkins.backpack.test`
 
 ## Services
 
 | Port | Service | Credentials
 | ---: | ------- | -----------
-| [8082](http://dkron.backpack.test:8082) | HTTP API and management console | -
+| [8083](http://jenkins.backpack.test:8083) | HTTP API and management console | -
+| 50000 | Inbound agents | -
