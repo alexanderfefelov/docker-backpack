@@ -24,13 +24,14 @@
 - File sharing
     - [proftpd](file-sharing/proftpd)
     - [Samba](file-sharing/samba)
+- [Grafana](grafana)
+- [Graphite/StatsD](graphite-statsd)
 - InfluxData stack
     - [Chronograf](influxdata/chronograf)
     - [InfluxDB](influxdata/influxdb)
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
-- [Grafana](grafana)
-- [Graphite/StatsD](graphite-statsd)
+- [Jenkins](jenkins)
 - Messaging
     - [ActiveMQ](messaging/activemq)
     - [RabbitMQ](messaging/rabbitmq)

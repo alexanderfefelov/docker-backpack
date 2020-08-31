@@ -38,6 +38,7 @@ build_all() {
 
   build grafana
   build graphite-statsd
+  build jenkins
   build ofelia
   build prometheus
   build redis

@@ -28,6 +28,7 @@ Port,Container
 5674,backpack-rabbitmq
 6379,backpack-redis
 8000,backpack-cubesviewer-server
+8083,backpack-jenkins
 8086,backpack-influxdb
 8126,backpack-graphite-statsd
 8161,backpack-activemq
@@ -44,6 +45,7 @@ Port,Container
 15674,backpack-rabbitmq
 15675,backpack-rabbitmq
 19999,backpack-netdata
+50000,backpack-jenkins
 61613,backpack-activemq
 61614,backpack-activemq
 61616,backpack-activemq
