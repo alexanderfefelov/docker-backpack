@@ -1,6 +1,5 @@
-import jenkins.model.*
-import hudson.security.*
-import jenkins.security.s2m.AdminWhitelistRule
+import jenkins.model.Jenkins
+import hudson.security.HudsonPrivateSecurityRealm
 
 def jenkins = Jenkins.getInstance()
 def realm = new HudsonPrivateSecurityRealm(false)

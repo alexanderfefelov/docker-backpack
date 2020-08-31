@@ -13,7 +13,9 @@ readonly PREREQUISITES="
   mkpasswd
   mysql
   nc
+  patch
   redis-cli
+  sleep
   smbpasswd
   sysctl
   tac
