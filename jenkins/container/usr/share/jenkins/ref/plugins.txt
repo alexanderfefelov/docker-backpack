@@ -1,4 +1,8 @@
-ant
-cloudbees-folder
-gradle
-timestamper
+trilead-api:1.0.8
+
+cloudbees-folder:6.14
+timestamper:1.11.5
+
+ant:1.11
+gradle:1.36
+maven-plugin:3.7

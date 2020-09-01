@@ -27,7 +27,7 @@ run() {
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 sleep 42
-patch $(docker volume inspect --format '{{.Mountpoint}}' $CONTAINER_NAME-data)/config.xml config.xml.patch
+patch $(docker volume inspect --format '{{.Mountpoint}}' $CONTAINER_NAME-data)/config.xml patches/config.xml.patch
 docker restart $CONTAINER_NAME
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
