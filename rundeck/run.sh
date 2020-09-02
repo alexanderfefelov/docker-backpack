@@ -25,6 +25,8 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 4440:4440 \
+    --env RUNDECK_SERVER_UUID=$PRIMARY_SERVER_ID \
+    --env RUNDECK_PRIMARYSERVERID=$PRIMARY_SERVER_ID \
     --env RUNDECK_DATABASE_DRIVER=$DB_DRIVER \
     --env RUNDECK_DATABASE_URL=$DB_URL \
     --env RUNDECK_DATABASE_USERNAME=$DB_USERNAME \

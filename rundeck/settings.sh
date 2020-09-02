@@ -13,6 +13,8 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=rundeck_bineurvendle
 readonly DB_PASSWORD=nocionersava
 
+readonly PRIMARY_SERVER_ID=1b6eeef2-ecca-11ea-adc1-0242ac120002
+
 . ../lib/settings/go.sh
 . ../lib/settings/health.sh
 . ../lib/settings/log.sh
