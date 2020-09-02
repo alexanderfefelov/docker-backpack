@@ -1,22 +1,14 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a pipeline, which may consist of a single simple command,
+# a list, or a compound command returns a non-zero status
+set -e
+
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
 . ../../lib/lib.sh
-
-readonly MYSQL="mysql --host=$DB_HOST --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
-
-initialize_database() {
-  echo Initializing database...
-  $MYSQL --execute="
-    CREATE DATABASE $DB_DATABASE;
-    CREATE USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
-    GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%';
-  "
-  echo ...database initialized
-}
 
 run() {
   docker run \
@@ -27,17 +19,13 @@ run() {
     --publish 10051:10051 \
     --env DB_SERVER_HOST=$DB_HOST \
     --env MYSQL_DATABASE=$DB_DATABASE \
+    --env MYSQL_ROOT_PASSWORD=$DB_ROOT_PASSWORD \
     --env MYSQL_USER=$DB_USERNAME \
     --env MYSQL_PASSWORD=$DB_PASSWORD \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
-
-$MYSQL --execute="use $DB_DATABASE;"
-if [ $? -ne 0 ]; then
-  initialize_database
-fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
