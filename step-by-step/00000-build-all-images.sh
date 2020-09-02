@@ -42,6 +42,7 @@ build_all() {
   build ofelia
   build prometheus
   build redis
+  build rundeck
 
   build business-intelligence/cubes
   build business-intelligence/cubesviewer-server

@@ -17,6 +17,7 @@ Port,Container
 3307,backpack-mysql-test
 3308,backpack-mysql-main-backup
 3309,backpack-mysql-main-slave
+4440,backpack-rundeck
 5000,backpack-cubes
 5380,backpack-dnsmasq
 5432,backpack-postgresql-main

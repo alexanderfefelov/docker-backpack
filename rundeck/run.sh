@@ -8,7 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
-. ../../lib/lib.sh
+. ../lib/lib.sh
 
 run() {
   docker run \
@@ -18,6 +18,7 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/home/rundeck/server/data \
     --publish 4440:4440 \
+    --env RUNDECK_GRAILS_URL=http://rundeck.backpack.test:4440 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME

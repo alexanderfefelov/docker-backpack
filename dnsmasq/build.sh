@@ -29,6 +29,7 @@ address=/jenkins.backpack.test/$1
 address=/ofelia.backpack.test/$1
 address=/prometheus.backpack.test/$1
 address=/redis.backpack.test/$1
+address=/rundeck.backpack.test/$1
 
 # Business intelligence
 #

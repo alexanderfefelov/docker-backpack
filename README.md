@@ -40,6 +40,7 @@
 - [Portainer](portainer)
 - [Prometheus](prometheus)
 - [Redis](redis)
+- [Rundeck](rundeck)
 
 ---
 

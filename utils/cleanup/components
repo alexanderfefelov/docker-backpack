@@ -8,6 +8,7 @@ jenkins
 ofelia
 prometheus
 redis
+rundeck
 
 # Business intelligence
 #
