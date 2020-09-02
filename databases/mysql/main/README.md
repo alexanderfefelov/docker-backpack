@@ -14,6 +14,7 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 | | | `metabase_licideophaig` / `msorphorylac`
 | | | `replicator_avaternetrai` / `ergatecuserb`
 | | | `root` / `camycorymicu`
+| | | `rundeck_bineurvendle` / `nocionersava`
 | | | `telegraf_resterfigral` / `mpyrismelort`
 
 ## Databases
