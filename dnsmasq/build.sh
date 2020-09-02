@@ -75,6 +75,11 @@ address=/telegraf.backpack.test/$1
 address=/activemq.backpack.test/$1
 address=/rabbitmq.backpack.test/$1
 
+# Zabbix
+#
+address=/backend.zabbix.backpack.test/$1
+address=/frontend.zabbix.backpack.test/$1
+
 conf-dir=/etc/dnsmasq.d
 
 EOF

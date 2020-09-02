@@ -16,6 +16,7 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 | | | `root` / `camycorymicu`
 | | | `rundeck_bineurvendle` / `nocionersava`
 | | | `telegraf_resterfigral` / `mpyrismelort`
+| | | `zabbix_webarnalastr` / `dentinguarne`
 
 ## Databases
 
@@ -25,3 +26,5 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 | `grafana` | [Grafana](../../grafana) backend
 | `graphite` | [Graphite](../../graphite-statsd) backend
 | `metabase` | [Metabase](../../business-intelligence/metabase) backend
+| `rundeck` | [Rundeck](../../rundeck) backend
+| `zabbix` | [Zabbix](../../zabbix) backend

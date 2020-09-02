@@ -41,6 +41,9 @@
 - [Prometheus](prometheus)
 - [Redis](redis)
 - [Rundeck](rundeck)
+- Zabbix
+    - [Backend](zabbix/backend)
+    - [Frontend](zabbix/frontend)
 
 ---
 
