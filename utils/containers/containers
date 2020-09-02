@@ -48,3 +48,8 @@ backpack-chronograf
 #
 backpack-activemq
 backpack-rabbitmq
+
+# Zabbix
+#
+backpack-zabbix-backend
+backpack-zabbix-frontend

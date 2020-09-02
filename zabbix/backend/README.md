@@ -6,3 +6,4 @@ Hostname `backend.zabbix.backpack.test`
 
 | Port | Service | Credentials
 | ---: | ------- | -----------
+| 10051 | Trapper | -

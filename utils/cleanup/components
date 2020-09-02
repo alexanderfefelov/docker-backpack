@@ -46,3 +46,8 @@ influxdata/telegraf
 #
 messaging/activemq
 messaging/rabbitmq
+
+# Zabbix
+#
+zabbix/backend
+zabbix/frontend

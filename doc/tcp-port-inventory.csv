@@ -30,6 +30,7 @@ Port,Container
 6379,backpack-redis
 8000,backpack-cubesviewer-server
 8083,backpack-jenkins
+8084,backpack-zabbix-frontend
 8086,backpack-influxdb
 8126,backpack-graphite-statsd
 8161,backpack-activemq
@@ -42,6 +43,7 @@ Port,Container
 9200,backpack-elasticsearch
 9300,backpack-elasticsearch
 9600,backpack-logstash
+10051,backpack-zabbix-backend
 15672,backpack-rabbitmq
 15674,backpack-rabbitmq
 15675,backpack-rabbitmq

@@ -69,6 +69,9 @@ build_all() {
   build messaging/activemq
   build messaging/rabbitmq
 
+  build zabbix/backend
+  build zabbix/frontend
+
   echo -e "\nOK, all done."
 }
 
