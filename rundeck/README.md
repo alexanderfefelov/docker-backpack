@@ -6,4 +6,5 @@ Hostname `rundeck.backpack.test`
 
 | Port | Service | Credentials
 | ---: | ------- | -----------
-| [4440](http://rundeck.backpack.test:4440) | HTTP API and management console | `admin` / `admin`
+| [4440](http://rundeck.backpack.test:4440) | HTTP API and management console | `admin_aithutersale` / `isormonypelm`
+| | | `user_cidahloneold` / `fayogymonise`
