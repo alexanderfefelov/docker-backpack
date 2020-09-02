@@ -22,9 +22,9 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 
 | Name | Description
 | ---- | -----------
-| `cubesviewer_server` | [CubesViewer Server](../../business-intelligence/cubesviewer-server) backend
-| `grafana` | [Grafana](../../grafana) backend
-| `graphite` | [Graphite](../../graphite-statsd) backend
-| `metabase` | [Metabase](../../business-intelligence/metabase) backend
-| `rundeck` | [Rundeck](../../rundeck) backend
-| `zabbix` | [Zabbix](../../zabbix) backend
+| `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
+| `grafana` | [Grafana](../../../grafana)
+| `graphite` | [Graphite](../../../graphite-statsd)
+| `metabase` | [Metabase](../../../business-intelligence/metabase)
+| `rundeck` | [Rundeck](../../../rundeck)
+| `zabbix` | [Zabbix](../../../zabbix)
