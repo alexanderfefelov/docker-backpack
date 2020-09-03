@@ -29,6 +29,7 @@ run() {
     --publish 81:8080 \
     --publish 82:80 \
     --publish 2003-2004:2003-2004 \
+    --publish 2003:2003/udp \
     --publish 2023-2024:2023-2024 \
     --publish 8125:8125/udp \
     --publish 8126:8126 \
