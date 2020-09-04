@@ -1,4 +1,2 @@
-<h4 class="subheader">Your info</h4>
-
-<p>Add your organization's contact information.</p>
-<p>Your NAV administrator: <a href="mailto:root@localhost">root@localhost</a></p>
+<h4 class="subheader"><a href="https://github.com/alexanderfefelov/docker-backpack">docker-backpack</a></h4>
+<p>Your NAV administrator: <a href="mailto:admin@backpack.test">admin@backpack.test</a></p>

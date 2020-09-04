@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-navsyncdb --create
+if [ "$1" = "supervisord" ]; then
+  navsyncdb --create
+fi
 
 exec "$@"

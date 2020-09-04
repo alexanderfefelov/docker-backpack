@@ -44,26 +44,16 @@ RUN  apt-get -qq update \
   && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group --home=/usr/local/nav nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
-  && mkdir --parents \
-       /usr/local/share/nav/var \
-       /usr/local/share/nav/www \
-       /var/lib/nav/uploads \
-       /var/log/nav \
-       /var/run/nav \
-  && chown --recursive nav \
-       /etc/nav \
-       /usr/local/share/nav \
-       /var/lib/nav \
-       /var/log/nav \
-       /var/run/nav \
+  && mkdir --parents /usr/local/share/nav/www /var/lib/nav/uploads /var/run/nav \
+  && chown nav /var/run/nav \
   && ln --symbolic /usr/local/lib/python3.7/site-packages/nav/web/static /usr/local/share/nav/www/static \
-  && ln --symbolic /var/lib/nav/uploads /usr/local/share/nav/var/uploads \
-  && echo django-admin collectstatic --noinput --settings=nav.django.settings \
-  && a2dissite 000-default > /dev/null \
-  && a2ensite nav > /dev/null \
+  && a2dissite 000-default \
+  && a2ensite nav \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  && rm --recursive --force /.wheels \
+  && rm --recursive --force \
+       /.wheels \
+       /requirements \
   && rm --force /requirements.txt
 
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
