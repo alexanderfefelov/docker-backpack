@@ -6,5 +6,6 @@
 . settings.sh
 
 docker volume rm $CONTAINER_NAME-log-apache2
+docker volume rm $CONTAINER_NAME-log-cron
 docker volume rm $CONTAINER_NAME-log-nav
 docker volume rm $CONTAINER_NAME-log-supervisor

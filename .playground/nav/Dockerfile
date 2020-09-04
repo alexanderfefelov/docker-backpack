@@ -44,9 +44,14 @@ RUN  apt-get -qq update \
   && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group --home=/usr/local/nav nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
-  && mkdir --parents /usr/local/share/nav/www /var/lib/nav/uploads /var/run/nav \
+  && mkdir --parents \
+       /usr/local/share/nav/www \
+       /var/lib/nav/uploads \
+       /var/log/cron \
+       /var/run/nav \
   && chown nav /var/run/nav \
   && ln --symbolic /usr/local/lib/python3.7/site-packages/nav/web/static /usr/local/share/nav/www/static \
+  && a2enconf server-name \
   && a2dissite 000-default \
   && a2ensite nav \
   && apt-get -qq clean \

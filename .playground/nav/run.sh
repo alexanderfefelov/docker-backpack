@@ -17,6 +17,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-log-apache2:/var/log/apache2 \
+    --volume $CONTAINER_NAME-log-cron:/var/log/cron \
     --volume $CONTAINER_NAME-log-nav:/var/log/nav \
     --volume $CONTAINER_NAME-log-supervisor:/var/log/supervisor \
     --publish 83:80 \
