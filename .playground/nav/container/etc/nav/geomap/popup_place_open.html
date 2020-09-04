@@ -1,0 +1,11 @@
+{% load geomap %}
+<div class="place-popup">
+
+  <table class="vertitable">
+    <caption>{{ place.num_rooms }} room{{ place.num_rooms|pluralize }}</caption>
+    {% for room in place.rooms %}
+    <tr><th>{{ room.id }}</th> <td>{{ room.descr|default:"" }}</td></tr>
+    {% endfor %}
+  </table>
+
+</div>

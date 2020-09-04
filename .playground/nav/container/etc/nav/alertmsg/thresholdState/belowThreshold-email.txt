@@ -1,0 +1,8 @@
+Subject: Threshold alert cleared for {{ metric }}
+
+A previously exceeded threshold rule has returned to normal:
+
+Metric: {{ metric }}
+Time: {{ time }}
+Value: {{ measured_value }}
+Threshold: {% firstof clear alert %}

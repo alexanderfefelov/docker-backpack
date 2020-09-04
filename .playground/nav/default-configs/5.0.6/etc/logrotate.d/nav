@@ -1,0 +1,93 @@
+/var/log/nav/servicemon.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/servicemon.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/pping.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/pping.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/alertengine.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/alertengine.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/eventengine.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/eventengine.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/thresholdmon.log /var/log/nav/powersupplywatch.log /var/log/nav/navtopology.log /var/log/nav/macwatch.log /var/log/nav/maintengine.log /var/log/nav/navstats.log /var/log/nav/collect_active_ip.log /var/log/nav/netbiostracker.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+}
+
+/var/log/nav/smsd.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/smsd.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/snmptraps.log /var/log/nav/snmptrapd.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        sharedscripts
+        postrotate
+            kill -HUP `cat /var/run/nav/snmptrapd.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+
+/var/log/nav/ipdevpoll.log {
+        weekly
+        missingok
+        compress
+        notifempty
+        rotate 6
+        postrotate
+            kill -HUP `cat /var/run/nav/ipdevpolld.pid 2>/dev/null` 2>/dev/null || true
+            sleep 1
+        endscript
+}
+

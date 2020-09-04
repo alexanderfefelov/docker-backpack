@@ -1,0 +1,1 @@
+{{ metric }} cleared at {{ measured_value }} {% firstof clear alert %} on {{ time }}.
