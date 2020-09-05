@@ -5,6 +5,7 @@ portainer
 grafana
 graphite-statsd
 jenkins
+nav
 ofelia
 prometheus
 redis

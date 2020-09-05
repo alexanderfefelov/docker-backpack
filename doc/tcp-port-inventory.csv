@@ -3,6 +3,7 @@ Port,Container
 21,backpack-proftpd
 81,backpack-graphite-statsd
 82,backpack-graphite-statsd
+83,backpack-nav
 139,backpack-samba
 445,backpack-samba
 1883,backpack-activemq
@@ -38,6 +39,7 @@ Port,Container
 8883,backpack-rabbitmq
 8888,backpack-chronograf
 9000,backpack-portainer
+9001,backpack-nav
 9092,backpack-kapacitor
 9090,backpack-prometheus
 9200,backpack-elasticsearch

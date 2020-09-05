@@ -5,6 +5,7 @@ backpack-portainer
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
+backpack-nav
 backpack-ofelia
 backpack-prometheus
 backpack-redis

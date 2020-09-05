@@ -35,6 +35,7 @@
 - Messaging
     - [ActiveMQ](messaging/activemq)
     - [RabbitMQ](messaging/rabbitmq)
+- [NAV](nav)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)

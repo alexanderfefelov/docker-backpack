@@ -14,9 +14,12 @@ readonly PREREQUISITES="
   mysql
   nc
   patch
+  psql
+  pwgen
   redis-cli
   sleep
   smbpasswd
+  smidump
   sysctl
   tac
 "

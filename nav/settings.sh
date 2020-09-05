@@ -13,5 +13,5 @@ readonly DB_PASSWORD=tateicenstop
 
 export NAV_VERSION=5.0.6
 
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../lib/settings/health.sh
+. ../lib/settings/log.sh
