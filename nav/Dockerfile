@@ -11,7 +11,7 @@ RUN  apt-get -qq update \
   && pip3 install --root /.build /nav \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  && rm --recursive --force /.build/usr/local/python/nav
+  && rm --recursive --force /.build/usr/local/python
 
 FROM python:3.7.9-slim-buster
 
