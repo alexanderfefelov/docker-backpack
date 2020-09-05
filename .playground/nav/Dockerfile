@@ -11,7 +11,7 @@ RUN  apt-get -qq update \
   && pip3 install --root /.build /nav \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  && rm --recursive --force /.build/usr/local/python/nav/web
+  && rm --recursive --force /.build/usr/local/python/nav
 
 FROM python:3.7.9-slim-buster
 
@@ -40,17 +40,22 @@ RUN  apt-get -qq update \
        nbtscan \
        postgresql-client \
        python3-gammu \
+       rsyslog \
        supervisor \
   && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
-  && adduser --system --group --home=/usr/local/nav nav \
+  && adduser --system --group --no-create-home nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
   && mkdir --parents \
        /usr/local/share/nav/www \
-       /var/lib/nav/uploads \
-       /var/log/cron \
+       /var/lib/nav/uploads/images/rooms \
+       /var/log/nav \
        /var/run/nav \
-  && chown nav /var/run/nav \
+  && chown --recursive nav \
+       /var/lib/nav \
+       /var/log/nav \
+       /var/run/nav \
   && ln --symbolic /usr/local/lib/python3.7/site-packages/nav/web/static /usr/local/share/nav/www/static \
+  && a2enconf server-info \
   && a2enconf server-name \
   && a2dissite 000-default \
   && a2ensite nav \

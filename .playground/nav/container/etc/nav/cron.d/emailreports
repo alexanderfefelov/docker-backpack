@@ -1,4 +1,3 @@
-## info: Send email reports for device and link availability
-0 5 1 * * emailreports.py month
-0 5 * * mon emailreports.py week
-0 5 * * * emailreports.py day
+0 5 1 * * /usr/local/bin/emailreports.py month
+0 5 * * mon /usr/local/bin/emailreports.py week
+0 5 * * * /usr/local/bin/emailreports.py day

@@ -1,3 +1,1 @@
-## info: Monitors your Graphite metrics for exceeded thresholds
-
-*/5 * * * * thresholdmon
+*/5 * * * * /usr/local/bin/thresholdmon

@@ -1,2 +1,1 @@
-## navstats: Collect statistics defined in navstats.conf
-*/5 * * * * navstats
+*/5 * * * * /usr/local/bin/navstats

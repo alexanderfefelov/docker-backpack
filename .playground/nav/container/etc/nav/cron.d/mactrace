@@ -1,2 +1,1 @@
-## info: Checks NAV's cam log for watched MAC addresses
-11,26,41,56 * * * *      macwatch.py
+11,26,41,56 * * * * /usr/local/bin/macwatch.py
