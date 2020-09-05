@@ -31,6 +31,7 @@ RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        apache2 \
        cron \
+       curl `# For health checks` \
        libapache2-mod-wsgi-py3 \
        libjpeg62-turbo \
        libopenjp2-7 \
@@ -38,12 +39,13 @@ RUN  apt-get -qq update \
        libsnmp30 \
        libtiff5 \
        nbtscan \
+       netcat-openbsd `# For health checks` \
        postgresql-client \
        python3-gammu \
        rsyslog \
        supervisor \
   && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
-  && adduser --system --group --no-create-home nav \
+  && adduser --system --group nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
   && mkdir --parents \
        /usr/local/share/nav/www \
