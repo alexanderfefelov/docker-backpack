@@ -6,6 +6,6 @@ for i in {1..7}; do
   timestamp=$(date +%s)
   message="$metric $value $timestamp"
   echo $message
-  echo $message | nc -N graphite.backpack.test 2003
+  echo $message | nc -N carbon.backpack.test 2003
   sleep 30s
 done

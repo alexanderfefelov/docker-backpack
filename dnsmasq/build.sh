@@ -61,6 +61,7 @@ address=/samba.backpack.test/$1
 
 # Graphite
 #
+address=/carbon.backpack.test/$1
 address=/graphite.backpack.test/$1
 address=/statsd.backpack.test/$1
 

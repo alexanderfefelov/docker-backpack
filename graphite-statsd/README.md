@@ -1,6 +1,6 @@
 # backpack-graphite-statsd
 
-Hostnames: `graphite.backpack.test`, `statsd.backpack.test`
+Hostnames: `carbon.backpack.test`, `graphite.backpack.test`, `statsd.backpack.test`
 
 ## Services
 
