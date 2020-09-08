@@ -10,7 +10,7 @@ set -e
 . settings.sh
 
 generate_config() {
-  cat > container/etc/dnsmasq.conf.generated << EOF
+  cat > container/etc/dnsmasq.d/dnsmasq.conf.generated << EOF
 # GENERATED. DO NOT EDIT!
 
 no-hosts
@@ -81,8 +81,6 @@ address=/rabbitmq.backpack.test/$1
 #
 address=/backend.zabbix.backpack.test/$1
 address=/frontend.zabbix.backpack.test/$1
-
-conf-dir=/etc/dnsmasq.d
 
 EOF
 }
