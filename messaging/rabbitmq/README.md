@@ -5,7 +5,7 @@ Hostname `rabbitmq.backpack.test`
 ## Services
 
 | Port | Service | Credentials
-| ---: | ------- | -----------
+| ---: | :------ | :----------
 | 1893 | STOMP | -
 | 5673 | AMQP | -
 | 5674 | AMQP with TLS | -

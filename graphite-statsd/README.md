@@ -5,7 +5,7 @@ Hostnames: `carbon.backpack.test`, `graphite.backpack.test`, `statsd.backpack.te
 ## Services
 
 | Port | Service | Credentials
-| ---: | ------- | -----------
+| ---: | :------ | :----------
 | [81](http://graphite.backpack.test:81) | Graphite API and management console | `admin_blemsturtwin` / `witomerearec`
 | [82](http://graphite.backpack.test:82) | Graphite API and management console behind Nginx | `admin_blemsturtwin` / `witomerearec`
 | 2003, 2003/udp | Carbon receiver, plaintext | -
