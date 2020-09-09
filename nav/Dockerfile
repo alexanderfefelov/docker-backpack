@@ -32,6 +32,7 @@ RUN  apt-get -qq update \
        apache2 \
        cron \
        curl `# For health checks` \
+       dhcping \
        libapache2-mod-wsgi-py3 \
        libjpeg62-turbo \
        libopenjp2-7 \
