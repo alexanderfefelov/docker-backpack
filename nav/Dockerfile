@@ -45,6 +45,7 @@ RUN  apt-get -qq update \
        python3-gammu \
        rsyslog \
        supervisor \
+  && chmod +s /usr/sbin/dhcping \
   && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
