@@ -24,6 +24,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/grafana \
     --volume $CONTAINER_NAME-data:/var/lib/grafana \
     --publish 3000:3000 \
     $DEFAULT_GO_SETTINGS \

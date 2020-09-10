@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/proftpd \
     --volume $CONTAINER_NAME-data:/home \
     --volume $CONTAINER_NAME-log:/var/log/proftpd \
     --publish 20:20 \

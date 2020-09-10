@@ -17,6 +17,7 @@ run() {
     --detach \
     --restart unless-stopped \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/dnsmasq.d \
     --publish 53:53/udp \
     --publish 5380:8080 \
     --env HTTP_USER=$ADMIN_USERNAME \

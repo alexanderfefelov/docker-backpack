@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/samba \
     --volume $CONTAINER_NAME-data:/var/lib/samba \
     --volume $CONTAINER_NAME-log:/var/log/samba \
     --publish 139:139 \

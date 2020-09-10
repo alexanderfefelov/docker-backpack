@@ -16,8 +16,10 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume /var/run/docker.sock:/var/run/docker.sock \
+    --volume $CONTAINER_NAME-conf:/ofelia/cfg \
+    --volume $CONTAINER_NAME-jobs:/ofelia/jobs \
     --volume $CONTAINER_NAME-var:/ofelia/var \
+    --volume /var/run/docker.sock:/var/run/docker.sock \
     $DEFAULT_GO_SETTINGS \
     --health-cmd /healthcheck.sh --health-start-period $HEALTH_START_PERIOD --health-interval $HEALTH_INTERVAL --health-timeout $HEALTH_TIMEOUT --health-retries $HEALTH_RETRIES \
     $DEFAULT_LOG_SETTINGS \

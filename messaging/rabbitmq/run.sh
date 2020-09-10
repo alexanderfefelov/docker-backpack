@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/rabbitmq \
     --volume $CONTAINER_NAME-data:/var/lib/rabbitmq \
     --publish 1893:1883 \
     --publish 5673:5672 \

@@ -5,6 +5,9 @@
 
 . settings.sh
 
+docker volume rm $MASTER_CONTAINER_NAME-conf
 docker volume rm $MASTER_CONTAINER_NAME-data
+docker volume rm $BACKUP_CONTAINER_NAME-conf
 docker volume rm $BACKUP_CONTAINER_NAME-data
+docker volume rm $SLAVE_CONTAINER_NAME-conf
 docker volume rm $SLAVE_CONTAINER_NAME-data
