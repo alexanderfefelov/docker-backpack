@@ -17,7 +17,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-conf:/ofelia/cfg \
-    --volume $CONTAINER_NAME-jobs:/ofelia/jobs \
+    --volume $CONTAINER_NAME-job:/ofelia/jobs \
     --volume $CONTAINER_NAME-var:/ofelia/var \
     --volume /var/run/docker.sock:/var/run/docker.sock \
     $DEFAULT_GO_SETTINGS \

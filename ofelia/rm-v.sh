@@ -6,5 +6,5 @@
 . settings.sh
 
 docker volume rm $CONTAINER_NAME-conf
-docker volume rm $CONTAINER_NAME-jobs
+docker volume rm $CONTAINER_NAME-job
 docker volume rm $CONTAINER_NAME-var
