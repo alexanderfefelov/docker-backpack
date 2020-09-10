@@ -10,13 +10,8 @@ set -e
 . settings.sh
 
 generate_config() {
-  cat > container/etc/dnsmasq.d/dnsmasq.conf.generated << EOF
+  cat > container/etc/dnsmasq.d/address.conf.generated << EOF
 # GENERATED. DO NOT EDIT!
-
-no-hosts
-no-resolv
-
-server=8.8.8.8
 
 address=/host.backpack.test/$1
 
