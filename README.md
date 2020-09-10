@@ -4,35 +4,35 @@
 
 ## Components
 
-- Business intelligence
+- [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
     - [CubesViewer Server](business-intelligence/cubesviewer-server)
     - [Metabase](business-intelligence/metabase)
-- Databases
-    - MySQL
+- [Databases](databases)
+    - [MySQL](databases/mysql)
         - [main instance](databases/mysql/main) with replication
         - [test instance](databases/mysql/test)
-    - PostgreSQL
+    - [PostgreSQL](databases/postgresql)
         - [main instance](databases/postgresql/main)
         - [test instance](databases/postgresql/test)
 - [dnsmasq](dnsmasq)
-- Elastic stack
+- [Elastic stack](elastic)
     - [APM](elastic/apm)
     - [Elasticsearch](elastic/elasticsearch)
     - [Kibana](elastic/kibana)
     - [Logstash](elastic/logstash)
-- File sharing
+- [File sharing](file-sharing)
     - [proftpd](file-sharing/proftpd)
     - [Samba](file-sharing/samba)
 - [Grafana](grafana)
 - [Graphite/StatsD](graphite-statsd)
-- InfluxData stack
+- [InfluxData stack](influxdata)
     - [Chronograf](influxdata/chronograf)
     - [InfluxDB](influxdata/influxdb)
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)
-- Message queues
+- [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq)
     - [RabbitMQ](message-queuse/rabbitmq)
 - [NAV](nav)
@@ -42,7 +42,7 @@
 - [Prometheus](prometheus)
 - [Redis](redis)
 - [Rundeck](rundeck)
-- Zabbix
+- [Zabbix](zabbix)
     - [Backend](zabbix/backend)
     - [Frontend](zabbix/frontend)
 
