@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/nav \
     --volume $CONTAINER_NAME-data:/var/lib/nav \
     --volume $CONTAINER_NAME-log-apache2:/var/log/apache2 \
     --volume $CONTAINER_NAME-log-cron:/var/log/cron \
