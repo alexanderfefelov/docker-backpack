@@ -67,7 +67,7 @@ address=/influxdb.backpack.test/$1
 address=/kapacitor.backpack.test/$1
 address=/telegraf.backpack.test/$1
 
-# Messaging
+# Message queues
 #
 address=/activemq.backpack.test/$1
 address=/rabbitmq.backpack.test/$1

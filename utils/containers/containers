@@ -45,7 +45,7 @@ backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
 
-# Messaging
+# Message queues
 #
 backpack-activemq
 backpack-rabbitmq

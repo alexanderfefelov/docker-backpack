@@ -3,4 +3,4 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-(cd ../messaging/activemq && ./run.sh)
+(cd ../message-queues/activemq && ./run.sh)

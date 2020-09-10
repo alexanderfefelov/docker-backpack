@@ -67,8 +67,8 @@ build_all() {
   build influxdata/kapacitor
   build influxdata/telegraf
 
-  build messaging/activemq
-  build messaging/rabbitmq
+  build message-queues/activemq
+  build message-queues/rabbitmq
 
   build zabbix/backend
   build zabbix/frontend

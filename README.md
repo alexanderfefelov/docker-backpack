@@ -32,9 +32,9 @@
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)
-- Messaging
-    - [ActiveMQ](messaging/activemq)
-    - [RabbitMQ](messaging/rabbitmq)
+- Message queues
+    - [ActiveMQ](message-queues/activemq)
+    - [RabbitMQ](message-queuse/rabbitmq)
 - [NAV](nav)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
