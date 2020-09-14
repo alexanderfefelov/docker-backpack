@@ -1,4 +1,4 @@
-FROM dkron/dkron:v3.0.4
+FROM dkron/dkron:v3.0.5
 
 ADD container/ /
 
