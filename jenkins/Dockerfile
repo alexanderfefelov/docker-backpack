@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.255
+FROM jenkins/jenkins:2.256
 
 ADD container/ /
 
