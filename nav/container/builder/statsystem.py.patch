@@ -1,0 +1,30 @@
+45a46,58
+> from nav.mibs.dlink_dgs_1210_xx import (
+>     DLink_DGS_1210_10_ME_AX_Mib,
+>     DLink_DGS_1210_10_ME_BX_Mib,
+>     DLink_DGS_1210_10_P_CX_Mib,
+>     DLink_DGS_1210_10_P_ME_AX_Mib,
+>     DLink_DGS_1210_10_P_ME_BX_Mib,
+>     DLink_DGS_1210_12_TS_ME_BX_Mib,
+>     DLink_DGS_1210_28_ME_AX_Mib,
+>     DLink_DGS_1210_28_ME_BX_Mib,
+>     DLink_DGS_1210_28_XS_ME_BX_Mib,
+>     DLink_DGS_1210_52_ME_BX_Mib
+> )
+> from nav.mibs.dlink_genmgmt import DLinkGenmgmtMib
+46a60
+>                                 VENDOR_ID_D_LINK_SYSTEMS_INC,
+56a71,83
+>     VENDOR_ID_D_LINK_SYSTEMS_INC: [
+>         DLink_DGS_1210_10_ME_AX_Mib,
+>         DLink_DGS_1210_10_ME_BX_Mib,
+>         DLink_DGS_1210_10_P_CX_Mib,
+>         DLink_DGS_1210_10_P_ME_AX_Mib,
+>         DLink_DGS_1210_10_P_ME_BX_Mib,
+>         DLink_DGS_1210_12_TS_ME_BX_Mib,
+>         DLink_DGS_1210_28_ME_AX_Mib,
+>         DLink_DGS_1210_28_ME_BX_Mib,
+>         DLink_DGS_1210_28_XS_ME_BX_Mib,
+>         DLink_DGS_1210_52_ME_BX_Mib,
+>         DLinkGenmgmtMib
+>     ],

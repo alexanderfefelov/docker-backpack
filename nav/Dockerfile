@@ -2,18 +2,24 @@ FROM python:3.7.9-buster AS builder
 
 ARG NAV_VERSION
 
+COPY container/builder/ /
+
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        libldap2-dev \
        libsasl2-dev \
+       patch \
   && git clone https://github.com/Uninett/nav.git --branch ${NAV_VERSION} --depth 1 \
   && pip3 wheel --requirement /nav/requirements.txt --wheel-dir /.wheels \
   && pip3 install --root /.build /nav \
+  && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
+  && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
+  && patch /.build/usr/local/lib/python3.7/site-packages/nav/ipdevpoll/plugins/statsystem.py /statsystem.py.patch \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --recursive --force /.build/usr/local/python
 
-FROM python:3.7.9-slim-buster
+FROM python:3.7.9-slim-buster AS target
 
 ARG NAV_VERSION
 
@@ -21,7 +27,7 @@ ENV TINI_VERSION 0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
 RUN chmod +x /usr/sbin/tini
 
-COPY container/ /
+COPY container/target/ /
 COPY --from=builder /nav/requirements/ /requirements/
 COPY --from=builder /nav/requirements.txt /
 COPY --from=builder /.wheels/ /.wheels/
