@@ -1,3 +1,3 @@
-FROM prom/prometheus:v2.20.1
+FROM prom/prometheus:v2.21.0
 
 copy container/ /
