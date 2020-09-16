@@ -1,3 +1,3 @@
-FROM portainer/portainer:1.24.1
+FROM portainer/portainer-ce:2.0.0
 
 ADD container/ /
