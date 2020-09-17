@@ -14,7 +14,9 @@ RUN  apt-get -qq update \
   && pip3 install --root /.build /nav \
   && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
   && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
-  && patch /.build/usr/local/lib/python3.7/site-packages/nav/ipdevpoll/plugins/statsystem.py /statsystem.py.patch \
+  && patch \
+       /.build/usr/local/lib/python3.7/site-packages/nav/ipdevpoll/plugins/statsystem.py \
+       /nav-add-ons/snmp/patches/nav/ipdevpoll/plugins/statsystem.py-36819df.patch \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --recursive --force /.build/usr/local/python
