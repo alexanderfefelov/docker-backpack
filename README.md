@@ -34,7 +34,7 @@
 - [Jenkins](jenkins)
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq)
-    - [RabbitMQ](message-queuse/rabbitmq)
+    - [RabbitMQ](message-queues/rabbitmq)
 - [NAV](nav)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
