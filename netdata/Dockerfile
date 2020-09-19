@@ -1,3 +1,3 @@
-FROM netdata/netdata:v1.24.0
+FROM netdata/netdata:v1.25.0
 
 ADD container/ /
