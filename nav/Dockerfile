@@ -15,6 +15,9 @@ RUN  apt-get -qq update \
   && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
   && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
   && patch \
+       /.build/usr/local/lib/python3.7/site-packages/nav/ipdevpoll/neighbor.py \
+       /nav-add-ons/snmp/patches/nav/ipdevpoll/neighbor.py-36819df.patch \
+  && patch \
        /.build/usr/local/lib/python3.7/site-packages/nav/ipdevpoll/plugins/statsystem.py \
        /nav-add-ons/snmp/patches/nav/ipdevpoll/plugins/statsystem.py-36819df.patch \
   && patch \
