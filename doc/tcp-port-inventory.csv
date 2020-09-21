@@ -42,6 +42,7 @@ Port,Container
 9001,backpack-nav
 9092,backpack-kapacitor
 9090,backpack-prometheus
+9093,backpack-alertmanager
 9200,backpack-elasticsearch
 9300,backpack-elasticsearch
 9600,backpack-logstash

@@ -4,6 +4,7 @@
 
 ## Components
 
+- [Alertmanager](alertmanager)
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
     - [CubesViewer Server](business-intelligence/cubesviewer-server)

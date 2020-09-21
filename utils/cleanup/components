@@ -2,6 +2,7 @@ dnsmasq
 netdata
 portainer
 
+alertmanager
 grafana
 graphite-statsd
 jenkins

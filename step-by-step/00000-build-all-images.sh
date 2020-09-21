@@ -36,6 +36,7 @@ build_all() {
   build netdata
   build portainer
 
+  build alertmanager
   build grafana
   build graphite-statsd
   build jenkins
