@@ -26,4 +26,5 @@ run() {
 }
 
 run
+wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME

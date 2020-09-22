@@ -22,8 +22,12 @@ run() {
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME
+    $IMAGE_NAME \
+      --config.file=/etc/prometheus/prometheus.yml \
+      --web.page-title=$CONTAINER_NAME \
+      --web.enable-admin-api
 }
 
 run
+wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
