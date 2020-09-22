@@ -36,13 +36,10 @@ build_all() {
   build netdata
   build portainer
 
-  build alertmanager
   build grafana
   build graphite-statsd
   build jenkins
-  build nav
   build ofelia
-  build prometheus
   build redis
   build rundeck
 
@@ -71,8 +68,12 @@ build_all() {
   build message-queues/activemq
   build message-queues/rabbitmq
 
-  build zabbix/backend
-  build zabbix/frontend
+  build network-monitoring/nav
+  build network-monitoring/zabbix/backend
+  build network-monitoring/zabbix/frontend
+
+  build prometheus/alertmanager
+  build prometheus/prometheus
 
   echo -e "\nOK, all done."
 }

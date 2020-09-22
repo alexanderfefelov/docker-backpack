@@ -2,13 +2,10 @@ backpack-dnsmasq
 backpack-netdata
 backpack-portainer
 
-backpack-alertmanager
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
-backpack-nav
 backpack-ofelia
-backpack-prometheus
 backpack-redis
 backpack-rundeck
 
@@ -51,7 +48,13 @@ backpack-chronograf
 backpack-activemq
 backpack-rabbitmq
 
-# Zabbix
+# Network monitoring
 #
+backpack-nav
 backpack-zabbix-backend
 backpack-zabbix-frontend
+
+# Prometheus
+#
+backpack-alertmanager
+backpack-prometheus

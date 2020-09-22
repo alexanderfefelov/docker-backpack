@@ -8,7 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
-. ../../lib/lib.sh
+. ../../../lib/lib.sh
 
 run() {
   docker run \
@@ -16,17 +16,18 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --publish 10051:10051 \
+    --publish 8084:8080 \
     --env DB_SERVER_HOST=$DB_HOST \
     --env MYSQL_DATABASE=$DB_DATABASE \
-    --env MYSQL_ROOT_PASSWORD=$DB_ROOT_PASSWORD \
     --env MYSQL_USER=$DB_USERNAME \
     --env MYSQL_PASSWORD=$DB_PASSWORD \
+    --env ZBX_SERVER_HOST=backend.zabbix.backpack.test \
+    --env PHP_TZ=Europe/Moscow \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
 
 run
-wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+wait_for_container_ports $CONTAINER_NAME 8080 $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME

@@ -2,13 +2,10 @@ dnsmasq
 netdata
 portainer
 
-alertmanager
 grafana
 graphite-statsd
 jenkins
-nav
 ofelia
-prometheus
 redis
 rundeck
 
@@ -49,7 +46,13 @@ influxdata/telegraf
 message-queues/activemq
 message-queues/rabbitmq
 
-# Zabbix
+# Network monitoring
 #
-zabbix/backend
-zabbix/frontend
+network-monitoring/nav
+network-monitoring/zabbix/backend
+network-monitoring/zabbix/frontend
+
+# Prometheus
+#
+prometheus/alertmanager
+prometheus/prometheus

@@ -4,7 +4,6 @@
 
 ## Components
 
-- [Alertmanager](alertmanager)
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
     - [CubesViewer Server](business-intelligence/cubesviewer-server)
@@ -36,16 +35,19 @@
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq)
     - [RabbitMQ](message-queues/rabbitmq)
-- [NAV](nav)
+- [Network monitoring](network-monitoring)
+    - [NAV](network-monitoring/nav)
+    - [Zabbix]((network-monitoring/zabbix)
+        - [Backend]((network-monitoring/zabbix/backend)
+        - [Frontend]((network-monitoring/zabbix/frontend)
 - [Netdata](netdata)
 - [Ofelia](ofelia)
 - [Portainer](portainer)
 - [Prometheus](prometheus)
+    - [Alertmanager](prometheus/alertmanager)
+    - [Prometheus](prometheus/prometheus)
 - [Redis](redis)
 - [Rundeck](rundeck)
-- [Zabbix](zabbix)
-    - [Backend](zabbix/backend)
-    - [Frontend](zabbix/frontend)
 
 ---
 

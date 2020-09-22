@@ -19,12 +19,9 @@ address=/dnsmasq.backpack.test/$1
 address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1
 
-address=/alertmanager.backpack.test/$1
 address=/grafana.backpack.test/$1
 address=/jenkins.backpack.test/$1
-address=/nav.backpack.test/$1
 address=/ofelia.backpack.test/$1
-address=/prometheus.backpack.test/$1
 address=/redis.backpack.test/$1
 address=/rundeck.backpack.test/$1
 
@@ -73,10 +70,16 @@ address=/telegraf.backpack.test/$1
 address=/activemq.backpack.test/$1
 address=/rabbitmq.backpack.test/$1
 
-# Zabbix
+# Network monitoring
 #
+address=/nav.backpack.test/$1
 address=/backend.zabbix.backpack.test/$1
 address=/frontend.zabbix.backpack.test/$1
+
+# Prometheus
+#
+address=/alertmanager.backpack.test/$1
+address=/prometheus.backpack.test/$1
 
 EOF
 }
