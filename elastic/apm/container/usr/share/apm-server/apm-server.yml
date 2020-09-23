@@ -1081,7 +1081,7 @@ output.elasticsearch:
 # reporting is disabled by default.
 
 # Set to true to enable the monitoring reporter.
-monitoring.enabled: false
+monitoring.enabled: true
 
 # Most settings from the Elasticsearch output are accepted here as well.
 # Note that these settings should be configured to point to your Elasticsearch *monitoring* cluster.
