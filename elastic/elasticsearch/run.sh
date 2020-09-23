@@ -37,6 +37,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/usr/share/elasticsearch/config \
     --volume $CONTAINER_NAME-data:/usr/share/elasticsearch/data \
     --publish 9200:9200 \
     --publish 9300:9300 \
