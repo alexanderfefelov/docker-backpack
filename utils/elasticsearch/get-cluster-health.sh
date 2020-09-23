@@ -5,4 +5,4 @@
 set -e
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html
-http --verbose GET http://elasticsearch.backpack.test:9200/_cluster/health/?pretty
+http --verbose --auth-type basic --auth superuser_brapildehect:aytoadowmate GET http://elasticsearch.backpack.test:9200/_cluster/health/?pretty

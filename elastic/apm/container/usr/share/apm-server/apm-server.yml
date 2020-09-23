@@ -306,8 +306,8 @@ apm-server:
 
     # Optional protocol and basic auth credentials.
     #protocol: "https"
-    #username: "elastic"
-    #password: "changeme"
+    username: "apm_shahleichali"
+    password: "urachaemaebu"
 
     # Optional HTTP path.
     #path: ""
@@ -542,8 +542,8 @@ output.elasticsearch:
 
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
-  #username: "elastic"
-  #password: "changeme"
+  username: "apm_shahleichali"
+  password: "urachaemaebu"
 
   # Dictionary of HTTP parameters to pass within the url with index operations.
   #parameters:

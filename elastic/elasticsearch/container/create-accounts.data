@@ -5,12 +5,14 @@ apm_system_ardishmergen                  : teonmantinai : apm_system
 apm_user_aereleishahn                    : cheitaecuagu : apm_user
 beats_admin_jeexewaowaik                 : cheevahvaido : beats_admin
 beats_system_leigaojahngu                : xezaipheethu : beats_system
-data_frame_transforms_admin_oxahveyuulua : zoobutoorieb : data_frame_transforms_admin
-data_frame_transforms_user_saicheexoobu  : jaigughahkei : data_frame_transforms_user
+# data_frame_transforms_admin   deprecated
+# data_frame_transforms_user    deprecated
 enrich_user_iemoakudaizo                 : uiraimeaghum : enrich_user
 ingest_admin_queitiezahso                : oixuengiwail : ingest_admin
 kibana_admin_thihieweiham                : kipeyoshieta : kibana_admin
+# kibana_dashboard_only_user    deprecated
 kibana_system_tabiantegawf               : infemiturfar : kibana_system
+# kibana_user                   deprecated
 logstash_admin_iusheevekoul              : shoghahphier : logstash_admin
 logstash_system_esperonverbo             : donzagonocka : logstash_system
 machine_learning_admin_kiataxukailo      : thiezuizohdi : machine_learning_admin
@@ -19,6 +21,8 @@ monitoring_user_rezibohwushe             : kievohixooka : monitoring_user
 remote_monitoring_agent_beisheepaodo     : dahlienibiho : remote_monitoring_agent
 remote_monitoring_collector_dohziateefes : yeitoitheeza : remote_monitoring_collector
 reporting_user_hohghoopogim              : phohzitohcoa : reporting_user
+rollup_admin_zohngeeteevu                : rooghahfange : rollup_admin
+rollup_user_tookoatohgai                 : ichohbioghup : rollup_user
 snapshot_user_boxiengeetap               : ahwukaopacah : snapshot_user
 superuser_brapildehect                   : aytoadowmate : superuser
 transform_admin_toenehahhave             : rohchohphaeb : transform_admin
@@ -29,5 +33,11 @@ watcher_user_shaequuoraix                : aediebeixain : watcher_user
 
 # Other accounts
 #
+#
+# TODO FIXME too much permissions
+apm_shahleichali         : urachaemaebu : superuser
 healthcheck_sheetheekahx : yoongootecie : monitoring_user
-telegraf_eabeongoovee    : cheudoonahro : monitoring_user
+# TODO FIXME too much permissions
+logstash_ucahseevaute    : oohooheexook : superuser
+# TODO FIXME too much permissions
+telegraf_eabeongoovee    : cheudoonahro : superuser

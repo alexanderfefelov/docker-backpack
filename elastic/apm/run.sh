@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/usr/share/apm-server \
     --publish 8200:8200 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
