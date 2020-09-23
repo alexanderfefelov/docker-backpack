@@ -6,4 +6,4 @@ Hostname `apm.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 8200 | API | -
+| 8200 | [HTTP API](https://www.elastic.co/guide/en/apm/server/current/intake-api.html) | -

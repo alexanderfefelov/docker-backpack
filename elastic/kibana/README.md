@@ -6,4 +6,4 @@ Hostname `kibana.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [5601](http://kibana.backpack.test:5601) | Management console | See [`../elasticsearch/container/create-accounts.data`](../elasticsearch/container/create-accounts.data)
+| [5601](http://kibana.backpack.test:5601) | [HTTP API](https://www.elastic.co/guide/en/kibana/master/api.html) and management console | See [`../elasticsearch/container/create-accounts.data`](../elasticsearch/container/create-accounts.data)

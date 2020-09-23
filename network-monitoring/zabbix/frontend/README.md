@@ -6,4 +6,4 @@ Hostname `frontend.zabbix.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8084](http://frontend.zabbix.backpack.test:8084) | HTTP API and management console | `Admin` / `zabbix`
+| [8084](http://frontend.zabbix.backpack.test:8084) | [HTTP API](https://www.zabbix.com/documentation/current/ru/manual/api) and management console | `Admin` / `zabbix`

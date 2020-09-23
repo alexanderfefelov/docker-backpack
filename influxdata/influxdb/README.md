@@ -6,4 +6,4 @@ Hostname `influxdb.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 8086 | API | -
+| 8086 | [HTTP API](https://docs.influxdata.com/influxdb/v1.8/tools/api/) | -

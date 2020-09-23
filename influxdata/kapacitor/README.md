@@ -6,4 +6,4 @@ Hostname `kapacitor.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 9092 | API | -
+| 9092 | [HTTP API](https://docs.influxdata.com/kapacitor/v1.5/working/api/) | -

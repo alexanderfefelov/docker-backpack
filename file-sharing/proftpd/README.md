@@ -6,4 +6,4 @@ Hostname `proftpd.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 20, 21 | FTP | See [create-acconts.data](container/create-acconts.data)
+| 20, 21 | FTP | See [create-accounts.data](container/create-accounts.data)
