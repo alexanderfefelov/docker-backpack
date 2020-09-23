@@ -34,6 +34,7 @@ datasources:
   isDefault: false
   # <map> fields that will be converted to json and stored in json_data
   jsonData:
+    esVersion: 70
     timeField: "@timestamp"
   # <string> json object of data that will be encrypted.
   secureJsonData:
