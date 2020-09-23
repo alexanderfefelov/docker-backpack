@@ -12,7 +12,7 @@ RUN apt-get -qq update \
 
 ADD container/ /
 
-RUN /create-acconts.sh \
-  && rm --force /create-acconts.*
+RUN /create-accounts.sh \
+  && rm --force /create-accounts.*
 
 CMD ["/usr/sbin/proftpd", "--nodaemon"]
