@@ -1,6 +1,10 @@
 # backpack-mysql-main
 
-Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.mysql.backpack.test`
+Hostnames:
+
+- `backup.mysql.backpack.test`
+- `master.mysql.backpack.test`
+- `slave.mysql.backpack.test`
 
 ## Services
 
@@ -27,4 +31,4 @@ Hostnames: `master.mysql.backpack.test`, `backup.mysql.backpack.test`, `slave.my
 | `graphite` | [Graphite](../../../graphite-statsd)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
 | `rundeck` | [Rundeck](../../../rundeck)
-| `zabbix` | [Zabbix](../../../zabbix)
+| `zabbix` | [Zabbix](../../../network-monitoring/zabbix)

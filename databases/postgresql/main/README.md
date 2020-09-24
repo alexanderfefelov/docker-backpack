@@ -15,4 +15,4 @@ Hostname `main.postgresql.backpack.test`
 
 | Name | Description
 | :--- | :----------
-| `nav` | [NAV](../../../nav)
+| `nav` | [NAV](../../../network-monitoring/nav)

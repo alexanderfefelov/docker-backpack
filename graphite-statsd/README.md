@@ -1,6 +1,10 @@
 # backpack-graphite-statsd
 
-Hostnames: `carbon.backpack.test`, `graphite.backpack.test`, `statsd.backpack.test`
+Hostnames:
+
+- `carbon.backpack.test`
+- `graphite.backpack.test`
+- `statsd.backpack.test`
 
 ## Services
 
@@ -13,4 +17,4 @@ Hostnames: `carbon.backpack.test`, `graphite.backpack.test`, `statsd.backpack.te
 | 2023 | Carbon aggregator, plaintext | -
 | 2024 | Carbon aggregator, pickle | -
 | 8125/udp | StatsD | -
-| 8126 | [StatsD management interface](https://github.com/statsd/statsd/blob/master/docs/admin_interface.md) | -
+| 8126 | StatsD [management interface](https://github.com/statsd/statsd/blob/master/docs/admin_interface.md) | -
