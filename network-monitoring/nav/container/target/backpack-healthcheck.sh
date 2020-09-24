@@ -8,4 +8,6 @@ readonly WAIT_TIMEOUT=2
 
 [ $(supervisorctl status | grep --count --invert-match RUNNING) = 0 ]
 nc -z -N -w $WAIT_TIMEOUT -u localhost 162
-curl --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" http://localhost:80/ > /dev/null
+curl --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
+  http://localhost:80/ \
+  > /dev/null

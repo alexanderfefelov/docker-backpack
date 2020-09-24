@@ -2,7 +2,7 @@
 
 ![Backpack](doc/assets/backpack_2551.png)
 
-## Components
+## What's inside
 
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
