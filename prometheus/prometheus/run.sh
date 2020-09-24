@@ -24,6 +24,7 @@ run() {
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME \
       --config.file=/etc/prometheus/prometheus.yml \
+      --storage.tsdb.path=/prometheus \
       --web.page-title=$CONTAINER_NAME \
       --web.enable-admin-api
 }

@@ -57,6 +57,7 @@ RUN  apt-get -qq update \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
   && mkdir --parents \
        /usr/local/share/nav/www \
+       /var/lib/nav/uploads/images/locations \
        /var/lib/nav/uploads/images/rooms \
        /var/log/nav \
        /var/run/nav \
