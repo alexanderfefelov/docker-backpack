@@ -11,19 +11,12 @@
       <div class="medium-6 column">
 
         <table class="vertitable full-width">
-          <caption>
-            IP Device: {{ netbox.get_short_sysname }}
-            {% include 'ipdevinfo/frag-disclaimer.html' %}
-          </caption>
           <tbody>
             <tr>
               <th>Full sysname</th>
               <td>
                 {{ netbox.sysname }}
-                <small>
-                  <a href="http://{{ netbox.sysname }}"><i class="fa fa-globe"></i></a>
-                  <a href="telnet://{{ netbox.sysname }}"><i class="fa fa-terminal"></i></a>
-                </small>
+                {% include 'info/fragments/netbox_sysname_actions.html' %}
                 <button class="table-button secondary right"
                         data-reveal-id="dns-modal"
                         data-reveal-ajax="{% url 'ipdevinfo-hostinfo' netbox.sysname %}" >
@@ -43,8 +36,8 @@
               <th>Type</th>
               <td>
                 {% if netbox.type %}
-                  <a href="{% report 'type' typeid=netbox.type.id %}">
-                    {{ netbox.type }}</a>
+                  {{ netbox.type.vendor }}
+                  <a href="{% report 'type' typeid=netbox.type.id %}">{{ netbox.type.name }}</a> ({{ netbox.type.sysobjectid }})
                 {% else %}
                   N/A
                 {% endif %}
@@ -55,7 +48,7 @@
               <th>Category</th>
               <td>
                 <a href="{% report 'netbox' catid=netbox.category.id %}">
-                  {{ netbox.category }}
+                  {{ netbox.category.id }}
                 </a>
               </td>
             </tr>
@@ -81,17 +74,22 @@
             </tr>
 
             <tr>
+              <th>ID</th>
+              <td>{{ netbox.id }}</td>
+            </tr>
+
+            <tr>
               <th>Organization</th>
               <td>
                 <a href="{% report 'org' orgid=netbox.organization.id %}">
-                  {{ netbox.organization }}</a></td>
+                  {{ netbox.organization.id }}</a></td>
             </tr>
 
             <tr>
               <th>Room</th>
               <td>
                 <a href="{% url 'room-info' netbox.room.id %}">
-                  {{ netbox.room }}</a></td>
+                  {{ netbox.room.id }}</a></td>
             </tr>
 
             <tr>
@@ -137,10 +135,7 @@
               <th>IP address</th>
               <td><a href="{% url 'ipdevinfo-details-by-addr' netbox.ip %}">
                 {{ netbox.ip }}</a>
-                <small>
-                  <a href="http://{{ netbox.ip }}"><i class="fa fa-globe"></i></a>
-                  <a href="telnet://{{ netbox.ip }}"><i class="fa fa-terminal"></i></a>
-                </small>
+                {% include 'info/fragments/netbox_ip_actions.html' %}
               </td>
             </tr>
 
@@ -436,7 +431,7 @@
                 {% for job in jobs|dictsortreversed:'end_time' %}
                   <tr>
                     <td title="{{ job_descriptions|lookup:job.job_name|default:'No description' }}">
-                      {{ job.job_name|capfirst }}
+                      {{ job.job_name }}
                     </td>
                     <td title="Next run expected at {{ job.end_time|add_interval:job.interval|date:"DATETIME_FORMAT" }}">
                       {{ job.end_time|date:"DATETIME_FORMAT" }}

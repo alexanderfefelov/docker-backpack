@@ -1,0 +1,88 @@
+{% load silent_include %}
+<h4>
+    If this device stops working the following will likely be affected
+</h4>
+
+<div class="panel">
+  {# List of affected ip-devices #}
+  {% if affected %}
+    <section>
+      <h4>
+        Affected devices
+        <i class="fa fa-question-circle"
+           title="Devices with or behind devices with redundant links"></i>
+      </h4>
+
+      <ul>
+        {% for netbox in affected %}
+          <li>
+            <a href="{% url 'ipdevinfo-details-by-id' netbox.id %}">{{ netbox }}</a>
+            ({{ netbox.category.id }})
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+
+  {# List of unreachable ip-devices #}
+  {% if unreachable %}
+    <section>
+      <h4>Devices unreachable</h4>
+
+      <ul>
+        {% for netbox in unreachable %}
+          <li>
+            <a href="{% url 'ipdevinfo-details-by-id' netbox.id %}">{{ netbox }}</a>
+            ({{ netbox.category.id }})
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section>
+      <h4>Affected hosts</h4>
+
+      <p>{{ affected_hosts }} active hosts/users</p>
+    </section>
+  {% endif %}
+
+
+  {# List of unreachable services #}
+  {% if services %}
+    <section>
+      <h4>Services on devices going down</h4>
+
+      <ul>
+        {% for service in services %}
+          <li>{{ service }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+
+  {# List of contacts that are involved #}
+  <section>
+    <h4>Organizations</h4>
+    <ul>
+      {% for organization in organizations %}
+        <li>{{ organization }} - {{ organization.contact|default:'No contact info' }}</li>
+      {% empty %}
+        <li>No organizations affected</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {# Form to send mail to involved contacts #}
+  <form action="mailto:{{ contacts|join:"," }}">
+    <input type="submit"
+           class="button small"
+           value="Send mail to affected organizations"
+           {% if not contacts %}disabled{% endif %}>
+  </form>
+
+  {% try_to_include "ipdevinfo/custom-affected.html" %}
+
+
+</div>

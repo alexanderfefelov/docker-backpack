@@ -1,0 +1,5 @@
+<small>
+    <a href="http://kibana.backpack.test:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!f,value:30000),time:(from:now-2d,to:now))&_a=(columns:!(logsource,message),filters:!(),interval:auto,query:(language:kuery,query:'{{ netbox.sysname }}'),sort:!())" title="Search in Elasticsearch"><i class="fa fa-search"></i></a>
+    <a href="http://{{ netbox.sysname }}" title="Open in browser"><i class="fa fa-globe"></i></a>
+    <a href="telnet://{{ netbox.sysname }}" title="Open with telnet"><i class="fa fa-terminal"></i></a>
+</small>

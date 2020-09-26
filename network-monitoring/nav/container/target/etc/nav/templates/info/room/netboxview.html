@@ -1,0 +1,198 @@
+{% load info %}
+
+{% if netboxes %}
+
+<div id="searchhelptext" class="reveal-modal" data-reveal>
+    <a class="close-reveal-modal">&#215;</a>
+  <h4>About the search</h4>
+
+  <p>
+    The search text matches the whole row, including some of the HTML. You can,
+    for instance, search for <em>"down"</em> to see all interfaces with status
+    down.
+  </p>
+
+  <p>
+    To improve the filtering you can use the other search boxes that filter on
+    specific columns.
+  </p>
+
+  <p>
+    You can also use predefined keywords in the main search box to filter what
+    you want to see. The following keywords are currently supported:
+    <ul>
+      <li>
+          <code>$vlan</code> -
+          Example: <code>$vlan:130</code> -
+          Only show interfaces on vlan 130
+      </li>
+      <li>
+          <code>$days</code> -
+          Example: <code>$days:5</code> -
+          Only show rows where <em>"last active"</em> is 5 days or more
+      </li>
+    </ul>
+  </p>
+
+  <p>
+      You can combine the filters if you want to, by separating each search term
+      with spaces. <code>fa1/2 $days:5 $vlan:10</code> is a valid filter.
+      Combining keywords and search boxes also works, but keywords take
+      precedence.
+  </p>
+
+</div>
+
+
+
+
+<div id="netboxes">
+
+  <div class="row">
+    <div class="small-12 column">
+      <a href="javascript:void(0);"
+         data-reveal-id="searchhelptext"
+         class="small button right secondary"
+         data-reveal>
+        About the search
+      </a>
+      <h4>{{ netboxes|length }}
+        netbox{{ netboxes|pluralize:"es" }}</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="global-search" class="small-3 columns">
+      <label>
+        Search
+        <input id="netbox-global-search" type="text"/>
+      </label>
+    </div>
+
+    <div id="vlanfilter" class="small-3 columns">
+      <label>
+        VLAN
+        <input type="text">
+      </label>
+    </div>
+
+    <div id="lastseenfilter" class="small-3 columns">
+      <label>
+        Last seen (days ago)
+        <input type="text">
+      </label>
+
+    </div>
+
+    <div class="small-3 columns">
+      <label>
+        CSV
+        <i class="fa fa-question-circle has-tip"
+           data-tooltip
+           title="To open this in Microsoft Excel, you need to change the file to a .txt file, start Excel and import the file.">
+        </i>
+      </label>
+
+      <form id="csv-download-form" action="{% url 'room-csv' %}" method="POST">
+        <input type="hidden" name="rows" value="">
+        <input type="hidden" name="roomid" value="{{ room.id }}">
+        <input type="submit" class="button small secondary" value="Download as CSV">
+      </form>
+    </div>
+  </div>
+
+
+
+  {% for netbox in netboxes %}
+
+    <table class="listtable netbox compact cluttered">
+
+      <caption>
+        <a href="{% url 'ipdevinfo-details-by-name' netbox.sysname %}">{{ netbox.sysname }}</a>
+        {% if netbox.type.name %}
+          {{ netbox.type.vendor }}
+          {{ netbox.type.name }}
+        {% endif %}
+      </caption>
+
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>VLAN</th>
+        <th>Last active</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {% for interface in netbox.interfaces %}
+        <tr>
+
+          <td title="Interface speed: {{ interface.speed }}">
+            <a href="{% url 'ipdevinfo-interface-details' netbox.sysname interface.id %}">
+              {{ interface.ifname }}
+            </a>
+          </td>
+
+          <td>{{ interface.ifalias }}</td>
+
+          <td class="center-content help">
+            <img title="Link status (green=link, red=no link)"
+                 src="{{ STATIC_URL }}images/lys/{% if interface.ifoperstatus == interface.OPER_UP %}green.png{% else %}red.png{% endif %}"
+                 alt="{% if interface.ifoperstatus == interface.OPER_UP %}Up{% else %}Down{% endif %}"/>
+          </td>
+
+          <td class="numeric">
+            {% if interface.trunk %}
+              <span class="help" title="Allowed vlans: {{ interface.get_trunkvlans_as_range }}">
+                Trunk
+              </span>
+            {% else %}
+              {% if interface.vlan %}
+                {{ interface.vlan }}
+              {% endif %}
+            {% endif %}
+          </td>
+
+          {% if interface.to_netbox and not interface.trunk %}
+            {# If the interface is connected to other equipment, it should be considered active #}
+            <td title="To netbox: {{ interface.to_netbox }}"
+                class="numeric brighten">
+              <a href="{{ interface.to_netbox.get_absolute_url }}">
+                {{ interface.to_netbox }}
+              </a>
+
+              <span class="hidden" title="{{ maxtime }}"></span>
+            </td>
+          {% else %}
+            {# If not connected to other equipment, use information from the cam table to indicate last used #}
+            <td
+              {% if not interface.last_cam|is_max_timestamp %}
+                title="{{ interface.last_cam|date:"Y-m-d H:i" }}"
+              {% else %}
+                title="Active now"
+              {% endif %}
+              class="numeric {% if interface.last_cam|is_max_timestamp %}brighten{% endif %}">
+
+              {% if not interface.trunk %}
+                {{ interface.last_cam|days_since }}
+                <span class="hidden" title="{{ interface.last_cam|default:'Never' }}"></span>
+              {% endif %}
+            </td>
+          {% endif %}
+
+        </tr>
+      {% endfor %}
+      </tbody>
+
+    </table>
+
+  {% endfor %}
+
+
+</div>
+
+{% else %}
+  <p class="alert-box">There are no netboxes in this room</p>
+{% endif %}

@@ -1,0 +1,58 @@
+{% load info %}
+{% if netboxes %}
+    <thead>
+        <tr>
+            <th>Sysname</th>
+            <th>IP address</th>
+            <th>Category</th>
+            <th>Vendor</th>
+            <th>Type</th>
+            <th>Organization</th>
+            <th>Switch ports</th>
+            <th>Router ports</th>
+            <th>Up</th>
+            <th>Week availability</th>
+            <th>Month availability</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for netbox in netboxes %}
+        <tr>
+            <td>
+                <a href="{% url 'ipdevinfo-details-by-name' netbox.sysname %}">{{ netbox.sysname }}</a>
+            </td>
+            <td>{{ netbox.ip }}</td>
+            <td>
+                <a href="/report/netbox?catid={{ netbox.category.id }}">{{ netbox.category.id }}</a>
+            </td>
+            <td>
+                <a href="/report/vendor?vendorid={{ netbox.type.vendor.id }}">{{ netbox.type.vendor }}</a>
+            </td>
+            <td>
+                <a href="/report/netbox?typeid={{ netbox.type.id }}">{{ netbox.type.name }}</a>
+            </td>
+            <td>
+                <a href="/report/netbox?orgid={{ netbox.organization.id }}">{{ netbox.organization.id }}</a>
+            </td>
+            <td>
+                <a href="/report/swport?netboxid={{ netbox.id }}">{{ netbox.get_swport_count }}</a>
+            </td>
+            <td>
+                <a href="/report/gwport?netboxid={{ netbox.id }}">{{ netbox.get_gwport_count }}</a>
+            </td>
+            <td>
+              <img src="{{ STATIC_URL }}images/lys/{% if netbox.up == 'y' %}green.png{% else %}red.png{% endif %}">
+            </td>
+
+            {% with data=availabilities|get_value:netbox.id %}
+              {% with availability=data|get_value:'availability' %}
+                <td class="numeric">{{ availability|get_value:'week'|floatformat:'2' }}%</td>
+                <td class="numeric">{{ availability|get_value:'month'|floatformat:'2' }}%</td>
+              {% endwith %}
+            {% endwith %}
+        </tr>
+    {% endfor %}
+    </tbody>
+{% else %}
+    <p class="alert-box">There are no netboxes in this room</p>
+{% endif %}

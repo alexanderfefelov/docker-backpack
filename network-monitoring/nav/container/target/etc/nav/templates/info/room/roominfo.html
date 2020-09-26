@@ -1,0 +1,90 @@
+{% extends "info/room/base.html" %}
+{% load silent_include %}
+
+{% block base_content %}
+
+    <h4>{{ room.id }} <sub><small>Room</small></sub></h4>
+
+    <ul class="button-group">
+        <li>
+            <a href="{% url 'seeddb-room-edit' room.id %}" class="button secondary small">
+                Edit room
+                <i class="fa fa-edit"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'room-info-upload' room.id %}" class="button secondary small">
+                Edit images
+                <i class="fa fa-camera"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% query 'maintenance-new' room=room.id %}" class="button secondary small">
+                Schedule maintenance
+                <i class="fa fa-wrench"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'devicehistory-view-room' room.id %}" class="button secondary small">
+                View room history
+                <i class="fa fa-clock-o"></i>
+            </a>
+        </li>
+
+    </ul>
+
+    <div id="infotabs" class="ui-helper-hidden">
+        <ul>
+            <li aria-controls="roominfo">
+              <a href="#roominfo">Info</a>
+            </li>
+
+
+            <li aria-controls="deviceinfo">
+              <a href="{% url 'room-info-deviceinfo' room.id %}">
+                Netboxes
+              </a>
+            </li>
+
+            <li aria-controls="netboxinterfaces">
+              <a href="{% url 'room-info-netboxes' room.id %}">
+                Netbox interfaces
+              </a>
+            </li>
+
+            <li aria-controls="sensors">
+              <a href="{% url 'room-info-sensors' room.id %}">
+                Environment sensors
+              </a>
+            </li>
+
+            <li aria-controls="racks">
+              <a href="{% url 'room-info-racks' room.id %}">
+                Sensors in racks
+              </a>
+            </li>
+
+            {% try_to_include "info/room/custom-tabs.html" %}
+
+        </ul>
+
+        <div id="roominfo">
+          {% include 'info/room/roominfo_main.html' %}
+        </div>
+
+        <div id="deviceinfo"></div>
+
+        <div id="netboxinterfaces"></div>
+
+        <div id="sensors"></div>  {# sensors #}
+
+        <div id="racks"></div>
+
+        {% try_to_include "info/room/custom-fragments.html" %}
+
+    </div>
+
+{% endblock %}

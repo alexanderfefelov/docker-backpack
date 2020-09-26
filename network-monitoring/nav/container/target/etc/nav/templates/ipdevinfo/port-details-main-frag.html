@@ -1,0 +1,87 @@
+<table class="vertitable full-width">
+  <tr>
+    <th>Interface</th>
+    <td>{{ port.ifdescr }}</td>
+  </tr>
+
+  <tr>
+    <th>At module</th>
+    <td>
+      {% if port.module %}
+        <a href="{{ port.module.get_absolute_url }}">
+          Module {{ port.module.name }}
+        </a>
+      {% else %}
+        No module
+      {% endif %}
+    </td>
+  </tr>
+
+  <tr>
+    <th>Port name</th>
+    <td>{{ port.ifalias|default:"N/A" }}</td>
+  </tr>
+
+  <tr>
+    <th>Link</th>
+    <td>
+      {{ port.get_link_display|capfirst }}
+      {% if detention.status == 'disabled' %}
+        (Disabled by <a href="{% url 'arnold-details' detention.id %}" title="Link to detention">Arnold</a>)
+      {% endif %}
+      {% if port.is_degraded %}
+          <small class="label warning" title="One more of the interfaces aggregated under {{ port.ifname }} is down.">Degraded</small>
+      {% endif %}
+    </td>
+  </tr>
+
+  <tr>
+    <th>Speed</th>
+    <td>
+      {{ port.speed }} Mbit
+      {% if port.duplex %}
+        {{ port.get_duplex_display|capfirst }}
+      {% endif %}
+
+    </td>
+  </tr>
+
+  <tr>
+      <th>Hardware address</th>
+      <td>{{ port.ifphysaddress|default:"N/A"|upper }}</td>
+  </tr>
+
+  {% if port.poeport_set.exists %}
+    {%with port.poeport_set.first as poeport %}
+    <tr>
+      <th>PoE Status</th>
+      <td>
+        {% if poeport.admin_enable %}
+          {% if poeport.detection_status != poeport.STATUS_DELIVERING_POWER %}
+            {{ poeport.get_detection_status_display }}
+          {% else %}
+            {{ poeport.get_classification_display }} (priority {{poeport.get_priority_display}})
+          {% endif %}
+        {% else %}
+          Disabled
+        {% endif %}
+      </td>
+    </tr>
+    {% endwith %}
+  {% endif %}
+
+  {% if debug %}
+  <tr>
+    <th>ifIndex</th>
+    <td>{{ port.ifindex }}</td>
+  </tr>
+
+  <tr>
+    <th>Baseport</th>
+    <td>{{ port.baseport }}</td>
+  </tr>
+  {% endif %}
+
+
+
+</table>

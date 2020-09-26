@@ -1,0 +1,89 @@
+{# -*- web-mode-markup-indent-offset: 2 -*- #}
+<div class="row">
+
+
+  <div class="medium-6 column">
+    <table id="roominfotable" class="vertitable full-width">
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <td>{{ room.id }}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{{ room.description }}</td>
+        </tr>
+        <tr>
+          <th>Location</th>
+          <td>
+            <a href="{% url 'location-info' room.location.id %}">{{ room.location.description|default:room.location.id }}</a>
+          </td>
+        </tr>
+        <tr>
+          <th>Position</th>
+          <td class="position" data-roomname="{{ room.id }}">
+            {% if room.position %}
+              <div class="geo">
+                <span class="latitude">{{ room.latitude }}</span>
+                <span class="longitude">{{ room.longitude }}</span>
+                {% include 'info/fragments/room_position_actions.html' %}
+              </div>
+            {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <th>Room summary</th>
+          <td>
+            <ul>
+              <li>Devices: <strong>{{ room.meta_data.devices }}</strong></li>
+              <li>
+                Interfaces: <strong>{{ room.meta_data.interfaces }}</strong>
+              </li>
+              <li>Interfaces with link: <strong>{{ room.meta_data.interfaces_with_link }}</strong></li>
+              <li>Trunk interfaces: <strong>{{ room.meta_data.trunk_interfaces }}</strong></li>
+            </ul>
+          </td>
+        </tr>
+        {% for key, value in room.sorted_data %}
+          <tr>
+            <th>{{ key }}</th>
+            <td>{{ value|urlize }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div> {# End of column #}
+
+  <div class="medium-6 column">
+    <div class="mapwrapper">
+      <div id="room_map"></div>
+    </div>
+  </div>
+
+</div>
+
+{% if images|length > 0 %}
+
+  <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-6"
+      data-clearing>
+    {% for image in images %}
+      <li>
+        <a href="{{image.url }}"
+           class="th">
+          <img src="{{ image.thumb_url }}"
+               data-caption="{{ image.title|safe }}">
+        </a>
+      </li>
+    {% endfor %}
+
+  </ul>
+
+{% else %}
+
+  <a href="{% url 'room-info-upload' room.id %}" class="button secondary small">
+    Add images
+    <i class="fa fa-camera"></i>
+  </a>
+
+{% endif %}
