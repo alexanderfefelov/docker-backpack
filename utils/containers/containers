@@ -58,3 +58,4 @@ backpack-zabbix-frontend
 #
 backpack-alertmanager
 backpack-prometheus
+backpack-pushgateway

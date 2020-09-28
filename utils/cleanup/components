@@ -56,3 +56,4 @@ network-monitoring/zabbix/frontend
 #
 prometheus/alertmanager
 prometheus/prometheus
+prometheus/pushgateway

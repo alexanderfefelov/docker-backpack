@@ -80,6 +80,7 @@ address=/frontend.zabbix.backpack.test/$1
 #
 address=/alertmanager.backpack.test/$1
 address=/prometheus.backpack.test/$1
+address=/pushgateway.backpack.test/$1
 
 EOF
 }

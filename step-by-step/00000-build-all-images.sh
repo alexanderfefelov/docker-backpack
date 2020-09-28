@@ -74,6 +74,7 @@ build_all() {
 
   build prometheus/alertmanager
   build prometheus/prometheus
+  build prometheus/pushgateway
 
   echo -e "\nOK, all done."
 }

@@ -46,6 +46,7 @@
 - [Prometheus](prometheus)
     - [Alertmanager](prometheus/alertmanager)
     - [Prometheus](prometheus/prometheus)
+    - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
 - [Rundeck](rundeck)
 
