@@ -1,12 +1,9 @@
 {% load info %}
 {% load report %}
 <div id="deviceinfo">
-
   <div class="row">
 
     {% if netbox %}
-
-
       {% comment %} IP DEVICE {% endcomment %}
       <div class="medium-6 column">
 
@@ -17,18 +14,16 @@
               <td>
                 {{ netbox.sysname }}
                 {% include 'info/fragments/netbox_sysname_actions.html' %}
-                <button class="table-button secondary right"
-                        data-reveal-id="dns-modal"
-                        data-reveal-ajax="{% url 'ipdevinfo-hostinfo' netbox.sysname %}" >
-                  DNS
-                </button>
+                <button class="table-button secondary right" data-reveal-id="dns-modal" data-reveal-ajax="{% url 'ipdevinfo-hostinfo' netbox.sysname %}" >DNS</button>
               </td>
             </tr>
 
             {% if netbox.master %}
               <tr>
                 <th>Virtual instance of</th>
-                <td><a href="{{ netbox.master.get_absolute_url }}">{{ netbox.master }}</a></td>
+                <td>
+                  <a href="{{ netbox.master.get_absolute_url }}">{{ netbox.master }}</a>
+                </td>
               </tr>
             {% endif %}
 
@@ -37,7 +32,8 @@
               <td>
                 {% if netbox.type %}
                   {{ netbox.type.vendor }}
-                  <a href="{% report 'type' typeid=netbox.type.id %}">{{ netbox.type.name }}</a> ({{ netbox.type.sysobjectid }})
+                  <a href="{% report 'type' typeid=netbox.type.id %}">{{ netbox.type.name }}</a>
+                  ({{ netbox.type.sysobjectid }})
                 {% else %}
                   N/A
                 {% endif %}
@@ -47,9 +43,7 @@
             <tr>
               <th>Category</th>
               <td>
-                <a href="{% report 'netbox' catid=netbox.category.id %}">
-                  {{ netbox.category.id }}
-                </a>
+                <a href="{% report 'netbox' catid=netbox.category.id %}">{{ netbox.category.id }}</a>
               </td>
             </tr>
 
@@ -59,9 +53,7 @@
                 <td>
                   {% for netboxgroup in netboxgroups %}
                     <span class="label secondary">
-                      <a href="{% url 'netbox-group-detail' netboxgroup.category_id %}">
-                        {{ netboxgroup.category_id }}
-                      </a>
+                      <a href="{% url 'netbox-group-detail' netboxgroup.category_id %}">{{ netboxgroup.category_id }}</a>
                     </span>
                   {% endfor %}
                 </td>
@@ -81,15 +73,16 @@
             <tr>
               <th>Organization</th>
               <td>
-                <a href="{% report 'org' orgid=netbox.organization.id %}">
-                  {{ netbox.organization.id }}</a></td>
+                <a href="{% report 'org' orgid=netbox.organization.id %}">{{ netbox.organization.id }}</a>
+              </td>
             </tr>
 
             <tr>
               <th>Room</th>
               <td>
-                <a href="{% url 'room-info' netbox.room.id %}">
-                  {{ netbox.room.id }}</a></td>
+                <a href="{% url 'room-info' netbox.room.id %}">{{ netbox.room.id }}</a>
+                {% include 'info/fragments/netbox_room_actions.html' %}
+              </td>
             </tr>
 
             <tr>
@@ -105,18 +98,11 @@
                           (serial: {{ chass.device.serial|default:"N/A" }},
                           {% if chass.model_name %}
                             model:
-                            <span data-tooltip
-                                  class="has-tip"
-                                  title="{{ chass.descr }}">
-                              {{ chass.model_name }}
-                            </span>,
+                            <span data-tooltip class="has-tip" title="{{ chass.descr }}">{{ chass.model_name }}</span>,
                           {% endif %}
                           software: {{ chass.get_software_revision|default:"N/A" }})
                           {% if chass.gone_since %}
-                            <span class="label alert"
-                                  title="Down since {{ chass.gone_since }}">
-                              Down
-                            </span>
+                            <span class="label alert" title="Down since {{ chass.gone_since }}">Down</span>
                           {% endif %}
                         </li>
                       {% endfor %}
@@ -133,8 +119,8 @@
 
             <tr>
               <th>IP address</th>
-              <td><a href="{% url 'ipdevinfo-details-by-addr' netbox.ip %}">
-                {{ netbox.ip }}</a>
+              <td>
+                <a href="{% url 'ipdevinfo-details-by-addr' netbox.ip %}">{{ netbox.ip }}</a>
                 {% include 'info/fragments/netbox_ip_actions.html' %}
               </td>
             </tr>
@@ -144,8 +130,7 @@
               <td>
                 {% with netbox.get_filtered_prefix as prefix %}
                   {% if prefix %}
-                    <a href="{% url 'prefix-details' prefix.id %}">
-                      {{ prefix }}</a>
+                    <a href="{% url 'prefix-details' prefix.id %}">{{ prefix }}</a>
                   {% else %}
                     N/A
                   {% endif %}
@@ -160,23 +145,19 @@
                   {% if uplinks %}
                     {% if uplinks|length_is:1 %}
                       {% if uplinks.0.this %}
-                        From <a href="{{ uplinks.0.this.get_absolute_url }}">
-                        {{ uplinks.0.this }}</a><br/>
+                        From <a href="{{ uplinks.0.this.get_absolute_url }}">{{ uplinks.0.this }}</a><br/>
                         To
                       {% endif %}
-                      <a href="{{ uplinks.0.other.get_absolute_url }}">
-                        {{ uplinks.0.other }}</a>
+                      <a href="{{ uplinks.0.other.get_absolute_url }}">{{ uplinks.0.other }}</a>
                     {% else %}
                       <ul>
                         {% for uplink in uplinks %}
                           <li>
                             {% if uplinks.0.this %}
-                              From <a href="{{ uplink.this.get_absolute_url }}">
-                              {{ uplink.this }}</a><br/>
+                              From <a href="{{ uplink.this.get_absolute_url }}">{{ uplink.this }}</a><br/>
                               To
                             {% endif %}
-                            <a href="{{ uplink.other.get_absolute_url }}">
-                              {{ uplink.other }}</a>
+                            <a href="{{ uplink.other.get_absolute_url }}">{{ uplink.other }}</a>
                           </li>
                         {% endfor %}
                       </ul>
@@ -190,26 +171,30 @@
 
             <tr>
               <th>Modules</th>
-              <td><a href="{% report 'modules' netboxid=netbox.id %}">
-                {{ netbox.module_set.count }}</a></td>
+              <td>
+                <a href="{% report 'modules' netboxid=netbox.id %}">{{ netbox.module_set.count }}</a>
+              </td>
             </tr>
 
             <tr>
               <th>Interfaces</th>
-              <td><a href="{% report 'interfaces' netboxid=netbox.id %}">
-                {{ netbox.interface_set.count }}</a></td>
+              <td>
+                <a href="{% report 'interfaces' netboxid=netbox.id %}">{{ netbox.interface_set.count }}</a>
+              </td>
             </tr>
 
             <tr>
               <th>Switch ports</th>
-              <td><a href="{% report 'swport' netboxid=netbox.id %}">
-                {{ netbox.get_swports.count }}</a></td>
+              <td>
+                <a href="{% report 'swport' netboxid=netbox.id %}">{{ netbox.get_swports.count }}</a>
+              </td>
             </tr>
 
             <tr>
               <th>Router ports</th>
-              <td><a href="{% report 'gwport' netboxid=netbox.id %}">
-                {{ netbox.get_gwports.count }}</a></td>
+              <td>
+                <a href="{% report 'gwport' netboxid=netbox.id %}">{{ netbox.get_gwports.count }}</a>
+              </td>
             </tr>
 
             {% if netbox.instances.count > 0 %}
@@ -219,9 +204,7 @@
                   <ul class="no-bullet">
                     {% for instance in netbox.instances.all %}
                       <li>
-                        <a href="{{ instance.get_absolute_url }}">
-                          {{ instance }}
-                        </a>
+                        <a href="{{ instance.get_absolute_url }}">{{ instance }}</a>
                       </li>
                     {% endfor %}
                   </ul>
@@ -322,8 +305,10 @@
 
             <tr>
               <th>First discovered</th>
-              <td>{{ netbox.discovered|date|default:"N/A" }}
-                {{ netbox.discovered|time }}</td>
+              <td>
+                {{ netbox.discovered|date|default:"N/A" }}
+                {{ netbox.discovered|time }}
+              </td>
             </tr>
 
             <tr>
@@ -333,10 +318,7 @@
                   <ul class="normalize-font-size">
                     {% for task in current_maintenance_tasks %}
                       <li>
-                        <a href="{% url 'maintenance-edit' task.id %}">
-                          {{ task.description }}
-
-                        </a>
+                        <a href="{% url 'maintenance-edit' task.id %}">{{ task.description }}</a>
                         <div>
                           ({{ task.start_time }} -
                           {% if task.is_endless %}
@@ -372,9 +354,7 @@
                   <ul class="normalize-font-size">
                     {% for task in future_maintenance_tasks %}
                       <li>
-                        <a href="{% url 'maintenance-edit' task.id %}">
-                          {{ task.description }}
-                        </a>
+                        <a href="{% url 'maintenance-edit' task.id %}">{{ task.description }}</a>
                         <div>
                           ({{ task.start_time }} -
                           {% if task.is_endless %}
@@ -400,7 +380,6 @@
         {% if netbox.data %}
           <table class="vertitable full-width">
             <caption>Custom data</caption>
-
             <tbody>
               {% for key, value in netbox.data.items %}
                 <tr>
@@ -409,7 +388,6 @@
                 </tr>
               {% endfor %}
             </tbody>
-
           </table>
         {% endif %}
 
@@ -442,21 +420,16 @@
                     </td>
                     <td class="cell-center">
                       {% if job.is_overdue %}
-                        <img src="{{ STATIC_URL }}images/lys/yellow.png"
-                             alt="Overdue"
-                             title="Overdue - interval is {{ job.interval|interval }}">
+                        <img src="{{ STATIC_URL }}images/lys/yellow.png" alt="Overdue" title="Overdue - interval is {{ job.interval|interval }}">
                       {% else %}
                         {% if job.has_result %}
                           {% if job.success %}
-                            <img src="{{ STATIC_URL }}images/lys/green.png"
-                                 alt="Success" title="Success">
+                            <img src="{{ STATIC_URL }}images/lys/green.png" alt="Success" title="Success">
                           {% else %}
-                            <img src="{{ STATIC_URL }}images/lys/red.png"
-                                 alt="Failed" title="Failed">
+                            <img src="{{ STATIC_URL }}images/lys/red.png" alt="Failed" title="Failed">
                           {% endif %}
                         {% else %}
-                          <img src="{{ STATIC_URL }}images/lys/grey.png"
-                               alt="N/A" title="Not applicable">
+                          <img src="{{ STATIC_URL }}images/lys/grey.png" alt="N/A" title="Not applicable">
                         {% endif %}
                       {% endif %}
                     </td>
@@ -476,31 +449,24 @@
       {% comment %} IF NO NETBOX SHOW THIS {% endcomment %}
       <div class="small-12 column">
         <table id="ipdevinfo" class="vertitable">
-          <caption class="nowrap">IP
-            Address: {{ host_info.addresses.0.addr|default:"N/A" }}</caption>
+          <caption class="nowrap">IP Address: {{ host_info.addresses.0.addr|default:"N/A" }}</caption>
           <tr>
             <th>Status</th>
             <td>Not monitored</td>
           </tr>
-
           <tr>
             <th>DNS</th>
             <td>
               <ul class="no-bullet" style="font-size: 1em;">
                 {% for address in host_info.addresses %}
                   <li>
-                    <a href="{% url 'ipdevinfo-details-by-addr' address.addr %}">
-                      {{ address.addr }}
-                    </a>
-
+                    <a href="{% url 'ipdevinfo-details-by-addr' address.addr %}">{{ address.addr }}</a>
                     {% if address.name %}
                       &ndash; <a href="{% url 'ipdevinfo-details-by-name' address.name %}">{{ address.name }}</a>
                     {% endif %}
-
                     {% if address.error %}
                       ({{ address.error }})
                     {% endif %}
-
                   </li>
                 {% empty %}
                   <li>N/A</li>
@@ -514,9 +480,7 @@
             <td>
               {% with no_netbox.prefix as prefix %}
                 {% if prefix %}
-                  <a href="{% url 'prefix-details' prefix.id %}">
-                    {{ prefix.net_address }}
-                  </a>
+                  <a href="{% url 'prefix-details' prefix.id %}">{{ prefix.net_address }}</a>
                 {% else %}
                   N/A
                 {% endif %}
@@ -529,9 +493,7 @@
               <th>VLAN</th>
               <td>
                 {% if vlan %}
-                  <a href="{% report 'swporttrunk' vlanid=vlan.id %}">
-                    {{ vlan }}
-                  </a>
+                  <a href="{% report 'swporttrunk' vlanid=vlan.id %}">{{ vlan }}</a>
                 {% else %}
                   N/A
                 {% endif %}
@@ -552,9 +514,7 @@
               <th class="indent">Organization</th>
               <td>
                 {% if vlan.organization %}
-                  <a href="{% report 'org' orgid=vlan.organization.id %}">
-                    {{ vlan.organization|default:"N/A" }}
-                  </a>
+                  <a href="{% report 'org' orgid=vlan.organization.id %}">{{ vlan.organization|default:"N/A" }}</a>
                 {% else %}
                   N/A
                 {% endif %}
@@ -582,9 +542,7 @@
               <th>Last active</th>
               <td>
                 {% ifequal no_netbox.dt_max arp.end_time %}
-                  <a href="{% query 'machinetracker-mac' mac=arp.mac days=1 %}">
-                    Right now
-                  </a>
+                  <a href="{% query 'machinetracker-mac' mac=arp.mac days=1 %}">Right now</a>
                 {% else %}
                   {% if arp.end_time %}
                     <a href="{% query 'machinetracker-mac' mac=arp.mac days=no_netbox.days_since_active %}">
@@ -602,9 +560,7 @@
               <th>Last seen with MAC</th>
               <td>
                 {% if arp.mac %}
-                  <a href="{% query 'machinetracker-mac' mac=arp.mac days=30 %}">
-                    {{ arp.mac }}
-                  </a>
+                  <a href="{% query 'machinetracker-mac' mac=arp.mac days=30 %}">{{ arp.mac }}</a>
                 {% else %}
                   N/A
                 {% endif %}
@@ -618,6 +574,5 @@
 
   </div>
 </div>
-
 
 <div id="dns-modal" class="reveal-modal small" data-reveal aria-hidden="true" role="dialog"></div>

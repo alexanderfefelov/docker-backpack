@@ -8,7 +8,7 @@
   {% if affected %}
     <section>
       <h4>
-        Affected devices
+        Devices
         <i class="fa fa-question-circle"
            title="Devices with or behind devices with redundant links"></i>
       </h4>
@@ -28,7 +28,7 @@
   {# List of unreachable ip-devices #}
   {% if unreachable %}
     <section>
-      <h4>Devices unreachable</h4>
+      <h4>Unreachable</h4>
 
       <ul>
         {% for netbox in unreachable %}
@@ -41,7 +41,7 @@
     </section>
 
     <section>
-      <h4>Affected hosts</h4>
+      <h4>Hosts</h4>
 
       <p>{{ affected_hosts }} active hosts/users</p>
     </section>
