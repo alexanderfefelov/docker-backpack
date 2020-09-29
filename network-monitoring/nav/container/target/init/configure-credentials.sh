@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-
-
 echo Configuring credentials...
 
 navuser lock admin
