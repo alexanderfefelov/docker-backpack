@@ -1,8 +1,0 @@
-Subject: Threshold exceeded on {{ metric }}
-
-A configured threshold rule was exceeded:
-
-Metric: {{ metric }}
-Time: {{ time }}
-Value: {{ measured_value }}
-Threshold: {{ alert|safe }}

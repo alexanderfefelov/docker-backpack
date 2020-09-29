@@ -1,3 +1,0 @@
-* * * * * /usr/local/bin/logengine.py -q
-3 3 * * * /usr/local/bin/logengine.py -d
-3 * * * * /usr/local/bin/ipdevpolld --clean

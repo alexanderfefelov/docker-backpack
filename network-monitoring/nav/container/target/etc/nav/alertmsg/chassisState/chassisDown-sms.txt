@@ -1,1 +1,0 @@
-{{event.get_subject}} is down

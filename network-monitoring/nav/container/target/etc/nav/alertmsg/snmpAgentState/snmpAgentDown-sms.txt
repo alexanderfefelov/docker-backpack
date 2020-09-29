@@ -1,1 +1,0 @@
-No SNMP response: {{ netbox.sysname }}

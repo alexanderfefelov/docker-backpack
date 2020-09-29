@@ -1,3 +1,0 @@
-{% with interface=event.get_subject %}
-Link RESTORED on {{ interface }} ({{ interface.ifalias }}) at {{time }}
-{% endwith %}

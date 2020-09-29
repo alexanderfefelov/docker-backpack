@@ -1,3 +1,0 @@
-Utility power has been restored on {{ sysname }}.
-
-{{ sysname }} is now running on utility power.

@@ -1,1 +1,0 @@
-*/30 * * * * /usr/local/bin/collect_active_ip.py

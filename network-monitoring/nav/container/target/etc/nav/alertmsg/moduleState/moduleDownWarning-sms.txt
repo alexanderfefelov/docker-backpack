@@ -1,1 +1,0 @@
-Module {{module.name}}, box {{netbox.sysname}} does not reply since {{time}}.

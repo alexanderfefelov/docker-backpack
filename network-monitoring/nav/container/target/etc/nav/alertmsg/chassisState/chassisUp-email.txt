@@ -1,3 +1,0 @@
-Subject: {{event.get_subject}} is up
-
-{{event.get_subject}} is up (detected {{time}}).

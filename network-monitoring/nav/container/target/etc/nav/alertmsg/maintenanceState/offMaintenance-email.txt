@@ -1,3 +1,0 @@
-Subject: Off maintenance: {{netbox.sysname}}
-
-{{netbox.sysname}} is no longer on maintenance, since {{time}}.

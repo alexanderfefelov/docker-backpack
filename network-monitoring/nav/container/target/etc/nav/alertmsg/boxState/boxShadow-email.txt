@@ -1,3 +1,0 @@
-Subject: Box {{netbox.sysname}} is in shadow
-
-Box {{netbox.sysname}} ({{netbox.ip}}) is in shadow since {{time}}.

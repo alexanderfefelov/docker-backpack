@@ -1,1 +1,0 @@
-Box {{netbox.sysname}} is on maintenance since {{time}}.

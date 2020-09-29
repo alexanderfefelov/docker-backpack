@@ -27,11 +27,14 @@ ENV TINI_VERSION 0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
 RUN chmod +x /usr/sbin/tini
 
-COPY container/target/ /
 COPY --from=builder /nav/requirements/ /requirements/
 COPY --from=builder /nav/requirements.txt /
 COPY --from=builder /.wheels/ /.wheels/
 COPY --from=builder /.build/ /
+
+COPY --from=builder /nav/python/nav/etc/ /etc/nav/
+COPY --from=builder /nav-add-ons/web/etc/ /etc/nav/
+COPY container/target/ /
 
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

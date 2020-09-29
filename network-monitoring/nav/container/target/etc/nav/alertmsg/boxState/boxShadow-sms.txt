@@ -1,1 +1,0 @@
-Box shadow {{netbox.sysname}} ({{netbox.ip}})

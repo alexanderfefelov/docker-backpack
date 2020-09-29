@@ -1,3 +1,0 @@
-{% with interface=event.get_subject %}
-Link UP on {{ interface }} ({{ interface.ifalias }})
-{% endwith %}

@@ -1,3 +1,0 @@
-{% with interface=event.get_subject %}
-Link DEGRADED on {{ interface }} ({{ interface.ifalias }}) at {{ time }} - Link down on {{ aggregate_ifname }}
-{% endwith %}

@@ -1,3 +1,0 @@
-Subject: Box {{netbox.sysname}} is down
-
-Box {{netbox.sysname}} ({{netbox.ip}}) is down since {{time}}.

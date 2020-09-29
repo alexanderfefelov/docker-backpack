@@ -1,2 +1,0 @@
-Subject: Fan OK again on {{ netbox.sysname }}
-Fan unit {{ unitname }} on {{ netbox.sysname }} is OK again (state={{ alert.state }})

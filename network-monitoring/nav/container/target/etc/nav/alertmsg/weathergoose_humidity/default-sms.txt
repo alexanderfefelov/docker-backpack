@@ -1,5 +1,0 @@
-{% if event.state == event.STATE_START %}
-{{ goosename }}: humidity threshold exceeded - {{ climatevalue }}
-{% else %}
-{{ goosename }}: humidity threshold clear - {{ climatevalue }}
-{% endif %}

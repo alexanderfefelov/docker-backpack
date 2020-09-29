@@ -1,1 +1,0 @@
-PSU OK on {{ netbox.sysname }} ({{ unitname }})

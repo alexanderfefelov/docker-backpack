@@ -1,3 +1,0 @@
-{% with session=event.get_subject %}
-{{ netbox }} BGP session with {{ session.get_peer_display }} is DOWN
-{% endwith %}

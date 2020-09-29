@@ -1,1 +1,0 @@
-Fan not OK on {{ netbox.sysname }} ({{ unitname }})
