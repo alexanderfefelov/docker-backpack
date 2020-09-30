@@ -18,3 +18,4 @@ select enterprise.vendorid,
 from enterprise
 group by enterprise.vendorid, enterprise.enterprise
 order by enterprise.enterprise, (count(*)) desc, enterprise.vendorid;
+alter view enterprise_number owner to nav_smarigarybol;
