@@ -6,5 +6,6 @@
 . settings.sh
 
 docker build \
+  --build-arg IMAGE_NAME \
   --build-arg NAV_VERSION \
   --tag $IMAGE_NAME .

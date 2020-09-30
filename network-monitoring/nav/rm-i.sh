@@ -5,4 +5,5 @@
 
 . settings.sh
 
+yes | docker image prune --filter label=$IMAGE_NAME-stage=builder
 docker image rm $IMAGE_NAME

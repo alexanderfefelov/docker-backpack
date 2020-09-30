@@ -1,6 +1,9 @@
 FROM python:3.7.9-buster AS builder
 
+ARG IMAGE_NAME
 ARG NAV_VERSION
+
+LABEL $IMAGE_NAME-stage=builder
 
 COPY container/builder/ /
 
