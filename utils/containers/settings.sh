@@ -1,1 +1,1 @@
-readonly CONTAINERS=../../containers
+readonly CONTAINERS=../../lib/containers

@@ -18,14 +18,15 @@ popd() {
 }
 
 build() {
+  local -r COMPONENT_HOME=$BACKPACK_HOME/$1
   echo
   echo ----------------------------------------------------------------------
   echo
   echo $1
+  echo Home: $COMPONENT_HOME
   echo
   echo ----------------------------------------------------------------------
   echo
-  local -r COMPONENT_HOME=$BACKPACK_HOME/$1
   pushd $COMPONENT_HOME
   ./build.sh
   popd
@@ -40,4 +41,5 @@ build_all() {
   echo -e "\nOK, all done."
 }
 
+echo Home: $BACKPACK_HOME
 time build_all

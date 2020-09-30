@@ -1,1 +1,1 @@
-readonly COMPONENTS=../../components
+readonly COMPONENTS=../../lib/components
