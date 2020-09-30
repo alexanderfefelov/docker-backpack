@@ -9,8 +9,10 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
+. settings.sh
+
 IFS=$'\n'
-for container in $(< containers); do
+for container in $(< $CONTAINERS); do
   [[ "$container" =~ ^#.*$ ]] && continue
   docker start $container
 done

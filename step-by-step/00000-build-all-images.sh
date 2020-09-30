@@ -7,7 +7,7 @@ set -e
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-readonly BACKPACK_HOME=$(dirname "$(dirname "$(realpath "$0")")")
+. settings.sh
 
 pushd() {
   command pushd "$@" > /dev/null
@@ -32,50 +32,11 @@ build() {
 }
 
 build_all() {
-  build dnsmasq
-  build netdata
-  build portainer
-
-  build grafana
-  build graphite-statsd
-  build jenkins
-  build ofelia
-  build redis
-  build rundeck
-
-  build business-intelligence/cubes
-  build business-intelligence/cubesviewer-server
-  build business-intelligence/metabase
-
-  build databases/mysql/main
-  build databases/mysql/test
-  build databases/postgresql/main
-  build databases/postgresql/test
-
-  build elastic/apm
-  build elastic/elasticsearch
-  build elastic/kibana
-  build elastic/logstash
-
-  build file-sharing/proftpd
-  build file-sharing/samba
-
-  build influxdata/chronograf
-  build influxdata/influxdb
-  build influxdata/kapacitor
-  build influxdata/telegraf
-
-  build message-queues/activemq
-  build message-queues/rabbitmq
-
-  build network-monitoring/nav
-  build network-monitoring/zabbix/backend
-  build network-monitoring/zabbix/frontend
-
-  build prometheus/alertmanager
-  build prometheus/prometheus
-  build prometheus/pushgateway
-
+  IFS=$'\n'
+  for component in $(< $COMPONENTS); do
+    [[ "$component" =~ ^#.*$ ]] && continue
+    build $component
+  done
   echo -e "\nOK, all done."
 }
 

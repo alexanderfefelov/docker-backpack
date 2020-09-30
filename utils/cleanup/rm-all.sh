@@ -9,8 +9,10 @@ if [ "$REPLY" != "Y" ]; then
   exit
 fi
 
+. settings.sh
+
 IFS=$'\n'
-for component in $(< components); do
+for component in $(< $COMPONENTS); do
   [[ "$component" =~ ^#.*$ ]] && continue
   (cd ../../$component && ./rm.sh)
 done

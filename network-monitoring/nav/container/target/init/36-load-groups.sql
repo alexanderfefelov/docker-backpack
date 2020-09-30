@@ -1,3 +1,7 @@
 insert into netboxgroup(netboxgroupid, descr) values
-  ('DOCKER-CONTAINER', ''),
-  ('DOCKER-HOST', '');
+  ('development', ''),
+  ('staging', ''),
+  ('production', ''),
+  ('test', ''),
+  ('docker container', ''),
+  ('docker host', '');
