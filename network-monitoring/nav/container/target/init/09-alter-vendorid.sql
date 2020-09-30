@@ -5,7 +5,7 @@ alter table vendor alter column vendorid type varchar;
 --       Detail: rule _RETURN on view enterprise_number depends on column "vendorid"
 drop view enterprise_number;
 alter table type alter column vendorid type varchar;
-create or replace view enterprise_number
+create view manage.enterprise_number
 as
 with enterprise as (
     select type.vendorid,
@@ -18,3 +18,4 @@ select enterprise.vendorid,
 from enterprise
 group by enterprise.vendorid, enterprise.enterprise
 order by enterprise.enterprise, (count(*)) desc, enterprise.vendorid;
+alter view enterprise_number owner to nav_smarigarybol;
