@@ -1,15 +1,11 @@
 #!/usr/bin/env bash
 
-# Exit immediately if a pipeline, which may consist of a single simple command,
-# a list, or a compound command returns a non-zero status
-set -e
-
-readonly FIRST_RUN_FLAG=/first-run
 readonly INIT_SCRIPTS_DIR=/init
 
 if [ "$1" = "supervisord" ]; then
-  navsyncdb --create
-  if [ -f $FIRST_RUN_FLAG ]; then
+  psql --command="select version();" 2>&1 | grep "does not exist"
+  if [ $? -eq 0 ]; then
+    navsyncdb --create
     for f in $INIT_SCRIPTS_DIR/*; do
       case $f in
         *.sh)
@@ -24,7 +20,6 @@ if [ "$1" = "supervisord" ]; then
           ;;
       esac
     done
-    rm --force $FIRST_RUN_FLAG
   fi
 fi
 

@@ -33,7 +33,7 @@ COPY --from=builder /.wheels/ /.wheels/
 COPY --from=builder /.build/ /
 
 COPY --from=builder /nav/python/nav/etc/ /etc/nav/
-COPY --from=builder /nav-add-ons/web/etc/ /etc/nav/
+COPY --from=builder /nav-add-ons/web/etc/nav/ /etc/nav/
 COPY container/target/ /
 
 RUN  apt-get -qq update \
