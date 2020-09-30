@@ -14,8 +14,8 @@ nc -z -w $WAIT_TIMEOUT localhost 2024
 nc -z -w $WAIT_TIMEOUT -u localhost 8125
 nc -z -w $WAIT_TIMEOUT localhost 8126
 curl --request GET --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
-  http://admin_blemsturtwin:witomerearec@localhost:80/tags \
+  http://localhost:80/tags \
   > /dev/null
 curl --request GET --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
-  http://admin_blemsturtwin:witomerearec@localhost:8080/tags \
+  http://localhost:8080/tags \
   > /dev/null
