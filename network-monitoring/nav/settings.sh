@@ -5,6 +5,7 @@ readonly HOST_NAME=$BASE_NAME
 readonly WAIT_TIMEOUT=600
 
 readonly DB_HOST=main.postgresql.backpack.test
+readonly DB_PORT=5432
 readonly DB_DATABASE=nav
 readonly DB_ROOT_USERNAME=postgres_ibleabaldine
 readonly DB_ROOT_PASSWORD=undestrokend

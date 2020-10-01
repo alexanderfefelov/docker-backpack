@@ -6,8 +6,9 @@ readonly WAIT_TIMEOUT=600
 
 readonly DB_DRIVER=com.mysql.cj.jdbc.Driver
 readonly DB_HOST=master.mysql.backpack.test
+readonly DB_PORT=3306
 readonly DB_DATABASE=rundeck
-readonly DB_URL=jdbc:mysql://$DB_HOST/$DB_DATABASE?serverTimezone=Europe/Moscow
+readonly DB_URL=jdbc:mysql://$DB_HOST:$DB_PORT/$DB_DATABASE?serverTimezone=Europe/Moscow
 readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=rundeck_bineurvendle

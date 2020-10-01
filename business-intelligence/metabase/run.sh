@@ -6,13 +6,13 @@
 . settings.sh
 . ../../lib/lib.sh
 
-readonly MYSQL="mysql --host=$DB_HOST --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
+readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
 
 initialize_database() {
   echo Initializing database...
   $MYSQL --execute="
     CREATE DATABASE $DB_DATABASE;
-    CREATE USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
+    CREATE USER IF NOT EXISTS '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
     GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%';
   "
   echo ...database initialized
@@ -37,7 +37,13 @@ run() {
 }
 
 $MYSQL --execute="use $DB_DATABASE;"
-if [ $? -ne 0 ]; then
+readonly USE_DB_RETCODE=$?
+
+# Exit immediately if a pipeline, which may consist of a single simple command,
+# a list, or a compound command returns a non-zero status
+set -e
+
+if [ "$USE_DB_RETCODE" -ne 0 ]; then
   initialize_database
 fi
 

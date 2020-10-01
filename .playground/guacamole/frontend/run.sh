@@ -86,7 +86,7 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
-  FIRST_RUN=true
+  readonly FIRST_RUN=true
   initialize_database
 fi
 

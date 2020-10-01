@@ -5,6 +5,7 @@ readonly HOST_NAME=$BASE_NAME
 readonly WAIT_TIMEOUT=600
 
 readonly DB_HOST=master.mysql.backpack.test
+readonly DB_PORT=3306
 readonly DB_DATABASE=zabbix
 readonly DB_USERNAME=zabbix_webarnalastr
 readonly DB_PASSWORD=dentinguarne

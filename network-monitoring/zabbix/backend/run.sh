@@ -18,6 +18,7 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 10051:10051 \
     --env DB_SERVER_HOST=$DB_HOST \
+    --env DB_SERVER_PORT=$DB_PORT \
     --env MYSQL_DATABASE=$DB_DATABASE \
     --env MYSQL_ROOT_PASSWORD=$DB_ROOT_PASSWORD \
     --env MYSQL_USER=$DB_USERNAME \

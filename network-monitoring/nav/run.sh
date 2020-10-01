@@ -27,6 +27,7 @@ run() {
     --publish 162:162/udp \
     --publish 9001:9001 \
     --env PGHOST=$DB_HOST \
+    --env PGPORT=$DB_PORT \
     --env PGDATABASE=$DB_DATABASE \
     --env PGUSER=$DB_ROOT_USERNAME \
     --env PGPASSWORD=$DB_ROOT_PASSWORD \
