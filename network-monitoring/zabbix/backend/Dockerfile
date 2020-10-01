@@ -1,4 +1,4 @@
-FROM zabbix/zabbix-server-mysql:ubuntu-5.0.3
+FROM zabbix/zabbix-server-mysql:ubuntu-5.0.4
 
 ADD container/ /
 
