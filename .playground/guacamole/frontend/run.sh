@@ -67,7 +67,7 @@ fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
-if [ $FIRST_RUN -eq 1 ]; then
+if [ "$FIRST_RUN" == 1 ]; then
   initialize_users
 fi
 print_container_info $CONTAINER_NAME
