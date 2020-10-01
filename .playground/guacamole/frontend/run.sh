@@ -15,10 +15,30 @@ initialize_database() {
     CREATE USER '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
     GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%';
   "
-  docker run --rm guacamole/guacamole:1.2.0 /opt/guacamole/bin/initdb.sh --mysql > initdb.sql.generated
-  $MYSQL $DB_DATABASE < initdb.sql.generated
-# rm --force initdb.sql.generated
+  docker run --rm guacamole/guacamole:1.2.0 /opt/guacamole/bin/initdb.sh --mysql > init/db.sql.generated
+  $MYSQL $DB_DATABASE < init/db.sql.generated
+  rm --force initdb.sql.generated
   echo ...database initialized
+}
+
+initialize_users() {
+  echo Initializing users...
+  local -r HTTP=http
+  local -r API=http://localhost:8085/guacamole/api
+  token=$( \
+    $HTTP --form --body POST $API/tokens username=guacadmin password=guacadmin \
+      | jq --raw-output .authToken \
+  )
+  $HTTP POST $API/session/data/mysql/users token==$token < init/credentials.json
+  $HTTP PATCH $API/session/data/mysql/users/admin_reuphoodeixu/permissions token==$token < init/permissions.json
+  $HTTP DELETE $API/tokens/$token
+  token=$( \
+    $HTTP --form --body POST $API/tokens username=admin_reuphoodeixu password=zaicieceifox \
+      | jq --raw-output .authToken \
+  )
+  $HTTP DELETE $API/session/data/mysql/users/guacadmin token==$token
+  $HTTP DELETE $API/tokens/$token
+  echo ...users initialized
 }
 
 run() {
@@ -41,9 +61,13 @@ run() {
 
 $MYSQL --execute="use $DB_DATABASE;"
 if [ $? -ne 0 ]; then
+  FIRST_RUN=1
   initialize_database
 fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+if [ $FIRST_RUN -eq 1 ]; then
+  initialize_users
+fi
 print_container_info $CONTAINER_NAME

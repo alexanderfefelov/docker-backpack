@@ -6,4 +6,4 @@ Hostname `frontend.guacamole.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8085](http://frontend.guacamole.backpack.test:8085) | Management console | `guacadmin` / `guacadmin`
+| [8085](http://frontend.guacamole.backpack.test:8085) | [HTTP API](https://github.com/ridvanaltun/guacamole-rest-api-documentation) and management console | `admin_reuphoodeixu` / `zaicieceifox`
