@@ -20,7 +20,7 @@ check_vm_max_map_count() {
   fi
 }
 
-readonly SSE_SUPPORT=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiter=' ' --serial -)
+readonly SSE_SUPPORT=$(cat /proc/cpuinfo | grep flags | grep --only-matching --word-regexp 'sse\S*' | sort | uniq | paste --delimiters=' ' --serial -)
 
 print_sse_info() {
   echo Elasticsearch Machine Learning requires CPU with SSE4.2 support
