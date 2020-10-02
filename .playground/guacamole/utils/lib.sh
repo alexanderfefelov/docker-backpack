@@ -1,16 +1,17 @@
-readonly HTTP=http
+readonly HTTP="http --verbose --check-status"
 readonly API=http://frontend.guacamole.backpack.test:8085/guacamole/api
 readonly API_SESSION=$API/session/data/mysql
-readonly AUTH="username=admin_reuphoodeixu password=zaicieceifox"
+readonly USERNAME=admin_reuphoodeixu
+readonly PASSWORD=zaicieceifox
 
 create_token() {
-  local token
-  token=$($HTTP --form --body POST $API/tokens $AUTH | jq --raw-output .authToken)
+  local response="$($HTTP --form --body POST $API/tokens username=$1 password=$2)"
+  local token=$(echo $response | jq --raw-output .authToken)
   echo $token
 }
 
 delete_token() {
-  $HTTP --body DELETE $API/tokens/$1
+  $HTTP DELETE $API/tokens/$1
 }
 
 get_connections() {
