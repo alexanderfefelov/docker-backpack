@@ -9,6 +9,8 @@
 readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
 readonly HTTP=http
 readonly API=http://frontend.guacamole.backpack.test:8085/guacamole/api
+readonly API_SESSION=$API/session/data/mysql
+AUTH="username=guacadmin password=guacadmin"
 
 initialize_database() {
   echo Initializing database...
@@ -26,37 +28,51 @@ initialize_database() {
 initialize_users() {
   echo Initializing users...
 
-  # Create admin user
+  local token
+
+  # Create users
   #
   token=$( \
-    $HTTP --form --body POST $API/tokens username=guacadmin password=guacadmin \
+    $HTTP --form --body POST $API/tokens $AUTH \
       | jq --raw-output .authToken \
   )
-  $HTTP POST $API/session/data/mysql/users token==$token < init/credentials.json
-  $HTTP PATCH $API/session/data/mysql/users/admin_reuphoodeixu/permissions token==$token < init/permissions.json
+  jq --compact-output --raw-output '.[] | .username, .permissions' < init/permissions.json | paste --delimiters='|' - - | \
+  while IFS='|' read -r username permissions; do
+    echo $permissions > temp-json.generated
+    $HTTP PATCH $API_SESSION/users/$username/permissions token==$token < temp-json.generated
+    rm --force temp-json.generated
+  done
   $HTTP DELETE $API/tokens/$token
+
+  AUTH="username=admin_reuphoodeixu password=zaicieceifox"
 
   # Remove default admin user
   #
   token=$( \
-    $HTTP --form --body POST $API/tokens username=admin_reuphoodeixu password=zaicieceifox \
+    $HTTP --form --body POST $API/tokens $AUTH \
       | jq --raw-output .authToken \
   )
-  $HTTP DELETE $API/session/data/mysql/users/guacadmin token==$token
+  $HTTP DELETE $API_SESSION/users/guacadmin token==$token
   $HTTP DELETE $API/tokens/$token
 
   echo ...users initialized
 }
 
-create_connection() {
-  echo Creating connection...
+create_connections() {
+  echo Creating connections...
+  local token
   token=$( \
-    $HTTP --form --body POST $API/tokens username=admin_reuphoodeixu password=zaicieceifox \
+    $HTTP --form --body POST $API/tokens $AUTH \
       | jq --raw-output .authToken \
   )
-  $HTTP POST $API/session/data/mysql/connections token==$token < init/connection.json
+  IFS=$'\n'
+  for obj in $(jq --compact-output .[] < init/connections.json); do
+    echo $obj > temp-json.generated
+    $HTTP POST $API_SESSION/connections token==$token < temp-json.generated
+    rm --force temp-json.generated
+  done
   $HTTP DELETE $API/tokens/$token
-  echo ...connection created
+  echo ...connections created
 }
 
 run() {
@@ -94,6 +110,6 @@ run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
   initialize_users
-  create_connection
+  create_connections
 fi
 print_container_info $CONTAINER_NAME

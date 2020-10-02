@@ -8,6 +8,7 @@ readonly PREREQUISITES="
   htpasswd
   http
   ip
+  jq
   logger
   lorem
   mkpasswd
