@@ -17,6 +17,32 @@ initialize_database() {
   "
   echo ...database initialized
 }
+
+initialize_mattermost() {
+  # https://docs.mattermost.com/administration/command-line-tools.html
+
+  echo Initializing Mattermost...
+  docker exec --tty --interactive $CONTAINER_NAME bash -c '
+    set -e
+
+    echo Creating users...
+    bin/mattermost user create --system_admin --email admin@backpack.test --username admin_iesheigichae --password "Vuachaeghiok(42)"
+    bin/mattermost user create --email user@backpack.test --username user_eequoocheshi --password "#phahA4iezahzo"
+    echo ...users created
+
+    echo Creating and populating team...
+    bin/mattermost team create --name backpack --display_name backpack
+    bin/mattermost team add backpack admin_iesheigichae user_eequoocheshi
+    echo ...team created and populated
+
+    echo Creating and populating channel...
+    bin/mattermost channel create --team backpack --name test --display_name test
+    bin/mattermost channel add backpack:test admin_iesheigichae user_eequoocheshi
+    echo ...channel created and populated
+  '
+  echo ...Mattermost initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -41,9 +67,13 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
+  readonly FIRST_RUN=true
   initialize_database
 fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+if [ "$FIRST_RUN" == "true" ]; then
+  initialize_mattermost
+fi
 print_container_info $CONTAINER_NAME

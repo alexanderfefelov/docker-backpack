@@ -10,6 +10,7 @@ ADD https://releases.mattermost.com/$MATTERMOST_VERSION/$MATTERMOST_STUFF /
 
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
+       ca-certificates \
        curl `# For health checks` \
   && tar --extract --gzip --file $MATTERMOST_STUFF \
   && useradd $MATTERMOST_USER --no-create-home \

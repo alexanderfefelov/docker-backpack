@@ -144,7 +144,7 @@
     "MaxOpenConns": 300,
     "Trace": false,
     "AtRestEncryptKey": "",
-    "QueryTimeout": 30,
+    "QueryTimeout": 150,
     "DisableDatabaseSearch": false
   },
   "LogSettings": {
