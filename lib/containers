@@ -36,6 +36,11 @@ backpack-kibana
 backpack-proftpd
 backpack-samba
 
+# Guacamole
+#
+backpack-guacamole-backend
+backpack-guacamole-frontend
+
 # InfluxData stack
 #
 backpack-influxdb

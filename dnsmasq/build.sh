@@ -58,6 +58,11 @@ address=/carbon.backpack.test/$1
 address=/graphite.backpack.test/$1
 address=/statsd.backpack.test/$1
 
+# Guacamole
+#
+address=/backend.guacamole.backpack.test/$1
+address=/frontend.guacamole.backpack.test/$1
+
 # InfluxData stack
 #
 address=/chronograf.backpack.test/$1

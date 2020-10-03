@@ -34,6 +34,11 @@ elastic/logstash
 file-sharing/proftpd
 file-sharing/samba
 
+# Guacamole
+#
+guacamole/backend
+guacamole/frontend
+
 # InfluxData stack
 #
 influxdata/influxdb

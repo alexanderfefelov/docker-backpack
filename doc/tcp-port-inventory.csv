@@ -19,6 +19,7 @@ Port,Container
 3308,backpack-mysql-main-backup
 3309,backpack-mysql-main-slave
 4440,backpack-rundeck
+4822,backpack-guacamole-backend
 5000,backpack-cubes
 5380,backpack-dnsmasq
 5432,backpack-postgresql-main
@@ -37,6 +38,7 @@ Port,Container
 8161,backpack-activemq
 8200,backpack-apm
 8883,backpack-rabbitmq
+8085,backpack-guacamole-frontend
 8888,backpack-chronograf
 9000,backpack-portainer
 9001,backpack-nav

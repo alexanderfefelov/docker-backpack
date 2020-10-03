@@ -14,6 +14,7 @@ Hostnames:
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
 | | | `grafana_solenstgalog` / `peritypindol`
 | | | `graphite_comoneigalky` / `strignenecoi`
+| | | `guacamole_peoghonahmoh` / `gechaegiezav`
 | | | `healthcheck_tutedojobu` / `adqafzubjutk`
 | | | `metabase_licideophaig` / `msorphorylac`
 | | | `replicator_avaternetrai` / `ergatecuserb`
@@ -29,6 +30,7 @@ Hostnames:
 | `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
 | `grafana` | [Grafana](../../../grafana)
 | `graphite` | [Graphite](../../../graphite-statsd)
+| `guacamole` | [Guacamole](../../../guacamole/frontend)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
 | `rundeck` | [Rundeck](../../../rundeck)
 | `zabbix` | [Zabbix](../../../network-monitoring/zabbix)
