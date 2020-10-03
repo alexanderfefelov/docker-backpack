@@ -6,6 +6,6 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-curl --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
+curl --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
   http://localhost:8065/api/v4/system/ping \
   > /dev/null
