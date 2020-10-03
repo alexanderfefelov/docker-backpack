@@ -5,6 +5,7 @@ portainer
 grafana
 graphite-statsd
 jenkins
+mattermost
 ofelia
 redis
 rundeck

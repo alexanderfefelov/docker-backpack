@@ -31,14 +31,15 @@ Port,Container
 5674,backpack-rabbitmq
 6379,backpack-redis
 8000,backpack-cubesviewer-server
+8065,backpack-mattermost
 8083,backpack-jenkins
 8084,backpack-zabbix-frontend
+8085,backpack-guacamole-frontend
 8086,backpack-influxdb
 8126,backpack-graphite-statsd
 8161,backpack-activemq
 8200,backpack-apm
 8883,backpack-rabbitmq
-8085,backpack-guacamole-frontend
 8888,backpack-chronograf
 9000,backpack-portainer
 9001,backpack-nav

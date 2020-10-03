@@ -35,6 +35,7 @@
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)
+- [Mattermost](mattermost)
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq)
     - [RabbitMQ](message-queues/rabbitmq)

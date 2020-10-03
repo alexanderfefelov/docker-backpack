@@ -21,6 +21,7 @@ address=/portainer.backpack.test/$1
 
 address=/grafana.backpack.test/$1
 address=/jenkins.backpack.test/$1
+address=/mattermost.backpack.test/$1
 address=/ofelia.backpack.test/$1
 address=/redis.backpack.test/$1
 address=/rundeck.backpack.test/$1

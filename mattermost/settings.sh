@@ -4,9 +4,9 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$BASE_NAME
 readonly WAIT_TIMEOUT=600
 
-. ../../lib/settings/go.sh
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../lib/settings/go.sh
+. ../lib/settings/health.sh
+. ../lib/settings/log.sh
 
 readonly DB_HOST=master.mysql.backpack.test
 readonly DB_PORT=3306

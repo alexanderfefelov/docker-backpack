@@ -16,6 +16,7 @@ Hostnames:
 | | | `graphite_comoneigalky` / `strignenecoi`
 | | | `guacamole_peoghonahmoh` / `gechaegiezav`
 | | | `healthcheck_tutedojobu` / `adqafzubjutk`
+| | | `mattermost_fepheedooroh` / `thohrawaenee`
 | | | `metabase_licideophaig` / `msorphorylac`
 | | | `replicator_avaternetrai` / `ergatecuserb`
 | | | `root` / `camycorymicu`
@@ -31,6 +32,7 @@ Hostnames:
 | `grafana` | [Grafana](../../../grafana)
 | `graphite` | [Graphite](../../../graphite-statsd)
 | `guacamole` | [Guacamole](../../../guacamole/frontend)
+| `mattermost` | [Mattermost](../../../mattermost)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
 | `rundeck` | [Rundeck](../../../rundeck)
 | `zabbix` | [Zabbix](../../../network-monitoring/zabbix)
