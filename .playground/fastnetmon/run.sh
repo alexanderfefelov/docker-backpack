@@ -18,6 +18,7 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-conf:/fastnetmon/conf \
     --volume $CONTAINER_NAME-log:/fastnetmon/log \
+    --volume $CONTAINER_NAME-log-attack:/var/log/fastnetmon_attacks \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }

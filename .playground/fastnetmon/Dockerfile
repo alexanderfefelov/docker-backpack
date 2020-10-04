@@ -26,7 +26,6 @@ RUN apt-get -qq update \
        ca-certificates \
        libpcap0.8 \
   && mkdir --parents /fastnetmon/log \
-  && ln --symbolic /var/log/fastnetmon_attacks /fastnetmon/log/attacks \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
