@@ -8,4 +8,4 @@ ENV \
   TELEGRAF_USERNAME=telegraf \
   TELEGRAF_PASSWORD=password
 
-COPY container/ /
+ADD container/ /

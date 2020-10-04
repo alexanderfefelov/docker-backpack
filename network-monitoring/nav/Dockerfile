@@ -5,7 +5,7 @@ ARG NAV_VERSION
 
 LABEL $IMAGE_NAME-stage=builder
 
-COPY container/builder/ /
+ADD container/builder/ /
 
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
@@ -37,7 +37,7 @@ COPY --from=builder /.build/ /
 
 COPY --from=builder /nav/python/nav/etc/ /etc/nav/
 COPY --from=builder /nav-add-ons/web/etc/nav/ /etc/nav/
-COPY container/target/ /
+ADD container/target/ /
 
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
