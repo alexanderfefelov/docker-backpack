@@ -1,4 +1,4 @@
-FROM rabbitmq:3.8.8
+FROM rabbitmq:3.8.9
 
 ADD container/ /
 
