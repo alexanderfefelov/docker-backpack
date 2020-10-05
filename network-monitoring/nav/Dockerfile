@@ -83,5 +83,5 @@ RUN  apt-get -qq update \
        /requirements \
   && rm --force /requirements.txt
 
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["tini", "--", "/backpack-entrypoint.sh"]
 CMD ["supervisord", "--nodaemon"]
