@@ -9,6 +9,7 @@ Port,Container
 1883,backpack-activemq
 1893,backpack-rabbitmq
 2003,backpack-graphite-statsd
+2013,backpack-influxdb
 2004,backpack-graphite-statsd
 2023,backpack-graphite-statsd
 2024,backpack-graphite-statsd

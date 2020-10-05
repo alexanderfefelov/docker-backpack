@@ -4,15 +4,10 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$BASE_NAME
 readonly WAIT_TIMEOUT=600
 
-readonly DB_HOST=main.postgresql.backpack.test
-readonly DB_PORT=5432
-readonly DB_DATABASE=nav
-readonly DB_ROOT_USERNAME=postgres_ibleabaldine
-readonly DB_ROOT_PASSWORD=undestrokend
-readonly DB_USERNAME=nav_smarigarybol
-readonly DB_PASSWORD=tateicenstop
-
 export IMAGE_NAME
 export FASTNETMON_VERSION=1.1.7
+
+readonly GRAPHITE_HOST=influxdb.backpack.test
+readonly GRAPHITE_PORT=2013
 
 . ../../lib/settings/log.sh

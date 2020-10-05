@@ -249,11 +249,11 @@ gobgp_announce_whole_subnet = off
 
 # Graphite monitoring
 # InfluxDB is also supported, please check our reference:
-# https://github.com/pavel-odintsov/fastnetmon/blob/master/docs/INFLUXDB_INTEGRATION.md
-graphite = off
+# https://fastnetmon.com/docs/influxdb_integration/
+graphite = on
 # Please use only IP because domain names are not allowed here
-graphite_host = 127.0.0.1
-graphite_port = 2003
+graphite_host = _GRAPHITE_IP_ADDRESS_
+graphite_port = _GRAPHITE_PORT_
 
 # Default namespace for Graphite data
 graphite_prefix = fastnetmon
