@@ -1,3 +1,3 @@
-FROM influxdb:1.8.2
+FROM influxdb:1.8.3
 
 ADD container/ /
