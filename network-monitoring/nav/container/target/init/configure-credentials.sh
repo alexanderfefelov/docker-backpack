@@ -8,4 +8,4 @@ echo recherahngoh | navuser passwd --noverify admin_shephuojuika
 navuser add operator_paenetheyahk
 echo haixengahleb | navuser passwd --noverify operator_paenetheyahk
 
-echo Credentials are ready
+echo ...credentials are ready
