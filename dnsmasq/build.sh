@@ -28,8 +28,8 @@ address=/rundeck.backpack.test/$1
 
 # Business intelligence
 #
-address=/cubes.backpack.test/$1
-address=/cubesviewer-server.backpack.test/$1
+address=/backend.cubes.backpack.test/$1
+address=/frontend.cubes.backpack.test/$1
 address=/metabase.backpack.test/$1
 
 # Databases

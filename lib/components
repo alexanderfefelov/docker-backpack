@@ -12,8 +12,8 @@ rundeck
 
 # Business intelligence
 #
-business-intelligence/cubes
-business-intelligence/cubesviewer-server
+business-intelligence/cubes/backend
+business-intelligence/cubes/frontend
 business-intelligence/metabase
 
 # Databases

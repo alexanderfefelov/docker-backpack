@@ -12,8 +12,8 @@ backpack-rundeck
 
 # Business intelligence
 #
-backpack-cubes
-backpack-cubesviewer-server
+backpack-cubes-backend
+backpack-cubes-frontend
 backpack-metabase
 
 # Databases

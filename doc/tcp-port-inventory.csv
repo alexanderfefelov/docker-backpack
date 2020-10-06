@@ -21,7 +21,7 @@ Port,Container
 3309,backpack-mysql-main-slave
 4440,backpack-rundeck
 4822,backpack-guacamole-backend
-5000,backpack-cubes
+5000,backpack-cubes-backend
 5380,backpack-dnsmasq
 5432,backpack-postgresql-main
 5433,backpack-postgresql-test
@@ -31,7 +31,7 @@ Port,Container
 5673,backpack-rabbitmq
 5674,backpack-rabbitmq
 6379,backpack-redis
-8000,backpack-cubesviewer-server
+8000,backpack-cubes-frontend
 8065,backpack-mattermost
 8083,backpack-jenkins
 8084,backpack-zabbix-frontend

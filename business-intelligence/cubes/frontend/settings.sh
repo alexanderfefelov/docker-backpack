@@ -1,4 +1,4 @@
-readonly BASE_NAME=backpack-cubesviewer-server
+readonly BASE_NAME=backpack-cubes-frontend
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
 readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$BASE_NAME
@@ -12,5 +12,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=cubesviewer_server_odogymahouli
 readonly DB_PASSWORD=inceadeavoca
 
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh

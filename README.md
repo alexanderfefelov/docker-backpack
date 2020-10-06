@@ -6,7 +6,8 @@
 
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
-    - [CubesViewer Server](business-intelligence/cubesviewer-server)
+      - [Backend](business-intelligence/cubes/backend)
+      - [Frontend](business-intelligence/cubes/frontend)
     - [Metabase](business-intelligence/metabase)
 - [Databases](databases)
     - [MySQL](databases/mysql)
