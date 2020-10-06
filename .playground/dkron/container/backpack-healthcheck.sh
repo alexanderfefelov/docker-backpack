@@ -6,4 +6,6 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-curl --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" http://localhost:8080/v1 > /dev/null
+curl --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
+  http://localhost:8080/v1 \
+  > /dev/null
