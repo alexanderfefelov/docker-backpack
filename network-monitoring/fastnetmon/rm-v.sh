@@ -8,3 +8,4 @@
 docker volume rm $CONTAINER_NAME-conf
 docker volume rm $CONTAINER_NAME-log
 docker volume rm $CONTAINER_NAME-log-attack
+docker volume rm $CONTAINER_NAME-scripts

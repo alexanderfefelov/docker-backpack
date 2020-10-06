@@ -179,7 +179,7 @@ sflow_qinq_ethertype = 0x8100
 ###
 
 # This script executed for ban, unban and attack detail collection
-notify_script_path = /fastnetmon/bin/notify.sh
+notify_script_path = /fastnetmon/scripts/notification-handler.sh
 
 # pass attack details to notify_script via stdin
 # Pass details only in case of "ban" call
