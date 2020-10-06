@@ -56,6 +56,7 @@ backpack-rabbitmq
 
 # Network monitoring
 #
+backpack-fastnetmon
 backpack-nav
 backpack-zabbix-backend
 backpack-zabbix-frontend

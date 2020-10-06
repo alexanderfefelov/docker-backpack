@@ -54,6 +54,7 @@ message-queues/rabbitmq
 
 # Network monitoring
 #
+network-monitoring/fastnetmon
 network-monitoring/nav
 network-monitoring/zabbix/backend
 network-monitoring/zabbix/frontend

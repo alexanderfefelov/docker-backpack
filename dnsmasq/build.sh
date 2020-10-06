@@ -78,6 +78,7 @@ address=/rabbitmq.backpack.test/$1
 
 # Network monitoring
 #
+address=/fastnetmon.backpack.test/$1
 address=/nav.backpack.test/$1
 address=/backend.zabbix.backpack.test/$1
 address=/frontend.zabbix.backpack.test/$1

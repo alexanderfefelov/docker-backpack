@@ -42,6 +42,7 @@
     - [RabbitMQ](message-queues/rabbitmq)
 - [Netdata](netdata)
 - [Network monitoring](network-monitoring)
+    - [FastNetMon](network-monitoring/fastnetmon)
     - [NAV](network-monitoring/nav)
     - [Zabbix](network-monitoring/zabbix)
         - [Backend](network-monitoring/zabbix/backend)
