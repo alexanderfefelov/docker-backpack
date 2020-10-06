@@ -81,7 +81,7 @@ for i in {1..42}; do
       | sed "s/_VALUE_/$value/g" \
       | sed "s/_SUMMARY_/$summary/g" \
       | sed "s/_DESCRIPTION_/$description/g" \
-      | sed "s/_GENERATOR_URL_/$generator_url/g" \
+      | sed "s/_GENERATOR_URL_/$generator_url/g"
   )
   alerts="
     [
