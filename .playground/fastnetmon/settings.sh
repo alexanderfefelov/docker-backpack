@@ -9,6 +9,8 @@ export FASTNETMON_VERSION=1.1.7
 
 readonly GRAPHITE_HOST=influxdb.backpack.test
 readonly GRAPHITE_PORT=2013
+readonly REDIS_HOST=redis.backpack.test
+readonly REDIS_PORT=6379
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

@@ -193,14 +193,14 @@ collect_attack_pcap_dumps = on
 process_pcap_attack_dumps_with_dpi = on
 
 # Save attack details to Redis
-redis_enabled = off
+redis_enabled = on
 
 # Redis configuration
-redis_port = 6379
-redis_host = 127.0.0.1
+redis_host = _REDIS_IP_ADDRESS_
+redis_port = _REDIS_PORT_
 
 # specify a custom prefix here
-redis_prefix = mydc1
+redis_prefix = test.backpack.fastnetmon
 
 # We could store attack information to MongoDB
 mongodb_enabled = off
