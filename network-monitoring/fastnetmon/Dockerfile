@@ -24,6 +24,7 @@ COPY --from=builder /opt/ /opt/
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
+       httpie \
        libpcap0.8 \
        netcat `# For health checks` \
   && mkdir --parents /fastnetmon/log \

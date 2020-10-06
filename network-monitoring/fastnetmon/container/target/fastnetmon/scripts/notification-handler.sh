@@ -7,6 +7,12 @@ LOGGER_SYSLOG_HOST=logstash.backpack.test
 LOGGER_SYSLOG_PORT=5514
 . "$HOME"/logging.sh
 
+ALERTMANAGER_HOST=alertmanager.backpack.test
+ALERTMANAGER_PORT=9093
+. "$HOME"/alertmanager.sh
+
+readonly ACTOR=$(hostname --fqdn)
+
 readonly IP_ADDRESS=$1
 readonly DIRECTION=$2
 readonly PPS=$3
@@ -14,17 +20,22 @@ readonly ACTION=$4
 readonly DETAILS=$(< /dev/stdin)
 
 handle_ban() {
-  log_notice handle_ban called
-  ret_code=0
+  create_alert \
+    "FastNetMon alert" \
+    "critical" \
+    "testing" \
+    "$ACTOR" \
+    "$ACTION" \
+    "$IP_ADDRESS" \
+    "$ACTOR $ACTION $IP_ADDRESS $DIRECTION $PPS pps" \
+    "$DETAILS"
 }
 
 handle_attack_details() {
-  log_notice handle_attack_details called
   ret_code=0
 }
 
 handle_unban() {
-  log_notice handle_unban called
   ret_code=0
 }
 
