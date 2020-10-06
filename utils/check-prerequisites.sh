@@ -12,6 +12,7 @@ readonly PREREQUISITES="
   logger
   lorem
   mkpasswd
+  mongo
   mysql
   nc
   patch

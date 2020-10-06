@@ -34,6 +34,8 @@ address=/metabase.backpack.test/$1
 
 # Databases
 #
+address=/main.mongodb.backpack.test/$1
+address=/test.mongodb.backpack.test/$1
 address=/backup.mysql.backpack.test/$1
 address=/master.mysql.backpack.test/$1
 address=/slave.mysql.backpack.test/$1

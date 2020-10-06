@@ -18,6 +18,8 @@ backpack-metabase
 
 # Databases
 #
+backpack-mongodb-main
+backpack-mongodb-test
 backpack-mysql-main-master
 backpack-mysql-main-backup
 backpack-mysql-main-slave

@@ -10,6 +10,9 @@
       - [Frontend](business-intelligence/cubes/frontend)
     - [Metabase](business-intelligence/metabase)
 - [Databases](databases)
+    - [MongoDB](databases/mongodb)
+        - [main instance](databases/mongodb/main)
+        - [test instance](databases/mongodb/test)
     - [MySQL](databases/mysql)
         - [main instance](databases/mysql/main) with replication
         - [test instance](databases/mysql/test)

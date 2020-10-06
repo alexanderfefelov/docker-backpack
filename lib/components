@@ -18,6 +18,8 @@ business-intelligence/metabase
 
 # Databases
 #
+databases/mongodb/main
+databases/mongodb/test
 databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
