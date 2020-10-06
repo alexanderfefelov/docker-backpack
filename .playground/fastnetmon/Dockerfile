@@ -25,6 +25,7 @@ RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
        libpcap0.8 \
+       netcat `# For health checks` \
   && mkdir --parents /fastnetmon/log \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*

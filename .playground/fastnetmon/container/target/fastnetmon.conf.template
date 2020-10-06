@@ -120,7 +120,7 @@ netmap_read_packet_length_from_ip_header = off
 # Pcap mode, very slow and thus not suitable for production
 pcap = off
 # Netflow capture method with v5, v9 and IPFIX support
-netflow = off
+netflow = on
 # sFLOW capture suitable for switches
 sflow = off
 

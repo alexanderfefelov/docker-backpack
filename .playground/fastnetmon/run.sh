@@ -19,8 +19,10 @@ run() {
     --volume $CONTAINER_NAME-conf:/fastnetmon/conf \
     --volume $CONTAINER_NAME-log:/fastnetmon/log \
     --volume $CONTAINER_NAME-log-attack:/var/log/fastnetmon_attacks \
+    --publish 2055:2055/udp \
     --env GRAPHITE_HOST=$GRAPHITE_HOST \
     --env GRAPHITE_PORT=$GRAPHITE_PORT \
+    $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
