@@ -15,18 +15,22 @@ readonly DETAILS=$(< /dev/stdin)
 
 handle_ban() {
   log_notice handle_ban called
+  ret_code=0
 }
 
 handle_attack_details() {
   log_notice handle_attack_details called
+  ret_code=0
 }
 
 handle_unban() {
   log_notice handle_unban called
+  ret_code=0
 }
 
 handle_unknown_action() {
   log_error unknown action
+  ret_code=404
 }
 
 log_notice "started, action: $ACTION, IP address: $IP_ADDRESS"
