@@ -196,8 +196,8 @@ process_pcap_attack_dumps_with_dpi = on
 redis_enabled = on
 
 # Redis configuration
-redis_host = _REDIS_IP_ADDRESS_
-redis_port = _REDIS_PORT_
+redis_host = redis.backpack.test
+redis_port = 6379
 
 # specify a custom prefix here
 redis_prefix = test.backpack.fastnetmon
