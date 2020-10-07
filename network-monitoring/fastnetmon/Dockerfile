@@ -28,6 +28,8 @@ RUN apt-get -qq update \
        jq \
        libpcap0.8 \
        netcat `# For health checks` \
+  && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/unban.d/ \
+  && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/attack_details.d/ \
   && mkdir --parents /fastnetmon/log \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
