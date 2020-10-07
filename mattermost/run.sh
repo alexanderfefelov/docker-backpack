@@ -29,17 +29,34 @@ initialize_mattermost() {
     bin/mattermost user create --system_admin --email admin@backpack.test --username admin_iesheigichae --password "Vuachaeghiok(42)"
     bin/mattermost user create --system_admin --email script@backpack.test --username script_noosoochieza --password "7^iengoomoogieV"
     bin/mattermost user create --email user@backpack.test --username user_eequoocheshi --password "#phahA4iezahzo"
+    bin/mattermost user create --email alertmanager@backpack.test --username alertmanager_miepuiyiolim --password "Kleophakoneil)0("
+    bin/mattermost user create --email kapacitor@backpack.test --username kapacitor_zoodiopishoo --password "woo~5raeBuothe"
     echo ...users created
 
     echo Creating and populating team...
     bin/mattermost team create --name backpack --display_name backpack
-    bin/mattermost team add backpack admin_iesheigichae script_noosoochieza user_eequoocheshi
+    bin/mattermost team add backpack \
+      admin_iesheigichae \
+      alertmanager_miepuiyiolim \
+      kapacitor_zoodiopishoo \
+      script_noosoochieza \
+      user_eequoocheshi
     echo ...team created and populated
 
-    echo Creating and populating channel...
+    echo Creating and populating channels...
+    bin/mattermost channel create --team backpack --name alerts --display_name alerts
+    bin/mattermost channel add backpack:alerts \
+      admin_iesheigichae \
+      alertmanager_miepuiyiolim \
+      kapacitor_zoodiopishoo \
+      script_noosoochieza \
+      user_eequoocheshi
     bin/mattermost channel create --team backpack --name test --display_name test
-    bin/mattermost channel add backpack:test admin_iesheigichae script_noosoochieza user_eequoocheshi
-    echo ...channel created and populated
+    bin/mattermost channel add backpack:test \
+      admin_iesheigichae \
+      script_noosoochieza \
+      user_eequoocheshi
+    echo ...channels created and populated
   '
   echo ...Mattermost initialized
 }
