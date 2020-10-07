@@ -1,7 +1,8 @@
-USERNAME=admin_cahorthelvau
-PASSWORD=unatrustyphe
+readonly USERNAME=admin_cahorthelvau
+readonly PASSWORD=unatrustyphe
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
 readonly API=http://jenkins.backpack.test:8083
+
 #
 # Arguments:
 #   $1 - significant part of the API URL

@@ -11,7 +11,7 @@ readonly API=http://$MATTERMOST_HOST:$MATTERMOST_PORT/api/v4
 # Returns:
 #   bearer token
 #
-create_token() {
+authenticate() {
   local token=$(
     $HTTP --headers \
       POST $API/users/login \

@@ -5,9 +5,9 @@ readonly PASSWORD=7^iengoomoogieV
 
 #
 # Arguments:
-#   None
+#   none
 # Returns:
-#   the body of the response
+#   body of the response
 #
 get_server_status() {
   local response=$(
@@ -25,12 +25,12 @@ get_server_status() {
 # Returns:
 #   bearer token
 #
-create_token() {
+authenticate() {
   local token=$(
     $HTTP --headers \
       POST $API/users/login \
-      login_id=$1 \
-      password=$2 \
+        login_id=$1 \
+        password=$2 \
     | grep Token: \
     | cut --delimiter=: --fields=2 \
     | xargs
@@ -43,13 +43,31 @@ create_token() {
 #   $1 - bearer token
 #   $2 - significant part of the API URL
 # Returns:
-#   the body of the response
+#   body of the response
 #
 execute_get_request() {
   local response=$(
     $HTTP --body \
       GET $API/$2 \
         "Authorization: Bearer $1"
+  )
+  echo $response
+}
+
+#
+# Arguments:
+#   $1 - bearer token
+#   $2 - significant part of the API URL
+#   $3... - request parameters
+# Returns:
+#   body of the response
+#
+execute_post_request() {
+  local response=$(
+    $HTTP --body \
+      POST $API/$2 \
+        "Authorization: Bearer $1" \
+        "${@:3}"
   )
   echo $response
 }
@@ -91,15 +109,12 @@ get_channel_id_by_team_name_and_channel_name() {
 #   $2 - channel id
 #   $3 - message
 # Returns:
-#   the body of the response
+#   message id
 #
 create_post() {
-  local response=$(
-    $HTTP --body \
-      POST $API/posts \
-        "Authorization: Bearer $1" \
-        channel_id=$2 \
-        message="$3"
+  local id=$(
+    execute_post_request $1 posts channel_id=$2 message="$3" \
+    | jq --raw-output .id
   )
-  echo $response
+  echo $id
 }

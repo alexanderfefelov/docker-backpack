@@ -1,5 +1,5 @@
-USERNAME=superuser_brapildehect
-PASSWORD=aytoadowmate
+readonly USERNAME=superuser_brapildehect
+readonly PASSWORD=aytoadowmate
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
 readonly API=http://elasticsearch.backpack.test:9200
 
