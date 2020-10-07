@@ -25,6 +25,7 @@ RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
        httpie \
+       jq \
        libpcap0.8 \
        netcat `# For health checks` \
   && mkdir --parents /fastnetmon/log \

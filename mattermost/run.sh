@@ -30,6 +30,7 @@ initialize_mattermost() {
     bin/mattermost user create --system_admin --email script@backpack.test --username script_noosoochieza --password "7^iengoomoogieV"
     bin/mattermost user create --email user@backpack.test --username user_eequoocheshi --password "#phahA4iezahzo"
     bin/mattermost user create --email alertmanager@backpack.test --username alertmanager_miepuiyiolim --password "Kleophakoneil)0("
+    bin/mattermost user create --email fastnetmon@backpack.test --username fastnetmon_taeyaiyohsho --password "8#Shioghaefeim"
     bin/mattermost user create --email kapacitor@backpack.test --username kapacitor_zoodiopishoo --password "woo~5raeBuothe"
     echo ...users created
 
@@ -38,6 +39,7 @@ initialize_mattermost() {
     bin/mattermost team add backpack \
       admin_iesheigichae \
       alertmanager_miepuiyiolim \
+      fastnetmon_taeyaiyohsho \
       kapacitor_zoodiopishoo \
       script_noosoochieza \
       user_eequoocheshi
@@ -48,6 +50,7 @@ initialize_mattermost() {
     bin/mattermost channel add backpack:alerts \
       admin_iesheigichae \
       alertmanager_miepuiyiolim \
+      fastnetmon_taeyaiyohsho \
       kapacitor_zoodiopishoo \
       script_noosoochieza \
       user_eequoocheshi

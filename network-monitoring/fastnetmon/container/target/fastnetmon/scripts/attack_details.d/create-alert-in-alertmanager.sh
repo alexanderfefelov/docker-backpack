@@ -11,5 +11,5 @@ create_alert \
   "$ACTOR" \
   "$ACTION" \
   "$IP_ADDRESS" \
-  "$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps" \
+  "$SUMMARY" \
   "$DETAILS"

@@ -12,6 +12,7 @@ export IP_ADDRESS=$1 DIRECTION=$2 PPS=$3 ACTION=$4 DETAILS=$(< /dev/stdin)
 
 handle_action() {
   export ALERT_NAME="FastNetMon alert" SEVERITY=critical ENV=testing ACTOR=$(hostname --fqdn)
+  export SUMMARY="$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps"
 
   local -r HANDLERS_DIR="$SCRIPTS_DIR/$ACTION.d"
   for handler in $HANDLERS_DIR/*; do
