@@ -5,12 +5,12 @@ readonly USERNAME=admin_reuphoodeixu
 readonly PASSWORD=zaicieceifox
 
 create_token() {
-  local token=$( \
+  local token=$(
     $HTTP --form --body \
       POST $API/tokens \
         username=$1 \
         password=$2 \
-    | jq --raw-output .authToken \
+    | jq --raw-output .authToken
   )
   echo $token
 }

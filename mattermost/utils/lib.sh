@@ -10,10 +10,10 @@ readonly PASSWORD=7^iengoomoogieV
 #   the body of the response
 #
 get_server_status() {
-  local response=$( \
+  local response=$(
     $HTTP --body \
       GET $API/system/ping \
-        get_server_status==true \
+        get_server_status==true
   )
   echo $response
 }
@@ -26,14 +26,14 @@ get_server_status() {
 #   bearer token
 #
 create_token() {
-  local token=$( \
+  local token=$(
     $HTTP --headers \
       POST $API/users/login \
       login_id=$1 \
       password=$2 \
     | grep Token: \
     | cut --delimiter=: --fields=2 \
-    | xargs \
+    | xargs
   )
   echo $token
 }
@@ -46,10 +46,10 @@ create_token() {
 #   the body of the response
 #
 execute_get_request() {
-  local response=$( \
+  local response=$(
     $HTTP --body \
       GET $API/$2 \
-        "Authorization: Bearer $1" \
+        "Authorization: Bearer $1"
   )
   echo $response
 }
@@ -62,9 +62,9 @@ execute_get_request() {
 #   team id
 #
 get_team_id_by_name() {
-  local id=$( \
+  local id=$(
     execute_get_request $1 teams/name/$2 \
-    | jq --raw-output .id \
+    | jq --raw-output .id
   )
   echo $id
 }
@@ -78,9 +78,9 @@ get_team_id_by_name() {
 #   channel id
 #
 get_channel_id_by_team_name_and_channel_name() {
-  local id=$( \
+  local id=$(
     execute_get_request $1 teams/name/$2/channels/name/$3 \
-    | jq --raw-output .id \
+    | jq --raw-output .id
   )
   echo $id
 }
@@ -94,12 +94,12 @@ get_channel_id_by_team_name_and_channel_name() {
 #   the body of the response
 #
 create_post() {
-  local response=$( \
+  local response=$(
     $HTTP --body \
       POST $API/posts \
         "Authorization: Bearer $1" \
         channel_id=$2 \
-        message="$3" \
+        message="$3"
   )
   echo $response
 }
