@@ -7,7 +7,7 @@ readonly API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
 readonly ALERT_TEMPLATE='
   {
     "labels": {
-      "alertname": "_ALERTNAME_",
+      "alertname": "_ALERT_NAME_",
       "severity": "_SEVERITY_",
       "env": "_ENV_",
       "actor": "_ACTOR_",
@@ -22,23 +22,23 @@ readonly ALERT_TEMPLATE='
 '
 
 create_alert() {
-  alertname=$1 severity=$2 env=$3 actor=$4 action=$5 victim=$6 summary=$7 description=$8
+  local -r ALERT_NAME=$1 SEVERITY=$2 ENV=$3 ACTOR=$4 ACTION=$5 VICTIM=$6 SUMMARY=$7 DESCRIPTION=$8
 
-  alert=${ALERT_TEMPLATE//_ALERTNAME_/"$alertname"}
-  alert=${alert//_SEVERITY_/"$severity"}
-  alert=${alert//_ENV_/"$env"}
-  alert=${alert//_ACTOR_/"$actor"}
-  alert=${alert//_ACTION_/"$action"}
-  alert=${alert//_VICTIM_/"$victim"}
-  alert=${alert//_SUMMARY_/"$summary"}
-  alert=${alert//_DESCRIPTION_/"$description"}
+  local alert
+  alert=${ALERT_TEMPLATE//_ALERT_NAME_/"$ALERT_NAME"}
+  alert=${alert//_SEVERITY_/"$SEVERITY"}
+  alert=${alert//_ENV_/"$ENV"}
+  alert=${alert//_ACTOR_/"$ACTOR"}
+  alert=${alert//_ACTION_/"$ACTION"}
+  alert=${alert//_VICTIM_/"$VICTIM"}
+  alert=${alert//_SUMMARY_/"$SUMMARY"}
+  alert=${alert//_DESCRIPTION_/"$DESCRIPTION"}
 
-  alerts="
+  local -r ALERTS="
     [
       $alert
     ]
   "
 
-  echo $alerts | $HTTP POST $API/alerts
-  ret_code=$?
+  echo $ALERTS | $HTTP POST $API/alerts
 }
