@@ -5,7 +5,7 @@ readonly API=http://prometheus.backpack.test:9090/api/v1
 # Arguments:
 #   $1 - significant part of the API URL
 # Returns:
-#   the body of the response
+#   response body
 #
 execute_get_request() {
   local response=$(
@@ -19,7 +19,7 @@ execute_get_request() {
 # Arguments:
 #   $1 - significant part of the API URL
 # Returns:
-#   the body of the response
+#   response body
 #
 execute_post_request() {
   local response=$(

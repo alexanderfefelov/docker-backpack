@@ -7,7 +7,7 @@ readonly PASSWORD=7^iengoomoogieV
 # Arguments:
 #   none
 # Returns:
-#   body of the response
+#   response body
 #
 get_server_status() {
   local response=$(
@@ -43,7 +43,7 @@ authenticate() {
 #   $1 - bearer token
 #   $2 - significant part of the API URL
 # Returns:
-#   body of the response
+#   response body
 #
 execute_get_request() {
   local response=$(
@@ -60,7 +60,7 @@ execute_get_request() {
 #   $2 - significant part of the API URL
 #   $3... - request parameters
 # Returns:
-#   body of the response
+#   response body
 #
 execute_post_request() {
   local response=$(

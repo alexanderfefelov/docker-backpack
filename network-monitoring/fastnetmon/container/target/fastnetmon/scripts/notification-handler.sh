@@ -31,7 +31,7 @@ handle_unknown_action() {
   log_error unknown action
 }
 
-log_notice "started, action: $ACTION, IP address: $IP_ADDRESS"
+log_notice "Started, action: $ACTION, IP address: $IP_ADDRESS"
 case $ACTION in
   ban|unban|attack_details)
     handle_action
@@ -40,4 +40,4 @@ case $ACTION in
     handle_unknown_action
     ;;
 esac
-log_notice "finished, action: $ACTION"
+log_notice "Finished, action: $ACTION"

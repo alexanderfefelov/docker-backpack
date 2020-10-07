@@ -2,8 +2,10 @@
 
 . lib.sh
 
+readonly DESTINATION=topic://lorem.ipsum
+
 for i in {1..7}; do
-  message=$(lorem -s 1)
+  message="$i: $(lorem -s 1)"
   echo $message
-  execute_post_form_request message destination==topic://lorem.ipsum body=="$message"
+  execute_post_form_request message destination==$DESTINATION body=="$message"
 done

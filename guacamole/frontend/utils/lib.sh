@@ -4,7 +4,7 @@ readonly API_SESSION=$API/session/data/mysql
 readonly USERNAME=admin_reuphoodeixu
 readonly PASSWORD=zaicieceifox
 
-create_token() {
+authenticate() {
   local token=$(
     $HTTP --form --body \
       POST $API/tokens \
@@ -15,7 +15,7 @@ create_token() {
   echo $token
 }
 
-delete_token() {
+deauthenticate() {
   $HTTP \
     DELETE $API/tokens/$1
 }

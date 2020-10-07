@@ -5,7 +5,7 @@ readonly API=http://pushgateway.backpack.test:9091/api/v1
 # Arguments:
 #   $1 - significant part of the API URL
 # Returns:
-#   the body of the response
+#   response body
 #
 execute_get_request() {
   local response=$(

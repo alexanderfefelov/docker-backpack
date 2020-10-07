@@ -5,7 +5,7 @@ readonly API=http://kapacitor.backpack.test:9092/kapacitor/v1
 # Arguments:
 #   $1 - significant part of the API URL
 # Returns:
-#   the body of the response
+#   response body
 #
 execute_get_request() {
   local response=$(
