@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 ALERTMANAGER_HOST=alertmanager.backpack.test
 ALERTMANAGER_PORT=9093
 . "$LIB_DIR"/alertmanager.sh

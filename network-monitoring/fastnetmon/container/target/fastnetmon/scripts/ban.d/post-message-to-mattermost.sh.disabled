@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 MATTERMOST_HOST=mattermost.backpack.test
 MATTERMOST_PORT=8065
 MATTERMOST_USERNAME=fastnetmon_taeyaiyohsho
