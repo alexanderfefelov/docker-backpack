@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-http --verbose GET "http://admin_cahorthelvau:unatrustyphe@jenkins.backpack.test:8083/pluginManager/api/json?pretty=1&tree=plugins[longName,shortName,version]"
+. lib.sh
+
+execute_get_request pluginManager/api/json tree==plugins[longName,shortName,version]

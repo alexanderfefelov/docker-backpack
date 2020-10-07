@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://www.elastic.co/guide/en/logstash/current/node-info-api.html
-http --verbose GET http://logstash.backpack.test:9600/_node/?pretty
+execute_get_request _node

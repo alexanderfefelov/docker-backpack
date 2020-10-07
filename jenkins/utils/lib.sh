@@ -1,8 +1,7 @@
-USERNAME=superuser_brapildehect
-PASSWORD=aytoadowmate
+USERNAME=admin_cahorthelvau
+PASSWORD=unatrustyphe
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
-readonly API=http://elasticsearch.backpack.test:9200
-
+readonly API=http://jenkins.backpack.test:8083
 #
 # Arguments:
 #   $1 - significant part of the API URL

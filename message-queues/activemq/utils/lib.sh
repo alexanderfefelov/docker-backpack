@@ -1,7 +1,7 @@
-USERNAME=superuser_brapildehect
-PASSWORD=aytoadowmate
+USERNAME=api_manostinerat
+PASSWORD=ombelervolpi
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
-readonly API=http://elasticsearch.backpack.test:9200
+readonly API=http://activemq.backpack.test:8161/api
 
 #
 # Arguments:
@@ -10,7 +10,7 @@ readonly API=http://elasticsearch.backpack.test:9200
 # Returns:
 #   none
 #
-execute_get_request() {
-  $HTTP \
-    GET $API/$1 "${@:2}"
+execute_post_form_request() {
+  $HTTP --form \
+    POST $API/$1 "${@:2}"
 }
