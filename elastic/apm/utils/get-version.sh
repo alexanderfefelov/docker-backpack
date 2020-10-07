@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-http --verbose GET http://apm.backpack.test:8200/
+. lib.sh
+
+execute_get_request

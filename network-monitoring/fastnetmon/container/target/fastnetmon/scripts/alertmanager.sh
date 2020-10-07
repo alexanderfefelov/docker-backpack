@@ -2,7 +2,7 @@ readonly ALERTMANAGER_HOST=${ALERTMANAGER_HOST:-alertmanager.test}
 readonly ALERTMANAGER_PORT=${ALERTMANAGER_PORT:-9093}
 
 readonly HTTP="http --check-status"
-readonly API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2/alerts
+readonly API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
 
 readonly ALERT_TEMPLATE='
   {
@@ -16,20 +16,13 @@ readonly ALERT_TEMPLATE='
     },
     "annotations": {
       "summary": "_SUMMARY_",
-      "details": "_DETAILS_"
+      "description": "_DESCRIPTION_"
     }
   }
 '
 
 create_alert() {
-  alertname=$1
-  severity=$2
-  env=$3
-  actor=$4
-  action=$5
-  victim=$6
-  summary=$7
-  details=$8
+  alertname=$1 severity=$2 env=$3 actor=$4 action=$5 victim=$6 summary=$7 description=$8
 
   alert=${ALERT_TEMPLATE//_ALERTNAME_/"$alertname"}
   alert=${alert//_SEVERITY_/"$severity"}
@@ -38,7 +31,7 @@ create_alert() {
   alert=${alert//_ACTION_/"$action"}
   alert=${alert//_VICTIM_/"$victim"}
   alert=${alert//_SUMMARY_/"$summary"}
-  alert=${alert//_DETAILS_/"$details"}
+  alert=${alert//_DESCRIPTION_/"$description"}
 
   alerts="
     [
@@ -46,6 +39,6 @@ create_alert() {
     ]
   "
 
-  echo $alerts | $HTTP POST $API
+  echo $alerts | $HTTP POST $API/alerts
   ret_code=$?
 }

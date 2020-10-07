@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://prometheus.io/docs/prometheus/latest/querying/api/#snapshot
-http --verbose POST http://prometheus.backpack.test:9090/api/v1/admin/tsdb/snapshot
+execute_post_request admin/tsdb/snapshot

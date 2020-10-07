@@ -3,7 +3,9 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-docker exec --tty --interactive backpack-nav bash -c '
+. lib.sh
+
+$DOCKER_EXEC bash -c '
   set -e
   readonly DUMP_DIR=/var/lib/nav/navdump
   echo Dump directory: $DUMP_DIR

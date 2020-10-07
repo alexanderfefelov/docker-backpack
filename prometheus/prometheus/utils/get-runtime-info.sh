@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://prometheus.io/docs/prometheus/latest/querying/api/#runtime-information
-http --verbose GET http://prometheus.backpack.test:9090/api/v1/status/runtimeinfo
+execute_get_request status/runtimeinfo

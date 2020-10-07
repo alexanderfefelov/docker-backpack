@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# Exit immediately if a pipeline, which may consist of a single simple command,
-# a list, or a compound command returns a non-zero status
-set -e
+. lib.sh
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html
-http --verbose --auth-type basic --auth superuser_brapildehect:aytoadowmate GET http://elasticsearch.backpack.test:9200/_cluster/health/?pretty
+execute_get_request _cluster/health

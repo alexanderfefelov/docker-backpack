@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-readonly HTTP="http --verbose --check-status"
-readonly API=http://alertmanager.backpack.test:9093/api/v2/alerts
+. lib.sh
+
 readonly ALERT_TEMPLATE='
   {
     "labels": {
@@ -61,6 +61,8 @@ get_level() {
 }
 
 for i in {1..42}; do
+  echo $i
+
   alertname="Parameter value is amazing"
   env=$(get_env)
   level=$(get_level)
@@ -89,5 +91,5 @@ for i in {1..42}; do
     ]
   "
 
-  echo $alerts | $HTTP POST $API
+  echo $alerts | execute_post_request alerts
 done

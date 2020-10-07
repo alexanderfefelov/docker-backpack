@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html
-http --verbose --auth-type basic --auth superuser_brapildehect:aytoadowmate GET http://elasticsearch.backpack.test:9200/_cat/indices/?v
+execute_get_request _cat/indices?v

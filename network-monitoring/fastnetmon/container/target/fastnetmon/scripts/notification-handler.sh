@@ -11,32 +11,46 @@ ALERTMANAGER_HOST=alertmanager.backpack.test
 ALERTMANAGER_PORT=9093
 . "$HOME"/alertmanager.sh
 
+readonly ALERT_NAME="FastNetMon alert"
+readonly ENV=testing
 readonly ACTOR=$(hostname --fqdn)
 
-readonly IP_ADDRESS=$1
-readonly DIRECTION=$2
-readonly PPS=$3
-readonly ACTION=$4
-readonly DETAILS=$(< /dev/stdin)
+readonly IP_ADDRESS=$1 DIRECTION=$2 PPS=$3 ACTION=$4 DETAILS=$(< /dev/stdin)
 
 handle_ban() {
   create_alert \
-    "FastNetMon alert" \
+    "$ALERT_NAME" \
     "critical" \
-    "testing" \
+    "$ENV" \
     "$ACTOR" \
     "$ACTION" \
     "$IP_ADDRESS" \
-    "$ACTOR $ACTION $IP_ADDRESS $DIRECTION $PPS pps" \
+    "$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps" \
     "$DETAILS"
 }
 
 handle_attack_details() {
-  ret_code=0
+  create_alert \
+    "$ALERT_NAME" \
+    "info" \
+    "$ENV" \
+    "$ACTOR" \
+    "$ACTION" \
+    "$IP_ADDRESS" \
+    "$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps" \
+    "$DETAILS"
 }
 
 handle_unban() {
-  ret_code=0
+  create_alert \
+    "$ALERT_NAME" \
+    "critical" \
+    "$ENV" \
+    "$ACTOR" \
+    "$ACTION" \
+    "$IP_ADDRESS" \
+    "$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps" \
+    "$DETAILS"
 }
 
 handle_unknown_action() {

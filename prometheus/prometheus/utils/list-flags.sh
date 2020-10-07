@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://prometheus.io/docs/prometheus/latest/querying/api/#flags
-http --verbose GET http://prometheus.backpack.test:9090/api/v1/status/flags
+execute_get_request status/flags

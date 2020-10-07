@@ -3,5 +3,7 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-docker exec --tty --interactive backpack-nav \
+. lib.sh
+
+$DOCKER_EXEC \
   ipdevpolld -J inventory --netbox $1 --log-stderr

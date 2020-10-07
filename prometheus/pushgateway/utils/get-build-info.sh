@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://github.com/prometheus/pushgateway/blob/master/README.md#query-api
-http --verbose GET http://pushgateway.backpack.test:9091/api/v1/status
+execute_get_request status

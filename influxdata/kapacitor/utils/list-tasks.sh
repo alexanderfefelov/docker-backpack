@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+. lib.sh
+
 # https://docs.influxdata.com/kapacitor/v1.5/working/api/#listing-tasks
-http --verbose GET http://kapacitor.backpack.test:9092/kapacitor/v1/tasks
+execute_get_request tasks
