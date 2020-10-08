@@ -13,8 +13,8 @@ RUN  apt-get -qq update \
        libsasl2-dev \
        patch \
   && git clone https://github.com/Uninett/nav.git --branch ${NAV_VERSION} --depth 1 \
-  && pip3 wheel --requirement /nav/requirements.txt --wheel-dir /.wheels \
-  && pip3 install --root /.build /nav \
+  && pip3 --quiet wheel --requirement /nav/requirements.txt --wheel-dir /.wheels \
+  && pip3 --quiet install --root /.build /nav \
   && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
   && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
   && /apply-patches.sh \
@@ -58,7 +58,7 @@ RUN  apt-get -qq update \
        rsyslog \
        supervisor \
   && chmod +s /usr/sbin/dhcping \
-  && pip3 install --requirement /requirements.txt --find-links=/.wheels --no-index \
+  && pip3 --quiet install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group nav \
   && cat /etc/nav/cron.d/* | crontab -u nav - \
   && mkdir --parents \
