@@ -47,7 +47,7 @@ create_alert() {
   alert=${alert//_DESCRIPTION_/"$DESCRIPTION"}
 
   local alerts="[
-      $alert
+    $alert
   ]"
 
   echo "$alerts" | execute_post_request alerts
