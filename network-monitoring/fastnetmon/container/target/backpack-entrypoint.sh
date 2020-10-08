@@ -8,7 +8,19 @@ readonly ACTIONS="
   attack_details
 "
 
-readonly AVAILABLE_PLUGINS="
+readonly PLUGINS_ban="
+  create-alert-in-alertmanager.sh
+  post-message-to-activemq.sh
+  post-message-to-mattermost.sh
+"
+
+readonly PLUGINS_unban="
+  create-alert-in-alertmanager.sh
+  post-message-to-activemq.sh
+  post-message-to-mattermost.sh
+"
+
+readonly PLUGINS_attack_details="
   create-alert-in-alertmanager.sh
   post-message-to-activemq.sh
   post-message-to-mattermost.sh
@@ -24,13 +36,14 @@ if [ ! -f $CONF_FILE ]; then
     > $CONF_FILE
   echo ...$CONF_FILE generated
 
-  echo Configuring plugins...
   for action in $ACTIONS; do
-    for plugin in $AVAILABLE_PLUGINS; do
+    echo Configuring plugins for \"$action\" action...
+    plugin_list="PLUGINS_$action"
+    for plugin in ${!plugin_list}; do
       ln --symbolic --verbose /fastnetmon/scripts/plugins/$plugin /fastnetmon/scripts/$action.d/$plugin
     done
+    echo ...plugins configured
   done
-  echo ...plugins configured
 fi
 
 exec "$@"
