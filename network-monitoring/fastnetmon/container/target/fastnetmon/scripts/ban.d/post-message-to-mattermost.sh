@@ -14,4 +14,4 @@ message="
 
 $DETAILS
 "
-message_id=$(create_post $token $channel_id "$message")
+create_post $token $channel_id "$message"

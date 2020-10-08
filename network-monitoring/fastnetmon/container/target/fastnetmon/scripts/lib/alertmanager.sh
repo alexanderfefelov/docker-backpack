@@ -1,11 +1,27 @@
 readonly ALERTMANAGER_HOST=${ALERTMANAGER_HOST:-alertmanager.test}
 readonly ALERTMANAGER_PORT=${ALERTMANAGER_PORT:-9093}
 
-readonly HTTP="http --check-status"
-readonly API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
+readonly ALERTMANAGER_API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
+readonly ALERTMANAGER_HTTP="http --check-status"
 
-readonly ALERT_TEMPLATE='
-  {
+#
+# Arguments:
+#   $1 - significant part of the API URL
+# Returns:
+#   response body
+#
+execute_post_request() {
+  local response=$(
+    $ALERTMANAGER_HTTP --body \
+      POST $ALERTMANAGER_API/$1
+  )
+  echo $response
+}
+
+create_alert() {
+  local -r ALERT_NAME=$1 SEVERITY=$2 ENV=$3 ACTOR=$4 ACTION=$5 VICTIM=$6 SUMMARY=$7 DESCRIPTION=$8
+
+  local -r ALERT_TEMPLATE='{
     "labels": {
       "alertname": "_ALERT_NAME_",
       "severity": "_SEVERITY_",
@@ -18,11 +34,7 @@ readonly ALERT_TEMPLATE='
       "summary": "_SUMMARY_",
       "description": "_DESCRIPTION_"
     }
-  }
-'
-
-create_alert() {
-  local -r ALERT_NAME=$1 SEVERITY=$2 ENV=$3 ACTOR=$4 ACTION=$5 VICTIM=$6 SUMMARY=$7 DESCRIPTION=$8
+  }'
 
   local alert
   alert=${ALERT_TEMPLATE//_ALERT_NAME_/"$ALERT_NAME"}
@@ -34,11 +46,9 @@ create_alert() {
   alert=${alert//_SUMMARY_/"$SUMMARY"}
   alert=${alert//_DESCRIPTION_/"$DESCRIPTION"}
 
-  local -r ALERTS="
-    [
+  local alerts="[
       $alert
-    ]
-  "
+  ]"
 
-  echo $ALERTS | $HTTP POST $API/alerts
+  echo "$alerts" | execute_post_request alerts
 }
