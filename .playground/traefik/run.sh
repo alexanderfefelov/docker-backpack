@@ -21,6 +21,7 @@ run() {
     --publish 8001:80 \
     --publish 8002:8080 \
     $DEFAULT_GO_SETTINGS \
+    $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
 }
