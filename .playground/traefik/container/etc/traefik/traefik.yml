@@ -1,0 +1,6 @@
+providers:
+  docker:
+    defaultRule: "Host(`{{ trimPrefix `/` .Name }}.backpack.test`)"
+
+api:
+  insecure: true
