@@ -2,18 +2,19 @@ readonly ALERTMANAGER_HOST=${ALERTMANAGER_HOST:-alertmanager.test}
 readonly ALERTMANAGER_PORT=${ALERTMANAGER_PORT:-9093}
 
 readonly ALERTMANAGER_API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
-readonly ALERTMANAGER_HTTP="http --check-status"
+readonly ALERTMANAGER_HTTP="http --check-status --ignore-stdin"
 
 #
 # Arguments:
 #   $1 - significant part of the API URL
+#   $2... - request parameters
 # Returns:
 #   response body
 #
 execute_post_request() {
   local response=$(
     $ALERTMANAGER_HTTP --body \
-      POST $ALERTMANAGER_API/$1
+      POST $ALERTMANAGER_API/$1 "${@:2}"
   )
   echo $response
 }

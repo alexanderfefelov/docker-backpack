@@ -30,8 +30,6 @@ RUN apt-get -qq update \
        python3-pip \
   && pip3 --quiet install \
        httpie \
-  && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/unban.d/ \
-  && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/attack_details.d/ \
   && mkdir --parents /fastnetmon/log \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
