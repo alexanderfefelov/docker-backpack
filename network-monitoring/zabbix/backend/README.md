@@ -1,6 +1,6 @@
 # backpack-zabbix-backend
 
-Hostname `backend.zabbix.backpack.test`
+Hostname `zabbix-backend.backpack.test`
 
 ## Services
 

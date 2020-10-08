@@ -2,9 +2,9 @@
 
 Hostnames:
 
-- `backup.mysql.backpack.test`
-- `master.mysql.backpack.test`
-- `slave.mysql.backpack.test`
+- `mysql-main-backup.backpack.test`
+- `mysql-main-master.backpack.test`
+- `mysql-main-slave.backpack.test`
 
 ## Services
 

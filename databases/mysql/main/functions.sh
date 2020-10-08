@@ -35,7 +35,7 @@ run_slave() {
     --env SERVER_ID=$3 \
     --env MODE=slave \
     --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
-    --env MASTER_HOST=master.mysql.backpack.test \
+    --env MASTER_HOST=mysql-main-master.backpack.test \
     --env MASTER_PORT=$5 \
     --env REPLICATOR_USERNAME=$REPLICATOR_USERNAME \
     --env REPLICATOR_PASSWORD=$REPLICATOR_PASSWORD \

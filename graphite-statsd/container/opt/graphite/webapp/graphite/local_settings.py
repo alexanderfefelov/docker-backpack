@@ -245,7 +245,7 @@ URL_PREFIX = str(os.environ.get('GRAPHITE_URL_ROOT', ''))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'master.mysql.backpack.test',
+        'HOST': 'mysql-main-master.backpack.test',
         'PORT': '3306',
         'NAME': 'graphite',
         'USER': 'graphite_comoneigalky',

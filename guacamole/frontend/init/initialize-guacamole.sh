@@ -5,7 +5,7 @@
 set -e
 
 readonly HTTP="http --check-status"
-readonly API=http://frontend.guacamole.backpack.test:8085/guacamole/api
+readonly API=http://guacamole-frontend.backpack.test:8085/guacamole/api
 readonly API_SESSION=$API/session/data/mysql
 readonly LOG_FILE=initialize-guacamole.log
 readonly TEMP_JSON_FILE=temp.json.generated

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-readonly HOST=carbon.backpack.test
+readonly HOST=graphite-statsd.backpack.test
 readonly PORT=2003
 
 echo Sending metrics to $HOST:$PORT...

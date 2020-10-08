@@ -1,6 +1,6 @@
 # backpack-mysql-test
 
-Hostname `test.mysql.backpack.test`
+Hostname `mysql-test.backpack.test`
 
 ## Services
 

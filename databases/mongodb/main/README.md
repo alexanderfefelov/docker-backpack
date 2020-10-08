@@ -1,6 +1,6 @@
 # backpack-mongodb-main
 
-Hostname `main.mongodb.backpack.test`
+Hostname `mongodb-main.backpack.test`
 
 ## Services
 

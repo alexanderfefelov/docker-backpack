@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-http --verbose GET http://graphite.backpack.test:81/version
+http --verbose GET http://graphite-statsd.backpack.test:81/version

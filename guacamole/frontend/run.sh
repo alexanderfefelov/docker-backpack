@@ -30,7 +30,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 8085:8080 \
-    --env GUACD_HOSTNAME=backend.guacamole.backpack.test \
+    --env GUACD_HOSTNAME=guacamole-backend.backpack.test \
     --env GUACD_PORT=4822 \
     --env MYSQL_HOSTNAME=$DB_HOST \
     --env MYSQL_PORT=$DB_PORT \

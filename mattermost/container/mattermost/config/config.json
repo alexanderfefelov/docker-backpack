@@ -136,7 +136,7 @@
   },
   "SqlSettings": {
     "DriverName": "mysql",
-    "DataSource": "mattermost_fepheedooroh:thohrawaenee@tcp(master.mysql.backpack.test:3306)/mattermost?charset=utf8",
+    "DataSource": "mattermost_fepheedooroh:thohrawaenee@tcp(mysql-main-master.backpack.test:3306)/mattermost?charset=utf8",
     "DataSourceReplicas": [],
     "DataSourceSearchReplicas": [],
     "MaxIdleConns": 20,

@@ -1,11 +1,12 @@
-readonly BASE_NAME=backpack-mysql-main
+readonly MONIKER=mysql-main
+readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
 readonly MASTER_CONTAINER_NAME=$BASE_NAME-master
 readonly BACKUP_CONTAINER_NAME=$BASE_NAME-backup
 readonly SLAVE_CONTAINER_NAME=$BASE_NAME-slave
-readonly MASTER_HOST_NAME=$BASE_NAME-master
-readonly BACKUP_HOST_NAME=$BASE_NAME-backup
-readonly SLAVE_HOST_NAME=$BASE_NAME-slave
+readonly MASTER_HOST_NAME=$MONIKER-master.backpack.test
+readonly BACKUP_HOST_NAME=$MONIKER-backup.backpack.test
+readonly SLAVE_HOST_NAME=$MONIKER-slave.backpack.test
 readonly WAIT_TIMEOUT=600
 
 readonly MASTER_PORT=3306

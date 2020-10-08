@@ -22,7 +22,7 @@ run() {
     --env MYSQL_DATABASE=$DB_DATABASE \
     --env MYSQL_USER=$DB_USERNAME \
     --env MYSQL_PASSWORD=$DB_PASSWORD \
-    --env ZBX_SERVER_HOST=backend.zabbix.backpack.test \
+    --env ZBX_SERVER_HOST=zabbix-backend.backpack.test \
     --env PHP_TZ=Europe/Moscow \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \

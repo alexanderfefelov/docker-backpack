@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'master.mysql.backpack.test',
+        'HOST': 'mysql-main-master.backpack.test',
         'PORT': '3306',
         'NAME': 'cubesviewer_server',
         'USER': 'cubesviewer_server_odogymahouli',
@@ -34,7 +34,7 @@ DATABASES = {
 # Base Cubes Server URL.
 # Your Cubes Server needs to be running and listening on this URL, and it needs
 # to be accessible to clients of the application.
-CUBESVIEWER_CUBES_URL = "http://backend.cubes.backpack.test:5000"
+CUBESVIEWER_CUBES_URL = "http://cubes-backend.backpack.test:5000"
 
 # CubesViewer Store backend URL. It should point to this application.
 # Note that this must match the URL that you use to access the application,
@@ -42,7 +42,7 @@ CUBESVIEWER_CUBES_URL = "http://backend.cubes.backpack.test:5000"
 # via http://localhost:8000, use the same here. Note that 127.0.0.1 and
 # 'localhost' are different strings for this purpose. (If you wish to accept
 # requests from different URLs, you may need to add CORS support).
-CUBESVIEWER_BACKEND_URL = "http://frontend.cubes.backpack.test:8000/cubesviewer"
+CUBESVIEWER_BACKEND_URL = "http://cubes-frontend.backpack.test:8000/cubesviewer"
 
 # Optional user and password tuple to access the backend, or False
 # (only applies when CubesViewer Cubes proxy is used)

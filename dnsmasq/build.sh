@@ -20,6 +20,7 @@ address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1
 
 address=/grafana.backpack.test/$1
+address=/graphite-statsd.backpack.test/$1
 address=/jenkins.backpack.test/$1
 address=/mattermost.backpack.test/$1
 address=/ofelia.backpack.test/$1
@@ -28,20 +29,20 @@ address=/rundeck.backpack.test/$1
 
 # Business intelligence
 #
-address=/backend.cubes.backpack.test/$1
-address=/frontend.cubes.backpack.test/$1
+address=/cubes-backend.backpack.test/$1
+address=/cubes-frontend.backpack.test/$1
 address=/metabase.backpack.test/$1
 
 # Databases
 #
-address=/main.mongodb.backpack.test/$1
-address=/test.mongodb.backpack.test/$1
-address=/backup.mysql.backpack.test/$1
-address=/master.mysql.backpack.test/$1
-address=/slave.mysql.backpack.test/$1
-address=/test.mysql.backpack.test/$1
-address=/main.postgresql.backpack.test/$1
-address=/test.postgresql.backpack.test/$1
+address=/mongodb-main.backpack.test/$1
+address=/mongodb-test.backpack.test/$1
+address=/mysql-main-backup.backpack.test/$1
+address=/mysql-main-master.backpack.test/$1
+address=/mysql-main-slave.backpack.test/$1
+address=/mysql-test.backpack.test/$1
+address=/postgresql-main.backpack.test/$1
+address=/postgresql-test.backpack.test/$1
 
 # Elastic stack
 #
@@ -55,16 +56,10 @@ address=/logstash.backpack.test/$1
 address=/proftpd.backpack.test/$1
 address=/samba.backpack.test/$1
 
-# Graphite
-#
-address=/carbon.backpack.test/$1
-address=/graphite.backpack.test/$1
-address=/statsd.backpack.test/$1
-
 # Guacamole
 #
-address=/backend.guacamole.backpack.test/$1
-address=/frontend.guacamole.backpack.test/$1
+address=/guacamole-backend.backpack.test/$1
+address=/guacamole-frontend.backpack.test/$1
 
 # InfluxData stack
 #
@@ -82,8 +77,8 @@ address=/rabbitmq.backpack.test/$1
 #
 address=/fastnetmon.backpack.test/$1
 address=/nav.backpack.test/$1
-address=/backend.zabbix.backpack.test/$1
-address=/frontend.zabbix.backpack.test/$1
+address=/zabbix-backend.backpack.test/$1
+address=/zabbix-frontend.backpack.test/$1
 
 # Prometheus
 #

@@ -1,6 +1,6 @@
 # backpack-cubes-backend
 
-Hostname `backend.cubes.backpack.test`
+Hostname `cubes-backend.backpack.test`
 
 ## Services
 

@@ -1,6 +1,6 @@
 # backpack-postgresql-main
 
-Hostname `main.postgresql.backpack.test`
+Hostname `postgresql-main.backpack.test`
 
 ## Services
 

@@ -1,7 +1,8 @@
-readonly BASE_NAME=backpack-samba
+readonly MONIKER=samba
+readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
 readonly CONTAINER_NAME=$BASE_NAME
-readonly HOST_NAME=$BASE_NAME
+readonly HOST_NAME=$MONIKER.backpack.test
 readonly WAIT_TIMEOUT=600
 
 export SAMBA_USERNAME=samba_romencosuesc

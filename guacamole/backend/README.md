@@ -1,6 +1,6 @@
 # backpack-guacamole-backend
 
-Hostname `backend.guacamole.backpack.test`
+Hostname `guacamole-backend.backpack.test`
 
 ## Services
 

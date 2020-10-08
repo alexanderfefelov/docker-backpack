@@ -1,5 +1,5 @@
 readonly HTTP="http --verbose --check-status"
-readonly API=http://frontend.guacamole.backpack.test:8085/guacamole/api
+readonly API=http://guacamole-frontend.backpack.test:8085/guacamole/api
 readonly API_SESSION=$API/session/data/mysql
 readonly USERNAME=admin_reuphoodeixu
 readonly PASSWORD=zaicieceifox
