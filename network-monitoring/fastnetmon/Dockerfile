@@ -24,10 +24,12 @@ COPY --from=builder /opt/ /opt/
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
-       httpie \
        jq \
        libpcap0.8 \
        netcat `# For health checks` \
+       python3-pip \
+  && pip3 --quiet install \
+       httpie \
   && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/unban.d/ \
   && cp /fastnetmon/scripts/ban.d/* /fastnetmon/scripts/attack_details.d/ \
   && mkdir --parents /fastnetmon/log \
