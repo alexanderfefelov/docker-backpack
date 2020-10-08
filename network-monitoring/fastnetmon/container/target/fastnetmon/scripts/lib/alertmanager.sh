@@ -2,7 +2,7 @@ readonly ALERTMANAGER_HOST=${ALERTMANAGER_HOST:-alertmanager.test}
 readonly ALERTMANAGER_PORT=${ALERTMANAGER_PORT:-9093}
 
 readonly ALERTMANAGER_API=http://$ALERTMANAGER_HOST:$ALERTMANAGER_PORT/api/v2
-readonly ALERTMANAGER_HTTP="http --check-status --ignore-stdin"
+readonly ALERTMANAGER_HTTP="http --check-status"
 
 #
 # Arguments:
@@ -38,18 +38,18 @@ create_alert() {
   }'
 
   local alert
-  alert=${ALERT_TEMPLATE//_ALERT_NAME_/"$ALERT_NAME"}
-  alert=${alert//_SEVERITY_/"$SEVERITY"}
-  alert=${alert//_ENV_/"$ENV"}
-  alert=${alert//_ACTOR_/"$ACTOR"}
-  alert=${alert//_ACTION_/"$ACTION"}
-  alert=${alert//_VICTIM_/"$VICTIM"}
-  alert=${alert//_SUMMARY_/"$SUMMARY"}
-  alert=${alert//_DESCRIPTION_/"$DESCRIPTION"}
+  alert=${ALERT_TEMPLATE//_ALERT_NAME_/$ALERT_NAME}
+  alert=${alert//_SEVERITY_/$SEVERITY}
+  alert=${alert//_ENV_/$ENV}
+  alert=${alert//_ACTOR_/$ACTOR}
+  alert=${alert//_ACTION_/$ACTION}
+  alert=${alert//_VICTIM_/$VICTIM}
+  alert=${alert//_SUMMARY_/$SUMMARY}
+  alert=${alert//_DESCRIPTION_/$DESCRIPTION}
 
   local alerts="[
     $alert
   ]"
 
-  echo "$alerts" | execute_post_request alerts
+  echo $alerts | execute_post_request alerts
 }
