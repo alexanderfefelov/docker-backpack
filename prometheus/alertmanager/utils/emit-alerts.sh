@@ -69,8 +69,8 @@ for i in {1..42}; do
   sensor=$(roll_dice)
   internal_id=$(head --bytes 10 /dev/random | base32)
   value=$RANDOM
-  summary="[$i] $(lorem -p 3)"
-  description=$(lorem -p 3)
+  summary="[$i] $(lorem -p 3 | tr '\n' ' ')"
+  description=$(lorem -p 3 | tr '\n' ' ')
   generator_url="http:\/\/foo.bar.baz.backpack.test\/$internal_id"
 
   alert=$(
