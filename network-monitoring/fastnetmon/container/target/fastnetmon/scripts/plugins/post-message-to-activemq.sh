@@ -6,4 +6,4 @@ ACTIVEMQ_PASSWORD=xaocheitohto
 
 destination="queue://fastnetmon.alert.$ACTOR.$ACTION"
 message="$ACTOR $ACTION $IP_ADDRESS $DIRECTION $PPS"
-post_message $destination "$message"
+response=$(post_message $destination "$message")
