@@ -4,6 +4,8 @@
 
 readonly ALERT_TEMPLATE='
   {
+    "startsAt": "_STARTS_AT_",
+    "endsAt": "_ENDS_AT_",
     "labels": {
       "alertname": "_ALERTNAME_",
       "env": "_ENV_",
@@ -72,9 +74,13 @@ for i in {1..42}; do
   summary="[$i] $(lorem -p 3 | tr '\n' ' ')"
   description=$(lorem -p 3 | tr '\n' ' ')
   generator_url="http:\/\/foo.bar.baz.backpack.test\/$internal_id"
+  starts_at=$(date --iso-8601=seconds --date "-1$(roll_dice) minutes")
+  ends_at=$(date --iso-8601=seconds --date "+$(roll_dice) hours")
 
   alert=$(
     echo $ALERT_TEMPLATE \
+      | sed "s/_STARTS_AT_/$starts_at/g" \
+      | sed "s/_ENDS_AT_/$ends_at/g" \
       | sed "s/_ALERTNAME_/$alertname/g" \
       | sed "s/_ENV_/$env/g" \
       | sed "s/_LEVEL_/$level/g" \
