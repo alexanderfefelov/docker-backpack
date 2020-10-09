@@ -9,5 +9,4 @@ create_alert \
   "$ACTOR" \
   "$ACTION" \
   "$IP_ADDRESS" \
-  "$SUMMARY" \
-  "$DETAILS"
+  "$SUMMARY"

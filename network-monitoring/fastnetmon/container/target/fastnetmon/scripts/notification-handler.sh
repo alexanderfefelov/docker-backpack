@@ -8,11 +8,15 @@ LOGGER_SYSLOG_HOST=logstash.backpack.test
 LOGGER_SYSLOG_PORT=5514
 . "$LIB_DIR"/logging.sh
 
-export IP_ADDRESS=$1 DIRECTION=$2 PPS=$3 ACTION=$4 DETAILS=$(< /dev/stdin)
+export IP_ADDRESS=$1 DIRECTION=$2 PPS=$3 ACTION=$4
 
 handle_action() {
+  local tmp_file=$(mktemp fastnetmon.$ACTION.details.XXXXXXXXXXXX)
+  cat > $tmp_file
+
   export ALERT_NAME="FastNetMon alert" SEVERITY=critical ENV=testing ACTOR=$(hostname --fqdn)
   export SUMMARY="$ACTOR: $ACTION $IP_ADDRESS, $DIRECTION $PPS pps"
+  export DETAILS_FILE=$tmp_file
 
   local -r HANDLERS_DIR="$SCRIPTS_DIR/$ACTION.d"
   for handler in $HANDLERS_DIR/*; do
@@ -25,6 +29,8 @@ handle_action() {
         ;;
     esac
   done
+
+  rm --force $tmp_file
 }
 
 handle_unknown_action() {

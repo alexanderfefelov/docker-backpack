@@ -9,9 +9,5 @@ readonly CHANNEL_NAME=alerts
 
 token=$(authenticate)
 channel_id=$(get_channel_id_by_team_name_and_channel_name $token $TEAM_NAME $CHANNEL_NAME)
-message="
-[ $ALERT_NAME ] $SUMMARY
-
-$DETAILS
-"
+message="[ $ALERT_NAME ] $SUMMARY"
 create_post $token $channel_id "$message"
