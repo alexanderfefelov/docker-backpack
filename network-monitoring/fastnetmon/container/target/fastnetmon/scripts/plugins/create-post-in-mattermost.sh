@@ -7,7 +7,9 @@ MATTERMOST_PASSWORD="8#Shioghaefeim"
 readonly TEAM_NAME=backpack
 readonly CHANNEL_NAME=alerts
 
+timestamp=$(date --iso-8601=seconds)
 token=$(authenticate)
 channel_id=$(get_channel_id_by_team_name_and_channel_name $token $TEAM_NAME $CHANNEL_NAME)
-message="[ $ALERT_NAME ] $SUMMARY"
+message="**$ALERT_NAME** $timestamp
+$SUMMARY"
 response=$(create_post $token $channel_id "$message")

@@ -25,6 +25,6 @@ execute_post_form_request() {
 # Returns:
 #   none
 #
-post_message() {
+send_message() {
   execute_post_form_request message destination==$1 body="$2"
 }

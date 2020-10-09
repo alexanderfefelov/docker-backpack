@@ -10,20 +10,20 @@ readonly ACTIONS="
 
 readonly PLUGINS_ban="
   create-alert-in-alertmanager.sh
-  post-message-to-activemq.sh
-  post-message-to-mattermost.sh
+  create-post-in-mattermost.sh
+  send-message-to-activemq.sh
 "
 
 readonly PLUGINS_unban="
   create-alert-in-alertmanager.sh
-  post-message-to-activemq.sh
-  post-message-to-mattermost.sh
+  create-post-in-mattermost.sh
+  send-message-to-activemq.sh
 "
 
 readonly PLUGINS_attack_details="
   create-alert-in-alertmanager.sh
-  post-message-to-activemq.sh
-  post-message-to-mattermost.sh
+  create-post-in-mattermost.sh
+  send-message-to-activemq.sh
 "
 
 if [ ! -f $CONF_FILE ]; then
