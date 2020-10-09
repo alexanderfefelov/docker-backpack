@@ -17,13 +17,15 @@ readonly LOGGER_IMPL_REMOTE_SYSLOG="logger --server $LOGGER_SYSLOG_HOST --port $
 readonly LOGGER=${LOGGER:-$LOGGER_IMPL_REMOTE_SYSLOG}
 
 log_notice() {
+  local -r TIMESTAMP=$(date --iso-8601=seconds)
   local -r MESSAGE="[$BASHPID] $SCRIPT: $@"
-  echo $MESSAGE
+  echo "$TIMESTAMP $MESSAGE"
   $LOGGER --priority $LOGGER_PRIORITY_NOTICE $MESSAGE
 }
 
 log_error() {
+  local -r TIMESTAMP=$(date --iso-8601=seconds)
   local -r MESSAGE="[$BASHPID] $SCRIPT: $@"
-  echo $MESSAGE >&2
+  echo "$TIMESTAMP $MESSAGE" >&2
   $LOGGER --priority $LOGGER_PRIORITY_ERROR $MESSAGE
 }
