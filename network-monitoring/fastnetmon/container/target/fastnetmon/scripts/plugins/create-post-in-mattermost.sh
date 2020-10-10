@@ -10,6 +10,8 @@ readonly CHANNEL_NAME=alerts
 timestamp=$(date --iso-8601=seconds)
 token=$(authenticate)
 channel_id=$(get_channel_id_by_team_name_and_channel_name $token $TEAM_NAME $CHANNEL_NAME)
-file_id=$(upload_file $token $channel_id "$DETAILS_FILE")
+if [ -s "$DETAILS_FILE" ]; then
+  file_id=$(upload_file $token $channel_id "$DETAILS_FILE")
+fi
 message="**$ALERT_NAME** $timestamp $SUMMARY"
 post_id=$(create_post $token $channel_id "$message" $file_id)
