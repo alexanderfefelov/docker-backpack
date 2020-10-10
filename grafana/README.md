@@ -7,3 +7,11 @@ Hostname `grafana.backpack.test`
 | Port | Service | Credentials
 | ---: | :------ | :----------
 | [3000](http://grafana.backpack.test:3000) | [HTTP API](https://grafana.com/docs/grafana/latest/http_api/) and management console | `admin_expotizopuro` / `smirespascro`
+
+## Preconfigured data sources
+
+- Elasticsearch @ [backpack-elasticsearch](../elastic/elasticsearch)
+- Graphite @ [backpack-graphite-statsd](../graphite-statsd)
+- InfluxDB @ [backpack-influxdb](../influxdata/influxdb)
+- Prometheus @ [backpack-prometheus](../prometheus/prometheus)
+- Redis @ [backpack-redis](../redis)
