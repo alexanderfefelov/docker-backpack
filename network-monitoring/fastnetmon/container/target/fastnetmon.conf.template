@@ -34,7 +34,7 @@ unban_only_if_attack_finished = on
 
 # enable per subnet speed meters
 # For each subnet, list track speed in bps and pps for both directions
-enable_subnet_counters = off
+enable_subnet_counters = on
 
 # list of all your networks in CIDR format
 networks_list_path = /fastnetmon/conf/networks
@@ -43,7 +43,7 @@ networks_list_path = /fastnetmon/conf/networks
 white_list_path = /fastnetmon/conf/networks.whitelist
 
 # redraw period for client's screen
-check_period = 1
+check_period = 10
 
 # Connection tracking is very useful for attack detection because it provides huge amounts of information,
 # but it's very CPU intensive and not recommended in big networks
@@ -52,7 +52,7 @@ enable_connection_tracking = off
 # Different approaches to attack detection
 ban_for_pps = on
 ban_for_bandwidth = on
-ban_for_flows = off
+ban_for_flows = on
 
 # Limits for Dos/DDoS attacks
 threshold_pps = 20000
@@ -187,10 +187,10 @@ notify_script_path = /fastnetmon/scripts/notification-handler.sh
 notify_script_pass_details = on
 
 # collect a full dump of the attack with full payload in pcap compatible format
-collect_attack_pcap_dumps = on
+collect_attack_pcap_dumps = off
 
 # Execute Deep Packet Inspection on captured PCAP packets
-process_pcap_attack_dumps_with_dpi = on
+process_pcap_attack_dumps_with_dpi = off
 
 # Save attack details to Redis
 redis_enabled = on
@@ -296,4 +296,4 @@ enable_api = off
 # Field used for sorting in client, valid values are: packets, bytes or flows
 sort_parameter = packets
 # How much IPs will be listed for incoming and outgoing channel eaters
-max_ips_in_list = 7
+max_ips_in_list = 13
