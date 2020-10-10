@@ -75,6 +75,24 @@ execute_post_request() {
 #
 # Arguments:
 #   $1 - bearer token
+#   $2 - significant part of the API URL
+#   $3... - request parameters
+# Returns:
+#   response body
+#
+execute_post_form_request() {
+  local response=$(
+    $HTTP --form --body \
+      POST $API/$2 \
+        "Authorization: Bearer $1" \
+        "${@:3}"
+  )
+  echo $response
+}
+
+#
+# Arguments:
+#   $1 - bearer token
 #   $2 - team name
 # Returns:
 #   team id
@@ -108,13 +126,30 @@ get_channel_id_by_team_name_and_channel_name() {
 #   $1 - bearer token
 #   $2 - channel id
 #   $3 - message
+#   $4 - file id
 # Returns:
 #   message id
 #
 create_post() {
   local id=$(
-    execute_post_request $1 posts channel_id=$2 message="$3" \
+    execute_post_request $1 posts channel_id=$2 message="$3" file_ids:="[\"$4\"]" \
     | jq --raw-output .id
+  )
+  echo $id
+}
+
+#
+# Arguments:
+#   $1 - bearer token
+#   $2 - channel id
+#   $3 - file path
+# Returns:
+#   file id
+#
+upload_file() {
+  local id=$(
+    execute_post_form_request $1 files channel_id==$2 files@"$3" \
+    | jq --raw-output .file_infos[0].id
   )
   echo $id
 }

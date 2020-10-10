@@ -11,11 +11,14 @@ readonly ACTIVEMQ_HTTP="http --check-status --ignore-stdin --auth-type basic --a
 #   $1 - significant part of the API URL
 #   $2... - request parameters
 # Returns:
-#   none
+#   response body
 #
 execute_post_form_request() {
-  $ACTIVEMQ_HTTP --form \
-    POST $ACTIVEMQ_API/$1 "${@:2}"
+  local response=$(
+    $ACTIVEMQ_HTTP --form --body \
+      POST $ACTIVEMQ_API/$1 "${@:2}"
+  )
+  echo $response
 }
 
 #
@@ -23,8 +26,11 @@ execute_post_form_request() {
 #   $1 - destination
 #   $2 - message
 # Returns:
-#   none
+#   response body
 #
 send_message() {
-  execute_post_form_request message destination==$1 body="$2"
+  local response=$(
+    execute_post_form_request message destination==$1 body="$2"
+  )
+  echo $response
 }

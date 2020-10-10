@@ -11,7 +11,7 @@ LOGGER_SYSLOG_PORT=5514
 export IP_ADDRESS=$1 DIRECTION=$2 PPS=$3 ACTION=$4
 
 handle_action() {
-  local tmp_file=$(mktemp fastnetmon.$ACTION.details.XXXXXXXXXXXX)
+  local tmp_file=$(mktemp $ACTION.XXXXXXXXXX.txt)
   cat > $tmp_file
 
   export ALERT_NAME="FastNetMon alert" SEVERITY=critical ENV=testing ACTOR=$(hostname --fqdn)

@@ -7,7 +7,9 @@ readonly CHANNEL_NAME=test
 
 token=$(authenticate $USERNAME $PASSWORD)
 channel_id=$(get_channel_id_by_team_name_and_channel_name $token $TEAM_NAME $CHANNEL_NAME)
+file_path=$(realpath "$0")
 for i in {1..7}; do
+  file_id=$(upload_file $token $channel_id "$file_path")
   message=$(lorem -p 3)
-  create_post $token $channel_id "$message"
+  post_id=$(create_post $token $channel_id "$message" $file_id)
 done

@@ -20,7 +20,7 @@ execute_post_request() {
 }
 
 create_alert() {
-  local -r ALERT_NAME=$1 SEVERITY=$2 ENV=$3 ACTOR=$4 ACTION=$5 VICTIM=$6 SUMMARY=$7 DESCRIPTION=$8
+  local -r ALERT_NAME=$1 SEVERITY=$2 ENV=$3 ACTOR=$4 ACTION=$5 VICTIM=$6 SUMMARY=$7
 
   local -r ALERT_TEMPLATE='{
     "labels": {
@@ -32,8 +32,7 @@ create_alert() {
       "victim": "_VICTIM_"
     },
     "annotations": {
-      "summary": "_SUMMARY_",
-      "description": "_DESCRIPTION_"
+      "summary": "_SUMMARY_"
     }
   }'
 
@@ -45,11 +44,10 @@ create_alert() {
   alert=${alert//_ACTION_/$ACTION}
   alert=${alert//_VICTIM_/$VICTIM}
   alert=${alert//_SUMMARY_/$SUMMARY}
-  alert=${alert//_DESCRIPTION_/$DESCRIPTION}
 
   local alerts="[
     $alert
   ]"
 
-  echo $alerts | execute_post_request alerts
+  execute_post_request alerts <<< $(echo $alerts)
 }

@@ -65,7 +65,7 @@ get_level() {
 for i in {1..42}; do
   echo $i
 
-  alertname="Parameter value is amazing"
+  alert_name="Parameter value is amazing"
   env=$(get_env)
   level=$(get_level)
   sensor=$(roll_dice)
@@ -81,7 +81,7 @@ for i in {1..42}; do
     echo $ALERT_TEMPLATE \
       | sed "s/_STARTS_AT_/$starts_at/g" \
       | sed "s/_ENDS_AT_/$ends_at/g" \
-      | sed "s/_ALERTNAME_/$alertname/g" \
+      | sed "s/_ALERTNAME_/$alert_name/g" \
       | sed "s/_ENV_/$env/g" \
       | sed "s/_LEVEL_/$level/g" \
       | sed "s/_SENSOR_/$sensor/g" \
@@ -97,5 +97,5 @@ for i in {1..42}; do
     ]
   "
 
-  echo $alerts | execute_post_request alerts
+  execute_post_request alerts <<< $(echo $alerts)
 done

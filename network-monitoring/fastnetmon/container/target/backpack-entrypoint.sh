@@ -11,19 +11,22 @@ readonly ACTIONS="
 readonly PLUGINS_ban="
   create-alert-in-alertmanager.sh
   create-post-in-mattermost.sh
-  send-message-to-activemq.sh
+  send-message-to-activemq-queue.sh
+  send-message-to-activemq-topic.sh
 "
 
 readonly PLUGINS_unban="
   create-alert-in-alertmanager.sh
   create-post-in-mattermost.sh
-  send-message-to-activemq.sh
+  send-message-to-activemq-queue.sh
+  send-message-to-activemq-topic.sh
 "
 
 readonly PLUGINS_attack_details="
   create-alert-in-alertmanager.sh
   create-post-in-mattermost.sh
-  send-message-to-activemq.sh
+  send-message-to-activemq-queue.sh
+  send-message-to-activemq-topic.sh
 "
 
 if [ ! -f $CONF_FILE ]; then
@@ -40,6 +43,7 @@ if [ ! -f $CONF_FILE ]; then
     echo Configuring plugins for \"$action\" action...
     plugin_list="PLUGINS_$action"
     for plugin in ${!plugin_list}; do
+      [[ "$plugin" =~ ^#.*$ ]] && continue
       ln --symbolic --verbose /fastnetmon/scripts/plugins/$plugin /fastnetmon/scripts/$action.d/$plugin
     done
     echo ...plugins configured
