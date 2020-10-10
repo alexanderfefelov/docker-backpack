@@ -32,7 +32,7 @@ create_alert() {
       "victim": "_VICTIM_"
     },
     "annotations": {
-      "uuid": "_UUID_"
+      "uuid": "_UUID_",
       "summary": "_SUMMARY_"
     }
   }'
