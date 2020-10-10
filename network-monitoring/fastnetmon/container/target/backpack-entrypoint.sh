@@ -13,6 +13,7 @@ readonly PLUGINS_ban="
   create-post-in-mattermost.sh
   send-message-to-activemq-queue.sh
   send-message-to-activemq-topic.sh
+  store-fact-in-mysql.sh
 "
 
 readonly PLUGINS_unban="
@@ -20,6 +21,7 @@ readonly PLUGINS_unban="
   create-post-in-mattermost.sh
   send-message-to-activemq-queue.sh
   send-message-to-activemq-topic.sh
+  store-fact-in-mysql.sh
 "
 
 readonly PLUGINS_attack_details="
@@ -27,6 +29,7 @@ readonly PLUGINS_attack_details="
   create-post-in-mattermost.sh
   send-message-to-activemq-queue.sh
   send-message-to-activemq-topic.sh
+  store-fact-in-mysql.sh
 "
 
 if [ ! -f $CONF_FILE ]; then

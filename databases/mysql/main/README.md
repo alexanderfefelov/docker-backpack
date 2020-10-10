@@ -12,6 +12,7 @@ Hostnames:
 | ---: | :------ | :----------
 | 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `backup_letocryloite` / `almatramushi`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
+| | | `fastnetmon_boeweewoonee` / `uheeghienoej`
 | | | `grafana_solenstgalog` / `peritypindol`
 | | | `graphite_comoneigalky` / `strignenecoi`
 | | | `guacamole_peoghonahmoh` / `gechaegiezav`
@@ -29,6 +30,7 @@ Hostnames:
 | Name | Description
 | :--- | :----------
 | `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
+| `fastnetmon` | [FastNetMon](../../../network-monitoring/fastnetmon) |
 | `grafana` | [Grafana](../../../grafana)
 | `graphite` | [Graphite](../../../graphite-statsd)
 | `guacamole` | [Guacamole](../../../guacamole/frontend)

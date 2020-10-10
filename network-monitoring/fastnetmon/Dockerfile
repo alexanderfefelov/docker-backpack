@@ -26,6 +26,7 @@ RUN apt-get -qq update \
        ca-certificates \
        jq \
        libpcap0.8 \
+       mysql-client \
        netcat `# For health checks` \
        python3-pip \
   && pip3 --quiet install \
