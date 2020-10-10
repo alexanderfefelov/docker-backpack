@@ -29,6 +29,7 @@ RUN apt-get -qq update \
        mysql-client \
        netcat `# For health checks` \
        python3-pip \
+       uuid-runtime \
   && pip3 --quiet install \
        httpie \
   && mkdir --parents /fastnetmon/log \

@@ -18,14 +18,14 @@ readonly LOGGER=${LOGGER:-$LOGGER_IMPL_REMOTE_SYSLOG}
 
 log_notice() {
   local -r TIMESTAMP=$(date --iso-8601=seconds)
-  local -r MESSAGE="[$BASHPID] $SCRIPT: $@"
+  local -r MESSAGE="[$BASHPID] $(basename "$SCRIPT"): $@"
   echo "$TIMESTAMP $MESSAGE"
   $LOGGER --priority $LOGGER_PRIORITY_NOTICE $MESSAGE
 }
 
 log_error() {
   local -r TIMESTAMP=$(date --iso-8601=seconds)
-  local -r MESSAGE="[$BASHPID] $SCRIPT: $@"
+  local -r MESSAGE="[$BASHPID] $(basename "$SCRIPT"): $@"
   echo "$TIMESTAMP $MESSAGE" >&2
   $LOGGER --priority $LOGGER_PRIORITY_ERROR $MESSAGE
 }

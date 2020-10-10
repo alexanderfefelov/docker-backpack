@@ -15,6 +15,7 @@ initialize_database() {
     USE $DB_DATABASE;
     CREATE TABLE fact(
       id         INT         NOT NULL AUTO_INCREMENT,
+      uuid       CHAR(36)    NOT NULL UNIQUE,
       created_at DATETIME    NOT NULL DEFAULT NOW(),
       actor      VARCHAR(128) NOT NULL,
       action     VARCHAR(32) NOT NULL,
@@ -22,14 +23,13 @@ initialize_database() {
       direction  VARCHAR(16) NOT NULL,
       pps        INT         NOT NULL,
       details    MEDIUMTEXT  NOT NULL,
-      PRIMARY KEY (id)
+      PRIMARY KEY (id),
+      KEY idx_fact_001 (created_at),
+      KEY idx_fact_002 (actor),
+      KEY idx_fact_003 (action),
+      KEY idx_fact_004 (victim),
+      KEY idx_fact_005 (direction)
     );
-    CREATE INDEX idx_fact_001 ON fact (created_at);
-    CREATE INDEX idx_fact_002 ON fact (actor);
-    CREATE INDEX idx_fact_003 ON fact (action);
-    CREATE INDEX idx_fact_004 ON fact (victim);
-    CREATE INDEX idx_fact_005 ON fact (direction);
-
     CREATE USER IF NOT EXISTS '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
     GRANT INSERT ON $DB_DATABASE.fact TO '$DB_USERNAME'@'%';
   "

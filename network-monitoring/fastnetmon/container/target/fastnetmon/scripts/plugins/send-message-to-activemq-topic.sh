@@ -5,5 +5,5 @@ ACTIVEMQ_PASSWORD=xaocheitohto
 . "$LIB_DIR"/activemq.sh
 
 destination="topic://fastnetmon.alert.$ACTOR.$ACTION"
-message="$ACTOR $ACTION $IP_ADDRESS $DIRECTION $PPS"
+message="$UUID $ACTOR $ACTION $IP_ADDRESS $DIRECTION $PPS"
 response=$(send_message $destination "$message")

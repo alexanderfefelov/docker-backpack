@@ -5,4 +5,4 @@ MYSQL_USERNAME=fastnetmon_boeweewoonee
 MYSQL_PASSWORD=uheeghienoej
 . "$LIB_DIR"/mysql.sh
 
-store_fact "$ACTOR" "$ACTION" "$IP_ADDRESS" "$DIRECTION" "$PPS" "$(< $DETAILS_FILE)"
+store_fact "$UUID" "$ACTOR" "$ACTION" "$IP_ADDRESS" "$DIRECTION" "$PPS" "$(< $DETAILS_FILE)"
