@@ -23,6 +23,7 @@ Hostnames:
 | | | `root` / `camycorymicu`
 | | | `rundeck_bineurvendle` / `nocionersava`
 | | | `telegraf_resterfigral` / `mpyrismelort`
+| | | `xwiki_thezoepebood` / `ohphahshielu`
 | | | `zabbix_webarnalastr` / `dentinguarne`
 
 ## Databases
@@ -37,4 +38,5 @@ Hostnames:
 | `mattermost` | [Mattermost](../../../mattermost)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
 | `rundeck` | [Rundeck](../../../rundeck)
+| `xwiki` | [XWiki](../../../.playground/xwiki)
 | `zabbix` | [Zabbix](../../../network-monitoring/zabbix)
