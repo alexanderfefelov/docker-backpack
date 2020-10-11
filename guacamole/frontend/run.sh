@@ -54,6 +54,6 @@ fi
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
-  (cd init && ./initialize-guacamole.sh)
+  (cd init && bash initialize-guacamole.sh)
 fi
 print_container_info $CONTAINER_NAME

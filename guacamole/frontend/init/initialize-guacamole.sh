@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Exit immediately if a pipeline, which may consist of a single simple command,
 # a list, or a compound command returns a non-zero status
 set -e
@@ -15,9 +13,9 @@ log() {
 
 authenticate() {
   log "Authenticating $1 / $2"
-  local response="$($HTTP --form --body POST $API/tokens username=$1 password=$2)"
+  local -r response="$($HTTP --form --body POST $API/tokens username=$1 password=$2)"
   log "Response: $response"
-  local token=$(echo $response | jq --raw-output .authToken)
+  local -r token=$(echo $response | jq --raw-output .authToken)
   log "Token received: $token"
   echo $token
 }
