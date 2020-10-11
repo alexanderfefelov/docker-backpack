@@ -5,9 +5,6 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$MONIKER.backpack.test
 readonly WAIT_TIMEOUT=600
 
-export IMAGE_NAME
-export FASTNETMON_VERSION=1.1.7
-
 readonly GRAPHITE_HOST=influxdb.backpack.test
 readonly GRAPHITE_PORT=2013
 readonly DB_HOST=mysql-main-master.backpack.test
@@ -17,6 +14,15 @@ readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=fastnetmon_boeweewoonee
 readonly DB_PASSWORD=uheeghienoej
+
+# Dockerfile
+#
+export IMAGE_NAME
+export FASTNETMON_VERSION=1.1.7
+
+# init/initialize-database.sql
+#
+export DB_DATABASE DB_USERNAME DB_PASSWORD
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

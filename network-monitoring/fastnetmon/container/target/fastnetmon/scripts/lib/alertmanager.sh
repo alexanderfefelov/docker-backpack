@@ -22,34 +22,25 @@ execute_post_request() {
 create_alert() {
   local -r UUID=$1 ALERT_NAME=$2 SEVERITY=$3 ENV=$4 ACTOR=$5 ACTION=$6 VICTIM=$7 SUMMARY=$8
 
+  export UUID ALERT_NAME SEVERITY ENV ACTOR ACTION VICTIM SUMMARY
   local -r ALERT_TEMPLATE='{
     "labels": {
-      "alertname": "_ALERT_NAME_",
-      "severity": "_SEVERITY_",
-      "env": "_ENV_",
-      "actor": "_ACTOR_",
-      "action": "_ACTION_",
-      "victim": "_VICTIM_"
+      "alertname": "$ALERT_NAME",
+      "severity": "$SEVERITY",
+      "env": "$ENV",
+      "actor": "$ACTOR",
+      "action": "$ACTION",
+      "victim": "$VICTIM"
     },
     "annotations": {
-      "uuid": "_UUID_",
-      "summary": "_SUMMARY_"
+      "uuid": "$UUID",
+      "summary": "$SUMMARY"
     }
   }'
-
-  local alert
-  alert=${ALERT_TEMPLATE//_UUID_/$UUID}
-  alert=${alert//_ALERT_NAME_/$ALERT_NAME}
-  alert=${alert//_SEVERITY_/$SEVERITY}
-  alert=${alert//_ENV_/$ENV}
-  alert=${alert//_ACTOR_/$ACTOR}
-  alert=${alert//_ACTION_/$ACTION}
-  alert=${alert//_VICTIM_/$VICTIM}
-  alert=${alert//_SUMMARY_/$SUMMARY}
-
+  local alert=$(envsubst <<< "$ALERT_TEMPLATE")
   local alerts="[
     $alert
   ]"
 
-  execute_post_request alerts <<< $(echo $alerts)
+  execute_post_request alerts <<< "$alerts"
 }

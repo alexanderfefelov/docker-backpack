@@ -5,6 +5,7 @@
 readonly PREREQUISITES="
   awk
   docker
+  envsubst
   htpasswd
   http
   ip

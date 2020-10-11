@@ -24,6 +24,7 @@ COPY --from=builder /opt/ /opt/
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
+       gettext-base \
        jq \
        libpcap0.8 \
        mysql-client \
