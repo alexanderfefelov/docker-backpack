@@ -12,7 +12,7 @@ RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
        curl `# For health checks` \
-  && tar --extract --gzip --file $MATTERMOST_STUFF \
+  && tar --extract --gzip --file=$MATTERMOST_STUFF \
   && useradd $MATTERMOST_USER --no-create-home \
   && mkdir --parents $MATTERMOST_HOME/data \
   && apt-get -qq clean \
