@@ -10,11 +10,8 @@ readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME -
 
 initialize_database() {
   echo Initializing database...
-  $MYSQL --execute="
-    CREATE DATABASE $DB_DATABASE;
-    CREATE USER IF NOT EXISTS '$DB_USERNAME'@'%' IDENTIFIED WITH mysql_native_password BY '$DB_PASSWORD';
-    GRANT ALL ON $DB_DATABASE.* TO '$DB_USERNAME'@'%';
-  "
+  export DB_DATABASE DB_USERNAME DB_PASSWORD
+  $MYSQL --execute="$(envsubst < init/initialize-database.sql)"
 
   local -r DB_SQL_FILE=init/db.sql.generated
   docker run --rm guacamole/guacamole:1.2.0 /opt/guacamole/bin/initdb.sh --mysql > $DB_SQL_FILE

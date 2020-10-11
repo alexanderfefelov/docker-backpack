@@ -1,3 +1,5 @@
+readonly NAV_VERSION=5.0.6
+
 readonly MONIKER=nav
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
@@ -12,9 +14,6 @@ readonly DB_ROOT_USERNAME=postgres_ibleabaldine
 readonly DB_ROOT_PASSWORD=undestrokend
 readonly DB_USERNAME=nav_smarigarybol
 readonly DB_PASSWORD=tateicenstop
-
-export IMAGE_NAME
-export NAV_VERSION=5.0.6
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

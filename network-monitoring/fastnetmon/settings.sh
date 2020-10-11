@@ -1,3 +1,5 @@
+readonly FASTNETMON_VERSION=1.1.7
+
 readonly MONIKER=fastnetmon
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
