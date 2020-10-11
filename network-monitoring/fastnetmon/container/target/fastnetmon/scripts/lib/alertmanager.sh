@@ -22,7 +22,6 @@ execute_post_request() {
 create_alert() {
   local -r UUID=$1 ALERT_NAME=$2 SEVERITY=$3 ENV=$4 ACTOR=$5 ACTION=$6 VICTIM=$7 SUMMARY=$8
 
-  export UUID ALERT_NAME SEVERITY ENV ACTOR ACTION VICTIM SUMMARY
   local -r ALERT_TEMPLATE='{
     "labels": {
       "alertname": "$ALERT_NAME",
@@ -37,6 +36,8 @@ create_alert() {
       "summary": "$SUMMARY"
     }
   }'
+
+  export UUID ALERT_NAME SEVERITY ENV ACTOR ACTION VICTIM SUMMARY
   local alert=$(envsubst <<< "$ALERT_TEMPLATE")
   local alerts="[
     $alert

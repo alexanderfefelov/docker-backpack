@@ -10,6 +10,7 @@ readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME -
 
 initialize_database() {
   echo Initializing database...
+  export DB_DATABASE DB_USERNAME DB_PASSWORD
   $MYSQL --execute="$(envsubst < init/initialize-database.sql)"
   echo ...database initialized
 }

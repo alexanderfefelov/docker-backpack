@@ -5,6 +5,9 @@
 
 . settings.sh
 
+export IMAGE_NAME
+export FASTNETMON_VERSION=1.1.7
+
 docker build \
   --build-arg IMAGE_NAME \
   --build-arg FASTNETMON_VERSION \

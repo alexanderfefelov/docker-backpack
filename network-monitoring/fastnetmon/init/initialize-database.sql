@@ -1,15 +1,15 @@
 CREATE DATABASE $DB_DATABASE;
 USE $DB_DATABASE;
 CREATE TABLE fact(
-  id         INT         NOT NULL AUTO_INCREMENT,
-  uuid       CHAR(36)    NOT NULL UNIQUE,
-  created_at DATETIME    NOT NULL DEFAULT NOW(),
+  id         INT          NOT NULL AUTO_INCREMENT,
+  uuid       CHAR(36)     NOT NULL UNIQUE,
+  created_at DATETIME     NOT NULL DEFAULT NOW(),
   actor      VARCHAR(128) NOT NULL,
-  action     VARCHAR(32) NOT NULL,
-  victim     INT         NOT NULL,
-  direction  VARCHAR(16) NOT NULL,
-  pps        INT         NOT NULL,
-  details    MEDIUMTEXT  NOT NULL,
+  action     VARCHAR(32)  NOT NULL,
+  victim     INT          NOT NULL,
+  direction  VARCHAR(16)  NOT NULL,
+  pps        INT          NOT NULL,
+  details    MEDIUMTEXT   NOT NULL,
   PRIMARY KEY (id),
   KEY idx_fact_001 (created_at),
   KEY idx_fact_002 (actor),

@@ -15,14 +15,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=fastnetmon_boeweewoonee
 readonly DB_PASSWORD=uheeghienoej
 
-# Dockerfile
-#
-export IMAGE_NAME
-export FASTNETMON_VERSION=1.1.7
-
-# init/initialize-database.sql
-#
-export DB_DATABASE DB_USERNAME DB_PASSWORD
-
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

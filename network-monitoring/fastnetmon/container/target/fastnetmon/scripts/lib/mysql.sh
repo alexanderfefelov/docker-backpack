@@ -11,7 +11,7 @@ store_fact() {
 
   local query="
     INSERT INTO fact(uuid, actor, action, victim, direction, pps, details)
-      VALUES('$UUID', '$ACTOR', '$ACTION', inet_aton('$VICTIM'), '$DIRECTION', '$PPS', '$DETAILS');
+      VALUES('$UUID', '$ACTOR', '$ACTION', inet_aton('$VICTIM'), '$DIRECTION', $PPS, '$DETAILS');
   "
 
   $MYSQL $MYSQL_DB <<< "$query"
