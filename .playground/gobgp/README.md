@@ -6,3 +6,5 @@ Hostname `gobgp.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
+| 179 | BGP | -
+| 50051 | gRPC | -
