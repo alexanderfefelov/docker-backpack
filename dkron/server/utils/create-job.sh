@@ -56,4 +56,4 @@ echo $NAME
 
 export NAME DISPLAY_NAME MINUTES K1 V1 K2 V2
 job=$(envsubst <<< "$JOB_TEMPLATE")
-response=$(execute_post_request jobs <<< $(echo $job))
+response=$(execute_post_request jobs <<< "$job")
