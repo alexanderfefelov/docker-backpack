@@ -23,7 +23,6 @@ address=/grafana.backpack.test/$1
 address=/graphite-statsd.backpack.test/$1
 address=/jenkins.backpack.test/$1
 address=/mattermost.backpack.test/$1
-address=/ofelia.backpack.test/$1
 address=/redis.backpack.test/$1
 address=/rundeck.backpack.test/$1
 
@@ -48,6 +47,7 @@ address=/postgresql-test.backpack.test/$1
 #
 address=/dkron-server.backpack.test/$1
 address=/dkron-agent-1.backpack.test/$1
+address=/dkron-agent-2.backpack.test/$1
 
 # Elastic stack
 #

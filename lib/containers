@@ -6,7 +6,6 @@ backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
 backpack-mattermost
-backpack-ofelia
 backpack-redis
 backpack-rundeck
 
@@ -30,6 +29,8 @@ backpack-postgresql-test
 # Dkron
 #
 backpack-dkron-server
+backpack-dkron-agent-1
+backpack-dkron-agent-2
 
 # Elastic stack
 #

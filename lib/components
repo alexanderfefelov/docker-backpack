@@ -6,7 +6,6 @@ grafana
 graphite-statsd
 jenkins
 mattermost
-ofelia
 redis
 rundeck
 
@@ -27,6 +26,7 @@ databases/postgresql/test
 
 # Dkron
 #
+dkron/agent
 dkron/server
 
 # Elastic stack
