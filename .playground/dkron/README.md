@@ -6,4 +6,4 @@ Hostname `dkron.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8082](http://dkron.backpack.test:8082) | HTTP API and management console | -
+| [8082](http://dkron.backpack.test:8082) | [HTTP API](https://dkron.io/api/) and management console | -
