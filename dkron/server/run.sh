@@ -16,7 +16,6 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-conf:/etc/dkron \
     --volume $CONTAINER_NAME-data:/data \
     --volume $CONTAINER_NAME-log:/var/log/dkron \
     --publish 8900:8080 \
@@ -26,7 +25,12 @@ run() {
     $IMAGE_NAME \
       agent \
         --server \
-        --bootstrap-expect 1
+        --bootstrap-expect 1 \
+        --region test \
+        --datacenter backpack \
+        --tag node=server \
+        --data-dir /data \
+        --enable-prometheus
 }
 
 run
