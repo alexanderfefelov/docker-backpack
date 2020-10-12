@@ -15,6 +15,7 @@ generate_config() {
 
 address=/host.backpack.test/$1
 
+address=/dkron.backpack.test/$1
 address=/dnsmasq.backpack.test/$1
 address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1

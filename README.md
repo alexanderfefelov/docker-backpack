@@ -19,6 +19,7 @@
     - [PostgreSQL](databases/postgresql)
         - [main instance](databases/postgresql/main)
         - [test instance](databases/postgresql/test)
+- [Dkron](dkron)
 - [dnsmasq](dnsmasq)
 - [Elastic stack](elastic)
     - [APM](elastic/apm)

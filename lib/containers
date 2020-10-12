@@ -2,6 +2,7 @@ backpack-dnsmasq
 backpack-netdata
 backpack-portainer
 
+backpack-dkron
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
