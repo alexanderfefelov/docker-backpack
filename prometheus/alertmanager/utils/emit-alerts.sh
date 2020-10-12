@@ -2,25 +2,23 @@
 
 . lib.sh
 
-readonly ALERT_TEMPLATE='
-  {
-    "startsAt": "_STARTS_AT_",
-    "endsAt": "_ENDS_AT_",
-    "labels": {
-      "alertname": "_ALERTNAME_",
-      "env": "_ENV_",
-      "level": "_LEVEL_",
-      "sensor": "_SENSOR_"
-    },
-    "annotations": {
-      "internal_id": "_INTERNAL_ID_",
-      "value": "_VALUE_",
-      "summary": "_SUMMARY_",
-      "description": "_DESCRIPTION_"
-    },
-    "generatorURL": "_GENERATOR_URL_"
-  }
-'
+readonly ALERT_TEMPLATE='{
+  "startsAt": "$STARTS_AT",
+  "endsAt": "$ENDS_AT",
+  "labels": {
+    "alertname": "$ALERT_NAME",
+    "env": "$ENV",
+    "level": "$LEVEL",
+    "sensor": "$SENSOR"
+  },
+  "annotations": {
+    "internal_id": "$INTERNAL_ID",
+    "value": "$VALUE",
+    "summary": "$SUMMARY",
+    "description": "$DESCRIPTION"
+  },
+  "generatorURL": "$GENERATOR_URL"
+}'
 
 roll_dice() {
   echo $(($RANDOM % 6 + 1))
@@ -65,37 +63,23 @@ get_level() {
 for i in {1..42}; do
   echo $i
 
-  alert_name="Parameter value is amazing"
-  env=$(get_env)
-  level=$(get_level)
-  sensor=$(roll_dice)
-  internal_id=$(head --bytes 10 /dev/random | base32)
-  value=$RANDOM
-  summary="[$i] $(lorem -p 3 | tr '\n' ' ')"
-  description=$(lorem -p 3 | tr '\n' ' ')
-  generator_url="http:\/\/foo.bar.baz.backpack.test\/$internal_id"
-  starts_at=$(date --iso-8601=seconds --date "-1$(roll_dice) minutes")
-  ends_at=$(date --iso-8601=seconds --date "+$(roll_dice) hours")
+  ALERT_NAME="Parameter value is amazing"
+  ENV=$(get_env)
+  LEVEL=$(get_level)
+  SENSOR=$(roll_dice)
+  INTERNAL_ID=$(head --bytes 10 /dev/random | base32)
+  VALUE=$RANDOM
+  SUMMARY="[$i] $(lorem -p 3 | tr '\n' ' ')"
+  DESCRIPTION=$(lorem -p 3 | tr '\n' ' ')
+  GENERATOR_URL="http:\/\/foo.bar.baz.backpack.test\/$internal_id"
+  STARTS_AT=$(date --iso-8601=seconds --date "-1$(roll_dice) minutes")
+  ENDS_AT=$(date --iso-8601=seconds --date "+$(roll_dice) hours")
 
-  alert=$(
-    echo $ALERT_TEMPLATE \
-      | sed "s/_STARTS_AT_/$starts_at/g" \
-      | sed "s/_ENDS_AT_/$ends_at/g" \
-      | sed "s/_ALERTNAME_/$alert_name/g" \
-      | sed "s/_ENV_/$env/g" \
-      | sed "s/_LEVEL_/$level/g" \
-      | sed "s/_SENSOR_/$sensor/g" \
-      | sed "s/_INTERNAL_ID_/$internal_id/g" \
-      | sed "s/_VALUE_/$value/g" \
-      | sed "s/_SUMMARY_/$summary/g" \
-      | sed "s/_DESCRIPTION_/$description/g" \
-      | sed "s/_GENERATOR_URL_/$generator_url/g"
-  )
-  alerts="
-    [
-      $alert
-    ]
-  "
+  export ALERT_NAME ENV LEVEL SENSOR INTERNAL_ID VALUE SUMMARY DESCRIPTION GENERATOR_URL STARTS_AT ENDS_AT
+  alert=$(envsubst <<< "$ALERT_TEMPLATE")
+  alerts="[
+    $alert
+  ]"
 
-  execute_post_request alerts <<< $(echo $alerts)
+  response=$(execute_post_request alerts <<< $(echo $alerts))
 done
