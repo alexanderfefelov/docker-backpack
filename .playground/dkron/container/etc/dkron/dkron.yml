@@ -1,0 +1,6 @@
+region: test
+datacenter: backpack
+
+data-dir: /data
+
+enable-prometheus: true
