@@ -30,6 +30,7 @@ run() {
         --datacenter backpack \
         --tag node=server \
         --data-dir /data \
+        --statsd-addr graphite-statsd.backpack.test:8125 \
         --enable-prometheus
 }
 
