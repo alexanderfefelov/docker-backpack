@@ -81,5 +81,5 @@ for i in {1..42}; do
     $alert
   ]"
 
-  response=$(execute_post_request alerts <<< $(echo $alerts))
+  response=$(execute_post_request alerts <<< "$alerts")
 done

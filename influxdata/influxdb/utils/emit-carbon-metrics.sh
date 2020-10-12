@@ -10,6 +10,6 @@ for i in {1..42}; do
   timestamp=$(date +%s)
   message="$metric $value $timestamp"
   echo $message
-  nc -N $HOST $PORT <<< $(echo $message)
+  nc -N $HOST $PORT <<< "$message"
 done
 echo ...done
