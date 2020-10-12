@@ -1,5 +1,7 @@
 region: test
 datacenter: backpack
+tags:
+  node: server
 
 data-dir: /data
 

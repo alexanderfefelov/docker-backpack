@@ -15,7 +15,6 @@ generate_config() {
 
 address=/host.backpack.test/$1
 
-address=/dkron.backpack.test/$1
 address=/dnsmasq.backpack.test/$1
 address=/netdata.backpack.test/$1
 address=/portainer.backpack.test/$1
@@ -44,6 +43,11 @@ address=/mysql-main-slave.backpack.test/$1
 address=/mysql-test.backpack.test/$1
 address=/postgresql-main.backpack.test/$1
 address=/postgresql-test.backpack.test/$1
+
+# Dkron
+#
+address=/dkron-server.backpack.test/$1
+address=/dkron-agent-1.backpack.test/$1
 
 # Elastic stack
 #

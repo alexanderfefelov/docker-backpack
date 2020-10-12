@@ -2,7 +2,6 @@ backpack-dnsmasq
 backpack-netdata
 backpack-portainer
 
-backpack-dkron
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
@@ -27,6 +26,10 @@ backpack-mysql-main-slave
 backpack-mysql-test
 backpack-postgresql-main
 backpack-postgresql-test
+
+# Dkron
+#
+backpack-dkron-server
 
 # Elastic stack
 #

@@ -8,7 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
-. ../lib/lib.sh
+. ../../lib/lib.sh
 
 run() {
   docker run \
@@ -19,7 +19,7 @@ run() {
     --volume $CONTAINER_NAME-conf:/etc/dkron \
     --volume $CONTAINER_NAME-data:/data \
     --volume $CONTAINER_NAME-log:/var/log/dkron \
-    --publish 8082:8080 \
+    --publish 8900:8080 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \

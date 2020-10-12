@@ -32,6 +32,7 @@ readonly JOB_TEMPLATE='{
   "owner": "Backpack Team",
   "owner_email": "admin@backpack.test",
   "tags": {
+    "node": "server"
   },
   "metadata": {
     "$K1": "$V1",

@@ -2,7 +2,6 @@ dnsmasq
 netdata
 portainer
 
-dkron
 grafana
 graphite-statsd
 jenkins
@@ -25,6 +24,10 @@ databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
+
+# Dkron
+#
+dkron/server
 
 # Elastic stack
 #
