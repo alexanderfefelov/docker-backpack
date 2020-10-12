@@ -14,3 +14,17 @@ execute_get_request() {
   )
   echo $response
 }
+
+#
+# Arguments:
+#   $1 - significant part of the API URL
+# Returns:
+#   response body
+#
+execute_post_request() {
+  local response=$(
+    $HTTP --body \
+      POST $API/$1
+  )
+  echo $response
+}

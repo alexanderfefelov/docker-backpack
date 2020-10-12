@@ -17,6 +17,7 @@ readonly PREREQUISITES="
   mysql
   nc
   patch
+  petname
   psql
   pwgen
   redis-cli
