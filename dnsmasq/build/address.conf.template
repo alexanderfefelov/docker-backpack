@@ -1,0 +1,79 @@
+# GENERATED. DO NOT EDIT!
+
+address=/host.backpack.test/$IP_ADDRESS
+
+address=/dnsmasq.backpack.test/$IP_ADDRESS
+address=/netdata.backpack.test/$IP_ADDRESS
+address=/portainer.backpack.test/$IP_ADDRESS
+
+address=/grafana.backpack.test/$IP_ADDRESS
+address=/graphite-statsd.backpack.test/$IP_ADDRESS
+address=/jenkins.backpack.test/$IP_ADDRESS
+address=/mattermost.backpack.test/$IP_ADDRESS
+address=/redis.backpack.test/$IP_ADDRESS
+
+# Business intelligence
+#
+address=/cubes-backend.backpack.test/$IP_ADDRESS
+address=/cubes-frontend.backpack.test/$IP_ADDRESS
+address=/metabase.backpack.test/$IP_ADDRESS
+
+# Databases
+#
+address=/mongodb-main.backpack.test/$IP_ADDRESS
+address=/mongodb-test.backpack.test/$IP_ADDRESS
+address=/mysql-main-backup.backpack.test/$IP_ADDRESS
+address=/mysql-main-master.backpack.test/$IP_ADDRESS
+address=/mysql-main-slave.backpack.test/$IP_ADDRESS
+address=/mysql-test.backpack.test/$IP_ADDRESS
+address=/postgresql-main.backpack.test/$IP_ADDRESS
+address=/postgresql-test.backpack.test/$IP_ADDRESS
+
+# Elastic stack
+#
+address=/apm.backpack.test/$IP_ADDRESS
+address=/elasticsearch.backpack.test/$IP_ADDRESS
+address=/kibana.backpack.test/$IP_ADDRESS
+address=/logstash.backpack.test/$IP_ADDRESS
+
+# File sharing
+#
+address=/proftpd.backpack.test/$IP_ADDRESS
+address=/samba.backpack.test/$IP_ADDRESS
+
+# Guacamole
+#
+address=/guacamole-backend.backpack.test/$IP_ADDRESS
+address=/guacamole-frontend.backpack.test/$IP_ADDRESS
+
+# InfluxData stack
+#
+address=/chronograf.backpack.test/$IP_ADDRESS
+address=/influxdb.backpack.test/$IP_ADDRESS
+address=/kapacitor.backpack.test/$IP_ADDRESS
+address=/telegraf.backpack.test/$IP_ADDRESS
+
+# Message queues
+#
+address=/activemq.backpack.test/$IP_ADDRESS
+address=/rabbitmq.backpack.test/$IP_ADDRESS
+
+# Network monitoring
+#
+address=/fastnetmon.backpack.test/$IP_ADDRESS
+address=/nav.backpack.test/$IP_ADDRESS
+address=/zabbix-backend.backpack.test/$IP_ADDRESS
+address=/zabbix-frontend.backpack.test/$IP_ADDRESS
+
+# Prometheus
+#
+address=/alertmanager.backpack.test/$IP_ADDRESS
+address=/prometheus.backpack.test/$IP_ADDRESS
+address=/pushgateway.backpack.test/$IP_ADDRESS
+
+# Workload automation
+#
+address=/dkron-server.backpack.test/$IP_ADDRESS
+address=/dkron-agent-1.backpack.test/$IP_ADDRESS
+address=/dkron-agent-2.backpack.test/$IP_ADDRESS
+address=/rundeck.backpack.test/$IP_ADDRESS
