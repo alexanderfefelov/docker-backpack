@@ -1025,42 +1025,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n31">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/traefik]]></data>
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2489.0" y="786.0"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">traefik<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n32">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/youtrack]]></data>
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2489.0" y="917.0"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">youtrack<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n33">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/gobgp]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1078,8 +1042,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n34" yfiles.foldertype="group">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/dkron]]></data>
+    <node id="n32" yfiles.foldertype="group">
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/workload-automation/dkron]]></data>
       <data key="d5"/>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1107,9 +1071,9 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n34:">
-        <node id="n34::n0">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/dkron/server]]></data>
+      <graph edgedefault="directed" id="n32:">
+        <node id="n32::n0">
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="411.9573129665662" y="299.2390802615678"/>
@@ -1126,8 +1090,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n1">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/dkron/agent]]></data>
+        <node id="n32::n1">
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="220.98128839795118" y="331.48250493905107"/>
@@ -1144,8 +1108,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n2">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/dkron/agent]]></data>
+        <node id="n32::n2">
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="310.67714017899686" y="147.0488770513159"/>
@@ -1163,6 +1127,42 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </data>
         </node>
       </graph>
+    </node>
+    <node id="n33">
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/traefik]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="90.0" x="2489.0" y="786.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">traefik<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n34">
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/youtrack]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="90.0" x="2489.0" y="917.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">youtrack<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
     </node>
     <edge id="n23::e0" source="n23::n0" target="n23::n1">
       <data key="d10">
@@ -1772,14 +1772,34 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e35" source="n34::n0" target="n20::n1">
+    <edge id="n32::e0" source="n32::n0" target="n32::n2">
       <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="n32::e1" source="n32::n0" target="n32::n1">
+      <data key="d9"/>
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e35" source="n32" target="n4">
+      <data key="d9"/>
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="36.53069931774132" sy="112.82241325286338" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="5.735762515253157" anchorY="-2.2269982548979783" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.039545095971561195" upY="-0.9992177867635263" verticalTextPosition="bottom" visible="true" width="42.666015625" x="4.996222878675621" y="-22.60077350833454">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="12.57066305483636" anchorY="15.519707599956746" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.8264984048450321" upY="-0.5629390613455576" verticalTextPosition="bottom" visible="true" width="42.666015625" x="12.57066305483636" y="4.992087458582304">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1790,34 +1810,14 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n34::e0" source="n34::n0" target="n34::n2">
+    <edge id="e36" source="n32::n0" target="n20::n1">
       <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-        </y:SplineEdge>
-      </data>
-    </edge>
-    <edge id="n34::e1" source="n34::n0" target="n34::n1">
-      <data key="d9"/>
-      <data key="d10">
-        <y:SplineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-        </y:SplineEdge>
-      </data>
-    </edge>
-    <edge id="e36" source="n34::n0" target="n4">
-      <data key="d9"/>
-      <data key="d10">
-        <y:SplineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="6.986535641516639" anchorY="12.096916981164043" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9245314595624214" upY="-0.38110573372671613" verticalTextPosition="bottom" visible="true" width="42.666015625" x="6.986535641516639" y="4.96979315219274">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="5.735762515253157" anchorY="-2.2269982548979783" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.039545095971561195" upY="-0.9992177867635263" verticalTextPosition="bottom" visible="true" width="42.666015625" x="4.996222878675621" y="-22.60077350833454">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
