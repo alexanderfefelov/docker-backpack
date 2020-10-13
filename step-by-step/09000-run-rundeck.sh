@@ -3,4 +3,4 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-(cd ../rundeck && ./run.sh)
+(cd ../workload-automation/rundeck && ./run.sh)

@@ -7,7 +7,6 @@ graphite-statsd
 jenkins
 mattermost
 redis
-rundeck
 
 # Business intelligence
 #
@@ -23,11 +22,6 @@ databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
-
-# Dkron
-#
-dkron/agent
-dkron/server
 
 # Elastic stack
 #
@@ -70,3 +64,9 @@ network-monitoring/zabbix/frontend
 prometheus/alertmanager
 prometheus/prometheus
 prometheus/pushgateway
+
+# Workload automation
+#
+dkron/agent
+dkron/server
+rundeck

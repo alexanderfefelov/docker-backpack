@@ -7,7 +7,6 @@ backpack-graphite-statsd
 backpack-jenkins
 backpack-mattermost
 backpack-redis
-backpack-rundeck
 
 # Business intelligence
 #
@@ -25,12 +24,6 @@ backpack-mysql-main-slave
 backpack-mysql-test
 backpack-postgresql-main
 backpack-postgresql-test
-
-# Dkron
-#
-backpack-dkron-server
-backpack-dkron-agent-1
-backpack-dkron-agent-2
 
 # Elastic stack
 #
@@ -73,3 +66,10 @@ backpack-zabbix-frontend
 backpack-alertmanager
 backpack-prometheus
 backpack-pushgateway
+
+# Workload automation
+#
+backpack-dkron-server
+backpack-dkron-agent-1
+backpack-dkron-agent-2
+backpack-rundeck

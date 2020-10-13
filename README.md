@@ -19,9 +19,6 @@
     - [PostgreSQL](databases/postgresql)
         - [main instance](databases/postgresql/main)
         - [test instance](databases/postgresql/test)
-- [Dkron](dkron)
-    - [agents](dkron/agent)
-    - [server](dkron/server)
 - [dnsmasq](dnsmasq)
 - [Elastic stack](elastic)
     - [APM](elastic/apm)
@@ -59,7 +56,11 @@
     - [Prometheus](prometheus/prometheus)
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
-- [Rundeck](rundeck)
+- [Workload automation](workload-automation)
+    - [Dkron](workload-automation/dkron)
+        - [agents](workload-automation/dkron/agent)
+        - [server](workload-automation/dkron/server)
+    - [Rundeck](workload-automation/rundeck)
 
 ---
 

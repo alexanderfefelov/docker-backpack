@@ -24,7 +24,6 @@ address=/graphite-statsd.backpack.test/$1
 address=/jenkins.backpack.test/$1
 address=/mattermost.backpack.test/$1
 address=/redis.backpack.test/$1
-address=/rundeck.backpack.test/$1
 
 # Business intelligence
 #
@@ -42,12 +41,6 @@ address=/mysql-main-slave.backpack.test/$1
 address=/mysql-test.backpack.test/$1
 address=/postgresql-main.backpack.test/$1
 address=/postgresql-test.backpack.test/$1
-
-# Dkron
-#
-address=/dkron-server.backpack.test/$1
-address=/dkron-agent-1.backpack.test/$1
-address=/dkron-agent-2.backpack.test/$1
 
 # Elastic stack
 #
@@ -90,6 +83,13 @@ address=/zabbix-frontend.backpack.test/$1
 address=/alertmanager.backpack.test/$1
 address=/prometheus.backpack.test/$1
 address=/pushgateway.backpack.test/$1
+
+# Workload automation
+#
+address=/dkron-server.backpack.test/$1
+address=/dkron-agent-1.backpack.test/$1
+address=/dkron-agent-2.backpack.test/$1
+address=/rundeck.backpack.test/$1
 
 EOF
 }
