@@ -11,16 +11,17 @@ set -e
 
 generate_config_files() {
   echo Genarating config files...
+
+  local -r IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
+  if [ -z $IP_ADDRESS ]; then
+    echo Failed to detect IP address >&2
+    exit 1
+  fi
+  export IP_ADDRESS
   envsubst < build/address.conf.template > container/etc/dnsmasq.d/address.conf.generated
+
   echo ..config files generated
 }
 
-readonly IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
-if [ -z $IP_ADDRESS ]; then
-  echo Failed to detect IP address >&2
-  exit 1
-fi
-
-export IP_ADDRESS
 generate_config_files
 docker build --tag $IMAGE_NAME .
