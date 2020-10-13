@@ -1,6 +1,9 @@
 # backpack-dkron-server
 
-Hostname `dkron-server.backpack.test`
+Hostnames:
+ 
+- `dkron-server-1.backpack.test`
+- `dkron-server-2.backpack.test`
 
 ## Services
 
