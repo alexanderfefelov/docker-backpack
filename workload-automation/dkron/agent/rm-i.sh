@@ -5,5 +5,4 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-backup
-docker volume rm $CONTAINER_NAME-log
+docker image rm $IMAGE_NAME

@@ -69,7 +69,7 @@ backpack-pushgateway
 
 # Workload automation
 #
-backpack-dkron-server
 backpack-dkron-agent-1
 backpack-dkron-agent-2
+backpack-dkron-server
 backpack-rundeck

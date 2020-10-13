@@ -5,5 +5,4 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-backup
-docker volume rm $CONTAINER_NAME-log
+docker logs --follow $AGENT_2_CONTAINER_NAME

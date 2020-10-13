@@ -23,7 +23,6 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-backup:/var/lib/dkron/backup \
-    --volume $CONTAINER_NAME-data:/var/lib/dkron/data \
     --volume $CONTAINER_NAME-log:/var/log/dkron \
     --publish 8900:8080 \
     --publish 8910:8946 \

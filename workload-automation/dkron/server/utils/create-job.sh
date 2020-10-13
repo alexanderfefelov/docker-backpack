@@ -10,9 +10,9 @@ readonly JOB_TEMPLATE='{
   "executor": "shell",
   "executor_config": {
     "shell": "true",
-    "cwd": "/opt/local/dkron",
+    "cwd": "/tmp",
     "env": "FOOBAR=BAZQUX",
-    "command": "echo Hello, \"$DISPLAY_NAME\" && printenv FOOBAR && pwd && ls -la /var/log/dkron"
+    "command": "echo Hello from $(hostname --fqdn), \"$DISPLAY_NAME\" && printenv FOOBAR && pwd && ls -la /var/log/dkron"
   },
   "parent_job": "",
   "dependent_jobs": [
@@ -32,7 +32,7 @@ readonly JOB_TEMPLATE='{
   "owner": "Backpack Team",
   "owner_email": "admin@backpack.test",
   "tags": {
-    "node": "server"
+    "host": "dkron-server.backpack.test"
   },
   "metadata": {
     "$K1": "$V1",
