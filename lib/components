@@ -67,6 +67,6 @@ prometheus/pushgateway
 
 # Workload automation
 #
-dkron/agent
-dkron/server
-rundeck
+workload-automation/dkron/agent
+workload-automation/dkron/server
+workload-automation/rundeck
