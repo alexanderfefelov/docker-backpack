@@ -73,7 +73,8 @@ address=/pushgateway.backpack.test/$IP_ADDRESS
 
 # Workload automation
 #
-address=/dkron-server.backpack.test/$IP_ADDRESS
 address=/dkron-agent-1.backpack.test/$IP_ADDRESS
 address=/dkron-agent-2.backpack.test/$IP_ADDRESS
+address=/dkron-server-1.backpack.test/$IP_ADDRESS
+address=/dkron-server-2.backpack.test/$IP_ADDRESS
 address=/rundeck.backpack.test/$IP_ADDRESS

@@ -71,5 +71,6 @@ backpack-pushgateway
 #
 backpack-dkron-agent-1
 backpack-dkron-agent-2
-backpack-dkron-server
+backpack-dkron-server-1
+backpack-dkron-server-2
 backpack-rundeck

@@ -1,7 +1,8 @@
 readonly HOST="$1"
 readonly HOST2="${HOST//./_}"
+
 readonly HTTP="http --check-status"
-readonly API="http://$HOST:8900/v1"
+readonly API="http://dkron-server-1.backpack.test:8900/v1"
 
 readonly JOB_TEMPLATE='{
   "name": "$NAME",

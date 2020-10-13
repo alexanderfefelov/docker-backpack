@@ -32,7 +32,7 @@ readonly JOB_TEMPLATE='{
   "owner": "Backpack Team",
   "owner_email": "admin@backpack.test",
   "tags": {
-    "host": "dkron-server.backpack.test"
+    "host": "dkron-server-1.backpack.test"
   },
   "metadata": {
     "$K1": "$V1",

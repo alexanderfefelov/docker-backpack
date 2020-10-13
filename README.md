@@ -59,7 +59,7 @@
 - [Workload automation](workload-automation)
     - [Dkron](workload-automation/dkron)
         - [agents](workload-automation/dkron/agent)
-        - [server](workload-automation/dkron/server)
+        - [servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
 
 ---

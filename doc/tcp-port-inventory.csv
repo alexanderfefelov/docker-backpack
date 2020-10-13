@@ -42,9 +42,12 @@ Port,Container
 8200,backpack-apm
 8883,backpack-rabbitmq
 8888,backpack-chronograf
-8900,backpack-dkron-server
-8910,backpack-dkron-server
-8920,backpack-dkron-server
+8900,backpack-dkron-server-1
+8901,backpack-dkron-server-1
+8902,backpack-dkron-server-1
+8903,backpack-dkron-server-2
+8904,backpack-dkron-server-2
+8905,backpack-dkron-server-2
 9000,backpack-portainer
 9001,backpack-nav
 9092,backpack-kapacitor

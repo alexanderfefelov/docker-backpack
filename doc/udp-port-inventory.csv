@@ -5,4 +5,5 @@ Port,Container
 2055,backpack-fastnetmon
 5514,backpack-logstash
 8125,backpack-graphite-statsd
-8910,backpack-dkron-server
+8901,backpack-dkron-server-1
+8904,backpack-dkron-server-2

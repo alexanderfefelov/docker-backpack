@@ -1,5 +1,5 @@
 readonly HTTP="http --check-status"
-readonly API=http://dkron-server.backpack.test:8900/v1
+readonly API=http://dkron-server-1.backpack.test:8900/v1
 
 #
 # Arguments:

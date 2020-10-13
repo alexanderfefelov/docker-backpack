@@ -5,4 +5,5 @@
 
 . settings.sh
 
-docker rm --force --volumes $CONTAINER_NAME
+docker rm --force --volumes $SERVER_1_CONTAINER_NAME
+docker rm --force --volumes $SERVER_2_CONTAINER_NAME

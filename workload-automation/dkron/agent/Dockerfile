@@ -107,5 +107,7 @@ RUN mkdir --parents $DKRON_HOME \
   && mkdir --parents /var/log/dkron \
   && rm --force /$DKRON_STUFF
 
+ADD container/ /
+
 ENTRYPOINT ["/dkron/dkron"]
 CMD ["--help"]

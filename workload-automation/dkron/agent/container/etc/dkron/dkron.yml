@@ -1,0 +1,7 @@
+#
+# There are no configuration parameters here.
+#
+# This file is only needed for fix the message:
+#
+#     No valid config found: Applying default values.  error="Config File \"dkron\" Not Found in \"[/etc/dkron /root/.dkron /config]\""
+#
