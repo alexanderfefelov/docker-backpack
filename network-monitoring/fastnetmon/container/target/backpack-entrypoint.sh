@@ -33,14 +33,13 @@ readonly PLUGINS_attack_details="
 "
 
 if [ ! -f $CONF_FILE ]; then
-  readonly TEMPLATE_FILE=/fastnetmon.conf.template
+  echo Generating config files...
   readonly GRAPHITE_IP_ADDRESS=$(getent hosts $GRAPHITE_HOST | awk '{ print $1 }')
-  echo Generating $CONF_FILE from $TEMPLATE_FILE...
-  cat $TEMPLATE_FILE \
-    | sed "s/_GRAPHITE_IP_ADDRESS_/$GRAPHITE_IP_ADDRESS/g" \
-    | sed "s/_GRAPHITE_PORT_/$GRAPHITE_PORT/g" \
+  export GRAPHITE_IP_ADDRESS GRAPHITE_PORT
+  envsubst \
+    < /init/fastnetmon.template.conf \
     > $CONF_FILE
-  echo ...$CONF_FILE generated
+  echo ...config files generated
 
   for action in $ACTIONS; do
     echo Configuring plugins for \"$action\" action...

@@ -18,10 +18,13 @@ generate_config_files() {
     exit 1
   fi
   export IP_ADDRESS
-  envsubst < build/address.conf.template > container/etc/dnsmasq.d/address.conf.generated
+  envsubst \
+    < build/address.template.conf \
+    > container/etc/dnsmasq.d/address.conf.generated
 
   echo ..config files generated
 }
 
 generate_config_files
 docker build --tag $IMAGE_NAME .
+rm --force container/etc/dnsmasq.d/address.conf.generated
