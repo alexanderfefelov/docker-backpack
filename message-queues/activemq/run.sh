@@ -23,6 +23,7 @@ run() {
     --publish 61613:61613 \
     --publish 61614:61614 \
     --publish 61616:61616 \
+    --env BROKER_NAME=$BROKER_NAME \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME
