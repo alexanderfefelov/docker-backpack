@@ -6,12 +6,12 @@ Hostname `activemq.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 1883 | MQTT | -
-| 5672 | AMQP | -
-| [8161](http://activemq.backpack.test:8161) | [HTTP API](https://activemq.apache.org/rest) and management console | `admin_sablanibleng` / `ruscathionob`
+| 1883 (node-1), 1884 (node-2), 1885 (node-3)| MQTT | -
+| 5670 (node-1), 5671 (node-2), 5672 (node-3)| AMQP | -
+| [8161](http://activemq-node-1.backpack.test:8161) (node-1), [8162](http://activemq-node-2.backpack.test:8162) (node-2), [8163](http://activemq-node-3.backpack.test:8163) (node-3) | [HTTP API](https://activemq.apache.org/rest) and management console | `admin_sablanibleng` / `ruscathionob`
 | | | `api_manostinerat` / `ombelervolpi`
 | | | `fastnetmon_zahdeegeishu` / `xaocheitohto`
 | | | `telegraf_guaduquainti` / `moncentivenv`
-| 61613 | STOMP | -
-| 61614 | WebSocket | -
-| 61616 | OpenWire | -
+| 61614 (node-1), 61617 (node-2), 61620 (node-3) | STOMP | -
+| 61615 (node-1), 61618 (node-2), 61621 (node-3) | WebSocket | -
+| 61616 (node-1), 61619 (node-2), 61622 (node-3) | OpenWire | -
