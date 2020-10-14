@@ -24,6 +24,7 @@ run_server() {
     $IMAGE_NAME \
       agent \
         --server \
+        --advertise-rpc-port $GRPC_PORT \
         --join $PEER \
         --retry-interval 15s \
         $BOOTSTRAP \

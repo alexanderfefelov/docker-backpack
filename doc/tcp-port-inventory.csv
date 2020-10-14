@@ -48,6 +48,8 @@ Port,Container
 8903,backpack-dkron-server-2
 8904,backpack-dkron-server-2
 8905,backpack-dkron-server-2
+8906,backpack-dkron-agent-1
+8907,backpack-dkron-agent-2
 9000,backpack-portainer
 9001,backpack-nav
 9092,backpack-kapacitor

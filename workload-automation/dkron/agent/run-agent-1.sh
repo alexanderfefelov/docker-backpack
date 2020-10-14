@@ -11,5 +11,5 @@ set -e
 . ../../../lib/lib.sh
 . functions.sh
 
-run_agent $AGENT_1_CONTAINER_NAME $AGENT_1_HOST_NAME
+run_agent $AGENT_1_CONTAINER_NAME $AGENT_1_HOST_NAME $AGENT_1_GRPC_PORT
 print_container_info $AGENT_1_CONTAINER_NAME
