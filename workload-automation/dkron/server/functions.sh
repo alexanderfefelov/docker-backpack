@@ -38,7 +38,7 @@ run_server() {
 
 initialize_dkron() {
   echo Initializing Dkron...
-  bash init/create-jobs.sh $SERVER_1_HOST_NAME
-  bash init/create-jobs.sh $SERVER_2_HOST_NAME
+  bash init/create-server-jobs.sh $SERVER_1_HOST_NAME
+  bash init/create-server-jobs.sh $SERVER_2_HOST_NAME
   echo ...Dkron initialized
 }
