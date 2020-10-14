@@ -53,7 +53,7 @@ response=$(execute_post_request jobs <<< "$job")
 
 NAME="${HOST2}___remove-old-dkron-backups"
 DISPLAY_NAME="Remove old Dkron backups @ $HOST"
-COMMAND='find /var/lib/dkron/backup/* -type f -mtime +7 -exec rm {} \\;'
+COMMAND='find /var/lib/dkron/backup -type f -mtime +7 -exec rm {} \\;'
 SCHEDULE="@every 8h"
 UUID=$(uuidgen)
 export HOST NAME DISPLAY_NAME COMMAND SCHEDULE UUID
@@ -62,7 +62,7 @@ response=$(execute_post_request jobs <<< "$job")
 
 NAME="${HOST2}___remove-old-dkron-logs"
 DISPLAY_NAME="Remove old Dkron logs @ $HOST"
-COMMAND='find /var/log/dkron/* -type f -mtime +7 -exec rm {} \\;'
+COMMAND='find /var/log/dkron -type f -mtime +7 -exec rm {} \\;'
 SCHEDULE="@every 8h"
 UUID=$(uuidgen)
 export HOST NAME DISPLAY_NAME COMMAND SCHEDULE UUID
