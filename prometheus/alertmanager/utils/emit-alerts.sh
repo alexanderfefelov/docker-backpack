@@ -2,23 +2,7 @@
 
 . lib.sh
 
-readonly ALERT_TEMPLATE='{
-  "startsAt": "$STARTS_AT",
-  "endsAt": "$ENDS_AT",
-  "labels": {
-    "alertname": "$ALERT_NAME",
-    "env": "$ENV",
-    "level": "$LEVEL",
-    "sensor": "$SENSOR"
-  },
-  "annotations": {
-    "internal_id": "$INTERNAL_ID",
-    "value": "$VALUE",
-    "summary": "$SUMMARY",
-    "description": "$DESCRIPTION"
-  },
-  "generatorURL": "$GENERATOR_URL"
-}'
+readonly ALERT_TEMPLATE=$(< alert.template.json)
 
 roll_dice() {
   echo $(($RANDOM % 6 + 1))
