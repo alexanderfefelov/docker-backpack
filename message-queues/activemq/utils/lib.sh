@@ -1,7 +1,7 @@
 readonly USERNAME=api_manostinerat
 readonly PASSWORD=ombelervolpi
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
-readonly API=http://activemq.backpack.test:8161/api
+readonly API=http://activemq-node-1.backpack.test:8161/api
 
 #
 # Arguments:

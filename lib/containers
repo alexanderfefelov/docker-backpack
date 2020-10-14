@@ -51,7 +51,9 @@ backpack-chronograf
 
 # Message queues
 #
-backpack-activemq
+backpack-activemq-node-1
+backpack-activemq-node-2
+backpack-activemq-node-3
 backpack-rabbitmq
 
 # Network monitoring
