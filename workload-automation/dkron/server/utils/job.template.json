@@ -1,0 +1,36 @@
+{
+  "name": "$NAME",
+  "displayname": "$DISPLAY_NAME",
+  "disabled": false,
+  "schedule": "@every ${MINUTES}m",
+  "executor": "shell",
+  "executor_config": {
+    "shell": "true",
+    "cwd": "/tmp",
+    "env": "FOOBAR=BAZQUX",
+    "command": "echo Hello, \"$DISPLAY_NAME\"! && echo CWD: $(pwd) && echo FOOBAR is $(printenv FOOBAR) && echo Truly yours, $(hostname --fqdn)"
+  },
+  "parent_job": "",
+  "dependent_jobs": [
+  ],
+  "processors": {
+    "files": {
+      "log_dir": "/var/log/dkron",
+      "forward": "true"
+    },
+    "log": {
+      "forward": "true"
+    }
+  },
+  "concurrency": "forbid",
+  "retries": 0,
+  "timezone": "Europe/Moscow",
+  "owner": "Backpack Team",
+  "owner_email": "admin@backpack.test",
+  "tags": {
+  },
+  "metadata": {
+    "$K1": "$V1",
+    "$K2": "$V2"
+  }
+}

@@ -2,43 +2,7 @@
 
 . lib.sh
 
-readonly JOB_TEMPLATE='{
-  "name": "$NAME",
-  "displayname": "$DISPLAY_NAME",
-  "disabled": false,
-  "schedule": "@every ${MINUTES}m",
-  "executor": "shell",
-  "executor_config": {
-    "shell": "true",
-    "cwd": "/tmp",
-    "env": "FOOBAR=BAZQUX",
-    "command": "echo Hello from $(hostname --fqdn), \"$DISPLAY_NAME\" && printenv FOOBAR && pwd && ls -la /var/log/dkron"
-  },
-  "parent_job": "",
-  "dependent_jobs": [
-  ],
-  "processors": {
-    "files": {
-      "log_dir": "/var/log/dkron",
-      "forward": "true"
-    },
-    "log": {
-      "forward": "true"
-    }
-  },
-  "concurrency": "forbid",
-  "retries": 0,
-  "timezone": "Europe/Moscow",
-  "owner": "Backpack Team",
-  "owner_email": "admin@backpack.test",
-  "tags": {
-    "host": "dkron-server-1.backpack.test"
-  },
-  "metadata": {
-    "$K1": "$V1",
-    "$K2": "$V2"
-  }
-}'
+readonly JOB_TEMPLATE=$(< job.template.json)
 
 roll_dice() {
   echo $(($RANDOM % 6 + 1))
