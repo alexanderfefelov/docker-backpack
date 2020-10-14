@@ -9,12 +9,12 @@ run_agent() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --publish $GRPC_PORT:6868 \
+    --publish $GRPC_PORT:$GRPC_PORT \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME \
       agent \
-        --advertise-rpc-port $GRPC_PORT \
+        --rpc-port $GRPC_PORT \
         --retry-join dkron-server-1.backpack.test:8901 \
         --retry-join dkron-server-2.backpack.test:8904 \
         --retry-interval 15s \
