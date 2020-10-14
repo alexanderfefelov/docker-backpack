@@ -34,5 +34,13 @@ readonly NODE_3_OPENWIRE_PORT=61622
 
 readonly WAIT_TIMEOUT=600
 
+readonly DB_HOST=mysql-main-master.backpack.test
+readonly DB_PORT=3306
+readonly DB_DATABASE=activemq
+readonly DB_ROOT_USERNAME=root
+readonly DB_ROOT_PASSWORD=camycorymicu
+readonly DB_USERNAME=activemq_feizievoudai
+readonly DB_PASSWORD=axiechiemoht
+
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

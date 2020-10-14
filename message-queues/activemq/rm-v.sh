@@ -5,4 +5,9 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-data
+docker volume rm $NODE_1_CONTAINER_NAME-conf
+docker volume rm $NODE_1_CONTAINER_NAME-data
+docker volume rm $NODE_2_CONTAINER_NAME-conf
+docker volume rm $NODE_2_CONTAINER_NAME-data
+docker volume rm $NODE_3_CONTAINER_NAME-conf
+docker volume rm $NODE_3_CONTAINER_NAME-data

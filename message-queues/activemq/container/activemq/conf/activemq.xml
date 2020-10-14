@@ -47,6 +47,14 @@
     -->
     <broker xmlns="http://activemq.apache.org/schema/core" brokerName="${BROKER_NAME}" dataDirectory="${activemq.data}">
 
+        <persistenceAdapter>
+            <jdbcPersistenceAdapter dataSource="#mysql-ds" lockKeepAlivePeriod="5000">
+                <locker>
+                    <lease-database-locker lockAcquireSleepInterval="10000"/>
+                </locker>
+            </jdbcPersistenceAdapter>
+        </persistenceAdapter>
+
         <destinationPolicy>
             <policyMap>
               <policyEntries>
@@ -78,18 +86,6 @@
         <managementContext>
             <managementContext createConnector="false"/>
         </managementContext>
-
-        <!--
-            Configure message persistence for the broker. The default persistence
-            mechanism is the KahaDB store (identified by the kahaDB tag).
-            For more information, see:
-
-            http://activemq.apache.org/persistence.html
-        -->
-        <persistenceAdapter>
-            <kahaDB directory="${activemq.data}/kahadb"/>
-        </persistenceAdapter>
-
 
           <!--
             The systemUsage controls the maximum amount of space the broker will

@@ -14,6 +14,7 @@ run_node() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/activemq/conf \
     --volume $CONTAINER_NAME-data:/activemq/data \
     --publish $MQTT_PORT:1883 \
     --publish $AMQP_PORT:5672 \
