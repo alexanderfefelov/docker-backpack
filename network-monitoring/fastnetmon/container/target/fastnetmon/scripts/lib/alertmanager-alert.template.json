@@ -1,0 +1,14 @@
+{
+  "labels": {
+    "alertname": "$ALERT_NAME",
+    "severity": "$SEVERITY",
+    "env": "$ENV",
+    "actor": "$ACTOR",
+    "action": "$ACTION",
+    "victim": "$VICTIM"
+  },
+  "annotations": {
+    "uuid": "$UUID",
+    "summary": "$SUMMARY"
+  }
+}

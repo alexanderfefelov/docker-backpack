@@ -1,3 +1,5 @@
+readonly LIB_DIR=${LIB_DIR:-.}
+
 readonly ALERTMANAGER_HOST=${ALERTMANAGER_HOST:-alertmanager.test}
 readonly ALERTMANAGER_PORT=${ALERTMANAGER_PORT:-9093}
 
@@ -22,20 +24,7 @@ execute_post_request() {
 create_alert() {
   local -r UUID=$1 ALERT_NAME=$2 SEVERITY=$3 ENV=$4 ACTOR=$5 ACTION=$6 VICTIM=$7 SUMMARY=$8
 
-  local -r ALERT_TEMPLATE='{
-    "labels": {
-      "alertname": "$ALERT_NAME",
-      "severity": "$SEVERITY",
-      "env": "$ENV",
-      "actor": "$ACTOR",
-      "action": "$ACTION",
-      "victim": "$VICTIM"
-    },
-    "annotations": {
-      "uuid": "$UUID",
-      "summary": "$SUMMARY"
-    }
-  }'
+  local -r ALERT_TEMPLATE=$(< $LIB_DIR/alertmanager-alert.template.json)
 
   export UUID ALERT_NAME SEVERITY ENV ACTOR ACTION VICTIM SUMMARY
   local alert=$(envsubst <<< "$ALERT_TEMPLATE")
