@@ -5,7 +5,8 @@ run_server() {
   local -r SERF_PORT=$4
   local -r GRPC_PORT=$5
   local -r PEER=$6
-  local -r BOOTSTRAP=$7
+  local -r NODE_NAME=$7
+  local -r BOOTSTRAP=$8
 
   docker run \
     --name $CONTAINER_NAME \
@@ -30,6 +31,7 @@ run_server() {
         $BOOTSTRAP \
         --region test \
         --datacenter backpack \
+        --node-name $NODE_NAME \
         --tag group=servers \
         --tag host=$HOST_NAME \
         --data-dir /var/lib/dkron/data \

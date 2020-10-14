@@ -2,6 +2,7 @@ run_agent() {
   local -r CONTAINER_NAME=$1
   local -r HOST_NAME=$2
   local -r GRPC_PORT=$3
+  local -r NODE_NAME=$4
 
   docker run \
     --name $CONTAINER_NAME \
@@ -19,6 +20,7 @@ run_agent() {
         --retry-interval 15s \
         --region test \
         --datacenter backpack \
+        --node-name $NODE_NAME \
         --tag group=agents \
         --tag host=$HOST_NAME \
         --data-dir /var/lib/dkron/data \
