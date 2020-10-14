@@ -17,14 +17,14 @@ run_server() {
     --publish $HTTP_PORT:8080 \
     --publish $SERF_PORT:8946 \
     --publish $SERF_PORT:8946/udp \
-    --publish $GRPC_PORT:6868 \
+    --publish $GRPC_PORT:$GRPC_PORT \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME \
       agent \
         --server \
-        --advertise-rpc-port $GRPC_PORT \
+        --rpc-port $GRPC_PORT \
         --join $PEER \
         --retry-interval 15s \
         $BOOTSTRAP \
