@@ -15,8 +15,8 @@ run_agent() {
     $IMAGE_NAME \
       agent \
         --rpc-port $GRPC_PORT \
-        --retry-join dkron-server-1.backpack.test:8901 \
-        --retry-join dkron-server-2.backpack.test:8904 \
+        --join dkron-server-1.backpack.test:8901 \
+        --join dkron-server-2.backpack.test:8904 \
         --retry-interval 15s \
         --region test \
         --datacenter backpack \
