@@ -16,6 +16,7 @@ run_agent() {
         --retry-interval 15s \
         --region test \
         --datacenter backpack \
+        --tag group=agents \
         --tag host=$HOST_NAME \
         --data-dir /var/lib/dkron/data \
         --statsd-addr graphite-statsd.backpack.test:8125

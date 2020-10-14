@@ -29,6 +29,7 @@ run_server() {
         $BOOTSTRAP \
         --region test \
         --datacenter backpack \
+        --tag group=servers \
         --tag host=$HOST_NAME \
         --data-dir /var/lib/dkron/data \
         --statsd-addr graphite-statsd.backpack.test:8125 \
