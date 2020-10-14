@@ -11,5 +11,11 @@ set -e
 . ../../../lib/lib.sh
 . functions.sh
 
-run_agent $AGENT_1_CONTAINER_NAME $AGENT_1_HOST_NAME $AGENT_1_GRPC_PORT $(petname)
+run_agent \
+  $AGENT_1_CONTAINER_NAME \
+  $AGENT_1_HOST_NAME \
+  $AGENT_1_SERF_PORT \
+  $AGENT_1_GRPC_PORT \
+  $(petname)
+wait_for_all_container_ports $AGENT_1_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $AGENT_1_CONTAINER_NAME

@@ -7,3 +7,5 @@ Port,Container
 8125,backpack-graphite-statsd
 8901,backpack-dkron-server-1
 8904,backpack-dkron-server-2
+8906,backpack-dkron-agent-1
+8908,backpack-dkron-agent-2
