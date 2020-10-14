@@ -14,7 +14,7 @@
         - [main instance](databases/mongodb/main)
         - [test instance](databases/mongodb/test)
     - [MySQL](databases/mysql)
-        - [main instance](databases/mysql/main) with replication
+        - [main instance](databases/mysql/main), with replication
         - [test instance](databases/mysql/test)
     - [PostgreSQL](databases/postgresql)
         - [main instance](databases/postgresql/main)
@@ -41,7 +41,7 @@
 - [Jenkins](jenkins)
 - [Mattermost](mattermost)
 - [Message queues](message-queues)
-    - [ActiveMQ](message-queues/activemq)
+    - [ActiveMQ](message-queues/activemq), cluster
     - [RabbitMQ](message-queues/rabbitmq)
 - [Netdata](netdata)
 - [Network monitoring](network-monitoring)
@@ -57,7 +57,7 @@
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
 - [Workload automation](workload-automation)
-    - [Dkron](workload-automation/dkron)
+    - [Dkron](workload-automation/dkron), cluster
         - [agents](workload-automation/dkron/agent)
         - [servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)

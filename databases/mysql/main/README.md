@@ -10,7 +10,8 @@ Hostnames:
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `backup_letocryloite` / `almatramushi`
+| 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `activemq_feizievoudai` / `axiechiemoht` 
+| | | `backup_letocryloite` / `almatramushi`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
 | | | `fastnetmon_boeweewoonee` / `uheeghienoej`
 | | | `grafana_solenstgalog` / `peritypindol`
@@ -30,6 +31,7 @@ Hostnames:
 
 | Name | Description
 | :--- | :----------
+| `activemq` | [ActiveMQ](../../../message-queues/activemq)
 | `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
 | `fastnetmon` | [FastNetMon](../../../network-monitoring/fastnetmon) |
 | `grafana` | [Grafana](../../../grafana)

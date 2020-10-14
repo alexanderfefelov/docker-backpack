@@ -1,4 +1,4 @@
-ACTIVEMQ_HOST=activemq.backpack.test
+ACTIVEMQ_HOST=activemq-node-1.backpack.test
 ACTIVEMQ_PORT=8161
 ACTIVEMQ_USERNAME=fastnetmon_zahdeegeishu
 ACTIVEMQ_PASSWORD=xaocheitohto
