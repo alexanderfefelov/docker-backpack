@@ -1,11 +1,11 @@
 run_server() {
   local -r CONTAINER_NAME=$1
   local -r HOST_NAME=$2
-  local -r HTTP_PORT=$3
-  local -r SERF_PORT=$4
-  local -r GRPC_PORT=$5
-  local -r PEER=$6
-  local -r NODE_NAME=$7
+  local -r NODE_NAME=$3
+  local -r HTTP_PORT=$4
+  local -r SERF_PORT=$5
+  local -r GRPC_PORT=$6
+  local -r PEER=$7
   local -r BOOTSTRAP=$8
 
   docker run \

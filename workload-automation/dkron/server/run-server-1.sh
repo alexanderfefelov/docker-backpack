@@ -14,11 +14,11 @@ set -e
 run_server \
   $SERVER_1_CONTAINER_NAME \
   $SERVER_1_HOST_NAME \
+  $SERVER_1_NODE_NAME \
   $SERVER_1_HTTP_PORT \
   $SERVER_1_SERF_PORT \
   $SERVER_1_GRPC_PORT \
   $SERVER_1_PEER \
-  $(petname) \
   "--bootstrap-expect 1"
 wait_for_all_container_ports $SERVER_1_CONTAINER_NAME $WAIT_TIMEOUT
 initialize_dkron

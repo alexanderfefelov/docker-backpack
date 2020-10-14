@@ -14,10 +14,10 @@ set -e
 run_server \
   $SERVER_2_CONTAINER_NAME \
   $SERVER_2_HOST_NAME \
+  $SERVER_2_NODE_NAME \
   $SERVER_2_HTTP_PORT \
   $SERVER_2_SERF_PORT \
   $SERVER_2_GRPC_PORT \
-  $SERVER_2_PEER \
-  $(petname) \
+  $SERVER_2_PEER
 wait_for_all_container_ports $SERVER_2_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $SERVER_2_CONTAINER_NAME

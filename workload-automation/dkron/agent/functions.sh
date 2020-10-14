@@ -1,9 +1,9 @@
 run_agent() {
   local -r CONTAINER_NAME=$1
   local -r HOST_NAME=$2
-  local -r SERF_PORT=$3
-  local -r GRPC_PORT=$4
-  local -r NODE_NAME=$5
+  local -r NODE_NAME=$3
+  local -r SERF_PORT=$4
+  local -r GRPC_PORT=$5
 
   docker run \
     --name $CONTAINER_NAME \

@@ -14,8 +14,8 @@ set -e
 run_agent \
   $AGENT_1_CONTAINER_NAME \
   $AGENT_1_HOST_NAME \
+  $AGENT_1_NODE_NAME \
   $AGENT_1_SERF_PORT \
-  $AGENT_1_GRPC_PORT \
-  $(petname)
+  $AGENT_1_GRPC_PORT
 wait_for_all_container_ports $AGENT_1_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $AGENT_1_CONTAINER_NAME
