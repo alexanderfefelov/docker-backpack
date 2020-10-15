@@ -9,4 +9,5 @@ export NAV_VERSION IMAGE_NAME
 docker build \
   --build-arg NAV_VERSION \
   --build-arg IMAGE_NAME \
-  --tag $IMAGE_NAME .
+  --tag $IMAGE_NAME \
+  .

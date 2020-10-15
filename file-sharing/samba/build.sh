@@ -10,4 +10,5 @@ docker build \
   --build-arg SAMBA_PASSWORD \
   --build-arg SAMBA_GID \
   --build-arg SAMBA_GROUP \
-  --tag $IMAGE_NAME .
+  --tag $IMAGE_NAME \
+  .
