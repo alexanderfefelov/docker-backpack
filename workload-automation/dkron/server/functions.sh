@@ -14,6 +14,7 @@ run_server() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-backup:/var/lib/dkron/backup \
+    --volume $CONTAINER_NAME-data:/var/lib/dkron/data \
     --volume $CONTAINER_NAME-log:/var/log/dkron \
     --publish $HTTP_PORT:8080 \
     --publish $SERF_PORT:$SERF_PORT \

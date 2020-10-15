@@ -6,6 +6,8 @@
 . settings.sh
 
 docker volume rm $SERVER_1_CONTAINER_NAME-backup
+docker volume rm $SERVER_1_CONTAINER_NAME-data
 docker volume rm $SERVER_1_CONTAINER_NAME-log
 docker volume rm $SERVER_2_CONTAINER_NAME-backup
+docker volume rm $SERVER_2_CONTAINER_NAME-data
 docker volume rm $SERVER_2_CONTAINER_NAME-log
