@@ -19,8 +19,8 @@ run_agent() {
       agent \
         --rpc-port $GRPC_PORT \
         --bind-addr $HOST_NAME:$SERF_PORT \
-        --join dkron-server-1.backpack.test:8901 \
-        --join dkron-server-2.backpack.test:8904 \
+        --retry-join dkron-server-1.backpack.test:8901 \
+        --retry-join dkron-server-2.backpack.test:8904 \
         --retry-interval 15s \
         --region test \
         --datacenter backpack \

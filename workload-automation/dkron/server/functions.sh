@@ -28,7 +28,7 @@ run_server() {
         --server \
         --bind-addr $HOST_NAME:$SERF_PORT \
         --rpc-port $GRPC_PORT \
-        --join $PEER \
+        --retry-join $PEER \
         --retry-interval 15s \
         $BOOTSTRAP \
         --region test \
