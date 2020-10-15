@@ -102,7 +102,6 @@ ENV DKRON_HOME=/dkron
 ADD https://github.com/distribworks/dkron/releases/download/v$DKRON_VERSION/$DKRON_STUFF /
 RUN mkdir --parents $DKRON_HOME \
   && tar --extract --gzip --file=$DKRON_STUFF --directory=$DKRON_HOME \
-  && mkdir --parents /var/lib/dkron/backup \
   && mkdir --parents /var/lib/dkron/data \
   && mkdir --parents /var/log/dkron \
   && rm --force /$DKRON_STUFF
