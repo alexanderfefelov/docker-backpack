@@ -2,7 +2,7 @@
 
 . lib.sh
 
-readonly JOB_TEMPLATE=$(< job.template.json)
+readonly JOB_TEMPLATE=$(< template.job.json)
 
 roll_dice() {
   echo $(($RANDOM % 6 + 1))

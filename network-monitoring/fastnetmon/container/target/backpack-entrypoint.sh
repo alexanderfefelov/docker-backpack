@@ -37,7 +37,7 @@ if [ ! -f $CONF_FILE ]; then
   readonly GRAPHITE_IP_ADDRESS=$(getent hosts $GRAPHITE_HOST | awk '{ print $1 }')
   export GRAPHITE_IP_ADDRESS GRAPHITE_PORT
   envsubst \
-    < /init/fastnetmon.template.conf \
+    < /init/template.fastnetmon.conf \
     > $CONF_FILE
   echo ...config files generated
 

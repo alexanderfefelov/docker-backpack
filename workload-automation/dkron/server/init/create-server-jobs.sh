@@ -4,7 +4,7 @@ readonly THIS_SCRIPT_HOME=$(dirname "$THIS_SCRIPT")
 
 readonly HOST=$1
 readonly HOST_=${HOST//./_}
-readonly JOB_TEMPLATE=$(< "$THIS_SCRIPT_HOME/server-job.template.json")
+readonly JOB_TEMPLATE=$(< "$THIS_SCRIPT_HOME/template.server-job.json")
 
 NAME="${HOST_}___backup-dkron-jobs"
 DISPLAY_NAME="Backup Dkron jobs @ $HOST"

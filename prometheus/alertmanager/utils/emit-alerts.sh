@@ -2,7 +2,7 @@
 
 . lib.sh
 
-readonly ALERT_TEMPLATE=$(< alert.template.json)
+readonly ALERT_TEMPLATE=$(< template.alert.json)
 
 roll_dice() {
   echo $(($RANDOM % 6 + 1))

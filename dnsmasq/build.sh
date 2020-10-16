@@ -19,7 +19,7 @@ generate_config_files() {
   fi
   export IP_ADDRESS
   envsubst \
-    < build/address.template.conf \
+    < build/template.address.conf \
     > container/etc/dnsmasq.d/address.conf.generated
 
   echo ..config files generated
