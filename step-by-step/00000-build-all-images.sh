@@ -38,7 +38,7 @@ build_all() {
     [[ "$component" =~ ^#.*$ ]] && continue
     build $component
   done
-  echo -e "\nOK, all done."
+  echo -e "\nOK, all done"
 }
 
 echo Home: $BACKPACK_HOME
