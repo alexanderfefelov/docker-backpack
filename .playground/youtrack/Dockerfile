@@ -1,4 +1,4 @@
-FROM jetbrains/youtrack:2020.3.9516
+FROM jetbrains/youtrack:2020.3.12000
 
 ADD container/ /
 
