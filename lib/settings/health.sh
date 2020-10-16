@@ -13,7 +13,7 @@ readonly HEALTH_INTERVAL=1m
 
 # Maximum time to allow one check to run (ms|s|m|h)
 #
-readonly HEALTH_TIMEOUT=2s
+readonly HEALTH_TIMEOUT=3s
 
 # Consecutive failures needed to report unhealthy
 #
