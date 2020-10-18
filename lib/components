@@ -5,6 +5,7 @@ portainer
 grafana
 graphite-statsd
 jenkins
+librespeed
 mattermost
 redis
 

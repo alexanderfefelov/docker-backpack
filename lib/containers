@@ -5,6 +5,7 @@ backpack-portainer
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
+backpack-librespeed
 backpack-mattermost
 backpack-redis
 
