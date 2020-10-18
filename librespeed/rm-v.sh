@@ -6,4 +6,3 @@
 . settings.sh
 
 docker volume rm $CONTAINER_NAME-conf
-docker volume rm $CONTAINER_NAME-data
