@@ -7,4 +7,4 @@ Hostname `influxdb.backpack.test`
 | Port | Service | Credentials
 | ---: | :------ | :----------
 | 2013 | Carbon receiver | -
-| 8086 | [HTTP API](https://docs.influxdata.com/influxdb/v1.8/tools/api/) | -
+| 8086 | HTTP [API](https://docs.influxdata.com/influxdb/v1.8/tools/api/) | -

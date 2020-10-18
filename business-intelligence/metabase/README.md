@@ -6,4 +6,4 @@ Hostname `metabase.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [3042](http://metabase.backpack.test:3042) | [HTTP API](https://www.metabase.com/docs/latest/api-documentation.html) and management console | -
+| [3042](http://metabase.backpack.test:3042) | HTTP [API](https://www.metabase.com/docs/latest/api-documentation.html) and management console | -

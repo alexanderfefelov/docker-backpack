@@ -63,6 +63,12 @@
         - [servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
 
+## Documentation
+
+- [Architecture](doc/architecture.graphml)
+- [TCP port inventory](doc/tcp-port-inventory.csv)
+- [UDP port inventory](doc/udp-port-inventory.csv)
+
 ---
 
 Copyright (c) 2020 Alexander Fefelov, MIT license (see [LICENSE](LICENSE))
