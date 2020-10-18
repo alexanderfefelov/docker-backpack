@@ -1,6 +1,6 @@
 readonly HTTP="http --check-status"
 readonly API=http://mattermost.backpack.test:8065/api/v4
-readonly USERNAME=script_noosoochieza
+readonly USERNAME=api_noosoochieza
 readonly PASSWORD=7^iengoomoogieV
 
 #

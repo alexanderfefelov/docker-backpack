@@ -16,7 +16,7 @@ docker exec --tty --interactive $CONTAINER_NAME bash -c '
   bin/mattermost user create \
     --system_admin \
     --email script@backpack.test \
-    --username script_noosoochieza \
+    --username api_noosoochieza \
     --password "7^iengoomoogieV" \
     --nickname Script
 
@@ -57,7 +57,7 @@ docker exec --tty --interactive $CONTAINER_NAME bash -c '
     alertmanager_miepuiyiolim \
     fastnetmon_taeyaiyohsho \
     kapacitor_zoodiopishoo \
-    script_noosoochieza \
+    api_noosoochieza \
     user_eequoocheshi
 
   echo ...team created and populated
@@ -74,7 +74,7 @@ docker exec --tty --interactive $CONTAINER_NAME bash -c '
     alertmanager_miepuiyiolim \
     fastnetmon_taeyaiyohsho \
     kapacitor_zoodiopishoo \
-    script_noosoochieza \
+    api_noosoochieza \
     user_eequoocheshi
 
   bin/mattermost channel create \
@@ -84,7 +84,7 @@ docker exec --tty --interactive $CONTAINER_NAME bash -c '
 
   bin/mattermost channel add backpack:test \
     admin_iesheigichae \
-    script_noosoochieza \
+    api_noosoochieza \
     user_eequoocheshi
 
   echo ...channels created and populated
