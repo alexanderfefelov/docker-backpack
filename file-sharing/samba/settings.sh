@@ -5,10 +5,10 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$MONIKER.backpack.test
 readonly WAIT_TIMEOUT=600
 
-export SAMBA_USERNAME=samba_romencosuesc
-export SAMBA_PASSWORD=atherfrustra
-export SAMBA_GID=128
-export SAMBA_GROUP=samba
+readonly SAMBA_USERNAME=samba_romencosuesc
+readonly SAMBA_PASSWORD=atherfrustra
+readonly SAMBA_GID=128
+readonly SAMBA_GROUP=samba
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh

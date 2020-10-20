@@ -1,9 +1,9 @@
 FROM ubuntu:20.04
 
-ARG SAMBA_USERNAME=samba
-ARG SAMBA_PASSWORD=password
-ARG SAMBA_GID=128
-ARG SAMBA_GROUP=sambashare
+ARG SAMBA_USERNAME
+ARG SAMBA_PASSWORD
+ARG SAMBA_GID
+ARG SAMBA_GROUP
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

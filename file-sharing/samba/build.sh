@@ -5,6 +5,7 @@
 
 . settings.sh
 
+export SAMBA_USERNAME SAMBA_PASSWORD SAMBA_GID SAMBA_GROUP
 docker build \
   --build-arg SAMBA_USERNAME \
   --build-arg SAMBA_PASSWORD \
