@@ -1,4 +1,4 @@
-FROM metabase/metabase:v0.36.7
+FROM metabase/metabase:v0.37.0
 
 ADD container/ /
 
