@@ -1,3 +1,3 @@
-FROM traefik:v2.3.1
+FROM traefik:v2.3.2
 
 ADD container/ /
