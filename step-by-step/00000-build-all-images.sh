@@ -22,7 +22,7 @@ build() {
   echo
   echo ----------------------------------------------------------------------
   echo
-  echo $1
+  toilet --termwidth -f smblock $1
   echo Home: $COMPONENT_HOME
   echo
   echo ----------------------------------------------------------------------
@@ -38,7 +38,8 @@ build_all() {
     [[ "$component" =~ ^#.*$ ]] && continue
     build $component
   done
-  echo -e "\nOK, all done"
+  echo
+  toilet --termwidth -f smblock --filter gay OK, all done
 }
 
 echo Home: $BACKPACK_HOME
