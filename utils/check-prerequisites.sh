@@ -26,6 +26,7 @@ readonly PREREQUISITES="
   smidump
   sysctl
   tac
+  toilet
 "
 
 for x in $PREREQUISITES; do
