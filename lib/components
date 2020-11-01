@@ -66,6 +66,10 @@ prometheus/alertmanager
 prometheus/prometheus
 prometheus/pushgateway
 
+# Swagger
+#
+swagger/ui
+
 # Workload automation
 #
 workload-automation/dkron/agent

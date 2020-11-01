@@ -41,6 +41,7 @@ Port,Container
 8084,backpack-zabbix-frontend
 8085,backpack-guacamole-frontend
 8086,backpack-influxdb
+8090,backpack-swagger-ui
 8126,backpack-graphite-statsd
 8161,backpack-activemq-node-1
 8162,backpack-activemq-node-2

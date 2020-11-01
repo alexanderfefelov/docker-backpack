@@ -70,6 +70,10 @@ backpack-alertmanager
 backpack-prometheus
 backpack-pushgateway
 
+# Swagger
+#
+backpack-swagger-ui
+
 # Workload automation
 #
 backpack-dkron-agent-1
