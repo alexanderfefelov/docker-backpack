@@ -68,6 +68,7 @@ prometheus/pushgateway
 
 # Swagger
 #
+swagger/editor
 swagger/ui
 
 # Workload automation

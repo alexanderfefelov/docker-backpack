@@ -60,6 +60,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
 - [Swagger](swagger)
+    - [Editor](swagger/editor)
     - [UI](swagger/ui)
 - [Workload automation](workload-automation)
     - [Dkron](workload-automation/dkron), cluster
