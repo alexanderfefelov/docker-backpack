@@ -1,3 +1,3 @@
-FROM crazymax/diun:4.6.1
+FROM crazymax/diun:4.7.0
 
 ADD container/ /
