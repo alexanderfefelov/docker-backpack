@@ -1,4 +1,4 @@
-FROM graphiteapp/graphite-statsd:1.1.7-6
+FROM graphiteapp/graphite-statsd:1.1.7-8
 
 ADD container/ /
 
