@@ -1,3 +1,3 @@
-FROM chronograf:1.8.7
+FROM chronograf:1.8.8
 
 ADD container/ /
