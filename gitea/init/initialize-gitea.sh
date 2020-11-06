@@ -1,6 +1,6 @@
 readonly CONTAINER_NAME=$1
 
-# https://docs.mattermost.com/administration/command-line-tools.html
+# https://docs.gitea.io/en-us/command-line/
 docker exec --tty --interactive $CONTAINER_NAME su git -c '
   set -e
 
