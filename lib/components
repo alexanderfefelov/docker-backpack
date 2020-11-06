@@ -2,6 +2,7 @@ dnsmasq
 netdata
 portainer
 
+gitea
 grafana
 graphite-statsd
 jenkins

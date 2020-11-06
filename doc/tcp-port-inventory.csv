@@ -16,6 +16,7 @@ Port,Container
 2023,backpack-graphite-statsd
 2024,backpack-graphite-statsd
 3000,backpack-grafana
+3001,backpack-gitea
 3042,backpack-metabase
 3306,backpack-mysql-main-master
 3307,backpack-mysql-test
