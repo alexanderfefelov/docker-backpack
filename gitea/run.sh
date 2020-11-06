@@ -15,6 +15,12 @@ initialize_database() {
   echo ...database initialized
 }
 
+initialize_gitea() {
+  echo Initializing Gitea...
+  bash init/initialize-gitea.sh $CONTAINER_NAME
+  echo ...Gitea initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -22,7 +28,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-data:/data \
-    --publish 3001:3000 \
+    --publish 3001:3001 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
@@ -37,9 +43,13 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
+  readonly FIRST_RUN=true
   initialize_database
 fi
 
 run
-wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+wait_for_container_ports $CONTAINER_NAME 3001 $WAIT_TIMEOUT
+if [ "$FIRST_RUN" == "true" ]; then
+  initialize_gitea
+fi
 print_container_info $CONTAINER_NAME
