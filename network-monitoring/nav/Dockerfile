@@ -52,7 +52,7 @@ RUN  apt-get -qq update \
        libsnmp30 \
        libtiff5 \
        nbtscan \
-       netcat-openbsd `# For health checks` \
+       netcat `# For health checks` \
        postgresql-client \
        python3-gammu \
        rsyslog \
