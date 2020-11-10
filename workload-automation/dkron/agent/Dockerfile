@@ -96,8 +96,8 @@ RUN apt-get -qq clean \
 
 # Dkron
 #
-ENV DKRON_VERSION=3.0.5
-ENV DKRON_STUFF=dkron_${DKRON_VERSION}_linux_amd64.tar.gz
+ARG DKRON_VERSION=3.0.5
+ARG DKRON_STUFF=dkron_${DKRON_VERSION}_linux_amd64.tar.gz
 ENV DKRON_HOME=/dkron
 ADD https://github.com/distribworks/dkron/releases/download/v$DKRON_VERSION/$DKRON_STUFF /
 RUN mkdir --parents $DKRON_HOME \

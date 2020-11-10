@@ -1,8 +1,7 @@
 FROM openjdk:8-jre
 
-ENV ACTIVEMQ_VERSION=5.16.0
-
-ENV ACTIVEMQ_STUFF=apache-activemq-$ACTIVEMQ_VERSION-bin.tar.gz
+ARG ACTIVEMQ_VERSION=5.16.0
+ARG ACTIVEMQ_STUFF=apache-activemq-$ACTIVEMQ_VERSION-bin.tar.gz
 
 ADD https://archive.apache.org/dist/activemq/$ACTIVEMQ_VERSION/$ACTIVEMQ_STUFF /
 

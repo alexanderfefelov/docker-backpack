@@ -26,7 +26,7 @@ FROM python:3.7.9-slim-buster AS target
 
 ARG NAV_VERSION
 
-ENV TINI_VERSION 0.19.0
+ARG TINI_VERSION=0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
 RUN chmod +x /usr/sbin/tini
 

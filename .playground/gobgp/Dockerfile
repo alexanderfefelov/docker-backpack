@@ -1,9 +1,7 @@
 FROM ubuntu:20.04
 
-ENV GOBGP_VERSION=2.21.0
-
-ENV GOBGP_STUFF=gobgp_${GOBGP_VERSION}_linux_amd64.tar.gz
-
+ARG GOBGP_VERSION=2.21.0
+ARG GOBGP_STUFF=gobgp_${GOBGP_VERSION}_linux_amd64.tar.gz
 ENV GOBGP_HOME=/gobgp
 
 ADD https://github.com/osrg/gobgp/releases/download/v$GOBGP_VERSION/$GOBGP_STUFF /
