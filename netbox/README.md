@@ -6,4 +6,4 @@ Hostname `netbox.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8087](http://netbox.backpack.test:8087) | Management console | `admin` / `admin`
+| [8087](http://netbox.backpack.test:8087) | HTTP [API](https://netbox.readthedocs.io/en/stable/rest-api/overview/) and management console | `admin` / `admin`
