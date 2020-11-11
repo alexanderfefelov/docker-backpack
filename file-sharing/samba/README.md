@@ -6,4 +6,4 @@ Hostname `samba.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 139, 445 | SMB | `samba_romencosuesc` / `atherfrustra` |
+| 139, 445 | SMB | `samba_romencosuesc` / `atherfrustra`
