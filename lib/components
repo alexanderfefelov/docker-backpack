@@ -8,6 +8,7 @@ graphite-statsd
 jenkins
 librespeed
 mattermost
+netbox
 redis
 
 # Business intelligence

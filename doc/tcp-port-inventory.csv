@@ -42,6 +42,7 @@ Port,Container
 8084,backpack-zabbix-frontend
 8085,backpack-guacamole-frontend
 8086,backpack-influxdb
+8087,backpack-netbox
 8090,backpack-swagger-ui
 8091,backpack-swagger-editor
 8126,backpack-graphite-statsd

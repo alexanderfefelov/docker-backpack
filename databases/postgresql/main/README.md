@@ -9,6 +9,7 @@ Hostname `postgresql-main.backpack.test`
 | 5432 | PostgreSQL | `postgres_ibleabaldine` / `undestrokend`
 | | | `healthcheck_phocincergeo` / `tanionetedio`
 | | | `nav_smarigarybol` / `tateicenstop`
+| | | `netbox_saengaejoola` / `thiunahbeifo`
 | | | `telegraf_viledahloger` / `atiolusethil`
 
 ## Databases
@@ -16,3 +17,4 @@ Hostname `postgresql-main.backpack.test`
 | Name | Description
 | :--- | :----------
 | `nav` | [NAV](../../../network-monitoring/nav)
+| `netbox` | [NetBox](../../../netbox)
