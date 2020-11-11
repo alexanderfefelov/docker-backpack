@@ -47,7 +47,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq), cluster
     - [RabbitMQ](message-queues/rabbitmq)
-- [NetBox](netbox)
+- `WIP` [NetBox](netbox)
 - [Netdata](netdata)
 - [Network monitoring](network-monitoring)
     - [FastNetMon](network-monitoring/fastnetmon)
