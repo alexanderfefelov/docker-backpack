@@ -1,4 +1,4 @@
-FROM docker.elastic.co/apm/apm-server:7.9.3
+FROM docker.elastic.co/apm/apm-server:7.10.0
 
 ADD container/ /
 
