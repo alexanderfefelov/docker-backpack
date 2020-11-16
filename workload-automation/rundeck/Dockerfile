@@ -1,3 +1,3 @@
-FROM rundeck/rundeck:3.3.5
+FROM rundeck/rundeck:3.3.6
 
 ADD container/ /
