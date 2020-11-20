@@ -1,4 +1,4 @@
-FROM postgres:13.0
+FROM postgres:13.1
 
 ENV \
   HEALTHCHECK_USERNAME=healthcheck \
