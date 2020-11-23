@@ -7,8 +7,6 @@ set -e
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-. settings.sh
-
 pushd() {
   command pushd "$@" > /dev/null
 }
@@ -42,5 +40,7 @@ build_all() {
   toilet --termwidth -f smblock --filter gay OK, all done
 }
 
+readonly BACKPACK_HOME=$(dirname "$(dirname "$(dirname "$(realpath "$0")")")")
+readonly COMPONENTS=$BACKPACK_HOME/lib/components
 echo Home: $BACKPACK_HOME
 time build_all
