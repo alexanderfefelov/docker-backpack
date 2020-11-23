@@ -10,6 +10,8 @@ set -e
 . settings.sh
 . functions.sh
 
+trap on_error ERR
+
 readonly COMPONENTS_HOME=$BACKPACK_HOME
 readonly COMPONENTS_LIST=$BACKPACK_HOME/lib/components
 time build_all $COMPONENTS_HOME $COMPONENTS_LIST

@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
+on_error() {
+    . $BACKPACK_HOME/lib/ansi-escape-codes.sh
+    echo -e $COLOR_FG_RED
+    toilet --termwidth -f smblock Something went wrong!
+    echo -e $COLOR_RESET
+}
 
 pushd() {
   command pushd "$@" > /dev/null
