@@ -1,0 +1,12 @@
+server:
+  address: 0.0.0.0:8080
+  tls: false
+
+auth:
+  jwt_key: zzvRbRE1MMgVH2zhfGKQZBRD0SvpaDccwqp4qpdUwIIfUhlb
+
+mysql:
+  address: mysql-main-master.backpack.test:3306
+  database: fleet
+  username: fleet_fiedabaetivu
+  password: iengeemiutuw

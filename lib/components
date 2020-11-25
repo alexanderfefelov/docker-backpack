@@ -2,6 +2,7 @@ dnsmasq
 netdata
 portainer
 
+fleet
 gitea
 grafana
 graphite-statsd

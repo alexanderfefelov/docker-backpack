@@ -37,6 +37,7 @@ Port,Container
 5674,backpack-rabbitmq
 6379,backpack-redis
 8000,backpack-cubes-frontend
+8003,backpack-fleet
 8065,backpack-mattermost
 8083,backpack-jenkins
 8084,backpack-zabbix-frontend

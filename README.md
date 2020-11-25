@@ -30,6 +30,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 - [File sharing](file-sharing)
     - [proftpd](file-sharing/proftpd)
     - [Samba](file-sharing/samba)
+- [Fleet](fleet)
 - [Gitea](gitea)
 - [Grafana](grafana)
 - [Graphite/StatsD](graphite-statsd)

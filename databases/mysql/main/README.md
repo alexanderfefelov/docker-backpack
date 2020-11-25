@@ -14,6 +14,7 @@ Hostnames:
 | | | `backup_letocryloite` / `almatramushi`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
 | | | `fastnetmon_boeweewoonee` / `uheeghienoej`
+| | | `fleet_fiedabaetivu` / `iengeemiutuw`
 | | | `gitea_vahkamiichae` / `ahphuzahphei`
 | | | `grafana_solenstgalog` / `peritypindol`
 | | | `graphite_comoneigalky` / `strignenecoi`
@@ -36,6 +37,7 @@ Hostnames:
 | `activemq` | [ActiveMQ](../../../message-queues/activemq)
 | `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
 | `fastnetmon` | [FastNetMon](../../../network-monitoring/fastnetmon) |
+| `fleet` | [Fleet](../../../fleet)
 | `gitea` | [Gitea](../../../gitea)
 | `grafana` | [Grafana](../../../grafana)
 | `graphite` | [Graphite](../../../graphite-statsd)
