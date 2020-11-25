@@ -15,6 +15,12 @@ initialize_database() {
   echo ...database initialized
 }
 
+initialize_fleet() {
+  echo Initializing Fleet...
+  bash init/initialize-fleet.sh $CONTAINER_NAME
+  echo ...Fleet initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -37,9 +43,13 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
+  readonly FIRST_RUN=true
   initialize_database
 fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+if [ "$FIRST_RUN" == "true" ]; then
+  initialize_fleet
+fi
 print_container_info $CONTAINER_NAME

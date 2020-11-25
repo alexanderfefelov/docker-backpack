@@ -1,6 +1,8 @@
 server:
   address: 0.0.0.0:8080
-  tls: false
+  cert: /etc/fleet/unoxidative-shantel.crt
+  key: /etc/fleet/unoxidative-shantel.key
+  tls: true
 
 auth:
   jwt_key: zzvRbRE1MMgVH2zhfGKQZBRD0SvpaDccwqp4qpdUwIIfUhlb
