@@ -16,6 +16,7 @@ readonly PREREQUISITES="
   mongo
   mysql
   nc
+  openssl
   patch
   petname
   psql
