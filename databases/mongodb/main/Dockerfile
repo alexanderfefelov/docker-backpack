@@ -1,4 +1,4 @@
-FROM mongo:4.4.1-bionic
+FROM mongo:4.4.2-bionic
 
 ADD container/ /
 
