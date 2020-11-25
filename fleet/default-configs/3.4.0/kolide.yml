@@ -1,0 +1,72 @@
+mysql:
+  protocol: tcp
+  address: localhost:3306
+  username: kolide
+  password: kolide
+  database: kolide
+  tls_cert: ""
+  tls_key: ""
+  tls_ca: ""
+  tls_server_name: ""
+  tls_config: ""
+  max_open_conns: 50
+  max_idle_conns: 50
+  conn_max_lifetime: 0
+redis:
+  address: localhost:6379
+  password: ""
+  database: 0
+  use_tls: false
+server:
+  address: 0.0.0.0:8080
+  cert: ./tools/osquery/kolide.crt
+  key: ./tools/osquery/kolide.key
+  tls: true
+  tlsprofile: modern
+  url_prefix: ""
+auth:
+  jwt_key: ""
+  bcrypt_cost: 12
+  salt_key_size: 24
+app:
+  token_key_size: 24
+  invite_token_validity_period: 120h0m0s
+session:
+  key_size: 64
+  duration: 2160h0m0s
+osquery:
+  node_key_size: 24
+  status_log_plugin: filesystem
+  result_log_plugin: filesystem
+  label_update_interval: 1h0m0s
+  detail_update_interval: 1h0m0s
+  status_log_file: ""
+  result_log_file: ""
+  enable_log_rotation: false
+logging:
+  debug: false
+  json: false
+  disable_banner: false
+firehose:
+  region: ""
+  access_key_id: ""
+  secret_access_key: ""
+  sts_assume_role_arn: ""
+  status_stream: ""
+  result_stream: ""
+kinesis:
+  region: ""
+  access_key_id: ""
+  secret_access_key: ""
+  sts_assume_role_arn: ""
+  status_stream: ""
+  result_stream: ""
+pubsub:
+  project: ""
+  status_topic: ""
+  result_topic: ""
+filesystem:
+  status_log_file: /tmp/osquery_status
+  result_log_file: /tmp/osquery_result
+  enable_log_rotation: false
+  enable_log_compression: false
