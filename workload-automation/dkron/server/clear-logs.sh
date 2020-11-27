@@ -5,3 +5,4 @@
 
 ./clear-logs-server-1.sh
 ./clear-logs-server-2.sh
+./clear-logs-server-3.sh

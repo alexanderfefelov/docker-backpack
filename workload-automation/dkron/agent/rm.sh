@@ -7,3 +7,4 @@
 
 docker rm --force --volumes $AGENT_1_CONTAINER_NAME
 docker rm --force --volumes $AGENT_2_CONTAINER_NAME
+docker rm --force --volumes $AGENT_3_CONTAINER_NAME

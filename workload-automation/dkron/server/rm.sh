@@ -7,3 +7,4 @@
 
 docker rm --force --volumes $SERVER_1_CONTAINER_NAME
 docker rm --force --volumes $SERVER_2_CONTAINER_NAME
+docker rm --force --volumes $SERVER_3_CONTAINER_NAME

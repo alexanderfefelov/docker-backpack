@@ -5,8 +5,7 @@ run_server() {
   local -r HTTP_PORT=$4
   local -r SERF_PORT=$5
   local -r GRPC_PORT=$6
-  local -r PEER=$7
-  local -r BOOTSTRAP=$8
+  local -r BOOTSTRAP=$7
 
   docker run \
     --name $CONTAINER_NAME \
@@ -28,7 +27,9 @@ run_server() {
         --server \
         --bind-addr $HOST_NAME:$SERF_PORT \
         --rpc-port $GRPC_PORT \
-        --retry-join $PEER \
+        --retry-join dkron-server-1.backpack.test:8901 \
+        --retry-join dkron-server-2.backpack.test:8904 \
+        --retry-join dkron-server-3.backpack.test:8907 \
         --retry-interval 15s \
         $BOOTSTRAP \
         --region test \
@@ -45,5 +46,6 @@ initialize_dkron() {
   echo Initializing Dkron...
   bash init/create-server-jobs.sh $SERVER_1_HOST_NAME
   bash init/create-server-jobs.sh $SERVER_2_HOST_NAME
+  bash init/create-server-jobs.sh $SERVER_3_HOST_NAME
   echo ...Dkron initialized
 }

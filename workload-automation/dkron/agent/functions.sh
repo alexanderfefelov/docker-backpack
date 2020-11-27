@@ -21,6 +21,7 @@ run_agent() {
         --bind-addr $HOST_NAME:$SERF_PORT \
         --retry-join dkron-server-1.backpack.test:8901 \
         --retry-join dkron-server-2.backpack.test:8904 \
+        --retry-join dkron-server-3.backpack.test:8907 \
         --retry-interval 15s \
         --region test \
         --datacenter backpack \

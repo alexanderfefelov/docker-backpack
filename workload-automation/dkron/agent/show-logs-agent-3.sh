@@ -3,6 +3,6 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-./clear-logs-agent-1.sh
-./clear-logs-agent-2.sh
-./clear-logs-agent-3.sh
+. settings.sh
+
+docker logs --follow $AGENT_3_CONTAINER_NAME

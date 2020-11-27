@@ -11,12 +11,11 @@ set -e
 . ../../../lib/lib.sh
 . functions.sh
 
-run_server \
-  $SERVER_2_CONTAINER_NAME \
-  $SERVER_2_HOST_NAME \
-  $SERVER_2_NODE_NAME \
-  $SERVER_2_HTTP_PORT \
-  $SERVER_2_SERF_PORT \
-  $SERVER_2_GRPC_PORT
-wait_for_all_container_ports $SERVER_2_CONTAINER_NAME $WAIT_TIMEOUT
-print_container_info $SERVER_2_CONTAINER_NAME
+run_agent \
+  $AGENT_3_CONTAINER_NAME \
+  $AGENT_3_HOST_NAME \
+  $AGENT_3_NODE_NAME \
+  $AGENT_3_SERF_PORT \
+  $AGENT_3_GRPC_PORT
+wait_for_all_container_ports $AGENT_3_CONTAINER_NAME $WAIT_TIMEOUT
+print_container_info $AGENT_3_CONTAINER_NAME
