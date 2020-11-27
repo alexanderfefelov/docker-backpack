@@ -12,7 +12,5 @@ RUN apt-get -qq update \
 
 ADD container/ /
 
-RUN /create-accounts.sh \
-  && rm --force /create-accounts.*
-
+ENTRYPOINT ["/backpack-entrypoint.sh"]
 CMD ["/usr/sbin/proftpd", "--nodaemon"]
