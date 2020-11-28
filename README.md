@@ -70,6 +70,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
         - [agents](workload-automation/dkron/agent)
         - [servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
+- [XWiki](xwiki)
 
 ## Documentation
 

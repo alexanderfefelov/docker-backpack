@@ -39,6 +39,7 @@ Port,Container
 8000,backpack-cubes-frontend
 8003,backpack-fleet
 8065,backpack-mattermost
+8082,backpack-xwiki
 8083,backpack-jenkins
 8084,backpack-zabbix-frontend
 8085,backpack-guacamole-frontend

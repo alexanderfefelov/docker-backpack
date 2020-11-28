@@ -11,6 +11,7 @@ backpack-librespeed
 backpack-mattermost
 backpack-netbox
 backpack-redis
+backpack-xwiki
 
 # Business intelligence
 #

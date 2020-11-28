@@ -46,5 +46,5 @@ Hostnames:
 | `mattermost` | [Mattermost](../../../mattermost)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
 | `rundeck` | [Rundeck](../../../rundeck)
-| `xwiki` | [XWiki](../../../.playground/xwiki)
+| `xwiki` | [XWiki](../../../xwiki)
 | `zabbix` | [Zabbix](../../../network-monitoring/zabbix)
