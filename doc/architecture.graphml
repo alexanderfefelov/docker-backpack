@@ -917,12 +917,12 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n25">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/.playground/xwiki]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/master/xwiki]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="819.2041895423245" y="1795.1009104193636"/>
           <y:Fill color="#FFCC00" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">xwiki<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -2148,7 +2148,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e45" source="n31::n4" target="n19::n1">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
