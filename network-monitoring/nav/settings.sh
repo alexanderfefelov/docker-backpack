@@ -1,4 +1,4 @@
-readonly NAV_VERSION=5.0.8
+readonly NAV_VERSION=5.1.0
 
 readonly MONIKER=nav
 readonly BASE_NAME=backpack-$MONIKER
