@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
       cifs-utils \
       curl \
       expect \
-      git \
+      git git-lfs \
       jq \
       libtext-lorem-perl \
       netcat \
