@@ -53,6 +53,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 - [Network monitoring](network-monitoring)
     - [FastNetMon](network-monitoring/fastnetmon)
     - [NAV](network-monitoring/nav)
+    - [nfdump](network-monitoring/nfdump)
     - [The Dude](network-monitoring/the-dude)
     - [Zabbix](network-monitoring/zabbix)
         - [Backend](network-monitoring/zabbix/backend)
