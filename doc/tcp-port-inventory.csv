@@ -38,6 +38,10 @@ Port,Container
 6379,backpack-redis
 8000,backpack-cubes-frontend
 8003,backpack-fleet
+8004,backpack-the-dude
+8005,backpack-the-dude
+8006,backpack-the-dude
+8007,backpack-the-dude
 8065,backpack-mattermost
 8082,backpack-xwiki
 8083,backpack-jenkins

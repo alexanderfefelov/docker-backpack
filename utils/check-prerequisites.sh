@@ -28,6 +28,7 @@ readonly PREREQUISITES="
   sysctl
   tac
   toilet
+  xargs
 "
 
 for x in $PREREQUISITES; do
