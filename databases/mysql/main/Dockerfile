@@ -1,4 +1,4 @@
-FROM alexanderfefelov/mysql-replication:8.0.22
+FROM quay.io/alexanderfefelov/mysql-replication:8.0.22
 
 ENV \
   HEALTHCHECK_USERNAME=healthcheck \
