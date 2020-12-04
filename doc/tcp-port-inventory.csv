@@ -51,6 +51,7 @@ Port,Container
 8087,backpack-netbox
 8090,backpack-swagger-ui
 8091,backpack-swagger-editor
+8123,backpack-clickhouse
 8126,backpack-graphite-statsd
 8161,backpack-activemq-node-1
 8162,backpack-activemq-node-2
@@ -76,6 +77,7 @@ Port,Container
 8989,backpack-librespeed
 9000,backpack-portainer
 9001,backpack-nav
+9002,backpack-clickhouse
 9092,backpack-kapacitor
 9090,backpack-prometheus
 9091,backpack-pushgateway

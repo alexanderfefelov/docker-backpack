@@ -2,6 +2,7 @@ dnsmasq
 netdata
 portainer
 
+clickhouse
 fleet
 gitea
 grafana

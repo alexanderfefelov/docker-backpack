@@ -12,6 +12,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
       - [Frontend](business-intelligence/cubes/frontend)
     - [Metabase](business-intelligence/metabase)
 - [Databases](databases)
+    - [ClickHouse](databases/clickhouse)
     - [MongoDB](databases/mongodb)
         - [main instance](databases/mongodb/main)
         - [test instance](databases/mongodb/test)
