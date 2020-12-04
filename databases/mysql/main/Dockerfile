@@ -1,4 +1,4 @@
-FROM alexanderfefelov/mysql-replication:5.7.31
+FROM alexanderfefelov/mysql-replication:8.0.22
 
 ENV \
   HEALTHCHECK_USERNAME=healthcheck \

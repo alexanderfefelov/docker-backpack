@@ -1,4 +1,4 @@
-FROM mysql:5.7.31
+FROM mysql:8.0.22
 
 ENV \
   HEALTHCHECK_USERNAME=healthcheck \
