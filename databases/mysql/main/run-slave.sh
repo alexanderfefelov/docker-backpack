@@ -13,7 +13,7 @@ set -e
 
 run_slave $SLAVE_CONTAINER_NAME $SLAVE_HOST_NAME $SLAVE_MYSQL_SERVER_ID $SLAVE_PORT $MASTER_HOST_NAME $MASTER_PORT
 wait_for_container_ports $SLAVE_CONTAINER_NAME 3306 $WAIT_TIMEOUT
-docker exec $SLAVE_CONTAINER_NAME cp /read-only.cnf /etc/mysql/mysql.conf.d/
+docker exec $SLAVE_CONTAINER_NAME cp /read-only.cnf /etc/mysql/conf.d/
 docker restart $SLAVE_CONTAINER_NAME
 wait_for_container_ports $SLAVE_CONTAINER_NAME 3306 $WAIT_TIMEOUT
 print_container_info $SLAVE_CONTAINER_NAME

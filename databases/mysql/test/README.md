@@ -6,6 +6,6 @@ Hostname `mysql-test.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 3307 | MySQL classic protocol | `root` / `ickyligholro`
-| | | `healthcheck_coloncieurgo` / `roladynorbas`
+| 3307 | MySQL classic protocol | `healthcheck_coloncieurgo` / `roladynorbas`
+| | | `root` / `ickyligholro`
 | | | `telegraf_husaughbleak` / `siblecitewar`
