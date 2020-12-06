@@ -2,7 +2,6 @@ backpack-dnsmasq
 backpack-netdata
 backpack-portainer
 
-backpack-clickhouse
 backpack-fleet
 backpack-gitea
 backpack-grafana
@@ -22,6 +21,7 @@ backpack-metabase
 
 # Databases
 #
+backpack-clickhouse
 backpack-mongodb-main
 backpack-mongodb-test
 backpack-mysql-main-master

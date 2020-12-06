@@ -2,7 +2,6 @@ dnsmasq
 netdata
 portainer
 
-clickhouse
 fleet
 gitea
 grafana
@@ -22,6 +21,7 @@ business-intelligence/metabase
 
 # Databases
 #
+databases/clickhouse
 databases/mongodb/main
 databases/mongodb/test
 databases/mysql/main
