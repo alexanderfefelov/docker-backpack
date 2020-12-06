@@ -1,4 +1,4 @@
-FROM alexanderfefelov/cubesviewer-server
+FROM quay.io/alexanderfefelov/cubesviewer-server
 
 ADD container/ /
 

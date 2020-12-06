@@ -1,4 +1,4 @@
-FROM alexanderfefelov/cubes
+FROM quay.io/alexanderfefelov/cubes
 
 ADD container/ /
 
