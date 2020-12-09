@@ -35,6 +35,7 @@ Port,Container
 5672,backpack-activemq-node-3
 5673,backpack-rabbitmq
 5674,backpack-rabbitmq
+5893,backpack-kkmserver
 6379,backpack-redis
 8000,backpack-cubes-frontend
 8003,backpack-fleet

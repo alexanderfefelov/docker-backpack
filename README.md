@@ -44,6 +44,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)
+- [KkmServer](kkmserver)
 - [LibreSpeed](librespeed)
 - [Mattermost](mattermost)
 - [Message queues](message-queues)
