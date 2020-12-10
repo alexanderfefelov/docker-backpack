@@ -1,4 +1,4 @@
-readonly FASTNETMON_VERSION=1.1.7
+readonly FASTNETMON_VERSION=1.1.8
 
 readonly MONIKER=fastnetmon
 readonly BASE_NAME=backpack-$MONIKER
