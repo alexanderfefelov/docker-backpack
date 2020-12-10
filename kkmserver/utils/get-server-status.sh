@@ -3,7 +3,7 @@
 . lib.sh
 
 readonly REQUEST='{
-  "Command": "List",
+  "Command": "GetServerData",
   "IdCommand": "'$(uuidgen)'"
 }'
 

@@ -5,9 +5,10 @@ readonly DEVICE_NO=${1:-3}
 . lib.sh
 
 readonly REQUEST='{
-  "Command": "OpenShift",
+  "Command": "DepositingCash",
   "IdCommand": "'$(uuidgen)'",
-  "NumDevice": '$DEVICE_NO'
+  "NumDevice": '$DEVICE_NO',
+  "Amount": 3141592.65
 }'
 
 execute_post_request <<< "$REQUEST"

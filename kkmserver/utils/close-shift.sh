@@ -6,6 +6,7 @@ readonly DEVICE_NO=${1:-3}
 
 readonly REQUEST='{
   "Command": "CloseShift",
+  "IdCommand": "'$(uuidgen)'",
   "NumDevice": '$DEVICE_NO'
 }'
 
