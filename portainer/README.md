@@ -6,4 +6,4 @@ Hostname `portainer.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [9000](http://portainer.backpack.test:9000) | HTTP [API](https://portainer.readthedocs.io/en/stable/API.html) and management console | `admin` / `defulobitusc`
+| [9000](http://portainer.backpack.test:9000) | HTTP [API](https://github.com/portainer/portainer/blob/develop/api/swagger.yaml) and management console | `admin` / `defulobitusc`
