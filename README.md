@@ -41,6 +41,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 - [InfluxData stack](influxdata)
     - [Chronograf](influxdata/chronograf)
     - [InfluxDB](influxdata/influxdb)
+    - [InfluxDB 2](influxdata/influxdb-2)
     - [Kapacitor](influxdata/kapacitor)
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)

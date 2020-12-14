@@ -52,6 +52,7 @@ backpack-guacamole-frontend
 # InfluxData stack
 #
 backpack-influxdb
+backpack-influxdb-2
 backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
