@@ -1,4 +1,4 @@
-FROM fleetdm/fleet:3.4.0
+FROM fleetdm/fleet:3.5.1
 
 ADD container/ /
 
