@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=2.1.40.34_29.11.2020
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=kkmserver
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

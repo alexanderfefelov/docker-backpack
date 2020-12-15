@@ -1,4 +1,6 @@
-FROM quay.io/alexanderfefelov/kkmserver:2.1.40.34_29.11.2020
+ARG VERSION
+
+FROM quay.io/alexanderfefelov/kkmserver:$VERSION
 
 ADD container/ /
 
