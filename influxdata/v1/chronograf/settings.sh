@@ -5,6 +5,6 @@ readonly CONTAINER_NAME=$BASE_NAME
 readonly HOST_NAME=$MONIKER.backpack.test
 readonly WAIT_TIMEOUT=600
 
-. ../../lib/settings/go.sh
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../../../lib/settings/go.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh
