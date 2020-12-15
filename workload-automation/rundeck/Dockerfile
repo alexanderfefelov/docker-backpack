@@ -1,3 +1,5 @@
-FROM rundeck/rundeck:3.3.7
+ARG VERSION
+
+FROM rundeck/rundeck:$VERSION
 
 ADD container/ /

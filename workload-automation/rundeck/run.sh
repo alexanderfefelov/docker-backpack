@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo  --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../../lib/lib.sh
@@ -31,7 +31,7 @@ run() {
     --env RUNDECK_GRAILS_URL=http://rundeck.backpack.test:4440 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME
+    $IMAGE_NAME:$VERSION
 }
 
 $MYSQL --execute="USE $DB_DATABASE;"
