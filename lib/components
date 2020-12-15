@@ -49,11 +49,11 @@ guacamole/frontend
 
 # InfluxData stack
 #
-influxdata/influxdb
 influxdata/influxdb-2
-influxdata/kapacitor
-influxdata/chronograf
 influxdata/telegraf
+influxdata/v1/chronograf
+influxdata/v1/influxdb
+influxdata/v1/kapacitor
 
 # Message queues
 #
