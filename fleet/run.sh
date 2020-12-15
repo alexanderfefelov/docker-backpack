@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../lib/lib.sh

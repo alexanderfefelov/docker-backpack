@@ -1,4 +1,6 @@
-FROM quay.io/alexanderfefelov/cubes
+ARG VERSION
+
+FROM quay.io/alexanderfefelov/cubes:$VERSION
 
 ADD container/ /
 
