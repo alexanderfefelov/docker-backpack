@@ -1,4 +1,6 @@
-FROM fleetdm/fleet:3.5.1
+ARG VERSION
+
+FROM fleetdm/fleet:$VERSION
 
 ADD container/ /
 
