@@ -96,10 +96,10 @@ RUN apt-get -qq clean \
 
 # Dkron
 #
-ARG DKRON_VERSION=3.0.8
-ARG DKRON_STUFF=dkron_${DKRON_VERSION}_linux_amd64.tar.gz
+ARG VERSION
+ARG DKRON_STUFF=dkron_${VERSION}_linux_amd64.tar.gz
 ENV DKRON_HOME=/dkron
-ADD https://github.com/distribworks/dkron/releases/download/v$DKRON_VERSION/$DKRON_STUFF /
+ADD https://github.com/distribworks/dkron/releases/download/v$VERSION/$DKRON_STUFF /
 RUN mkdir --parents $DKRON_HOME \
   && tar --extract --gzip --file=$DKRON_STUFF --directory=$DKRON_HOME \
   && mkdir --parents /var/lib/dkron/data \

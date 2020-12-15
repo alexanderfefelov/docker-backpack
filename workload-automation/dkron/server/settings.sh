@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=3.0.8
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=dkron-server
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

@@ -22,7 +22,7 @@ run_server() {
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME \
+    $IMAGE_NAME:$VERSION \
       agent \
         --server \
         --bind-addr $HOST_NAME:$SERF_PORT \
