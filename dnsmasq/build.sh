@@ -10,7 +10,7 @@ set -e
 . settings.sh
 
 generate_config_files() {
-  echo Genarating config files...
+  echo Generating config files...
 
   local -r IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
   if [ -z $IP_ADDRESS ]; then
@@ -26,5 +26,8 @@ generate_config_files() {
 }
 
 generate_config_files
-docker build --tag $IMAGE_NAME .
+docker build \
+  --build-arg VERSION \
+  --tag $IMAGE_NAME:$VERSION \
+  .
 rm --force container/etc/dnsmasq.d/address.conf.generated

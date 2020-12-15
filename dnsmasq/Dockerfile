@@ -1,4 +1,6 @@
-FROM jpillora/dnsmasq:1.1.0
+ARG VERSION
+
+FROM jpillora/dnsmasq:$VERSION
 
 ADD container/ /
 
