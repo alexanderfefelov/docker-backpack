@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=5.16.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=activemq
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
