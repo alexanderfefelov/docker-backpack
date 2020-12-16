@@ -1,3 +1,5 @@
-FROM docker.bintray.io/jfrog/artifactory-jcr:7.11.5
+ARG VERSION
+
+FROM docker.bintray.io/jfrog/artifactory-jcr:$VERSION
 
 ADD container/ /
