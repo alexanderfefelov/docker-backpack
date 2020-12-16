@@ -1,3 +1,5 @@
-FROM guacamole/guacamole:1.2.0
+ARG VERSION
+
+FROM guacamole/guacamole:$VERSION
 
 ADD container/ /

@@ -1,4 +1,6 @@
-FROM guacamole/guacd:1.2.0
+ARG VERSION
+
+FROM guacamole/guacd:$VERSION
 
 ADD container/ /
 

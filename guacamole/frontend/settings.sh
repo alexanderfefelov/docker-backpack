@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.2.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=guacamole-frontend
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
