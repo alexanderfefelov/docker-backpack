@@ -1,3 +1,5 @@
-FROM xwiki:12.10.0-mysql-tomcat
+ARG VERSION
+
+FROM xwiki:$VERSION-mysql-tomcat
 
 ADD container/ /
