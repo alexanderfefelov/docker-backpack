@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=20.11.4.13
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=clickhouse
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

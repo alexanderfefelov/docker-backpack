@@ -1,3 +1,5 @@
-FROM yandex/clickhouse-server:20.11.4.13
+ARG VERSION
+
+FROM yandex/clickhouse-server:$VERSION
 
 ADD container/ /

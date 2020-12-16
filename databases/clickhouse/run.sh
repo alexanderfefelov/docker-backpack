@@ -5,7 +5,7 @@
 set -e
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../../lib/lib.sh
@@ -22,7 +22,7 @@ run() {
     --publish 9002:9000 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME
+    $IMAGE_NAME:$VERSION
 }
 
 run
