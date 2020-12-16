@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=2.9.10
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=netbox
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

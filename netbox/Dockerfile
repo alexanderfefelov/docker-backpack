@@ -1,4 +1,6 @@
-FROM netboxcommunity/netbox:v2.9.10
+ARG VERSION
+
+FROM netboxcommunity/netbox:v$VERSION
 
 ADD container/ /
 
