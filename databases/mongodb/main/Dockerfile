@@ -1,4 +1,6 @@
-FROM mongo:4.4.2-bionic
+ARG VERSION
+
+FROM mongo:$VERSION-bionic
 
 ADD container/ /
 
