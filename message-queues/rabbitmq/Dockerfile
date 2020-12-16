@@ -1,4 +1,6 @@
-FROM rabbitmq:3.8.9
+ARG VERSION
+
+FROM rabbitmq:$VERSION
 
 ADD container/ /
 
