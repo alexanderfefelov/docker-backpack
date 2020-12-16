@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.26.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=netdata
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

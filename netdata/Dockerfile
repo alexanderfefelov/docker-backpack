@@ -1,3 +1,5 @@
-FROM netdata/netdata:v1.26.0
+ARG VERSION
+
+FROM netdata/netdata:v$VERSION
 
 ADD container/ /
