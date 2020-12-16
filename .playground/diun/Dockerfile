@@ -1,3 +1,5 @@
-FROM crazymax/diun:4.9.0
+ARG VERSION
+
+FROM crazymax/diun:$VERSION
 
 ADD container/ /
