@@ -5,7 +5,7 @@
 set -e
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../lib/lib.sh
@@ -22,7 +22,7 @@ run() {
     --publish 9000:9000 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME \
+    $IMAGE_NAME:$VERSION \
       --admin-password=$(htpasswd -B -C 13 -nb $ADMIN_USERNAME $ADMIN_PASSWORD | cut --delimiter=: --fields=2)
 }
 

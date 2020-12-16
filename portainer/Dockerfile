@@ -1,3 +1,5 @@
-FROM portainer/portainer-ce:2.0.0
+ARG VESRION
+
+FROM portainer/portainer-ce:$VERSION
 
 ADD container/ /
