@@ -1,4 +1,5 @@
-readonly NAV_VERSION=5.1.1
+readonly DEFAULT_VERSION=5.1.1
+export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=nav
 readonly BASE_NAME=backpack-$MONIKER

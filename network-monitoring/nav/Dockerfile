@@ -1,7 +1,7 @@
 FROM python:3.7.9-buster AS builder
 
+ARG VERSION
 ARG IMAGE_NAME
-ARG NAV_VERSION
 
 LABEL $IMAGE_NAME-stage=builder
 
@@ -12,7 +12,7 @@ RUN  apt-get -qq update \
        libldap2-dev \
        libsasl2-dev \
        patch \
-  && git clone https://github.com/Uninett/nav.git --branch ${NAV_VERSION} --depth 1 \
+  && git clone https://github.com/Uninett/nav.git --branch ${VERSION} --depth 1 \
   && pip3 --quiet wheel --requirement /nav/requirements.txt --wheel-dir /.wheels \
   && pip3 --quiet install --root /.build /nav \
   && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
@@ -24,7 +24,7 @@ RUN  apt-get -qq update \
 
 FROM python:3.7.9-slim-buster AS target
 
-ARG NAV_VERSION
+ARG VERSION
 
 ARG TINI_VERSION=0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
