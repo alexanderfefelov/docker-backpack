@@ -1,3 +1,5 @@
-FROM mysql:8.0.22
+ARG VERSION
+
+FROM mysql:$VERSION
 
 ADD container/ /
