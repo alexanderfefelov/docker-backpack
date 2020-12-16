@@ -1,3 +1,5 @@
-FROM zabbix/zabbix-web-nginx-mysql:ubuntu-5.2.2
+ARG VERSION
+
+FROM zabbix/zabbix-web-nginx-mysql:ubuntu-$VERSION
 
 ADD container/ /
