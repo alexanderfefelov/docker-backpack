@@ -1,4 +1,6 @@
-FROM metabase/metabase:v0.37.3
+ARG VERSION
+
+FROM metabase/metabase:v$VERSION
 
 ADD container/ /
 
