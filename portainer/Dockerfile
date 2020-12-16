@@ -1,4 +1,4 @@
-ARG VESRION
+ARG VERSION
 
 FROM portainer/portainer-ce:$VERSION
 
