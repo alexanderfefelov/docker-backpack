@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=latest
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=proftpd
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
