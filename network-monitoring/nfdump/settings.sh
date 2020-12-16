@@ -1,4 +1,5 @@
-readonly NFDUMP_VERSION=1.6.22
+readonly DEFAULT_VERSION=1.6.22
+export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=nfdump
 readonly BASE_NAME=backpack-$MONIKER

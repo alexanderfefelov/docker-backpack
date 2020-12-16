@@ -1,11 +1,11 @@
 FROM ubuntu:20.04 AS builder
 
+ARG VERSION
 ARG IMAGE_NAME
-ARG NFDUMP_VERSION
 
 LABEL $IMAGE_NAME-stage=builder
 
-ADD https://github.com/phaag/nfdump/archive/v$NFDUMP_VERSION.tar.gz /
+ADD https://github.com/phaag/nfdump/archive/v$VERSION.tar.gz /
 
 RUN apt-get -qq update \
   && apt-get -qq install --yes --no-install-recommends \
@@ -19,9 +19,9 @@ RUN apt-get -qq update \
        libtool \
        make \
        pkg-config \
-  && tar --extract --gzip --file=v$NFDUMP_VERSION.tar.gz \
-  && rm v$NFDUMP_VERSION.tar.gz \
-  && cd nfdump-$NFDUMP_VERSION \
+  && tar --extract --gzip --file=v$VERSION.tar.gz \
+  && rm v$VERSION.tar.gz \
+  && cd nfdump-$VERSION \
   && ./autogen.sh \
   && ./configure \
          --enable-nsel=yes \

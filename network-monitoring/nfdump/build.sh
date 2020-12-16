@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 
-export NFDUMP_VERSION IMAGE_NAME
+export IMAGE_NAME
 docker build \
-  --build-arg NFDUMP_VERSION \
+  --build-arg VERSION \
   --build-arg IMAGE_NAME \
-  --tag $IMAGE_NAME \
+  --tag $IMAGE_NAME:$VERSION \
   .
