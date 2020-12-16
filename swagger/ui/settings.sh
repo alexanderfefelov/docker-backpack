@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=3.37.2
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=swagger-ui
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
