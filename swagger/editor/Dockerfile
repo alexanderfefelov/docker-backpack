@@ -1,4 +1,6 @@
-FROM swaggerapi/swagger-editor:v3.14.7
+ARG VERSION
+
+FROM swaggerapi/swagger-editor:v$VERSION
 
 ADD container/ /
 
