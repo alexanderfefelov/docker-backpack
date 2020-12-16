@@ -1,3 +1,5 @@
-FROM gitea/gitea:1.13.0
+ARG VERSION
+
+FROM gitea/gitea:$VERSION
 
 ADD container/ /

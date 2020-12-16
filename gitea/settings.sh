@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.13.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=gitea
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
