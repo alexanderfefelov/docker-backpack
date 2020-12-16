@@ -6,4 +6,6 @@
 . settings.sh
 
 yes | docker image prune --filter label=$IMAGE_NAME-stage=builder
-docker image rm $IMAGE_NAME
+
+readonly IMAGES=$(docker image ls --quiet --filter reference=$IMAGE_NAME | sort | uniq)
+[ -z "$IMAGES" ] && echo There are no images to remove || docker image rm --force $IMAGES

@@ -1,4 +1,5 @@
-readonly FASTNETMON_VERSION=1.1.8
+readonly DEFAULT_VERSION=1.1.8
+export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=fastnetmon
 readonly BASE_NAME=backpack-$MONIKER
