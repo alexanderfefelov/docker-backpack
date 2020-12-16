@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
-ARG MATTERMOST_VERSION=5.29.1
-ARG MATTERMOST_STUFF=mattermost-team-$MATTERMOST_VERSION-linux-amd64.tar.gz
+ARG VERSION
+ARG MATTERMOST_STUFF=mattermost-team-$VERSION-linux-amd64.tar.gz
 ENV MATTERMOST_HOME=/mattermost MATTERMOST_USER=mattermost MATTERMOST_GROUP=mattermost
 
-ADD https://releases.mattermost.com/$MATTERMOST_VERSION/$MATTERMOST_STUFF /
+ADD https://releases.mattermost.com/$VERSION/$MATTERMOST_STUFF /
 
 RUN  apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
