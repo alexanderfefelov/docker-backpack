@@ -1,4 +1,6 @@
-FROM telegraf:1.16.3
+ARG VERSION
+
+FROM telegraf:$VERSION
 
 ADD container/ /
 

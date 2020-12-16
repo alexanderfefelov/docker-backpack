@@ -1,4 +1,6 @@
-FROM influxdb:1.8.3
+ARG VERSION
+
+FROM influxdb:$VERSION
 
 ADD container/ /
 

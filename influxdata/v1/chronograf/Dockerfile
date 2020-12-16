@@ -1,3 +1,5 @@
-FROM quay.io/influxdb/chronograf:1.8.9.1
+ARG VERSION
+
+FROM quay.io/influxdb/chronograf:$VERSION
 
 ADD container/ /

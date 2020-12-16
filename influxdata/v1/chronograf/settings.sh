@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.8.9.1
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=chronograf
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

@@ -1,3 +1,5 @@
-FROM kapacitor:1.5.7
+ARG VERSION
+
+FROM kapacitor:$VERSION
 
 ADD container/ /

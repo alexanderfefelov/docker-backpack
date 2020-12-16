@@ -1,1 +1,3 @@
-FROM quay.io/influxdb/influxdb:v2.0.2
+ARG VERSION
+
+FROM quay.io/influxdb/influxdb:v$VERSION
