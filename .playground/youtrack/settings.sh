@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=2020.5.3123
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=youtrack
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

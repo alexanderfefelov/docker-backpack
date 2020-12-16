@@ -1,4 +1,6 @@
-FROM jetbrains/youtrack:2020.5.3123
+ARG VERSION
+
+FROM jetbrains/youtrack:$VERSION
 
 ADD container/ /
 
