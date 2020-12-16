@@ -1,4 +1,6 @@
-FROM docker.elastic.co/apm/apm-server:7.10.1
+ARG VERSION
+
+FROM docker.elastic.co/apm/apm-server:$VERSION
 
 ADD container/ /
 

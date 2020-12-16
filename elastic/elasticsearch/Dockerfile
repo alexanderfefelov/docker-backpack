@@ -1,4 +1,6 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+ARG VERSION
+
+FROM docker.elastic.co/elasticsearch/elasticsearch:$VERSION
 
 ADD container/ /
 

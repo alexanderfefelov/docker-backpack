@@ -1,3 +1,5 @@
-FROM docker.elastic.co/logstash/logstash:7.10.1
+ARG VERSION
+
+FROM docker.elastic.co/logstash/logstash:$VERSION
 
 ADD container/ /

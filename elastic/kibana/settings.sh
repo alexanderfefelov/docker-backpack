@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=7.10.1
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=kibana
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

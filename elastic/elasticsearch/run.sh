@@ -5,7 +5,7 @@
 set -e
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../../lib/lib.sh
@@ -44,7 +44,7 @@ run() {
     $([[ $SSE_SUPPORT != *sse4_2* ]] && echo Machine Learning disabled >&2 && echo --env xpack.ml.enabled=false) \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME
+    $IMAGE_NAME:$VERSION
 }
 
 check_vm_max_map_count

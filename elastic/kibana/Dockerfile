@@ -1,3 +1,5 @@
-FROM docker.elastic.co/kibana/kibana:7.10.1
+ARG VERSION
+
+FROM docker.elastic.co/kibana/kibana:$VERSION
 
 ADD container/ /
