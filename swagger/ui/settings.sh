@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.37.2
+readonly DEFAULT_VERSION=3.38.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=swagger-ui
