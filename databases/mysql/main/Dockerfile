@@ -1,3 +1,5 @@
-FROM quay.io/alexanderfefelov/mysql-replication:8.0.22
+ARG VERSION
+
+FROM quay.io/alexanderfefelov/mysql-replication:$VERSION
 
 ADD container/ /

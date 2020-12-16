@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=8.0.22
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=mysql-main
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
