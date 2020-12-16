@@ -1,3 +1,5 @@
-FROM traefik:v2.3.4
+ARG VERSION
+
+FROM traefik:v$VERSION
 
 ADD container/ /
