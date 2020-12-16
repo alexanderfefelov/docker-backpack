@@ -1,3 +1,5 @@
-FROM alexanderfefelov/dude
+ARG VERSION
+
+FROM alexanderfefelov/dude:$VERSION
 
 ADD container/ /
