@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.3.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=pushgateway
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

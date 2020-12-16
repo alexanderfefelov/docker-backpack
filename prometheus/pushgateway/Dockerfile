@@ -1,3 +1,5 @@
-FROM prom/pushgateway:v1.3.0
+ARG VERSION
+
+FROM prom/pushgateway:v$VERSION
 
 ADD container/ /

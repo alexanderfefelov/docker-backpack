@@ -1,3 +1,5 @@
-FROM prom/alertmanager:v0.21.0
+ARG VERSION
+
+FROM prom/alertmanager:v$VERSION
 
 ADD container/ /

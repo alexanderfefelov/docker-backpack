@@ -1,3 +1,5 @@
-FROM prom/prometheus:v2.23.0
+ARG VERSION
+
+FROM prom/prometheus:v$VERSION
 
 ADD container/ /
