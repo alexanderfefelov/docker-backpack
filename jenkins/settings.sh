@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=2.269
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=jenkins
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

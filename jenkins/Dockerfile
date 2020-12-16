@@ -1,4 +1,6 @@
-FROM jenkins/jenkins:2.269
+ARG VERSION
+
+FROM jenkins/jenkins:$VERSION
 
 ADD container/ /
 
