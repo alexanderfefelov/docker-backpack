@@ -1,4 +1,6 @@
-FROM grafana/grafana:7.3.5
+ARG VERSION
+
+FROM grafana/grafana:$VERSION
 
 USER root
 
