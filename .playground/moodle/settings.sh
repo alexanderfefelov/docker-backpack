@@ -1,4 +1,5 @@
-readonly MOODLE_VERSION=3.10.0
+readonly DEFAULT_VERSION=3.10.0
+export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=moodle
 readonly BASE_NAME=backpack-$MONIKER
