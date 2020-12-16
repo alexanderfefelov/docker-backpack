@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
-ARG GOBGP_VERSION=2.22.0
-ARG GOBGP_STUFF=gobgp_${GOBGP_VERSION}_linux_amd64.tar.gz
+ARG VERSION
+ARG GOBGP_STUFF=gobgp_${VERSION}_linux_amd64.tar.gz
 ENV GOBGP_HOME=/gobgp
 
-ADD https://github.com/osrg/gobgp/releases/download/v$GOBGP_VERSION/$GOBGP_STUFF /
+ADD https://github.com/osrg/gobgp/releases/download/v$VERSION/$GOBGP_STUFF /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
