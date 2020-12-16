@@ -1,4 +1,6 @@
-FROM redis:6.0.9-alpine
+ARG VERSION
+
+FROM redis:$VERSION-alpine
 
 ADD container/ /
 

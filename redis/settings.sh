@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=6.0.9
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=redis
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
