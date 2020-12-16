@@ -1,3 +1,6 @@
+readonly DEFAULT_VERSION=1.1.7-8
+export VERSION=${VERSION:-$DEFAULT_VERSION}
+
 readonly MONIKER=graphite-statsd
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME

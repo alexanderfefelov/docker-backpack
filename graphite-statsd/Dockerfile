@@ -1,4 +1,6 @@
-FROM graphiteapp/graphite-statsd:1.1.7-8
+ARG VERSION
+
+FROM graphiteapp/graphite-statsd:$VERSION
 
 ADD container/ /
 

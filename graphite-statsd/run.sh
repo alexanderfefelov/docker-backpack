@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Elevate privileges
-[ $UID -eq 0 ] || exec sudo bash "$0" "$@"
+[ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
 . ../lib/lib.sh
@@ -32,7 +32,7 @@ run() {
     --publish 8126:8126 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME
+    $IMAGE_NAME:$VERSION
 }
 
 $MYSQL --execute="USE $DB_DATABASE;"
