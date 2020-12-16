@@ -15,7 +15,7 @@ run_agent() {
     --publish $GRPC_PORT:$GRPC_PORT \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME \
+    $IMAGE_NAME:$VERSION \
       agent \
         --rpc-port $GRPC_PORT \
         --bind-addr $HOST_NAME:$SERF_PORT \
