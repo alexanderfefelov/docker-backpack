@@ -1,4 +1,6 @@
-FROM quay.io/alexanderfefelov/cubesviewer-server
+ARG VERSION
+
+FROM quay.io/alexanderfefelov/cubesviewer-server:$VERSION
 
 ADD container/ /
 
