@@ -108,5 +108,9 @@ RUN mkdir --parents $DKRON_HOME \
 
 ADD container/ /
 
-ENTRYPOINT ["/dkron/dkron"]
+ARG TINI_VERSION=0.19.0
+ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
+RUN chmod +x /usr/sbin/tini
+
+ENTRYPOINT ["tini", "--", "/dkron/dkron"]
 CMD ["--help"]
