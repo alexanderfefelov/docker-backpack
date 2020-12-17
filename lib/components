@@ -12,6 +12,7 @@ librespeed
 mattermost
 netbox
 redis
+typesense
 xwiki
 
 # Business intelligence

@@ -12,6 +12,7 @@ backpack-librespeed
 backpack-mattermost
 backpack-netbox
 backpack-redis
+backpack-typesense
 backpack-xwiki
 
 # Business intelligence

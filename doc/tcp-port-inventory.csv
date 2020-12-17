@@ -53,6 +53,7 @@ Port,Container
 8090,backpack-swagger-ui
 8091,backpack-swagger-editor
 8092,backpack-influxdb-2
+8108,backpack-typesense
 8123,backpack-clickhouse
 8126,backpack-graphite-statsd
 8161,backpack-activemq-node-1
