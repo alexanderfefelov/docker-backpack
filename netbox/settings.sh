@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.9.10
+readonly DEFAULT_VERSION=2.10.1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=netbox
