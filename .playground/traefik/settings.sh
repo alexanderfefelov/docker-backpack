@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.3.5
+readonly DEFAULT_VERSION=2.3.6
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=traefik
