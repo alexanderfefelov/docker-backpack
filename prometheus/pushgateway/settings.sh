@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.3.0
+readonly DEFAULT_VERSION=1.3.1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=pushgateway
