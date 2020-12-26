@@ -1,5 +1,7 @@
 # backpack-rabbitmq
 
+![RabbitMQ](../../doc/assets/logo/rabbitmq.png)
+
 Hostname `rabbitmq.backpack.test`
 
 ## Services

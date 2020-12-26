@@ -1,5 +1,7 @@
 # backpack-fastnetmon
 
+![FastNetMon](../../doc/assets/logo/fastnetmon.png)
+
 Hostname `fastnetmon.backpack.test`
 
 ## Services

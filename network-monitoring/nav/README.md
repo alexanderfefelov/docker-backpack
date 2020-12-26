@@ -1,5 +1,7 @@
 # backpack-nav
 
+![NAV](../../doc/assets/logo/nav.png)
+
 Hostname `nav.backpack.test`
 
 ## Services

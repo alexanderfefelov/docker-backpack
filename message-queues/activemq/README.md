@@ -1,5 +1,7 @@
 # backpack-activemq
 
+![ActiveMQ](../../doc/assets/logo/activemq.png)
+
 Hostnames:
  
  - `activemq-node-1.backpack.test`

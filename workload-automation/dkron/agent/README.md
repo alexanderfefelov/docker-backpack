@@ -1,5 +1,7 @@
 # backpack-dkron-agent
 
+![Dkron](../../../doc/assets/logo/dkron.png)
+
 Hostnames:
 
 - `dkron-agent-1.backpack.test`

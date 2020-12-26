@@ -1,5 +1,7 @@
 # backpack-minecraft
 
+![Minecraft](../doc/assets/logo/minecraft.png)
+
 Hostname `minecraft.backpack.test`
 
 ## Services
