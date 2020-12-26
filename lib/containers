@@ -10,6 +10,7 @@ backpack-jenkins
 backpack-kkmserver
 backpack-librespeed
 backpack-mattermost
+backpack-minecraft
 backpack-netbox
 backpack-redis
 backpack-typesense
