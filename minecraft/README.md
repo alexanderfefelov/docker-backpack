@@ -1,6 +1,6 @@
 # backpack-minecraft
 
-![Minecraft](../doc/assets/logo/minecraft.png)
+![Minecraft](../doc/assets/logos/minecraft.png)
 
 Hostname `minecraft.backpack.test`
 

@@ -1,6 +1,6 @@
 # backpack-nav
 
-![NAV](../../doc/assets/logo/nav.png)
+![NAV](../../doc/assets/logos/nav.png)
 
 Hostname `nav.backpack.test`
 

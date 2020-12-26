@@ -1,6 +1,6 @@
 # backpack-dkron-server
 
-![Dkron](../../../doc/assets/logo/dkron.png)
+![Dkron](../../../doc/assets/logos/dkron.png)
 
 Hostnames:
 

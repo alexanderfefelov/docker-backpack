@@ -1,6 +1,6 @@
 # backpack-dkron-agent
 
-![Dkron](../../../doc/assets/logo/dkron.png)
+![Dkron](../../../doc/assets/logos/dkron.png)
 
 Hostnames:
 

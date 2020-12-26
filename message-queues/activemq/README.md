@@ -1,6 +1,6 @@
 # backpack-activemq
 
-![ActiveMQ](../../doc/assets/logo/activemq.png)
+![ActiveMQ](../../doc/assets/logos/activemq.png)
 
 Hostnames:
  
