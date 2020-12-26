@@ -8,3 +8,6 @@ readonly WAIT_TIMEOUT=2
 
 nc -z -w $WAIT_TIMEOUT localhost 25565
 nc -z -w $WAIT_TIMEOUT localhost 25575
+curl --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
+  http://jolokia_dahhegeedahg:ahyaquaexiew@localhost:8778/jolokia/ \
+  > /dev/null

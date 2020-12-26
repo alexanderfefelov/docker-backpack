@@ -18,6 +18,7 @@ run() {
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 25565:25565 \
     --publish 25575:25575 \
+    --publish 25576:8778 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION
