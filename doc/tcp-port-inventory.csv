@@ -93,6 +93,8 @@ Port,Container
 15674,backpack-rabbitmq
 15675,backpack-rabbitmq
 19999,backpack-netdata
+25565,backpack-minecraft
+25575,backpack-minecraft
 27017,backpack-mongodb-main
 27018,backpack-mongodb-test
 50000,backpack-jenkins
