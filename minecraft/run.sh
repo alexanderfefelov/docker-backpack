@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/minecraft \
     --publish 25565:25565 \
     --publish 25575:25575 \
     --publish 25576:8778 \
