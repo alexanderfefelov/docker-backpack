@@ -1,5 +1,7 @@
 # backpack-kibana
 
+![Kibana](../../doc/assets/logos/kibana.png)
+
 Hostname `kibana.backpack.test`
 
 ## Services

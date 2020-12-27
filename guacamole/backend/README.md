@@ -1,5 +1,7 @@
 # backpack-guacamole-backend
 
+![Guacamole](../../doc/assets/logos/guacamole.png)
+
 Hostname `guacamole-backend.backpack.test`
 
 ## Services

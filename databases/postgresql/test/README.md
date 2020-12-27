@@ -1,5 +1,7 @@
 # backpack-postgresql-test
 
+![PostgreSQL](../../../doc/assets/logos/postgresql.png)
+
 Hostname `postgresql-test.backpack.test`
 
 ## Services

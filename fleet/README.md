@@ -1,5 +1,7 @@
 # backpack-fleet
 
+![Fleet](../doc/assets/logos/fleet.png)
+
 Hostname `fleet.backpack.test`
 
 ## Services

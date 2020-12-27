@@ -1,5 +1,7 @@
 # backpack-guacamole-frontend
 
+![Guacamole](../../doc/assets/logos/guacamole.png)
+
 Hostname `guacamole-frontend.backpack.test`
 
 ## Services

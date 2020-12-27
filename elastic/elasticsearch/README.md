@@ -1,5 +1,7 @@
 # backpack-elasticsearch
 
+![Elasticsearch](../../doc/assets/logos/elasticsearch.png)
+
 Hostname `elasticsearch.backpack.test`
 
 ## Services

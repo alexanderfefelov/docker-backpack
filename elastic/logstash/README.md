@@ -1,5 +1,7 @@
 # backpack-logstash
 
+![Logstash](../../doc/assets/logos/logstash.png)
+
 Hostname `logstash.backpack.test`
 
 ## Services

@@ -1,5 +1,7 @@
 # backpack-apm
 
+![APM](../../doc/assets/logos/apm.png)
+
 Hostname `apm.backpack.test`
 
 ## Services

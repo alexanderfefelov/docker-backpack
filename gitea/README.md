@@ -1,5 +1,7 @@
 # backpack-gitea
 
+![Gitea](../doc/assets/logos/gitea.png)
+
 Hostname `gitea.backpack.test`
 
 ## Services

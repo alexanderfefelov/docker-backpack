@@ -1,5 +1,7 @@
 # backpack-mongodb-main
 
+![MongoDB](../../../doc/assets/logos/mongodb.png)
+
 Hostname `mongodb-main.backpack.test`
 
 ## Services

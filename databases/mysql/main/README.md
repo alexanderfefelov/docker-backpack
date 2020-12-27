@@ -1,5 +1,7 @@
 # backpack-mysql-main
 
+![MySQL](../../../doc/assets/logos/mysql.png)
+
 Hostnames:
 
 - `mysql-main-backup.backpack.test`
