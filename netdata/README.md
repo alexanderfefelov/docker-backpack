@@ -1,5 +1,7 @@
 # backpack-netdata
 
+![Netdata](../doc/assets/logos/netdata.png)
+
 Hostname `netdata.backpack.test`
 
 ## Services

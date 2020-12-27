@@ -1,5 +1,7 @@
 # backpack-xwiki
 
+![XWiki](../doc/assets/logos/xwiki.png)
+
 Hostname `xwiki.backpack.test`
 
 ## Services

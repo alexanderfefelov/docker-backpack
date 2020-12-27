@@ -1,5 +1,7 @@
 # backpack-redis
 
+![Redis](../doc/assets/logos/redis.png)
+
 Hostname `redis.backpack.test`
 
 ## Services

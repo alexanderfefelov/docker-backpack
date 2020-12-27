@@ -1,5 +1,7 @@
 # backpack-alertmanager
 
+![Prometheus](../../doc/assets/logos/prometheus.png)
+
 Hostname `alertmanager.backpack.test`
 
 ## Services

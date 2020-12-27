@@ -1,5 +1,7 @@
 # backpack-prometheus
 
+![Prometheus](../../doc/assets/logos/prometheus.png)
+
 Hostname `prometheus.backpack.test`
 
 ## Services

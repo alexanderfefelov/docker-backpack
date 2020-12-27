@@ -1,5 +1,7 @@
 # backpack-the-dude
 
+![The Dude](../../doc/assets/logos/the-dude.png)
+
 Hostname `the-dude.backpack.test`
 
 ## Services

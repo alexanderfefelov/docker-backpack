@@ -1,5 +1,7 @@
 # backpack-rundeck
 
+![Rundeck](../../doc/assets/logos/rundeck.png)
+
 Hostname `rundeck.backpack.test`
 
 ## Services

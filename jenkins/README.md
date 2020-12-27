@@ -1,5 +1,7 @@
 # backpack-jenkins
 
+![Jenkins](../doc/assets/logos/jenkins.png)
+
 Hostname `jenkins.backpack.test`
 
 ## Services

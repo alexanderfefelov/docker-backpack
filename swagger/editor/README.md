@@ -1,5 +1,7 @@
 # backpack-swagger-editor
 
+![Swagger](../../doc/assets/logos/swagger.png)
+
 Hostname `swagger-editor.backpack.test`
 
 ## Services

@@ -1,5 +1,7 @@
 # backpack-netbox
 
+![NetBox](../doc/assets/logos/netbox.png)
+
 Hostname `netbox.backpack.test`
 
 ## Services
