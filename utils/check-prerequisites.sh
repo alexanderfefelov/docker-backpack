@@ -12,6 +12,7 @@ readonly PREREQUISITES="
   jq
   logger
   lorem
+  mcrcon
   mkpasswd
   mongo
   mysql
