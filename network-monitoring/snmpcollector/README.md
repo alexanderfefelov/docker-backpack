@@ -6,4 +6,4 @@ Hostname `snmpcollector.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8093](http://snmpcollector.backpack.test:8093) | Management console | `adm1` / `adm1pass`
+| [8093](http://snmpcollector.backpack.test:8093) | HTTP [API](https://github.com/toni-moreno/snmpcollector/wiki/SnmpCollector-Automations) and management console | `admin_naungeitheir` / `xedierohgaej`

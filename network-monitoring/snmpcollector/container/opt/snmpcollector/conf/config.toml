@@ -1,4 +1,3 @@
-
 ############################
 # General Config
 ############################
@@ -7,7 +6,7 @@
  # InstanceID will be a string identifying the collector , It will be useful when
  # more than one running on the same server, this ID will be shown in the WebUI.
  # could be set also with SNMPCOL_GENERAL_INSTANCE_ID env var
- instanceID = "WAN Communicactions"
+ instanceID = "docker-backpack"
 
  # datadir set the directory where the data will be placed , also sqlite db if set as db engine
  # if not set the default datadir will be placed in the configuration directory
@@ -127,12 +126,12 @@ log_mode = "none"
 
  # Admin user to log in the UI
  # could also be set with SNMPCOL_HTTP_ADMIN_USER  env var
- adminuser = "adm1"
+ adminuser = "admin_naungeitheir"
 
  # Admin password to log in the UI
  # could also be set with SNMPCOL_HTTP_ADMIN_PASSWORD  env var
- adminpassword = "adm1pass"
+ adminpassword = "xedierohgaej"
 
  # When more than one instance you will need customize the cookie_id allowing navigate to all instances
  # could also be set with SNMPCOL_HTTP_COOKIE_ID  env var
- cookieid ="my_instance_cookie"
+ cookieid ="docker-backpack"
