@@ -71,6 +71,7 @@ backpack-rabbitmq
 backpack-fastnetmon
 backpack-nav
 backpack-nfdump
+backpack-snmpcollector
 backpack-the-dude
 backpack-zabbix-backend
 backpack-zabbix-frontend
