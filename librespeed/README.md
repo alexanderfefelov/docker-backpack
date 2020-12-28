@@ -1,5 +1,7 @@
 # backpack-librespeed
 
+![LibreSpeed](../doc/assets/logos/librespeed.png)
+
 Hostname `librespeed.backpack.test`
 
 ## Services
