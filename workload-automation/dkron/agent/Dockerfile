@@ -7,6 +7,7 @@ RUN apt-get -qq update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
       apache2-utils \
       ca-certificates \
+      certbot \
       cifs-utils \
       curl \
       expect \
