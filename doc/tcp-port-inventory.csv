@@ -29,6 +29,8 @@ Port,Container
 5432,backpack-postgresql-main
 5433,backpack-postgresql-test
 5514,backpack-logstash
+5555,backpack-riemann
+5556,backpack-riemann
 5601,backpack-kibana
 5670,backpack-activemq-node-1
 5671,backpack-activemq-node-2

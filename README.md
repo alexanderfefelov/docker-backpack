@@ -69,6 +69,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
     - [Prometheus](prometheus/prometheus)
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
+- [Riemann](riemann)
 - [Swagger](swagger)
     - [Editor](swagger/editor)
     - [UI](swagger/ui)
@@ -88,4 +89,4 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 
 ---
 
-Copyright (c) 2020 Alexander Fefelov, MIT license (see [LICENSE](LICENSE))
+Copyright (c) 2020-2021 Alexander Fefelov, MIT license (see [LICENSE](LICENSE))
