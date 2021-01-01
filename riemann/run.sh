@@ -17,6 +17,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-conf:/etc/riemann \
+    --volume $CONTAINER_NAME-log:/var/log/riemann \
     --publish 5555:5555 \
     --publish 5555:5555/udp \
     --publish 5556:5556 \
