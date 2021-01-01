@@ -37,7 +37,7 @@ scrape_configs:
   - targets:
     - pushgateway.backpack.test:9091
 
-- job_name: dkron-server
+- job_name: dkron-servers
   honor_timestamps: true
   honor_labels: true
   scrape_interval: 15s
@@ -46,4 +46,6 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - dkron-server.backpack.test:8900
+    - dkron-server-1.backpack.test:8900
+    - dkron-server-2.backpack.test:8903
+    - dkron-server-3.backpack.test:8906
