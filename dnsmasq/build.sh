@@ -22,7 +22,7 @@ generate_config_files() {
     < build/template.address.conf \
     > container/etc/dnsmasq.d/address.conf.generated
 
-  echo ..config files generated
+  echo ...config files generated
 }
 
 generate_config_files
