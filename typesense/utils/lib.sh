@@ -7,7 +7,7 @@ readonly API_KEY=xa7AMod9quaopho0eiquaike9ATu5viWae2iequ7ch
 #   $1 - significant part of the API URL
 #   $2... - request parameters
 # Returns:
-#   none
+#   response body
 #
 execute_get_request() {
   local response=$(
