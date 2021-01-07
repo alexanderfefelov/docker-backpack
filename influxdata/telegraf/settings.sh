@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.16.3
+readonly DEFAULT_VERSION=1.17.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=telegraf
