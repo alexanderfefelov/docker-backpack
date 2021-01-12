@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.11.5
+readonly DEFAULT_VERSION=7.12.6
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=container-registry
