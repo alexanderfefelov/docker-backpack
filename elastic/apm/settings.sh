@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.10.1
+readonly DEFAULT_VERSION=7.10.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=apm
