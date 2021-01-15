@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.3.6
+readonly DEFAULT_VERSION=7.3.7
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=grafana
