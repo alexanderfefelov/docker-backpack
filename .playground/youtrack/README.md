@@ -6,4 +6,4 @@ Hostname `youtrack.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| [8085](http://youtrack.backpack.test:8085) | HTTP API and management console | `admin` / `admin`
+| [8085](http://youtrack.backpack.test:8085) | HTTP [API](https://www.jetbrains.com/help/youtrack/standalone/youtrack-rest-api-reference.html) and management console | `admin` / `admin`
