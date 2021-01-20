@@ -27,7 +27,7 @@ run() {
 }
 
 run "configure -J-Ddisable.configuration.wizard.on.clean.install=true --listen-port=8080 --base-url=http://$HOST_NAME:$HOST_PORT"
-docker stop $CONTAINER_NAME
+docker wait $CONTAINER_NAME
 docker rm $CONTAINER_NAME
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
