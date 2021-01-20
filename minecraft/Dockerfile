@@ -1,4 +1,4 @@
-FROM quay.io/alexanderfefelov/graalvm:20.3.0
+FROM quay.io/alexanderfefelov/graalvm:21.0.0
 
 ARG VERSION
 ENV MINECRAFT_HOME=/minecraft
