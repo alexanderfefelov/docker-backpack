@@ -8,7 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
-. ../../lib/lib.sh
+. ../lib/lib.sh
 
 run() {
   docker run \

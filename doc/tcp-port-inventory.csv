@@ -56,6 +56,7 @@ Port,Container
 8091,backpack-swagger-editor
 8092,backpack-influxdb-2
 8093,backpack-snmpcollector
+8094,backpack-youtrack
 8108,backpack-typesense
 8123,backpack-clickhouse
 8126,backpack-graphite-statsd

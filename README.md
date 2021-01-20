@@ -80,6 +80,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
         - [servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
 - [XWiki](xwiki)
+- [YouTrack](youtrack)
 
 ## Documentation
 

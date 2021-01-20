@@ -16,6 +16,7 @@ redis
 riemann
 typesense
 xwiki
+youtrack
 
 # Business intelligence
 #
