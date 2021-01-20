@@ -20,12 +20,15 @@ run() {
     --volume $CONTAINER_NAME-conf:/opt/youtrack/conf \
     --volume $CONTAINER_NAME-data:/opt/youtrack/data \
     --volume $CONTAINER_NAME-log:/opt/youtrack/logs \
-    --publish 8085:8080 \
+    --publish $HOST_PORT:8080 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME:$VERSION
+    $IMAGE_NAME:$VERSION $1
 }
 
+run "configure -J-Ddisable.configuration.wizard.on.clean.install=true --listen-port=8080 --base-url=http://$HOST_NAME:$HOST_PORT"
+docker stop $CONTAINER_NAME
+docker rm $CONTAINER_NAME
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
