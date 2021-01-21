@@ -9,5 +9,13 @@ readonly HOST_NAME=$MONIKER.backpack.test
 readonly HOST_PORT=8094
 readonly WAIT_TIMEOUT=600
 
+readonly CONFIG="
+  -J-Ddisable.configuration.wizard.on.clean.install=true
+  --listen-port=8080
+  --base-url=http://$HOST_NAME:$HOST_PORT
+  --root-user=admin_mahcaewaeth0
+  --root-password=geeh2io1oquu
+"
+
 . ../lib/settings/health.sh
 . ../lib/settings/log.sh

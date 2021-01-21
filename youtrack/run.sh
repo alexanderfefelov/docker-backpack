@@ -26,7 +26,7 @@ run() {
     $IMAGE_NAME:$VERSION $1
 }
 
-run "configure -J-Ddisable.configuration.wizard.on.clean.install=true --listen-port=8080 --base-url=http://$HOST_NAME:$HOST_PORT"
+run "configure $CONFIG"
 docker wait $CONTAINER_NAME
 docker rm $CONTAINER_NAME
 run
