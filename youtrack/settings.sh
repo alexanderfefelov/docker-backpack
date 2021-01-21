@@ -15,6 +15,7 @@ readonly CONFIG="
   --base-url=http://$HOST_NAME:$HOST_PORT
   --root-user=admin_mahcaewaeth0
   --root-password=geeh2io1oquu
+  --allow-anonymous-access=false
 "
 
 . ../lib/settings/health.sh
