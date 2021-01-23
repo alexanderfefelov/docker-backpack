@@ -37,6 +37,7 @@ backpack-postgresql-test
 
 # DNS
 #
+backpack-coredns
 backpack-dnsmasq
 
 # Elastic stack

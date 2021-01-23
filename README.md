@@ -23,6 +23,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
         - [main instance](databases/postgresql/main)
         - [test instance](databases/postgresql/test)
 - [DNS](dns)
+    - [CoreDNS](dns/coredns)
     - [dnsmasq](dns/dnsmasq)
 - [Elastic stack](elastic)
     - [APM](elastic/apm)

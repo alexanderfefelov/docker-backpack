@@ -1,6 +1,7 @@
 Port,Container
 20,backpack-proftpd
 21,backpack-proftpd
+53,backpack-coredns
 81,backpack-graphite-statsd
 82,backpack-graphite-statsd
 83,backpack-nav

@@ -35,6 +35,7 @@ databases/postgresql/test
 
 # DNS
 #
+dns/coredns
 dns/dnsmasq
 
 # Elastic stack
