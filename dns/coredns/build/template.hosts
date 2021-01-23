@@ -1,0 +1,107 @@
+# GENERATED. DO NOT EDIT!
+
+$IP_ADDRESS host.backpack.test
+
+$IP_ADDRESS netdata.backpack.test
+$IP_ADDRESS portainer.backpack.test
+
+$IP_ADDRESS clickhouse.backpack.test
+$IP_ADDRESS fleet.backpack.test
+$IP_ADDRESS gitea.backpack.test
+$IP_ADDRESS grafana.backpack.test
+$IP_ADDRESS graphite-statsd.backpack.test
+$IP_ADDRESS jenkins.backpack.test
+$IP_ADDRESS kkmserver.backpack.test
+$IP_ADDRESS librespeed.backpack.test
+$IP_ADDRESS mattermost.backpack.test
+$IP_ADDRESS minecraft.backpack.test
+$IP_ADDRESS netbox.backpack.test
+$IP_ADDRESS redis.backpack.test
+$IP_ADDRESS riemann.backpack.test
+$IP_ADDRESS typesense.backpack.test
+$IP_ADDRESS xwiki.backpack.test
+$IP_ADDRESS youtrack.backpack.test
+
+# Business intelligence
+#
+$IP_ADDRESS cubes-backend.backpack.test
+$IP_ADDRESS cubes-frontend.backpack.test
+$IP_ADDRESS metabase.backpack.test
+
+# Databases
+#
+$IP_ADDRESS mongodb-main.backpack.test
+$IP_ADDRESS mongodb-test.backpack.test
+$IP_ADDRESS mysql-main-backup.backpack.test
+$IP_ADDRESS mysql-main-master.backpack.test
+$IP_ADDRESS mysql-main-slave.backpack.test
+$IP_ADDRESS mysql-test.backpack.test
+$IP_ADDRESS postgresql-main.backpack.test
+$IP_ADDRESS postgresql-test.backpack.test
+
+# DNS
+#
+$IP_ADDRESS coredns.backpack.test
+
+# Elastic stack
+#
+$IP_ADDRESS apm.backpack.test
+$IP_ADDRESS elasticsearch.backpack.test
+$IP_ADDRESS kibana.backpack.test
+$IP_ADDRESS logstash.backpack.test
+
+# File sharing
+#
+$IP_ADDRESS proftpd.backpack.test
+$IP_ADDRESS samba.backpack.test
+
+# Guacamole
+#
+$IP_ADDRESS guacamole-backend.backpack.test
+$IP_ADDRESS guacamole-frontend.backpack.test
+
+# InfluxData stack
+#
+$IP_ADDRESS chronograf.backpack.test
+$IP_ADDRESS influxdb.backpack.test
+$IP_ADDRESS influxdb-2.backpack.test
+$IP_ADDRESS kapacitor.backpack.test
+$IP_ADDRESS telegraf.backpack.test
+
+# Message queues
+#
+$IP_ADDRESS activemq-node-1.backpack.test
+$IP_ADDRESS activemq-node-2.backpack.test
+$IP_ADDRESS activemq-node-3.backpack.test
+$IP_ADDRESS rabbitmq.backpack.test
+
+# Network monitoring
+#
+$IP_ADDRESS fastnetmon.backpack.test
+$IP_ADDRESS nav.backpack.test
+$IP_ADDRESS nfdump.backpack.test
+$IP_ADDRESS snmpcollector.backpack.test
+$IP_ADDRESS the-dude.backpack.test
+$IP_ADDRESS zabbix-backend.backpack.test
+$IP_ADDRESS zabbix-frontend.backpack.test
+
+# Prometheus
+#
+$IP_ADDRESS alertmanager.backpack.test
+$IP_ADDRESS prometheus.backpack.test
+$IP_ADDRESS pushgateway.backpack.test
+
+# Swagger
+#
+$IP_ADDRESS swagger-editor.backpack.test
+$IP_ADDRESS swagger-ui.backpack.test
+
+# Workload automation
+#
+$IP_ADDRESS dkron-agent-1.backpack.test
+$IP_ADDRESS dkron-agent-2.backpack.test
+$IP_ADDRESS dkron-agent-3.backpack.test
+$IP_ADDRESS dkron-server-1.backpack.test
+$IP_ADDRESS dkron-server-2.backpack.test
+$IP_ADDRESS dkron-server-3.backpack.test
+$IP_ADDRESS rundeck.backpack.test
