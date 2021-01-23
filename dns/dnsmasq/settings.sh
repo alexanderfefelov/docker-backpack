@@ -11,5 +11,5 @@ readonly WAIT_TIMEOUT=600
 readonly ADMIN_USERNAME=admin_inestorasyno
 readonly ADMIN_PASSWORD=impardalwina
 
-. ../lib/settings/health.sh
-. ../lib/settings/log.sh
+. ../../lib/settings/health.sh
+. ../../lib/settings/log.sh

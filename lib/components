@@ -1,4 +1,3 @@
-dnsmasq
 netdata
 portainer
 
@@ -33,6 +32,10 @@ databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
+
+# DNS
+#
+dns/dnsmasq
 
 # Elastic stack
 #
