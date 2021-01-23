@@ -7,6 +7,10 @@
 
     errors
 
+    reload
+
+    cache 180
+
     hosts /etc/coredns/hosts.generated
 
     template IN A internal {
