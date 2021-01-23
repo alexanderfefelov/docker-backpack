@@ -1,5 +1,7 @@
 # backpack-youtrack
 
+![YouTrack](../doc/assets/logos/youtrack.png)
+
 Hostname `youtrack.backpack.test`
 
 ## Services
