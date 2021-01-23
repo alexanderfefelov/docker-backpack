@@ -1,0 +1,22 @@
+. {
+    forward . 8.8.8.8
+
+    log {
+        class denial error
+    }
+
+    errors
+
+    template IN A internal {
+        match "(^|[.])(?P<a>[0-9]*)-(?P<b>[0-9]*)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]internal[.]$"
+        answer "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+        fallthrough
+    }
+    template IN PTR in-addr.arpa {
+      match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>[0-9]*)[.](?P<a>[0-9]*)[.]in-addr[.]arpa[.]$"
+      answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.internal."
+    }
+
+    prometheus 0.0.0.0:9153
+
+}

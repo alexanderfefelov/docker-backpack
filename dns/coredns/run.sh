@@ -19,6 +19,7 @@ run() {
     --volume $CONTAINER_NAME-conf:/etc/coredns \
     --publish 53:53 \
     --publish 53:53/udp \
+    --publish 9153:9153 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \

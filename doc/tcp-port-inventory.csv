@@ -90,6 +90,7 @@ Port,Container
 9090,backpack-prometheus
 9091,backpack-pushgateway
 9093,backpack-alertmanager
+9153,backpack-coredns
 9200,backpack-elasticsearch
 9300,backpack-elasticsearch
 9600,backpack-logstash
