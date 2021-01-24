@@ -18,6 +18,10 @@ ENV KALA_HOME=/kala
 
 COPY --from=builder /go/kala $KALA_HOME
 COPY --from=builder /go/kala/webui $KALA_HOME
+ADD container/target/ /
+
+RUN apk add --quiet \
+      curl `# For health checks`
 
 WORKDIR $KALA_HOME
 
