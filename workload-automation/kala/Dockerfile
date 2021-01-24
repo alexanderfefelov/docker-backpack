@@ -29,4 +29,4 @@ RUN chmod +x /usr/sbin/tini
 
 WORKDIR $KALA_HOME
 
-ENTRYPOINT ["tini", "--", "./kala", "serve"]
+ENTRYPOINT ["tini", "--", "./kala", "serve", "--kala=/etc/kala/kala.yaml"]

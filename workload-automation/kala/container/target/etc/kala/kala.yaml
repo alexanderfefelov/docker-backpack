@@ -1,0 +1,2 @@
+jobdb: boltdb
+boltpath: /var/lib/kala
