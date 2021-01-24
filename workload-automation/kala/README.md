@@ -1,5 +1,7 @@
 # backpack-kala
 
+![Kala](../../doc/assets/logos/kala.png)
+
 Hostname `kala.backpack.test`
 
 ## Services
