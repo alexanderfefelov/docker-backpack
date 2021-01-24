@@ -16,7 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --publish 12345:8000 \
+    --publish 8008:8000 \
     $DEFAULT_GO_SETTINGS \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \

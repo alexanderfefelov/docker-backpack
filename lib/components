@@ -93,4 +93,5 @@ swagger/ui
 #
 workload-automation/dkron/agent
 workload-automation/dkron/server
+workload-automation/kala
 workload-automation/rundeck

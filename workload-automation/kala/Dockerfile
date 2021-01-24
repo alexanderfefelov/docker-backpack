@@ -10,11 +10,15 @@ ENV CGO_ENABLED=0
 
 RUN git clone https://github.com/ajvb/kala.git --branch v${VERSION} --depth 1 \
   && cd kala \
-  && go build \
-  && mv kala /usr/bin
+  && go build
 
 FROM alpine:3.13 AS target
 
-COPY --from=builder /usr/bin/kala /usr/bin
+ENV KALA_HOME=/kala
 
-CMD ["kala", "serve"]
+COPY --from=builder /go/kala $KALA_HOME
+COPY --from=builder /go/kala/webui $KALA_HOME
+
+WORKDIR $KALA_HOME
+
+CMD ["./kala", "serve"]
