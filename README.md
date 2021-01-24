@@ -80,7 +80,6 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
     - [Dkron](workload-automation/dkron), cluster
         - [Agents](workload-automation/dkron/agent)
         - [Servers](workload-automation/dkron/server)
-    - [Kala](workload-automation/kala)
     - [Rundeck](workload-automation/rundeck)
 - [XWiki](xwiki)
 - [YouTrack](youtrack)
