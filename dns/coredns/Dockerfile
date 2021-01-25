@@ -6,7 +6,7 @@ ENV COREDNS_HOME=/coredns
 
 ADD https://github.com/coredns/coredns/releases/download/v$VERSION/$COREDNS_STUFF /
 
-RUN  apt-get -qq update \
+RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        netcat `# For health checks` \
   && mkdir --parents $COREDNS_HOME \

@@ -6,7 +6,7 @@ ENV MATTERMOST_HOME=/mattermost MATTERMOST_USER=mattermost MATTERMOST_GROUP=matt
 
 ADD https://releases.mattermost.com/$VERSION/$MATTERMOST_STUFF /
 
-RUN  apt-get -qq update \
+RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
        curl `# For health checks` \
