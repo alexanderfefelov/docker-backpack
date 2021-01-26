@@ -7,7 +7,7 @@ LABEL $IMAGE_NAME-stage=builder
 
 ADD container/builder/ /
 
-RUN  apt-get -qq update \
+RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        libldap2-dev \
        libsasl2-dev \
@@ -39,7 +39,7 @@ COPY --from=builder /nav/python/nav/etc/ /etc/nav/
 COPY --from=builder /nav-add-ons/web/etc/nav/ /etc/nav/
 ADD container/target/ /
 
-RUN  apt-get -qq update \
+RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        apache2 \
        cron \
