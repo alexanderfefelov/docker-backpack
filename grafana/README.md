@@ -12,6 +12,12 @@ Hostname `grafana.backpack.test`
 
 - Elasticsearch @ [backpack-elasticsearch](../elastic/elasticsearch)
 - Graphite @ [backpack-graphite-statsd](../graphite-statsd)
-- InfluxDB @ [backpack-influxdb](../influxdata/influxdb)
+- InfluxDB @ [backpack-influxdb](../influxdata/v1/influxdb)
 - Prometheus @ [backpack-prometheus](../prometheus/prometheus)
 - Redis @ [backpack-redis](../redis)
+
+## Possible data sources
+
+- [MySQL](../databases/mysql)
+- [QuestDB](../databases/questdb) via PostgreSQL wire protocol
+- [PostgreSQL](../databases/postgresql)
