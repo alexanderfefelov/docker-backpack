@@ -34,6 +34,7 @@ backpack-mysql-main-slave
 backpack-mysql-test
 backpack-postgresql-main
 backpack-postgresql-test
+backpack-questdb
 
 # DNS
 #

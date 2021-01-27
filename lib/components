@@ -32,6 +32,7 @@ databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
+databases/questdb
 
 # DNS
 #

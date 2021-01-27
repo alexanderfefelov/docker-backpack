@@ -22,6 +22,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
     - [PostgreSQL](databases/postgresql)
         - [Main instance](databases/postgresql/main)
         - [Test instance](databases/postgresql/test)
+    - [QuestDB](databases/questdb)
 - [DNS](dns)
     - [CoreDNS](dns/coredns)
     - [dnsmasq](dns/dnsmasq)

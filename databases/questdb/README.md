@@ -1,5 +1,7 @@
 # backpack-questdb
 
+![QuestDB](../../doc/assets/logos/questdb.png)
+
 Hostname `questdb.backpack.test`
 
 ## Services
