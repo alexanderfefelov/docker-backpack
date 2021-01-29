@@ -11,7 +11,9 @@
 
     cache 180
 
-    hosts /etc/coredns/hosts.generated
+    hosts /etc/coredns/hosts.generated {
+        fallthrough
+    }
 
     template IN A internal {
         match "(^|[.])(?P<a>[0-9]*)-(?P<b>[0-9]*)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]internal[.]$"
@@ -19,8 +21,8 @@
         fallthrough
     }
     template IN PTR in-addr.arpa {
-      match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>[0-9]*)[.](?P<a>[0-9]*)[.]in-addr[.]arpa[.]$"
-      answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.internal."
+        match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>[0-9]*)[.](?P<a>[0-9]*)[.]in-addr[.]arpa[.]$"
+        answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.internal."
     }
 
     prometheus 0.0.0.0:9153
