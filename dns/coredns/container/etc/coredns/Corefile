@@ -35,6 +35,20 @@
         fallthrough
     }
 
+    # Synthetic domain for:
+    #   169.254.0.0/16
+    #
+    template IN A apipa {
+        match "(^|[.])(?P<a>169)-(?P<b>254)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]apipa[.]$"
+        answer "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+        fallthrough
+    }
+    template IN PTR in-addr.arpa {
+        match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>254)[.](?P<a>169)[.]in-addr[.]arpa[.]$"
+        answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.apipa."
+        fallthrough
+    }
+
     prometheus 0.0.0.0:9153
 
 }
