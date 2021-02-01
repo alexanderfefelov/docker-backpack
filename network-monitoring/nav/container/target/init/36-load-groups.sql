@@ -1,7 +1,10 @@
 insert into netboxgroup(netboxgroupid, descr) values
-  ('development', ''),
-  ('staging', ''),
-  ('production', ''),
-  ('test', ''),
-  ('docker container', ''),
-  ('docker host', '');
+  ('Development', ''),
+  ('Staging', ''),
+  ('Production', ''),
+  ('Test', ''),
+  ('Docker container', ''),
+  ('Docker host', ''),
+  ('Access layer', ''),
+  ('Core layer', ''),
+  ('Distribution layer', '');
