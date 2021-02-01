@@ -23,7 +23,7 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-conf:/etc/netbox \
-    --volume $CONTAINER_NAME-media:/opt/netbox/netbox/media \
+    --volume $CONTAINER_NAME-data:/opt/netbox/netbox/media \
     --publish 8087:8080 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
