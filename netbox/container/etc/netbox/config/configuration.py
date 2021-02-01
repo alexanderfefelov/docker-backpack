@@ -174,7 +174,7 @@ MAX_PAGE_SIZE = 1000
 # }
 
 # Expose Prometheus monitoring metrics at the HTTP endpoint '/metrics'
-METRICS_ENABLED = False
+METRICS_ENABLED = True
 
 # Credentials that NetBox will uses to authenticate to devices when connecting via NAPALM.
 NAPALM_USERNAME = ''

@@ -39,6 +39,16 @@ scrape_configs:
     - dkron-server-2.backpack.test:8903
     - dkron-server-3.backpack.test:8906
 
+- job_name: netbox
+  honor_timestamps: true
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  metrics_path: /metrics
+  scheme: http
+  static_configs:
+  - targets:
+    - netbox.backpack.test:8087
+
 - job_name: prometheus
   honor_timestamps: true
   scrape_interval: 15s
