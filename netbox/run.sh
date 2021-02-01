@@ -25,6 +25,10 @@ run() {
     --volume $CONTAINER_NAME-conf:/etc/netbox \
     --volume $CONTAINER_NAME-data:/opt/netbox/netbox/media \
     --publish 8087:8080 \
+    --env SUPERUSER_NAME=admin_aey0doh3deit \
+    --env SUPERUSER_EMAIL=admin@backpack.test \
+    --env SUPERUSER_PASSWORD=aipahgei4if1 \
+    --env SUPERUSER_API_TOKEN=kaeta2ab1foveen4nua0heeh0baiheizaiNgaec9 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION
