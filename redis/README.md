@@ -14,4 +14,4 @@ Hostname `redis.backpack.test`
 
 | Name | Description
 | :--- | :----------
-| `db14` | [YouTrack](../youtrack)
+| `db14` | [NetBox](../netbox)
