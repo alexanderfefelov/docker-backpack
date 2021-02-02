@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.0.1
+readonly DEFAULT_VERSION=2.1.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=portainer
