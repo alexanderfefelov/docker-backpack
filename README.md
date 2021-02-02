@@ -88,6 +88,7 @@ Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.s
 ## Documentation
 
 - [Architecture](doc/architecture.graphml)
+- [Feature matrix](doc/feature-matrix.md)
 - [TCP port inventory](doc/tcp-port-inventory.csv)
 - [UDP port inventory](doc/udp-port-inventory.csv)
 
