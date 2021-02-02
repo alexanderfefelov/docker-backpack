@@ -9,3 +9,9 @@ Hostname `redis.backpack.test`
 | Port | Service | Credentials
 | ---: | :------ | :----------
 | 6379 | Redis | -
+
+## Databases
+
+| Name | Description
+| :--- | :----------
+| `db14` | [YouTrack](../youtrack)
