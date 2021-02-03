@@ -10,5 +10,5 @@ if [ "$REPLY" != "Y" ]; then
 fi
 
 ./rm.sh
-./rm-v.sh
-./rm-i.sh
+./rm-volumes.sh
+./rm-images.sh
