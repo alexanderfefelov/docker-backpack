@@ -48,6 +48,7 @@ elastic/logstash
 
 # File sharing
 #
+file-sharing/atftpd
 file-sharing/proftpd
 file-sharing/samba
 

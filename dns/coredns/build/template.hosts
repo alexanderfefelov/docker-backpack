@@ -53,6 +53,7 @@ $IP_ADDRESS logstash.backpack.test
 
 # File sharing
 #
+$IP_ADDRESS atftpd.backpack.test
 $IP_ADDRESS proftpd.backpack.test
 $IP_ADDRESS samba.backpack.test
 

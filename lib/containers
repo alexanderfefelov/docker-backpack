@@ -50,6 +50,7 @@ backpack-kibana
 
 # File sharing
 #
+backpack-atftpd
 backpack-proftpd
 backpack-samba
 

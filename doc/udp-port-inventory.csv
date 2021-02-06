@@ -1,6 +1,7 @@
 Port,Container
 53,backpack-coredns
 53,backpack-dnsmasq
+69,backpack-atftpd
 162,backpack-nav
 2003,backpack-graphite-statsd
 2055,backpack-fastnetmon
