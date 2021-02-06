@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=5.16.0
+readonly DEFAULT_VERSION=5.16.1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=activemq
