@@ -16,7 +16,7 @@
 | [Elastic Elasticsearch](../elastic/elasticsearch) | Java | ? | ? | ? | InfluxDB | ? | ?
 | [Elastic Kibana](../elastic/kibana) | Node.js | ? | ? | ? | InfluxDB | ? | ?
 | [Elastic Logstash](../elastic/logstash) | Java | ? | ? | ? | InfluxDB | ? | ?
-| [FastNetMon](../network-monitoring/fastnetmon) | ? | ? | ? | Graphite | InfluxDB | ? | ?
+| [FastNetMon](../network-monitoring/fastnetmon) | ? | ? | ? | Graphite, InfluxDB | InfluxDB (thru Graphite wire protocol) | ? | ?
 | [Fleet](../fleet) | Go | MySQL | MySQL | ? | ? | Redis | ?
 | [Gitea](../gitea) | ? | [MySQL, PostgreSQL, SQL Server, SQLite](https://docs.gitea.io/en-us/database-prep/) | MySQL | ? | ? | ? | ?
 | [Grafana](../grafana) | ? | [MySQL, PostgreSQL, SQLite](https://grafana.com/docs/grafana/latest/installation/requirements/) | MySQL | ? | ? | ? | ?
@@ -49,7 +49,7 @@
 | [Prometheus](../prometheus/prometheus) | Go | ? | ? | ? | InfluxDB | ? | ?
 | [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [QuestDB](../databases/questdb) | Java | ? | ? | ? | ? | ? | ?
-| [RabbitMQ](../message-queues/rabbitmq) | ? | ? | ? | ? | ? | ? | ?
+| [RabbitMQ](../message-queues/rabbitmq) | Erlang | ? | ? | ? | ? | ? | ?
 | [Redis](../redis) | ? | ? | ? | ? | InfluxDB | ? | ?
 | [Riemann](../riemann) | Clojure | ? | ? | ? | ? | ? | ?
 | [Rundeck](../workload-automation/rundeck) | Java | [JDBC](https://docs.rundeck.com/docs/administration/configuration/database/) | MySQL | JMX | ? | ? | ?
