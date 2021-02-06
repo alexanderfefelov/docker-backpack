@@ -35,15 +35,15 @@
 | [Minecraft](../minecraft) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
 | [MongoDB main](../databases/mongodb/main) | ? | ? | ? | ? | ? | ? | ?
 | [MongoDB test](../databases/mongodb/test) | ? | ? | ? | ? | ? | ? | ?
-| [MySQL main](../databases/mysql/main) | ? | N/A | N/A | ? | InfluxDB | ? | ?
-| [MySQL test](../databases/mysql/test) | ? | N/A | N/A | ? | InfluxDB | ? | ?
+| [MySQL main](../databases/mysql/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
+| [MySQL test](../databases/mysql/test) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [NAV](../network-monitoring/nav) | Django | PostgreSQL | PostgreSQL | ? | ? | ? | ?
 | [NetBox](../netbox) | Django | PostgreSQL | PostgreSQL | Prometheus | Prometheus | Redis | Redis
 | [Netdata](../netdata) | ? | ? | ? | ? | ? | ? | ?
 | [nfdump](../network-monitoring/nfdump) | ? | ? | ? | ? | ? | ? | ?
 | [Portainer](../portainer) | ? | ? | ? | N/A | N/A | N/A | N/A
-| [PostgreSQL main](../databases/postgresql/main) | ? | N/A | N/A | ? | InfluxDB | ? | ?
-| [PostgreSQL test](../databases/postgresql/test) | ? | N/A | N/A | ? | InfluxDB | ? | ?
+| [PostgreSQL main](../databases/postgresql/main) | ? | N/A | N/A | PostgreSQL | InfluxDB | ? | ?
+| [PostgreSQL test](../databases/postgresql/test) | ? | N/A | N/A | PostgreSQL | InfluxDB | ? | ?
 | [ProFTPD](../file-sharing/proftpd) | ? | ? | ? | ? | ? | ? | ?
 | [Prometheus](../prometheus/prometheus) | Go | ? | ? | ? | InfluxDB | ? | ?
 | [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | Prometheus | Prometheus | ? | ?
