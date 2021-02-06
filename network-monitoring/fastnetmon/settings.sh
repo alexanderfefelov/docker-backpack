@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.1.9
+readonly DEFAULT_VERSION=1.2.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=fastnetmon
