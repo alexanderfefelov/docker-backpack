@@ -2,8 +2,8 @@
 
 | Component | Technology | Storage available | Storage implemented | Metrics available | Metrics implemented | Other required or available | Other implemented
 | --------- | ---------- | ----------------- | ------------------- | ----------------- | ------------------- | ------------------------ | -------------------
-| [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | ? | ? | ? | ?
-| [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | ? | ? | ? | ?
+| [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Web Console | N/A | N/A
+| [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDNS](../dns/coredns) | Go | N/A | N/A | Prometheus | Prometheus | N/A | N/A
 | [Cubes](../business-intelligence/cubes/backend) | ? | ? | ? | ? | ? | ? | ?
@@ -46,7 +46,7 @@
 | [PostgreSQL test](../databases/postgresql/test) | ? | N/A | N/A | ? | InfluxDB | ? | ?
 | [ProFTPD](../file-sharing/proftpd) | ? | ? | ? | ? | ? | ? | ?
 | [Prometheus](../prometheus/prometheus) | Go | ? | ? | ? | InfluxDB | ? | ?
-| [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | ? | ? | ? | ?
+| [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [QuestDB](../databases/questdb) | Java | ? | ? | ? | ? | ? | ?
 | [RabbitMQ](../message-queues/rabbitmq) | ? | ? | ? | ? | ? | ? | ?
 | [Redis](../redis) | ? | ? | ? | ? | InfluxDB | ? | ?
