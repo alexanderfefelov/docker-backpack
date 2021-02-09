@@ -1,6 +1,6 @@
 # docker-backpack
 
-Before you start, run [utils/check-prerequisites.sh](utils/check-prerequisites.sh) to make sure all the tools required are available.
+Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make sure all the tools required are available.
 
 ![Backpack](doc/assets/backpack_2551.png)
 

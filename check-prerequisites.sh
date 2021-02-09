@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ../lib/ansi-escape-codes.sh
+. lib/ansi-escape-codes.sh
 
 readonly PREREQUISITES="
   awk
