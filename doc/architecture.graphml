@@ -20,7 +20,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/grafana]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1296.7111554880264" y="1292.5695523761556"/>
+          <y:Geometry height="30.0" width="90.0" x="1220.2880010930314" y="1027.0853787633387"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">grafana<y:LabelModel>
@@ -38,7 +38,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dns/dnsmasq]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="852.7546004950655" y="862.3701353862524"/>
+          <y:Geometry height="30.0" width="90.0" x="732.9765232535192" y="285.56032378137115"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">dnsmasq<y:LabelModel>
@@ -56,7 +56,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/netdata]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="852.7546004950655" y="576.8098116048812"/>
+          <y:Geometry height="30.0" width="90.0" x="732.9765232535191" y="0.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">netdata<y:LabelModel>
@@ -74,10 +74,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/portainer]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1100.0570952026426" y="719.5899734955668"/>
+          <y:Geometry height="30.0" width="90.0" x="980.2790179610962" y="142.78016189068558"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.01483154296875" y="5.911895751953125">portainer<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.014831542968636" y="5.911895751953125">portainer<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -92,7 +92,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/graphite-statsd]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="326.8495840888954" y="1118.4779800160436"/>
+          <y:Geometry height="30.0" width="150.0" x="514.816772540299" y="1010.8679281012235"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.9505615234375" x="28.02471923828125" y="5.911895751953125">graphite-statsd<y:LabelModel>
@@ -110,7 +110,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/jenkins]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="437.19650803905336" y="759.4275675014371"/>
+          <y:Geometry height="30.0" width="90.0" x="1787.9944287984736" y="602.150696184735"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">jenkins<y:LabelModel>
@@ -128,7 +128,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/redis]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="630.1446926413782" y="980.5021823118034"/>
+          <y:Geometry height="30.0" width="90.0" x="1082.3829270988206" y="645.1071559537274"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">redis<y:LabelModel>
@@ -146,7 +146,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/rundeck]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1074.015618330154" y="1706.1171066638387"/>
+          <y:Geometry height="30.0" width="90.0" x="1026.7404494198863" y="1591.7035801401623"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">rundeck<y:LabelModel>
@@ -164,7 +164,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/test]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1477.5869599819537" y="876.6023610168726"/>
+          <y:Geometry height="30.0" width="90.0" x="1515.8561496077045" y="865.4723656557871"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">mysql-test<y:LabelModel>
@@ -182,10 +182,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/postgresql/test]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="1322.5148434964094" y="1003.9092675180108"/>
+          <y:Geometry height="30.0" width="150.0" x="1288.0136843055895" y="873.6571293174848"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.9505615234375" x="28.02471923828125" y="5.911895751953239">postgresql-test<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.9505615234375" x="28.02471923828125" y="5.911895751953125">postgresql-test<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -200,10 +200,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/postgresql/main]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="494.28602205621786" y="861.5489114566594"/>
+          <y:Geometry height="30.0" width="150.0" x="702.2327020855122" y="813.5111138294793"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.9505615234375" x="28.024719238281307" y="5.911895751953125">postgresql-main<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.9505615234375" x="28.02471923828125" y="5.911895751953125">postgresql-main<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -218,7 +218,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/rabbitmq]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2143.0" y="351.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2387.0" y="351.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">rabbitmq<y:LabelModel>
@@ -236,7 +236,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="436.81584806844336" y="986.8563038062184"/>
+          <y:Geometry height="30.0" width="90.0" x="541.6042241072425" y="894.7506668430372"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="21.9901123046875" x="34.00494384765625" y="5.911895751953125">nav<y:LabelModel>
@@ -254,7 +254,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/metabase]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="562.5399491392627" y="1375.9975402413197"/>
+          <y:Geometry height="30.0" width="90.0" x="556.333452288523" y="1352.2340379561256"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">metabase<y:LabelModel>
@@ -272,7 +272,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/samba]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="452.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2548.0" y="351.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">samba<y:LabelModel>
@@ -290,7 +290,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/proftpd]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2083.0" y="452.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2166.0" y="452.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">proftpd<y:LabelModel>
@@ -307,7 +307,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
     <node id="n16">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="935.1887653975912" y="719.5899734955668"/>
+          <y:Geometry height="30.0" width="90.0" x="815.4106881560449" y="142.78016189068558"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="27.98681640625" x="31.006591796875" y="5.911895751953125">host<y:LabelModel>
@@ -327,10 +327,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="266.2466274656367" width="280.7858662713386" x="722.8269057222725" y="1471.068005681937"/>
+              <y:Geometry height="269.1244172209558" width="309.5403295240134" x="746.2271112490392" y="1235.2470805682378"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="280.7858662713386" x="0.0" y="0.0">mysql-main</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="309.5403295240134" x="0.0" y="0.0">mysql-main</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -354,7 +354,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="893.6631878244408" y="1504.2442141780307"/>
+              <y:Geometry height="30.0" width="90.0" x="950.7674407730526" y="1268.4232890643316"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">master<y:LabelModel>
@@ -372,7 +372,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="898.6127719936111" y="1692.3146331475737"/>
+              <y:Geometry height="30.0" width="90.0" x="761.2271112490392" y="1366.0237927232324"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">backup<y:LabelModel>
@@ -390,7 +390,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="737.8269057222725" y="1668.017947438952"/>
+              <y:Geometry height="30.0" width="90.0" x="921.9436671903193" y="1459.3714977891937"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">slave<y:LabelModel>
@@ -412,10 +412,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="299.41999082795166" width="343.96762634605193" x="1482.8715990464007" y="494.05938735186726"/>
+              <y:Geometry height="228.73156016440123" width="378.54701210211397" x="1716.4025725493266" y="709.3495532048768"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="343.96762634605193" x="0.0" y="0.0">elastic</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.54701210211397" x="0.0" y="0.0">elastic</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -439,7 +439,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/kibana]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1497.8715990464007" y="527.235595847961"/>
+              <y:Geometry height="30.0" width="90.0" x="1899.4295855999642" y="742.5257617009705"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">kibana<y:LabelModel>
@@ -457,7 +457,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/elasticsearch]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1661.6230194203556" y="612.9337582837233"/>
+              <y:Geometry height="30.0" width="90.0" x="1828.159556159948" y="866.9466716517034"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.9571533203125" x="4.02142333984375" y="5.911895751953125">elasticsearch<y:LabelModel>
@@ -475,7 +475,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/apm]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1721.8392253924526" y="748.4793781798189"/>
+              <y:Geometry height="30.0" width="90.0" x="1989.9495846514405" y="893.081113369278"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="21.9901123046875" x="34.00494384765625" y="5.911895751953125">apm<y:LabelModel>
@@ -493,7 +493,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/logstash]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1531.9170713588578" y="713.4274398976706"/>
+              <y:Geometry height="30.0" width="90.0" x="1731.4025725493266" y="764.5564590110375"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">logstash<y:LabelModel>
@@ -515,14 +515,14 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="227.9117602765274" width="281.54499252406924" x="422.1358465828779" y="304.2332076896786"/>
+              <y:Geometry height="280.96010966679484" width="231.99072812802535" x="594.4382528981085" y="459.2268704234438"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="281.54499252406924" x="0.0" y="0.0">prometheus</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="231.99072812802535" x="0.0" y="0.0">prometheus</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="5.6843418860808015E-14"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -542,7 +542,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/alertmanager]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="598.6808391069471" y="386.19537194487265"/>
+              <y:Geometry height="30.0" width="90.0" x="712.8773658324278" y="695.1869800902386"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.96044921875" x="7.019775390625" y="5.911895751953125">alertmanager<y:LabelModel>
@@ -560,10 +560,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/prometheus]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="506.8276818015382" y="487.14496796620597"/>
+              <y:Geometry height="30.0" width="90.0" x="609.4382528981085" y="595.0838647284086"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.016479492187443" y="5.911895751953125">prometheus<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">prometheus<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -578,7 +578,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/pushgateway]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="437.1358465828779" y="337.40941618577233"/>
+              <y:Geometry height="30.0" width="90.0" x="721.4289810261339" y="492.4030789195376"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.9637451171875" x="10.01812744140625" y="5.911895751953125">pushgateway<y:LabelModel>
@@ -600,14 +600,14 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="133.9357816294662" width="280.94489915253894" x="1253.6417848176498" y="1499.8506851796672"/>
+              <y:Geometry height="137.5908082925614" width="280.93811295775754" x="395.07911446996184" y="1573.1698697761044"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="280.94489915253894" x="0.0" y="0.0">guacamole</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="280.93811295775754" x="0.0" y="0.0">guacamole</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="2.2737367544323206E-13" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="450.0" y="390.32379150390625"/>
@@ -627,7 +627,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/guacamole/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1429.5866839701887" y="1533.026893675761"/>
+              <y:Geometry height="30.0" width="90.0" x="410.07911446996184" y="1606.3460782721982"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">backend<y:LabelModel>
@@ -645,7 +645,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/guacamole/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1268.6417848176498" y="1588.7864668091333"/>
+              <y:Geometry height="30.0" width="90.0" x="571.0172274277194" y="1665.7606780686656"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">frontend<y:LabelModel>
@@ -667,14 +667,14 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="186.90633442398553" width="120.33988938539107" x="568.4472104727278" y="1087.0055632679546"/>
+              <y:Geometry height="178.85557573988876" width="228.7458412630026" x="1192.6113555521795" y="1358.0822137526172"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.33988938539107" x="0.0" y="0.0">zabbix</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="228.7458412630026" x="0.0" y="0.0">zabbix</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="2.2737367544323206E-13" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -694,7 +694,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="583.4472104727278" y="1228.9118976919399"/>
+              <y:Geometry height="30.0" width="90.0" x="1207.6113555521795" y="1491.937789492506"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">frontend<y:LabelModel>
@@ -712,7 +712,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="583.7870998581188" y="1120.1817717640483"/>
+              <y:Geometry height="30.0" width="90.0" x="1316.357196815182" y="1391.258422248711"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">backend<y:LabelModel>
@@ -734,10 +734,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="432.8658764163619" width="476.54343863445877" x="936.2637409382477" y="0.0"/>
+              <y:Geometry height="458.0466404767416" width="475.0600868965098" x="1242.1331405495055" y="116.77139010144424"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="476.54343863445877" x="0.0" y="0.0">influxdata</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="475.0600868965098" x="0.0" y="0.0">influxdata</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -761,7 +761,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/telegraf]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1158.6841179042867" y="387.8658764163619"/>
+              <y:Geometry height="30.0" width="90.0" x="1397.8348966797444" y="529.8180305781858"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">telegraf<y:LabelModel>
@@ -781,10 +781,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             <y:ProxyAutoBoundsNode>
               <y:Realizers active="0">
                 <y:GroupNode>
-                  <y:Geometry height="227.90682138057798" width="285.4572548033324" x="951.2637409382477" y="33.17620849609375"/>
+                  <y:Geometry height="230.5996216295016" width="281.99162051906274" x="1257.1331405495055" y="149.947598597538"/>
                   <y:Fill color="#F5F5F5" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="285.4572548033324" x="0.0" y="0.0">v1</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="281.99162051906274" x="0.0" y="0.0">v1</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -808,7 +808,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/chronograf]]></data>
               <data key="d6">
                 <y:ShapeNode>
-                  <y:Geometry height="30.0" width="90.0" x="970.6389005284826" y="66.3524169921875"/>
+                  <y:Geometry height="30.0" width="90.0" x="1311.9926810434881" y="183.12380709363174"/>
                   <y:Fill color="#FFCC00" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">chronograf<y:LabelModel>
@@ -826,7 +826,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/influxdb]]></data>
               <data key="d6">
                 <y:ShapeNode>
-                  <y:Geometry height="30.0" width="90.0" x="966.2637409382477" y="216.08302987667173"/>
+                  <y:Geometry height="30.0" width="90.0" x="1272.1331405495055" y="335.5472202270396"/>
                   <y:Fill color="#FFCC00" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">influxdb<y:LabelModel>
@@ -844,7 +844,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/kapacitor]]></data>
               <data key="d6">
                 <y:ShapeNode>
-                  <y:Geometry height="30.0" width="90.0" x="1131.72099574158" y="160.96569674190255"/>
+                  <y:Geometry height="30.0" width="90.0" x="1434.1247610685682" y="285.59660314671953"/>
                   <y:Fill color="#FFCC00" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.01483154296875" y="5.911895751953125">kapacitor<y:LabelModel>
@@ -864,7 +864,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/influxdb-2]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1307.8071795727064" y="128.04954223698746"/>
+              <y:Geometry height="30.0" width="90.0" x="1612.1932274460153" y="238.35605555098016"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">influxdb-2<y:LabelModel>
@@ -886,14 +886,14 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="178.74747072434548" width="264.49692324203426" x="227.8720933533922" y="1331.1304497963483"/>
+              <y:Geometry height="117.00604129200974" width="280.9721173305931" x="243.84232601019755" y="1123.3659579014256"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="264.49692324203426" x="0.0" y="0.0">cubes</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="280.9721173305931" x="0.0" y="0.0">cubes</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="5.6843418860808015E-14" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="315.0" y="210.82379150390625"/>
@@ -913,7 +913,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/cubes/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="242.8720933533922" y="1364.306658292442"/>
+              <y:Geometry height="30.0" width="90.0" x="258.84232601019755" y="1156.5421663975194"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">backend<y:LabelModel>
@@ -931,7 +931,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/cubes/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="387.3690165954264" y="1464.8779205206938"/>
+              <y:Geometry height="30.0" width="90.0" x="419.81444334079066" y="1195.3719991934354"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">frontend<y:LabelModel>
@@ -951,7 +951,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/mattermost]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="771.5475756086612" y="1212.7250275138167"/>
+          <y:Geometry height="30.0" width="90.0" x="1058.6243488831344" y="1024.8549335865325"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">mattermost<y:LabelModel>
@@ -969,7 +969,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/xwiki]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1336.3302309957414" y="1397.8466313391516"/>
+          <y:Geometry height="30.0" width="90.0" x="1193.4235715093346" y="1131.9741784146565"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">xwiki<y:LabelModel>
@@ -987,7 +987,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/fastnetmon]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="791.4240986659674" y="1078.958918143257"/>
+          <y:Geometry height="30.0" width="90.0" x="1100.4064199234726" y="833.113058827721"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">fastnetmon<y:LabelModel>
@@ -1005,7 +1005,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mongodb/main]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="1922.0" y="250.0"/>
+          <y:Geometry height="30.0" width="150.0" x="2166.0" y="250.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.96044921875" x="37.019775390625" y="5.911895751953125">mongodb-main<y:LabelModel>
@@ -1023,7 +1023,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mongodb/test]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="2143.0" y="250.0"/>
+          <y:Geometry height="30.0" width="150.0" x="2387.0" y="250.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.96044921875" x="37.019775390625" y="5.911895751953125">mongodb-test<y:LabelModel>
@@ -1041,7 +1041,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/diun]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2244.0" y="452.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2327.0" y="452.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="27.98681640625" x="31.006591796875" y="5.911895751953125">diun<y:LabelModel>
@@ -1059,7 +1059,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/gobgp]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="553.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2488.0" y="452.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">gobgp<y:LabelModel>
@@ -1079,10 +1079,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="423.9426834410806" width="333.73770926613827" x="33.04957813579961" y="614.1031661658167"/>
+              <y:Geometry height="377.8825546700293" width="455.40349956881244" x="0.0" y="558.6159562092885"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="333.73770926613827" x="0.0" y="0.0">dkron</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="455.40349956881244" x="0.0" y="0.0">dkron</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -1106,7 +1106,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="261.7872874019379" y="860.397875956983"/>
+              <y:Geometry height="30.0" width="90.0" x="350.40349956881244" y="807.4017012157077"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">server-1<y:LabelModel>
@@ -1124,7 +1124,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="48.04957813579961" y="887.8920053995063"/>
+              <y:Geometry height="30.0" width="90.0" x="180.97491878555059" y="891.4985108793178"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">agent-1<y:LabelModel>
@@ -1142,7 +1142,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="178.26275364271203" y="993.0458496068973"/>
+              <y:Geometry height="30.0" width="90.0" x="15.0" y="837.5345046866147"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">agent-2<y:LabelModel>
@@ -1160,7 +1160,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="130.14995717794784" y="647.2793746619104"/>
+              <y:Geometry height="30.0" width="90.0" x="129.19731029233856" y="591.7921647053822"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">server-2<y:LabelModel>
@@ -1178,7 +1178,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="230.31753607240512" y="747.5330772569384"/>
+              <y:Geometry height="30.0" width="90.0" x="249.1047850793301" y="704.2859058607519"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">server-3<y:LabelModel>
@@ -1196,7 +1196,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="60.56139984110382" y="773.6784987196029"/>
+              <y:Geometry height="30.0" width="90.0" x="65.4540217098081" y="731.1244090277013"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">agent-3<y:LabelModel>
@@ -1216,7 +1216,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/traefik]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2083.0" y="553.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2166.0" y="553.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">traefik<y:LabelModel>
@@ -1234,7 +1234,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/bug-tracking/youtrack]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2244.0" y="553.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2327.0" y="553.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">youtrack<y:LabelModel>
@@ -1254,10 +1254,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="205.7052411516397" width="308.0977537293261" x="1508.2009892015017" y="1103.9728354190606"/>
+              <y:Geometry height="211.1995137136862" width="293.78395274493096" x="1380.390278307908" y="1008.4936281994312"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="308.0977537293261" x="0.0" y="0.0">activemq</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="293.78395274493096" x="0.0" y="0.0">activemq</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -1281,7 +1281,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1523.2009892015017" y="1191.093364037627"/>
+              <y:Geometry height="30.0" width="90.0" x="1395.390278307908" y="1041.669836695525"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">node-1<y:LabelModel>
@@ -1299,7 +1299,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1708.1607780843274" y="1264.6780765707003"/>
+              <y:Geometry height="30.0" width="90.0" x="1569.1742310528389" y="1054.5959070465253"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">node-2<y:LabelModel>
@@ -1317,7 +1317,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1711.2987429308278" y="1137.1490439151544"/>
+              <y:Geometry height="30.0" width="90.0" x="1519.086205549605" y="1174.6931419131174"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">node-3<y:LabelModel>
@@ -1337,7 +1337,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/librespeed]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1128.607597921113" y="1209.7790157102313"/>
+          <y:Geometry height="30.0" width="90.0" x="609.1144753770279" y="1134.8895515721774"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">librespeed<y:LabelModel>
@@ -1357,7 +1357,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="178.70684203251517" width="280.58144640766795" x="1922.0" y="0.0"/>
+              <y:Geometry height="178.70684203251517" width="280.58144640766795" x="2166.0" y="0.0"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="280.58144640766795" x="0.0" y="0.0">swagger</y:NodeLabel>
@@ -1384,7 +1384,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/swagger/ui]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="1937.0" y="133.70684203251517"/>
+              <y:Geometry height="30.0" width="90.0" x="2181.0" y="133.70684203251517"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="15.993408203125" x="37.0032958984375" y="5.911895751953125">ui<y:LabelModel>
@@ -1402,7 +1402,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/swagger/editor]]></data>
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="30.0" width="90.0" x="2097.581446407668" y="33.17620849609375"/>
+              <y:Geometry height="30.0" width="90.0" x="2341.581446407668" y="33.17620849609375"/>
               <y:Fill color="#FFCC00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">editor<y:LabelModel>
@@ -1422,7 +1422,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/gitea]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1165.3923219332364" y="1392.785100107257"/>
+          <y:Geometry height="30.0" width="90.0" x="740.1961942366636" y="1002.9087752760811"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">gitea<y:LabelModel>
@@ -1440,7 +1440,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/netbox]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="604.0775690751314" y="700.1115663544595"/>
+          <y:Geometry height="30.0" width="90.0" x="921.9433858099175" y="713.199843752674"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">netbox<y:LabelModel>
@@ -1458,7 +1458,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/fleet]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="970.4838531142292" y="1104.0308191267677"/>
+          <y:Geometry height="30.0" width="90.0" x="922.5017049676673" y="912.0846893699513"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.9835205078125" x="28.00823974609375" y="5.911895751953125">fleet<y:LabelModel>
@@ -1476,7 +1476,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/container-registry]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="150.0" x="1922.0" y="351.0"/>
+          <y:Geometry height="30.0" width="150.0" x="2166.0" y="351.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="dotted" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.940673828125" x="19.0296630859375" y="5.911895751953125">container-registry<y:LabelModel>
@@ -1494,7 +1494,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/the-dude]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="654.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2488.0" y="553.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.9736328125" x="19.01318359375" y="5.911895751953125">the-dude<y:LabelModel>
@@ -1512,7 +1512,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nfdump]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2083.0" y="654.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2166.0" y="654.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">nfdump<y:LabelModel>
@@ -1530,7 +1530,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/clickhouse]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2244.0" y="654.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2327.0" y="654.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">clickhouse<y:LabelModel>
@@ -1548,7 +1548,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/kkmserver]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="755.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2488.0" y="654.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.01483154296875" y="5.911895751953125">kkmserver<y:LabelModel>
@@ -1566,7 +1566,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/typesense]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2083.0" y="755.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2166.0" y="755.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.01483154296875" y="5.911895751953125">typesense<y:LabelModel>
@@ -1584,7 +1584,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/minecraft]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2244.0" y="755.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2327.0" y="755.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.9703369140625" x="16.01483154296875" y="5.911895751953125">minecraft<y:LabelModel>
@@ -1602,7 +1602,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/snmpcollector]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="856.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2488.0" y="755.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.9571533203125" x="4.02142333984375" y="5.911895751953125">snmpcollector<y:LabelModel>
@@ -1620,7 +1620,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/riemann]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2083.0" y="856.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2166.0" y="856.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">riemann<y:LabelModel>
@@ -1638,7 +1638,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dns/coredns]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="774.0433837816911" y="375.09852034709803"/>
+          <y:Geometry height="30.0" width="90.0" x="430.70051811009637" y="408.9143835818986"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">coredns<y:LabelModel>
@@ -1656,7 +1656,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/questdb]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="2244.0" y="856.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2327.0" y="856.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">questdb<y:LabelModel>
@@ -1674,10 +1674,28 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/atftpd]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="1922.0" y="957.0"/>
+          <y:Geometry height="30.0" width="90.0" x="2488.0" y="856.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.980224609375" x="25.0098876953125" y="5.911895751953125">atftpd<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n52">
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/bug-tracking/redmine]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="90.0" x="1213.104111819657" y="1252.7564972944006"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">redmine<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1736,10 +1754,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
     <edge id="n19::e0" source="n19::n2" target="n19::n1">
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="5.515042337703335" sy="5.6843418860808015E-14" tx="5.515042337703392" ty="0.0"/>
+          <y:Path sx="7.39857824753534" sy="0.0" tx="7.398578247535397" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="7.988510465119134" anchorY="12.866543954678889" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9066113537910108" upY="-0.4219666493660733" verticalTextPosition="bottom" visible="true" width="42.666015625" x="7.988510465119134" y="4.975273119366092">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-35.108245365139396" anchorY="4.98395050156887" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.6758055173189003" upY="0.7370799839646534" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-66.55651147785005" y="4.98395050156887">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1801,7 +1819,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="5.21269642115908" anchorY="-2.053808231503922" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.010326651077462678" upY="-0.9999466787171826" verticalTextPosition="bottom" visible="true" width="30.021484375" x="5.019575944466297" y="-21.064004329997477">Logs<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="27.8884713591699" anchorY="16.93074231621415" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.5616315251452398" upY="-0.8273874726892062" verticalTextPosition="bottom" visible="true" width="30.021484375" x="27.8884713591699" y="1.457626982231437">Logs<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1836,7 +1854,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-0.9834978915974943" anchorY="-5.016545723930449" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9800829312279624" upY="-0.19858863994600792" verticalTextPosition="bottom" visible="true" width="93.349609375" x="-19.312197240245425" y="-100.22074479721852">Metrics (Carbon)<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-0.26463727860027575" anchorY="-5.028054453528853" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9452837798159985" upY="-0.3262492538179648" verticalTextPosition="bottom" visible="true" width="93.349609375" x="-17.94255171558892" y="-99.37116941761609">Metrics (Carbon)<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1853,7 +1871,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="8.121579142566134" anchorY="-4.996282052055676" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.4426400555327959" upY="-0.896699381753954" verticalTextPosition="bottom" visible="true" width="30.021484375" x="-0.156308614712227" y="-35.054322821369574">Logs<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="6.998280835154674" anchorY="-2.7603742692623428" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.10801256258811938" upY="-0.9941495291570316" verticalTextPosition="bottom" visible="true" width="30.021484375" x="4.9783193375350585" y="-24.59483294352125">Logs<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1906,7 +1924,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="3.592112184378834" anchorY="-20.938650695863316" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.5210534540489573" upY="0.8535240465409578" verticalTextPosition="bottom" visible="true" width="75.3671875" x="-70.47990486726422" y="-60.208984064693716">Attack details<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="20.137381956785248" anchorY="-6.775398332093118" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9954362276002315" upY="0.0954291191462016" verticalTextPosition="bottom" visible="true" width="75.3671875" x="-5.670666341819918" y="-81.79862714193244">Attack details<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1986,7 +2004,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-21.650950723392043" anchorY="5.010065604194779" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9891397787007471" upY="0.14697788334248504" verticalTextPosition="bottom" visible="true" width="34.01171875" x="-26.649921154106956" y="5.010065604194779">Posts<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-22.223720840818032" anchorY="4.973349355064784" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9770714663792784" upY="0.21291160040600565" verticalTextPosition="bottom" visible="true" width="34.01171875" x="-29.46521031243948" y="4.973349355064784">Posts<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2003,7 +2021,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="5.023219759717449" anchorY="-1.2302420475041345" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.15146783273656922" upY="-0.9884621872616507" verticalTextPosition="bottom" visible="true" width="58.69140625" x="5.023219759717449" y="-19.7156433034227">Messages<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="28.79081933753514" anchorY="18.355445236704554" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.577298027788694" upY="-0.8165335186697997" verticalTextPosition="bottom" visible="true" width="58.69140625" x="28.79081933753514" y="3.085311562362108">Messages<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2020,7 +2038,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="18.62860075090589" anchorY="-10.002280797734784" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9634070327128914" upY="0.26804270055224727" verticalTextPosition="bottom" visible="true" width="34.673828125" x="-8.682306282551107" y="-43.40729066443783">Alerts<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-6.033760019009151" anchorY="-22.70964178238262" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.3353074224217671" upY="0.9421087689162386" verticalTextPosition="bottom" visible="true" width="34.673828125" x="-44.97091928513885" y="-34.33603371647174">Alerts<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2037,7 +2055,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-0.5814918301598482" anchorY="-5.005236505563062" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9621080847709098" upY="-0.27266835756730523" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-18.5740404857877" y="-51.15377290307766">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="1.2790371983231807" anchorY="-4.992543455199666" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.835844713333105" upY="-0.5489659508504143" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-14.352238446529318" y="-50.92101365471997">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2054,7 +2072,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="2.4491728164748565" anchorY="-4.988784485071733" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.7463130065947692" upY="-0.6655951443538902" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-11.50775499240193" y="-49.278396079312415">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="11.713368201955973" anchorY="-5.0118626009600575" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.34326605117521075" upY="-0.9392382115898914" verticalTextPosition="bottom" visible="true" width="42.666015625" x="5.293890780075811" y="-37.22251253044382">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2071,7 +2089,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="7.81763368970428" anchorY="-3.190638297996486" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.15056583464658213" upY="-0.988599984542372" verticalTextPosition="bottom" visible="true" width="42.666015625" x="5.001876137475717" y="-28.102660778167966">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="6.550755392508222" anchorY="-2.5422605542513566" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.08250078612350867" upY="-0.9965909995023049" verticalTextPosition="bottom" visible="true" width="42.666015625" x="5.007894011389872" y="-24.699659954842403">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2088,7 +2106,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="4.689766864559488" anchorY="-4.995033855840575" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.5982885216693908" upY="-0.8012807528192942" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-6.498929610019452" y="-45.50651034824797">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="9.702094697794564" anchorY="-4.9876654673958" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.39209117408752353" upY="-0.9199263618370045" verticalTextPosition="bottom" visible="true" width="42.666015625" x="2.3695302605132404" y="-38.92033463249594">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2105,7 +2123,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="15.405260743810004" anchorY="-14.243434237549536" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.8686336998428502" upY="0.4954548369905386" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-21.97829118988845" y="-51.30457324744614">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="19.75601836955866" anchorY="-7.751364188616549" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9891756685807017" upY="0.14673614649404482" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-5.003372542204284" y="-49.95554872015059">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2122,7 +2140,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="1.3531140250750013" anchorY="-4.976860000526926" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.8293334405799717" upY="-0.5587540105769143" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-14.15639318889615" y="-50.810568322291445">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="27.4268014372949" anchorY="16.225903830998277" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.5534670934963589" upY="-0.8328710442899865" verticalTextPosition="bottom" visible="true" width="42.666015625" x="27.4268014372949" y="0.6502392820205021">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2139,7 +2157,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="18.266649248866997" anchorY="-10.61030038974502" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.953897519311587" upY="0.3001325084878354" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-12.37781050762755" y="-51.30930685334193">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-0.83556336198194" anchorY="-5.01578328017149" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9740963131154657" upY="-0.22613352863929004" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-19.05230593635808" y="-50.80555378159444">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2156,7 +2174,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="7.727539977174956" anchorY="-5.0096273227816255" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.45784582262990814" upY="-0.8890316095057266" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-0.8347134440777211" y="-41.17001727662474">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-4.992631748401436" anchorY="-21.94541143601441" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.18228637466030845" upY="0.9832454818676777" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-50.3527676639715" y="-29.722844745495735">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2173,7 +2191,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" anchorX="-3.089360078160098" anchorY="-22.3095263266884" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.3800601951315614" upY="0.9249617549264183" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-49.66136379837945" y="-38.52518055061215">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-2.501436598191276" anchorY="-22.222129851952218" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.39040982544473624" upY="0.9206411723338309" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-49.08264848933558" y="-38.87936156453085">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2190,7 +2208,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-1.5629953035183917" anchorY="-22.082796199034988" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.40847024890069444" upY="0.9127716339605458" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-48.146196430651734" y="-39.510594220979655">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="7.151465112548522" anchorY="-19.72096272880526" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6167084444865354" upY="0.7871916504251032" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-37.96803676146506" y="-46.033454857337226">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2207,7 +2225,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="8.563649965430386" anchorY="-19.090694082056075" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6573405113745143" upY="0.7535936916574422" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-35.88222814134266" y="-47.1367946113066">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="5.6380842651497005" anchorY="-20.307487529799232" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.5755026204065076" upY="0.817799935134042" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-40.0167539641383" y="-44.86189132429173">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2224,7 +2242,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="14.402408691373921" anchorY="-15.214960244417284" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.8374838258863311" upY="0.5464621133974372" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-24.57488134774451" y="-50.94705824536827">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="17.897345301746782" anchorY="-11.166077843717403" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9433821922146052" upY="0.3317077620622794" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-13.897655777755832" y="-51.4164371970925">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2241,7 +2259,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="4.258316614404748" anchorY="9.39388372989265" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9722987134865482" upY="-0.2337417629616141" verticalTextPosition="bottom" visible="true" width="33.337890625" x="4.258316614404748" y="5.022638846381995">Facts<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-23.489970951926352" anchorY="4.988364003502397" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9456858730007407" upY="0.32508188138810035" verticalTextPosition="bottom" visible="true" width="33.337890625" x="-34.327515157812066" y="4.988364003502397">Facts<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2258,7 +2276,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="12.024875168736003" anchorY="15.261022462032088" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.8358013571647025" upY="-0.5490319584155748" verticalTextPosition="bottom" visible="true" width="42.666015625" x="12.024875168736003" y="4.99348144283457">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="4.98745342623431" anchorY="1.8331919820308258" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.6093814943805305" upY="-0.7928771621799631" verticalTextPosition="bottom" visible="true" width="42.666015625" x="4.98745342623431" y="-12.994540103658913">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2275,7 +2293,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="1.2739388521393948" anchorY="-4.9869507031733065" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.8359521781698493" upY="-0.5488022920989712" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-14.35934651109558" y="-50.916945388657695">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="4.092427323730021" anchorY="-4.993623491323547" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6339177186461135" upY="-0.7734004952070479" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-7.762576887278838" y="-46.50386236912009">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2292,7 +2310,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="9.777641836472384" anchorY="-5.006941256058326" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.3912366036642881" upY="-0.9202901281407037" verticalTextPosition="bottom" visible="true" width="42.666015625" x="2.461058867555278" y="-38.90995216229585">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="5.006728016947932" anchorY="-1.9657078427547958" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.006854106782790536" upY="-0.9999765103342229" verticalTextPosition="bottom" visible="true" width="42.666015625" x="5.006728016947932" y="-20.66644043347781">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2372,7 +2390,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="3.340329127432426" anchorY="-5.028934461811559" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6855646927407888" upY="-0.728011711490432" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-9.48053402294463" y="-47.89392049783386">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="11.217991849224745" anchorY="-5.399693120146594" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.2900319181395366" upY="-0.9570169729217456" verticalTextPosition="bottom" visible="true" width="42.666015625" x="5.794055098861341" y="-35.671538369138574">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2398,7 +2416,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-21.448467222063982" anchorY="-13.285105598988082" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.38669218944361633" upY="0.9222088432797109" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-60.7954441389493" y="-13.285105598988082">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="19.21424446894946" anchorY="17.929980488838282" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.7213582203837519" upY="-0.6925621400890944" verticalTextPosition="bottom" visible="true" width="42.666015625" x="19.21424446894946" y="4.978256872914299">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2415,7 +2433,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="16.7282947104776" anchorY="-12.767934348310291" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.9096460357980719" upY="0.41538426734392925" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-18.005943791269807" y="-51.578906324890134">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-4.591458027205817" anchorY="-22.483744688103798" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.353553760283083" upY="0.935414206963788" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-51.11372483547626" y="-37.568474948619325">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2429,10 +2447,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
     <edge id="n19::e1" source="n19::n1" target="n19::n0">
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="-6.75999656881163" sy="0.0" tx="-6.75999656881163" ty="0.0"/>
+          <y:Path sx="7.189857126897039" sy="1.4210854715202004E-14" tx="7.189857126897039" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="2.5409625257852895" anchorY="-4.990652150981532" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.7396453458376457" upY="-0.6729968516870709" verticalTextPosition="bottom" visible="true" width="34.673828125" x="-11.29127221326834" y="-43.22281754074604">Alerts<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="21.07248463819451" anchorY="18.45739381571741" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.6954241109041166" upY="-0.7185995449297328" verticalTextPosition="bottom" visible="true" width="34.673828125" x="21.07248463819451" y="5.018740216689693">Alerts<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2446,10 +2464,10 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
     <edge id="n19::e2" source="n19::n2" target="n19::n1">
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="-5.515042337703392" sy="5.6843418860808015E-14" tx="-5.5150423377034485" ty="0.0"/>
+          <y:Path sx="-7.39857824753534" sy="2.8421709430404007E-14" tx="-7.398578247535397" ty="1.4210854715202004E-14"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-16.639034809314865" anchorY="12.866543954678889" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9066113537910108" upY="-0.4219666493660733" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-16.639034809314865" y="4.975273119366092">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-3.435804996869706" anchorY="4.98395050156887" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.6758055173189003" upY="0.7370799839646534" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-34.884071109580354" y="4.98395050156887">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2461,13 +2479,12 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="n22::e0" source="n22::n1::n1" target="n22::n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="7.507841918146994" sy="0.0" tx="7.507841918146994" ty="0.0"/>
+          <y:Path sx="5.955388101161418" sy="0.0" tx="5.955388101161361" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="23.234951892464096" anchorY="18.95741819409801" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.665970335352244" upY="-0.7459782251720352" verticalTextPosition="bottom" visible="true" width="42.666015625" x="23.234951892464096" y="5.00675119014833">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="11.80138945721228" anchorY="15.147867079671983" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.8395758454474093" upY="-0.5432424870546007" verticalTextPosition="bottom" visible="true" width="42.666015625" x="11.80138945721228" y="4.988595959461433">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2479,13 +2496,12 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="n22::e1" source="n22::n0" target="n22::n1::n1">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="-7.507841918146994" sy="0.0" tx="-7.50784191814698" ty="0.0"/>
+          <y:Path sx="-5.955388101161304" sy="0.0" tx="-5.955388101161361" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-23.234846956179354" anchorY="-18.957410216493997" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6659703353522439" upY="0.7459782251720353" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-67.51719127235287" y="-47.37171095041933">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-11.801369806087223" anchorY="-15.147881167024707" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.8395758454474093" upY="0.5432424870546007" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-50.68041443473311" y="-50.969237307256456">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2497,13 +2513,12 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="n22::e2" source="n22::n1::n2" target="n22::n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="2.858296773349366" anchorY="7.222282433353939" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9930133236036505" upY="-0.11800228449327517" verticalTextPosition="bottom" visible="true" width="42.666015625" x="2.858296773349366" y="5.015501429402553">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-21.650112885708268" anchorY="5.004470578360099" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.9891394215500535" upY="0.14698028689462225" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-27.9211761029212" y="5.004470578360099">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2515,13 +2530,12 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="n19::e3" source="n19::n0" target="n19::n1">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="6.75999656881163" sy="0.0" tx="6.759996568811573" ty="0.0"/>
+          <y:Path sx="-7.189857126897039" sy="0.0" tx="-7.189857126897039" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-2.5409255040187873" anchorY="4.990660030810147" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.7396453458376455" upY="0.6729968516870712" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-31.255019693675177" y="4.990660030810147">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-21.072478700627016" anchorY="-18.457423020507804" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-0.6954241109041177" upY="0.7185995449297315" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-64.7375039367538" y="-48.12839900234462">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2533,20 +2547,19 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="n19::e4" source="n19::n1" target="n19::n1">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
-          <y:Path sx="22.5" sy="15.0" tx="45.0" ty="7.5">
-            <y:Point x="574.3276818015381" y="532.144967966206"/>
-            <y:Point x="580.3276818015381" y="538.144967966206"/>
-            <y:Point x="611.8276818015381" y="538.144967966206"/>
-            <y:Point x="617.8276818015381" y="532.144967966206"/>
-            <y:Point x="617.8276818015381" y="515.644967966206"/>
-            <y:Point x="611.8276818015381" y="509.64496796620597"/>
+          <y:Path sx="-22.5" sy="-15.0" tx="-45.0" ty="-7.5">
+            <y:Point x="631.9382528981085" y="580.0838647284086"/>
+            <y:Point x="625.9382528981085" y="574.0838647284086"/>
+            <y:Point x="594.4382528981085" y="574.0838647284086"/>
+            <y:Point x="588.4382528981085" y="580.0838647284086"/>
+            <y:Point x="588.4382528981085" y="596.5838647284086"/>
+            <y:Point x="594.4382528981085" y="602.5838647284086"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" anchorX="-20.37849495627438" anchorY="-6.320974416606532" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="1.0" upY="1.8369701987210297E-16" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-20.378494956274388" y="-6.320974416606532">Metrics<y:LabelModel>
+          <y:EdgeLabel alignment="center" anchorX="-1.0617471018914557" anchorY="6.416872540908571" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="-1.0" upY="-6.123233995736766E-17" verticalTextPosition="bottom" visible="true" width="42.666015625" x="-19.762918976891456" y="-36.24914308409143">Metrics<y:LabelModel>
               <y:RotatedDiscreteEdgeLabelModel angle="0.0" autoRotationEnabled="true" candidateMask="63" distance="2.0" positionRelativeToSegment="false"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2554,6 +2567,16 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ModelParameter>
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e49" source="n52" target="n17::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
         </y:SplineEdge>
       </data>
     </edge>
