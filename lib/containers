@@ -18,6 +18,7 @@ backpack-xwiki
 
 # Bug tracking
 #
+backpack-redmine
 backpack-youtrack
 
 # Business intelligence

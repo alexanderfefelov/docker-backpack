@@ -25,6 +25,7 @@ Hostnames:
 | | | `librespeed_gohsotahleit` / `thuchusohgie`
 | | | `mattermost_fepheedooroh` / `thohrawaenee`
 | | | `metabase_licideophaig` / `msorphorylac`
+| | | `redmine_shaeM8oong9A` / `ucapah7kai1I`
 | | | `replicator_avaternetrai` / `ergatecuserb`
 | | | `root` / `camycorymicu`
 | | | `rundeck_bineurvendle` / `nocionersava`
@@ -47,6 +48,7 @@ Hostnames:
 | `librespeed` | [LibreSpeed](../../../librespeed)
 | `mattermost` | [Mattermost](../../../mattermost)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
+| `redmine` | [Redmine](../../../bug-tracking/redmine)
 | `rundeck` | [Rundeck](../../../rundeck)
 | `xwiki` | [XWiki](../../../xwiki)
 | `zabbix` | [Zabbix](../../../network-monitoring/zabbix)

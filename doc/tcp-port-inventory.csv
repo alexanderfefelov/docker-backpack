@@ -61,6 +61,7 @@ Port,Container
 8092,backpack-influxdb-2
 8093,backpack-snmpcollector
 8094,backpack-youtrack
+8095,backpack-redmine
 8108,backpack-typesense
 8123,backpack-clickhouse
 8126,backpack-graphite-statsd

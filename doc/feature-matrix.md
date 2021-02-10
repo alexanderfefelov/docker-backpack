@@ -51,6 +51,7 @@
 | [QuestDB](../databases/questdb) | Java | ? | ? | ? | ? | ? | ?
 | [RabbitMQ](../message-queues/rabbitmq) | Erlang | ? | ? | ? | ? | ? | ?
 | [Redis](../redis) | ? | ? | ? | ? | InfluxDB | ? | ?
+| [Redmine](../bug-tracking/redmine) | Ruby on Rails | ? | MySQL | ? | ? | ? | ?
 | [Riemann](../riemann) | Clojure | ? | ? | ? | ? | ? | ?
 | [Rundeck](../workload-automation/rundeck) | Java | [JDBC](https://docs.rundeck.com/docs/administration/configuration/database/) | MySQL | JMX | ? | ? | ?
 | [Samba](../file-sharing/samba) | ? | ? | ? | ? | ? | ? | ?
@@ -62,4 +63,4 @@
 | [Zabbix backend](../network-monitoring/zabbix/backend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
 | [Zabbix frontend](../network-monitoring/zabbix/frontend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
 | [XWiki](../xwiki) | Java | [Hibernate](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport) | MySQL | ? | ? | ? | ?
-| [YouTrack](../youtrack) | Java | Xodus | Xodus | ? | ? | ? | ?
+| [YouTrack](../bug-tracking/youtrack) | Java | Xodus | Xodus | ? | ? | ? | ?

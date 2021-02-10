@@ -1,0 +1,8 @@
+production:
+  adapter: "mysql2"
+  host: "mysql-main-master.backpack.test"
+  port: 3306
+  database: "redmine"
+  encoding: "utf8"
+  username: "redmine_shaeM8oong9A"
+  password: "ucapah7kai1I"

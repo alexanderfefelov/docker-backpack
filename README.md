@@ -7,6 +7,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 ## What's inside
 
 - [Bug tracking](bug-tracking)
+    - [Redmine](bug-tracking/redmine)
     - [YouTrack](bug-tracking/youtrack)
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)

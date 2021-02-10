@@ -18,6 +18,7 @@ xwiki
 
 # Bug tracking
 #
+bug-tracking/redmine
 bug-tracking/youtrack
 
 # Business intelligence
