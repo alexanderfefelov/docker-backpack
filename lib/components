@@ -15,7 +15,10 @@ redis
 riemann
 typesense
 xwiki
-youtrack
+
+# Bug tracking
+#
+bug-tracking/youtrack
 
 # Business intelligence
 #

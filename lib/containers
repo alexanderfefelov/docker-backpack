@@ -15,6 +15,9 @@ backpack-redis
 backpack-riemann
 backpack-typesense
 backpack-xwiki
+
+# Bug tracking
+#
 backpack-youtrack
 
 # Business intelligence

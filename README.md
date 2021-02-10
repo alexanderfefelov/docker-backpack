@@ -6,6 +6,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 
 ## What's inside
 
+- [Bug tracking](bug-tracking)
+    - [YouTrack](bug-tracking/youtrack)
 - [Business intelligence](business-intelligence)
     - [Cubes](business-intelligence/cubes)
       - [Backend](business-intelligence/cubes/backend)
@@ -84,7 +86,6 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
         - [Servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
 - [XWiki](xwiki)
-- [YouTrack](youtrack)
 
 ## Documentation
 

@@ -18,5 +18,5 @@ readonly CONFIG="
   --allow-anonymous-access=false
 "
 
-. ../lib/settings/health.sh
-. ../lib/settings/log.sh
+. ../../lib/settings/health.sh
+. ../../lib/settings/log.sh
