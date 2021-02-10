@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.10.2
+readonly DEFAULT_VERSION=7.11.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=kibana
