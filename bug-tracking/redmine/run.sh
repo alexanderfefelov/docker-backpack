@@ -21,6 +21,8 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/usr/src/redmine/config \
+    --volume $CONTAINER_NAME-data:/usr/src/redmine/files \
     --publish 8095:3000 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
