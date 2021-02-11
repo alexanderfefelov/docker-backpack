@@ -1,5 +1,7 @@
 # backpack-grafana
 
+![Grafana](../doc/assets/logos/grafana.png)
+
 Hostname `grafana.backpack.test`
 
 ## Services

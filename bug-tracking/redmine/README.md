@@ -1,5 +1,7 @@
 # backpack-redmine
 
+![Redmine](../../doc/assets/logos/redmine.png)
+
 Hostname `redmine.backpack.test`
 
 ## Services
