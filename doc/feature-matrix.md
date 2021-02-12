@@ -51,8 +51,8 @@
 | [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [QuestDB](../databases/questdb) | Java | ? | ? | ? | ? | ? | ?
 | [RabbitMQ](../message-queues/rabbitmq) | Erlang | ? | ? | ? | ? | ? | ?
-| [Redis](../redis) | ? | ? | ? | ? | InfluxDB | ? | ?
-| [Redmine](../bug-tracking/redmine) | Ruby on Rails | ? | MySQL | ? | ? | ? | ?
+| [Redis](../redis) | ? | ? | ? | Redis | InfluxDB | ? | ?
+| [Redmine](../bug-tracking/redmine) | Ruby on Rails | [MySQL, PostgreSQL, SQL Server, SQLite](https://www.redmine.org/projects/redmine/wiki/RedmineInstall) | MySQL | N/A | N/A | N/A | N/A
 | [Riemann](../riemann) | Clojure | ? | ? | ? | ? | ? | ?
 | [Rundeck](../workload-automation/rundeck) | Java | [JDBC](https://docs.rundeck.com/docs/administration/configuration/database/) | MySQL | JMX | ? | ? | ?
 | [Samba](../file-sharing/samba) | ? | ? | ? | ? | ? | ? | ?
