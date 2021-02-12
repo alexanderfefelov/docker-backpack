@@ -26,6 +26,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
         - [Main instance](databases/postgresql/main)
         - [Test instance](databases/postgresql/test)
     - [QuestDB](databases/questdb)
+- [DHCP](dhcp)
+    - [CoreDHCP](dhcp/coredhcp)
 - [DNS](dns)
     - [CoreDNS](dns/coredns)
     - [dnsmasq](dns/dnsmasq)

@@ -1,0 +1,3 @@
+server4:
+  plugins:
+    - dns: 8.8.8.8

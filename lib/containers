@@ -40,6 +40,10 @@ backpack-postgresql-main
 backpack-postgresql-test
 backpack-questdb
 
+# DHCP
+#
+backpack-coredhcp
+
 # DNS
 #
 backpack-coredns

@@ -44,6 +44,10 @@ $IP_ADDRESS postgresql-main.backpack.test
 $IP_ADDRESS postgresql-test.backpack.test
 $IP_ADDRESS questdb.backpack.test
 
+# DHCP
+#
+$IP_ADDRESS coredhcp.backpack.test
+
 # DNS
 #
 $IP_ADDRESS coredns.backpack.test

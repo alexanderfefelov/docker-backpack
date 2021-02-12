@@ -38,6 +38,10 @@ databases/postgresql/main
 databases/postgresql/test
 databases/questdb
 
+# DHCP
+#
+dhcp/coredhcp
+
 # DNS
 #
 dns/coredns
