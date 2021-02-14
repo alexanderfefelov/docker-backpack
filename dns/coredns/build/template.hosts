@@ -10,7 +10,6 @@ $IP_ADDRESS gitea.backpack.test
 $IP_ADDRESS grafana.backpack.test
 $IP_ADDRESS graphite-statsd.backpack.test
 $IP_ADDRESS jenkins.backpack.test
-$IP_ADDRESS kkmserver.backpack.test
 $IP_ADDRESS librespeed.backpack.test
 $IP_ADDRESS mattermost.backpack.test
 $IP_ADDRESS minecraft.backpack.test
@@ -30,6 +29,13 @@ $IP_ADDRESS youtrack.backpack.test
 $IP_ADDRESS cubes-backend.backpack.test
 $IP_ADDRESS cubes-frontend.backpack.test
 $IP_ADDRESS metabase.backpack.test
+
+# Commerce
+#
+$IP_ADDRESS bgbilling.backpack.test
+$IP_ADDRESS kaui.backpack.test
+$IP_ADDRESS killbill.backpack.test
+$IP_ADDRESS kkmserver.backpack.test
 
 # Databases
 #
@@ -77,11 +83,6 @@ $IP_ADDRESS influxdb.backpack.test
 $IP_ADDRESS influxdb-2.backpack.test
 $IP_ADDRESS kapacitor.backpack.test
 $IP_ADDRESS telegraf.backpack.test
-
-# Kill Bill
-#
-$IP_ADDRESS kaui.backpack.test
-$IP_ADDRESS killbill.backpack.test
 
 # Message queues
 #

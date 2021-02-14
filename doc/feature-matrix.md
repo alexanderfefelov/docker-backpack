@@ -5,6 +5,7 @@
 | [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Web Console | N/A | N/A
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
+| [BGBilling](../commerce/bgbilling) | Java | MySQL | ? | ? | ? | ? | ?
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDHCP](../dhcp/coredhcp) | Go | N/A | N/A | N/A | N/A | N/A | N/A
 | [CoreDNS](../dns/coredns) | Go | N/A | N/A | Prometheus | Prometheus | N/A | N/A
@@ -30,8 +31,9 @@
 | [InfluxData Kapacitor](../influxdata/v1/kapacitor)| ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData Telegraf](../influxdata/telegraf) | ? | ? | ? | ? | ? | ? | ?
 | [Jenkins](../jenkins) | ? | ? | ? | ? | InfluxDB | ? | ?
-| [Kill Bill](../killbill/killbill) | ? | ? | MySQL | ? | ? | ? | ?
-| [KkmServer](../kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
+| [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
+| [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?
+| [KkmServer](../commerce/kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
 | [LibreSpeed](../librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [Mattermost](../mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
 | [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | ? | ? | ? | ?
