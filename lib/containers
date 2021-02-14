@@ -75,6 +75,11 @@ backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
 
+# Kill Bill
+#
+backpack-kaui
+backpack-killbill
+
 # Message queues
 #
 backpack-activemq-node-1

@@ -73,6 +73,11 @@ influxdata/v1/chronograf
 influxdata/v1/influxdb
 influxdata/v1/kapacitor
 
+# Kill Bill
+#
+killbill/kaui
+killbill/killbill
+
 # Message queues
 #
 message-queues/activemq

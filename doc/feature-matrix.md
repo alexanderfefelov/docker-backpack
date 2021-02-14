@@ -30,6 +30,7 @@
 | [InfluxData Kapacitor](../influxdata/v1/kapacitor)| ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData Telegraf](../influxdata/telegraf) | ? | ? | ? | ? | ? | ? | ?
 | [Jenkins](../jenkins) | ? | ? | ? | ? | InfluxDB | ? | ?
+| [Kill Bill](../killbill/killbill) | ? | ? | MySQL | ? | ? | ? | ?
 | [KkmServer](../kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
 | [LibreSpeed](../librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [Mattermost](../mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?

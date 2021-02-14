@@ -78,6 +78,11 @@ $IP_ADDRESS influxdb-2.backpack.test
 $IP_ADDRESS kapacitor.backpack.test
 $IP_ADDRESS telegraf.backpack.test
 
+# Kill Bill
+#
+$IP_ADDRESS kaui.backpack.test
+$IP_ADDRESS killbill.backpack.test
+
 # Message queues
 #
 $IP_ADDRESS activemq-node-1.backpack.test
