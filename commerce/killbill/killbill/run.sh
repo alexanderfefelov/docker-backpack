@@ -4,7 +4,7 @@
 [ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
-. ../../lib/lib.sh
+. ../../../lib/lib.sh
 
 readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME --password=$DB_ROOT_PASSWORD"
 

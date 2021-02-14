@@ -6,7 +6,6 @@ gitea
 grafana
 graphite-statsd
 jenkins
-kkmserver
 librespeed
 mattermost
 minecraft
@@ -26,6 +25,12 @@ bug-tracking/youtrack
 business-intelligence/cubes/backend
 business-intelligence/cubes/frontend
 business-intelligence/metabase
+
+# Commerce
+#
+commerce/killbill/kaui
+commerce/killbill/killbill
+commerce/kkmserver
 
 # Databases
 #
@@ -72,11 +77,6 @@ influxdata/telegraf
 influxdata/v1/chronograf
 influxdata/v1/influxdb
 influxdata/v1/kapacitor
-
-# Kill Bill
-#
-killbill/kaui
-killbill/killbill
 
 # Message queues
 #

@@ -17,5 +17,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=killbill_shiezouceeng
 readonly DB_PASSWORD=aghahticeiri
 
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh

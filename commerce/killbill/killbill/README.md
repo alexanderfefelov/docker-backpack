@@ -1,6 +1,6 @@
 # backpack-killbill
 
-![Kill Bill](../../doc/assets/logos/killbill.png)
+![Kill Bill](../../../doc/assets/logos/killbill.png)
 
 Hostname `killbill.backpack.test`
 

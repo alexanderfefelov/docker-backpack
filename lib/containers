@@ -6,7 +6,6 @@ backpack-gitea
 backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
-backpack-kkmserver
 backpack-librespeed
 backpack-mattermost
 backpack-minecraft
@@ -26,6 +25,12 @@ backpack-youtrack
 backpack-cubes-backend
 backpack-cubes-frontend
 backpack-metabase
+
+# Commerce
+#
+backpack-kaui
+backpack-killbill
+backpack-kkmserver
 
 # Databases
 #
@@ -74,11 +79,6 @@ backpack-influxdb-2
 backpack-telegraf
 backpack-kapacitor
 backpack-chronograf
-
-# Kill Bill
-#
-backpack-kaui
-backpack-killbill
 
 # Message queues
 #
