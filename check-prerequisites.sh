@@ -6,6 +6,7 @@ readonly PREREQUISITES="
   awk
   docker
   envsubst
+  flyway
   htpasswd
   http
   ip
