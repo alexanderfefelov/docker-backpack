@@ -2,9 +2,9 @@ ARG VERSION
 
 FROM grafana/grafana:$VERSION
 
-USER root
-
 ADD container/ /
+
+USER root
 
 RUN apk add --quiet \
       curl `# For health checks` \
