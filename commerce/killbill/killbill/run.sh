@@ -15,6 +15,13 @@ initialize_database() {
   echo ...database initialized
 }
 
+initialize_migrations() {
+  echo Initializing migrations...
+  export DB_DATABASE
+  $MYSQL <<< "$(envsubst < init/initialize-migrations.sql)"
+  echo ...migrations initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -40,6 +47,7 @@ set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
   initialize_database
+  initialize_migrations
 fi
 
 run
