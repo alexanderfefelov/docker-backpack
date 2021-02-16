@@ -10,6 +10,7 @@ readonly PREREQUISITES="
   htpasswd
   http
   ip
+  java
   jq
   logger
   lorem

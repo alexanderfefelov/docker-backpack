@@ -12,7 +12,7 @@ RUN wget --quiet https://sourceforge.net/projects/jasperserver/files/JasperServe
 COPY container/ /
 
 RUN cd dist/buildomatic \
-  && ./js-install-ce.sh \
+  && BUILDOMATIC_ENV=dev ./js-ant deploy-webapp-ce \
   && cd / \
   && rm --force $JASPERREPORTS_STUFF \
   && rm --recursive --force dist
