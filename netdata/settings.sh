@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.29.0
+readonly DEFAULT_VERSION=1.29.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=netdata
