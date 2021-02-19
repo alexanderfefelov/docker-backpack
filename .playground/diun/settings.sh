@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=4.11.0
+readonly DEFAULT_VERSION=4.12.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=diun
