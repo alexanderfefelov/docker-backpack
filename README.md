@@ -17,6 +17,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Metabase](business-intelligence/metabase)
 - [Commerce](commerce)
     - [BGBilling](commerce/bgbilling)
+        - [Billing](commerce/bgbilling/billing)
+        - [Scheduler](commerce/bgbilling/scheduler)
     - [Kill Bill](commerce/killbill)
         - [Kaui](commerce/killbill/kaui)
         - [Kill Bill](commerce/killbill/killbill)
