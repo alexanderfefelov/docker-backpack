@@ -5,7 +5,7 @@
 | [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Web Console | N/A | N/A
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
-| [BGBilling](../commerce/bgbilling) | Java | MySQL | ? | ? | ? | ? | ?
+| [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | ? | ? | ? | ?
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDHCP](../dhcp/coredhcp) | Go | N/A | N/A | N/A | N/A | N/A | N/A
 | [CoreDNS](../dns/coredns) | Go | N/A | N/A | Prometheus | Prometheus | N/A | N/A
@@ -30,6 +30,7 @@
 | [InfluxData InfluxDB 2](../influxdata/influxdb-2) | ? | ? | ? | ? | ? | ? | ?
 | [InfluxData Kapacitor](../influxdata/v1/kapacitor)| ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData Telegraf](../influxdata/telegraf) | ? | ? | ? | ? | ? | ? | ?
+| [JasperReports](../business-intelligence/jasperreports) | Java | MySQL, PostgreSQL | MySQL | ? | ? | ? | ?
 | [Jenkins](../jenkins) | ? | ? | ? | ? | InfluxDB | ? | ?
 | [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
 | [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?

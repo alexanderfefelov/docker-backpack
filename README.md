@@ -13,6 +13,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Cubes](business-intelligence/cubes)
       - [Backend](business-intelligence/cubes/backend)
       - [Frontend](business-intelligence/cubes/frontend)
+    - [JasperReports](business-intelligence/jasperreports)
     - [Metabase](business-intelligence/metabase)
 - [Commerce](commerce)
     - [BGBilling](commerce/bgbilling)
