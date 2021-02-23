@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=5.2.4
+readonly DEFAULT_VERSION=5.2.5
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=zabbix-frontend
