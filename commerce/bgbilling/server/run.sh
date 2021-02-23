@@ -16,7 +16,10 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/BGBillingServer/data \
+    --volume $CONTAINER_NAME-dyn:/BGBillingServer/dyn \
     --volume $CONTAINER_NAME-log:/BGBillingServer/log \
+    --volume $CONTAINER_NAME-web:/BGBillingServer/webroot \
     --publish 8098:8080 \
     --publish 8099:8778 \
     $DEFAULT_HEALTH_SETTINGS \
