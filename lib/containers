@@ -24,10 +24,13 @@ backpack-youtrack
 #
 backpack-cubes-backend
 backpack-cubes-frontend
+backpack-jasperreports
 backpack-metabase
 
 # Commerce
 #
+backpack-bgbilling-scheduler
+backpack-bgbilling-server
 backpack-kaui
 backpack-killbill
 backpack-kkmserver

@@ -62,6 +62,10 @@ Port,Container
 8093,backpack-snmpcollector
 8094,backpack-youtrack
 8095,backpack-redmine
+8096,backpack-killbill
+8097,backpack-jasperreports
+8098,backpack-bgbilling-server
+8099,backpack-bgbilling-server
 8108,backpack-typesense
 8123,backpack-clickhouse
 8126,backpack-graphite-statsd

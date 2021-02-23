@@ -24,10 +24,13 @@ bug-tracking/youtrack
 #
 business-intelligence/cubes/backend
 business-intelligence/cubes/frontend
+business-intelligence/jasperreports
 business-intelligence/metabase
 
 # Commerce
 #
+commerce/bgbilling/scheduler
+commerce/bgbilling/server
 commerce/killbill/kaui
 commerce/killbill/killbill
 commerce/kkmserver
