@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=6.0.9
+readonly DEFAULT_VERSION=6.2.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=redis
