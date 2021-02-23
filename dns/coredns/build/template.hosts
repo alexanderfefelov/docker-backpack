@@ -32,8 +32,8 @@ $IP_ADDRESS metabase.backpack.test
 
 # Commerce
 #
-$IP_ADDRESS bgbilling-billing.backpack.test
 $IP_ADDRESS bgbilling-scheduler.backpack.test
+$IP_ADDRESS bgbilling-server.backpack.test
 $IP_ADDRESS kaui.backpack.test
 $IP_ADDRESS killbill.backpack.test
 $IP_ADDRESS kkmserver.backpack.test
