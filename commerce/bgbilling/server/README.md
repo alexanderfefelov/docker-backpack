@@ -1,10 +1,12 @@
-# backpack-bgbilling-billing
+# backpack-bgbilling-server
 
 ![BGBilling](../../../doc/assets/logos/bgbilling.png)
 
-Hostnames `bgbilling-billing.backpack.test`
+Hostnames `bgbilling-server.backpack.test`
 
 ## Services
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
+| 8098 | ? | ?
+| 8099 | ? | ?
