@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.8.9.1
+readonly DEFAULT_VERSION=1.8.10
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=chronograf
