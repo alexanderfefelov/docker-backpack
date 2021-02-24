@@ -10,12 +10,19 @@ readonly MYSQL="mysql --host=$DB_HOST --port=$DB_PORT --user=$DB_ROOT_USERNAME -
 
 initialize_database() {
   echo Initializing database...
+
   export DB_DATABASE DB_USERNAME DB_PASSWORD
   $MYSQL <<< "$(envsubst < init/initialize-database.sql)"
-  echo ...database initialized
-}
 
-loda_dump() {
+  # Skip the lines:
+  #   CREATE DATABASE ...
+  #   USE ...
+  #   SET collation_connection ...
+  # and drop the lines:
+  #   GRANT ALL ...
+  $MYSQL $DB_DATABASE <<< "$(tail --lines=+4 init/dump.sql | grep --invert-match 'GRANT ALL')"
+
+  echo ...database initialized
 }
 
 run() {
@@ -44,7 +51,6 @@ set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
   initialize_database
-  load_dump
 fi
 
 run
