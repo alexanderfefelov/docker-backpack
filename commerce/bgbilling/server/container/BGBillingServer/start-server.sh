@@ -10,7 +10,12 @@ cd $APP_HOME
 . settings.sh
 
 readonly AGENT="-javaagent:$APP_HOME/jolokia/jolokia-jvm-1.6.2-agent.jar=config=$APP_HOME/jolokia/jolokia.properties"
-readonly LOG="-Dlog4j.configuration=data/actual-log4j.xml -Dlog.dir=$APP_HOME/log"
+readonly LOG="
+  -Dlog4j.configuration=$APP_HOME/data/log4j.xml
+  -Dlog.dir.path=$APP_HOME/log/
+  -Dlog.prefix=server
+"
+
 readonly MEMORY="-Xmx500m"
 readonly NETWORK="-Djava.net.preferIPv4Stack=true"
 
