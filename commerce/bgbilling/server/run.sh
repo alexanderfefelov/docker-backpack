@@ -36,6 +36,7 @@ run() {
     --volume $CONTAINER_NAME-log:/BGBillingServer/log \
     --volume $CONTAINER_NAME-web:/BGBillingServer/webroot \
     --publish 8098:8080 \
+    --publish 8098:2005/udp \
     --publish 8099:8778 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \

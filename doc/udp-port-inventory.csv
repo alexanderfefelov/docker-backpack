@@ -9,6 +9,7 @@ Port,Container
 5514,backpack-logstash
 5515,backpack-the-dude
 5555,backpack-riemann
+8098,backpack-bgbilling-server
 8125,backpack-graphite-statsd
 8901,backpack-dkron-server-1
 8904,backpack-dkron-server-2
