@@ -9,6 +9,7 @@ ENV APP_HOME=/BGBillingServer
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
+       netcat `# For health checks` \
        unzip \
        wget \
   && SERVER_STUFF=$(/download-bgbilling-component.sh BGBillingServer $RELEASE $SET) \
