@@ -5,7 +5,7 @@
 set -e
 
 readonly COMPONENT=${1?Component is not specified}
-readonly RELEASE=${2?Release not specified}
+readonly RELEASE=${2?Release is not specified}
 readonly SET=${3?Set is not specified}
 
 readonly base_release_url=https://bgbilling.ru/download/$RELEASE

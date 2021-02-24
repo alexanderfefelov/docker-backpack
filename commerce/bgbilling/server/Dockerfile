@@ -4,6 +4,7 @@ ADD build/download-bgbilling-component.sh /
 
 ARG RELEASE
 ARG SET
+ARG COMPONENTS
 
 ENV APP_HOME=/BGBillingServer
 
@@ -21,9 +22,16 @@ RUN apt-get -qq update \
   && KERNEL_WEB_STUFF=$(/download-bgbilling-component.sh kernelWeb $RELEASE $SET) \
   && unzip -qq -o $KERNEL_WEB_STUFF -d $APP_HOME \
   && echo 0 | $APP_HOME/bin/bg_installer.sh \
+  && for component in $COMPONENTS; do \
+       echo -n Installing $component...; \
+       stuff=$(/download-bgbilling-component.sh $component $RELEASE $SET); \
+       unzip -qq $stuff -d $APP_HOME; \
+       rm --force $stuff; \
+       echo done; \
+     done \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  && rm --force $SERVER_STUFF \
+  && rm --force $SERVER_STUFF dump.sql \
   && rm --force $KERNEL_STUFF \
   && rm --force $UPDATE_LIB_STUFF \
   && rm --force $KERNEL_WEB_STUFF

@@ -8,5 +8,6 @@
 docker build \
   --build-arg RELEASE \
   --build-arg SET \
+  --build-arg COMPONENTS \
   --tag $IMAGE_NAME:$VERSION \
   .

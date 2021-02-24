@@ -2,6 +2,18 @@ readonly DEFAULT_VERSION=8.2101-2102221508
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 export RELEASE=${VERSION%-*}
 export SET=${VERSION#*-}
+export COMPONENTS='
+  card
+  inet
+  npay
+  rscm
+  subscription
+
+  bonus
+  dispatch
+  documents
+  helpdesk
+'
 
 readonly MONIKER=bgbilling-server
 readonly BASE_NAME=backpack-$MONIKER
