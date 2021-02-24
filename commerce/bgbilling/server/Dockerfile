@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk15:x86_64-ubuntu-jdk-15.0.2_7
 
-ADD build/download-bgbilling-component.sh /
+ADD init/download-bgbilling-component.sh /
 
 ARG RELEASE
 ARG SET

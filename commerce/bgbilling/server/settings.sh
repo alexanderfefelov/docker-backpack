@@ -15,8 +15,8 @@ readonly DB_PORT=3306
 readonly DB_DATABASE=bgbilling
 readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
-readonly DB_USERNAME=bgbilling_phohd9Riu0ai
-readonly DB_PASSWORD=Eesho8ue9oph
+readonly DB_USERNAME=bgbilling_nah0queithei
+readonly DB_PASSWORD=feizudi1xu9h
 
 . ../../../lib/settings/health.sh
 . ../../../lib/settings/log.sh

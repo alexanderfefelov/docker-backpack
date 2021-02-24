@@ -14,6 +14,7 @@ Hostnames:
 | ---: | :------ | :----------
 | 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `activemq_feizievoudai` / `axiechiemoht` 
 | | | `backup_letocryloite` / `almatramushi`
+| | | `bgbilling_nah0queithei` / `feizudi1xu9h`
 | | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
 | | | `fastnetmon_boeweewoonee` / `uheeghienoej`
 | | | `fleet_fiedabaetivu` / `iengeemiutuw`
@@ -39,6 +40,7 @@ Hostnames:
 | Name | Description
 | :--- | :----------
 | `activemq` | [ActiveMQ](../../../message-queues/activemq)
+| `bgbilling` | [BGBilling](../../../commerce/bgbilling)
 | `cubesviewer_server` | [CubesViewer Server](../../../business-intelligence/cubesviewer-server)
 | `fastnetmon` | [FastNetMon](../../../network-monitoring/fastnetmon) |
 | `fleet` | [Fleet](../../../fleet)
