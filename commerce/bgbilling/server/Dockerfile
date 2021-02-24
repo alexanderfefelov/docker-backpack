@@ -1,12 +1,12 @@
 FROM adoptopenjdk/openjdk15:x86_64-ubuntu-jdk-15.0.2_7
 
-ADD build/download-bgbilling-component.sh /
-
 ARG RELEASE
 ARG SET
 ARG COMPONENTS
 
 ENV APP_HOME=/BGBillingServer
+
+ADD build/download-bgbilling-component.sh /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
@@ -34,7 +34,8 @@ RUN apt-get -qq update \
   && rm --force $SERVER_STUFF dump.sql \
   && rm --force $KERNEL_STUFF \
   && rm --force $UPDATE_LIB_STUFF \
-  && rm --force $KERNEL_WEB_STUFF
+  && rm --force $KERNEL_WEB_STUFF \
+  && rm --force download-bgbilling-component.sh
 
 ADD container/ /
 
