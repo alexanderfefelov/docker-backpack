@@ -33,4 +33,4 @@ readonly STARTUP_CLASS=bitel.billing.server.TaskExecuter
 
 print_banner
 
-java $JAVA_OPTIONS $STARTUP_CLASS start 2>&1 | tee --append log/scheduler.out
+java $JAVA_OPTIONS $STARTUP_CLASS -estart 2>&1 | tee --append log/scheduler.out
