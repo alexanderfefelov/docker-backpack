@@ -1,6 +1,6 @@
 # backpack-bgbilling-server
 
-Hostnames `bgbilling-server.backpack.test`
+Hostname `bgbilling-server.backpack.test`
 
 ## Services
 

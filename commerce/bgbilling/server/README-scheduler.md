@@ -1,6 +1,6 @@
 # backpack-bgbilling-scheduler
 
-Hostnames `bgbilling-scheduler.backpack.test`
+Hostname `bgbilling-scheduler.backpack.test`
 
 ## Services
 
