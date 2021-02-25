@@ -20,9 +20,26 @@ initialize_database() {
   #   SET collation_connection ...
   # and drop the lines:
   #   GRANT ALL ...
-  $MYSQL $DB_DATABASE <<< "$(tail --lines=+4 init/dump.sql | grep --invert-match 'GRANT ALL')"
+  #   CREATE USER ...
+  $MYSQL $DB_DATABASE <<< "$(tail --lines=+4 init/dump.sql | grep --extended-regexp --invert-match 'GRANT ALL|CREATE USER')"
 
   echo ...database initialized
+}
+
+execute_scripts() {
+  echo Executing scripts from $1...
+  for f in $1/*; do
+    echo "$f"
+    case $f in
+      *.sql)
+        $MYSQL $DB_DATABASE <<< "$(envsubst < "$f")"
+        ;;
+      *)
+        echo skipped
+        ;;
+    esac
+  done
+  echo ...scripts from $1 executed
 }
 
 run() {
@@ -52,6 +69,8 @@ set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
   initialize_database
+  execute_scripts init/tune-database
+  execute_scripts init/configure-credentials
 fi
 
 run

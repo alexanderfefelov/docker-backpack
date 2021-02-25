@@ -1,0 +1,1 @@
+ALTER TABLE `user` MODIFY COLUMN login char(42) NOT NULL DEFAULT '';
