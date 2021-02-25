@@ -30,7 +30,8 @@ readonly JAVA_OPTIONS="
   $JAVA_OPTIONS_COMMON
 "
 readonly STARTUP_CLASS=bitel.billing.server.TaskExecuter
+readonly LISTENER_PORT=9066
 
 print_banner
 
-java $JAVA_OPTIONS $STARTUP_CLASS -estart 2>&1 | tee --append log/scheduler.out
+java $JAVA_OPTIONS $STARTUP_CLASS -p$LISTENER_PORT -estart 2>&1 | tee --append log/scheduler.out
