@@ -29,7 +29,6 @@ business-intelligence/metabase
 
 # Commerce
 #
-commerce/bgbilling/scheduler
 commerce/bgbilling/server
 commerce/killbill/kaui
 commerce/killbill/killbill
