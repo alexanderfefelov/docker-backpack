@@ -3,15 +3,20 @@ export VERSION=${VERSION:-$DEFAULT_VERSION}
 export RELEASE=${VERSION%-*}
 export SET=${VERSION#*-}
 export COMPONENTS='
+  bill
   card
   inet
   npay
+  reports
   rscm
+  sorm
   subscription
 
   bonus
+  cladr
   dispatch
   documents
+  fias
   helpdesk
 '
 
