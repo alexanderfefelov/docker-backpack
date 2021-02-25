@@ -9,5 +9,20 @@ docker build \
   --build-arg RELEASE \
   --build-arg SET \
   --build-arg COMPONENTS \
-  --tag $IMAGE_NAME:$VERSION \
+  --tag $IMAGE_NAME-base:$VERSION \
+  --file Dockerfile-base \
+  .
+
+docker build \
+  --build-arg IMAGE_NAME \
+  --build-arg VERSION \
+  --tag $IMAGE_NAME-scheduler:$VERSION \
+  --file Dockerfile-scheduler \
+  .
+
+docker build \
+  --build-arg IMAGE_NAME \
+  --build-arg VERSION \
+  --tag $IMAGE_NAME-server:$VERSION \
+  --file Dockerfile-server \
   .

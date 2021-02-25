@@ -27,20 +27,20 @@ initialize_database() {
 
 run() {
   docker run \
-    --name $CONTAINER_NAME \
-    --hostname $HOST_NAME \
+    --name $SERVER_CONTAINER_NAME \
+    --hostname $SERVER_HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-data:/BGBillingServer/data \
-    --volume $CONTAINER_NAME-dyn:/BGBillingServer/dyn \
-    --volume $CONTAINER_NAME-log:/BGBillingServer/log \
-    --volume $CONTAINER_NAME-web:/BGBillingServer/webroot \
+    --volume $SERVER_CONTAINER_NAME-data:/BGBillingServer/data \
+    --volume $SERVER_CONTAINER_NAME-dyn:/BGBillingServer/dyn \
+    --volume $SERVER_CONTAINER_NAME-log:/BGBillingServer/log \
+    --volume $SERVER_CONTAINER_NAME-web:/BGBillingServer/webroot \
     --publish 8098:8080 \
     --publish 8098:2005/udp \
     --publish 8099:8778 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME:$VERSION
+    $IMAGE_NAME-server:$VERSION
 }
 
 $MYSQL --execute="USE $DB_DATABASE;"
@@ -55,5 +55,5 @@ if [ "$USE_DB_RETCODE" -ne 0 ]; then
 fi
 
 run
-wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
-print_container_info $CONTAINER_NAME
+wait_for_all_container_ports $SERVER_CONTAINER_NAME $WAIT_TIMEOUT
+print_container_info $SERVER_CONTAINER_NAME

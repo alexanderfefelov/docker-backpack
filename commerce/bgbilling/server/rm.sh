@@ -5,4 +5,5 @@
 
 . settings.sh
 
-docker rm --force --volumes $CONTAINER_NAME
+docker rm --force --volumes $SCHEDULER_CONTAINER_NAME
+docker rm --force --volumes $SERVER_CONTAINER_NAME

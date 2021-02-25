@@ -20,11 +20,13 @@ export COMPONENTS='
   helpdesk
 '
 
-readonly MONIKER=bgbilling-server
+readonly MONIKER=bgbilling
 readonly BASE_NAME=backpack-$MONIKER
-readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
-readonly CONTAINER_NAME=$BASE_NAME
-readonly HOST_NAME=$MONIKER.backpack.test
+export IMAGE_NAME=alexanderfefelov/$BASE_NAME
+readonly SCHEDULER_CONTAINER_NAME=$BASE_NAME-scheduler
+readonly SERVER_CONTAINER_NAME=$BASE_NAME-server
+readonly SCHEDULER_HOST_NAME=$MONIKER-scheduler.backpack.test
+readonly SERVER_HOST_NAME=$MONIKER-server.backpack.test
 readonly WAIT_TIMEOUT=600
 
 readonly DB_HOST=mysql-main-master.backpack.test

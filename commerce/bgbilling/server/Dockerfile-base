@@ -37,7 +37,4 @@ RUN apt-get -qq update \
   && rm --force $KERNEL_WEB_STUFF \
   && rm --force download-bgbilling-component.sh
 
-ADD container/ /
-
 WORKDIR $APP_HOME
-CMD ["./start-server.sh"]

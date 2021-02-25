@@ -5,7 +5,11 @@
 
 . settings.sh
 
-yes | docker image prune --filter label=$IMAGE_NAME-stage=builder
+images=$(docker image ls --quiet --filter reference=$IMAGE_NAME-server | sort | uniq)
+[ -z "$images" ] && echo There are no images to remove || docker image rm --force $images
 
-readonly IMAGES=$(docker image ls --quiet --filter reference=$IMAGE_NAME | sort | uniq)
-[ -z "$IMAGES" ] && echo There are no images to remove || docker image rm --force $IMAGES
+images=$(docker image ls --quiet --filter reference=$IMAGE_NAME-scheduler | sort | uniq)
+[ -z "$images" ] && echo There are no images to remove || docker image rm --force $images
+
+images=$(docker image ls --quiet --filter reference=$IMAGE_NAME-base | sort | uniq)
+[ -z "$images" ] && echo There are no images to remove || docker image rm --force $images

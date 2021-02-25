@@ -5,4 +5,4 @@
 
 . settings.sh
 
-docker logs --follow $CONTAINER_NAME
+docker logs --follow $SERVER_CONTAINER_NAME

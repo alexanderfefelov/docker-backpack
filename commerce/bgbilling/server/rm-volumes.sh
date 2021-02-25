@@ -5,7 +5,7 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-data
-docker volume rm $CONTAINER_NAME-dyn
-docker volume rm $CONTAINER_NAME-log
-docker volume rm $CONTAINER_NAME-web
+docker volume rm $SERVER_CONTAINER_NAME-data
+docker volume rm $SERVER_CONTAINER_NAME-dyn
+docker volume rm $SERVER_CONTAINER_NAME-log
+docker volume rm $SERVER_CONTAINER_NAME-web
