@@ -70,7 +70,7 @@ set -e
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
   initialize_database
   execute_scripts init/tune-database
-  execute_scripts init/configure-credentials
+  execute_scripts init/configure-accounts
 fi
 
 run
