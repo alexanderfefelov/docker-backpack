@@ -1,6 +1,6 @@
 # backpack-xwiki
 
-![XWiki](../doc/assets/logos/xwiki.png)
+![XWiki](../../doc/assets/logos/xwiki.png)
 
 Hostname `xwiki.backpack.test`
 

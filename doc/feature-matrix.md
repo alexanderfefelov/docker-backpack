@@ -67,5 +67,5 @@
 | [Typesense](../typesense) | ? | ? | ? | ? | ? | ? | ?
 | [Zabbix backend](../network-monitoring/zabbix/backend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
 | [Zabbix frontend](../network-monitoring/zabbix/frontend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
-| [XWiki](../xwiki) | Java | [Hibernate](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport) | MySQL | ? | ? | ? | ?
+| [XWiki](../wiki/xwiki) | Java | [Hibernate](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport) | MySQL | ? | ? | ? | ?
 | [YouTrack](../bug-tracking/youtrack) | Java | Xodus | Xodus | ? | ? | ? | ?
