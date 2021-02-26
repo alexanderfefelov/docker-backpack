@@ -17,7 +17,6 @@ $IP_ADDRESS netbox.backpack.test
 $IP_ADDRESS redis.backpack.test
 $IP_ADDRESS riemann.backpack.test
 $IP_ADDRESS typesense.backpack.test
-$IP_ADDRESS xwiki.backpack.test
 
 # Bug tracking
 #
@@ -112,6 +111,10 @@ $IP_ADDRESS pushgateway.backpack.test
 #
 $IP_ADDRESS swagger-editor.backpack.test
 $IP_ADDRESS swagger-ui.backpack.test
+
+# Wiki
+#
+$IP_ADDRESS xwiki.backpack.test
 
 # Workload automation
 #

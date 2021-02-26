@@ -13,7 +13,6 @@ backpack-netbox
 backpack-redis
 backpack-riemann
 backpack-typesense
-backpack-xwiki
 
 # Bug tracking
 #
@@ -110,6 +109,10 @@ backpack-pushgateway
 #
 backpack-swagger-editor
 backpack-swagger-ui
+
+# Wiki
+#
+backpack-xwiki
 
 # Workload automation
 #

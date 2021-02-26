@@ -94,7 +94,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
         - [Agents](workload-automation/dkron/agent)
         - [Servers](workload-automation/dkron/server)
     - [Rundeck](workload-automation/rundeck)
-- [XWiki](xwiki)
+- [XWiki](wiki/xwiki)
 
 ## Documentation
 

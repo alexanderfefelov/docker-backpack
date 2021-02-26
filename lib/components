@@ -13,7 +13,6 @@ netbox
 redis
 riemann
 typesense
-xwiki
 
 # Bug tracking
 #
@@ -105,6 +104,10 @@ prometheus/pushgateway
 #
 swagger/editor
 swagger/ui
+
+# Wiki
+#
+wiki/xwiki
 
 # Workload automation
 #
