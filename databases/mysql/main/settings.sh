@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=8.0.22
+readonly DEFAULT_VERSION=8.0.23
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=mysql-main
