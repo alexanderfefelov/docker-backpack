@@ -28,6 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
       whois
 RUN pip3 --quiet install \
       httpie \
+      napalm \
       rotate-backups
 
 # MySQL
