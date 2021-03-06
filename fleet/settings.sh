@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.7.1
+readonly DEFAULT_VERSION=3.8.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=fleet
