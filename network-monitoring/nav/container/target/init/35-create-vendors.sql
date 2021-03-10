@@ -2,7 +2,10 @@ insert into vendor(vendorid) values
   ('Cisco'),
   ('D-Link'),
   ('Extreme'),
+  ('Huawei'),
   ('Juniper'),
   ('MikroTik'),
   ('NAG'),
-  ('NetPing');
+  ('NetPing'),
+  ('Ubiquiti'),
+  ('Zyxel');
