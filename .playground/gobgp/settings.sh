@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.24.0
+readonly DEFAULT_VERSION=2.25.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=gobgp
