@@ -12,6 +12,8 @@ initialize_database() {
   echo Initializing database...
   export DB_DATABASE DB_USERNAME DB_PASSWORD
   $MYSQL <<< "$(envsubst < init/initialize-database.sql)"
+  $MYSQL $DB_DATABASE < init/js-create-$DDL_VERSION.ddl
+  $MYSQL $DB_DATABASE < init/quartz-$DDL_VERSION.ddl
   echo ...database initialized
 }
 
