@@ -7,6 +7,7 @@ readonly PREREQUISITES="
   docker
   envsubst
   flyway
+  hadolint
   htpasswd
   http
   ip
@@ -25,6 +26,7 @@ readonly PREREQUISITES="
   psql
   pwgen
   redis-cli
+  shellcheck
   sleep
   smbpasswd
   smidump
