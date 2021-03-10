@@ -21,7 +21,7 @@ initialize_database() {
   # and drop the lines:
   #   GRANT ALL ...
   #   CREATE USER ...
-  $MYSQL $DB_DATABASE <<< "$(tail --lines=+4 init/dump-$DUMP_SQL_VERSION.sql | grep --extended-regexp --invert-match 'GRANT ALL|CREATE USER')"
+  $MYSQL $DB_DATABASE <<< "$(tail --lines=+4 init/dump-$DDL_VERSION.sql | grep --extended-regexp --invert-match 'GRANT ALL|CREATE USER')"
 
   echo ...database initialized
 }
