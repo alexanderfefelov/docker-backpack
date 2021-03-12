@@ -1,6 +1,7 @@
 FROM python:3.7.9-buster AS builder
 
 ARG VERSION
+ARG ADD_ONS_VERSION
 ARG IMAGE_NAME
 
 LABEL $IMAGE_NAME-stage=builder
@@ -13,9 +14,18 @@ RUN apt-get -qq update \
        libsasl2-dev \
        patch \
   && git clone https://github.com/Uninett/nav.git --branch ${VERSION} --depth 1 \
+  && ( \
+       cd nav; \
+       git log -1 > /nav.lastlog \
+     ) \
   && pip3 --quiet wheel --requirement /nav/requirements.txt --wheel-dir /.wheels \
   && pip3 --quiet install --root /.build /nav \
   && git clone https://github.com/alexanderfefelov/nav-add-ons.git \
+  && ( \
+       cd nav-add-ons; \
+       git checkout $ADD_ONS_VERSION; \
+       git log -1 > /nav-add-ons.lastlog \
+     ) \
   && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
   && /apply-patches.sh \
   && apt-get -qq clean \
@@ -24,12 +34,11 @@ RUN apt-get -qq update \
 
 FROM python:3.7.9-slim-buster AS target
 
-ARG VERSION
-
 ARG TINI_VERSION=0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini
 RUN chmod +x /usr/sbin/tini
 
+COPY --from=builder /*.lastlog /
 COPY --from=builder /nav/requirements/ /requirements/
 COPY --from=builder /nav/requirements.txt /
 COPY --from=builder /.wheels/ /.wheels/
