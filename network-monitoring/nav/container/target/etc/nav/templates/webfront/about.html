@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block base_content %}
+<h2>About NAV</h2>
+
+<h3>What is NAV?</h3>
+
+<div style="float: right;">
+        {% comment %}
+        Margins around the Uninett logo are as suggested by the Uninett logo
+        policy; they should be about the vertical height of the logo font on all
+        sides.
+        {% endcomment %}
+        <a href="http://www.uninett.no/index.en.html"><img
+        src="{{ STATIC_URL }}images/about/uninett.png" width="157" height="43" alt="Uninett"
+        style="margin: 22px; margin-top: 0;"/></a><br />
+        <a href="http://www.ntnu.no/"><img src="{{ STATIC_URL }}images/about/ntnu.jpg"
+        width="200" height="58" alt="NTNU" /></a>
+
+</div>
+
+<p>
+  Network Administration Visualized is an advanced software suite to monitor
+  large computer networks. It automatically discovers network topology,
+  monitors network load and outages, and can send alerts on network events by
+  e-mail and SMS, allowing for flexible configuration of alert profiles.
+</p>
+
+<p>
+  NAV was originally developed at the Norwegian University of Science and
+  Technology (<a href="http://www.ntnu.no/">NTNU</a>) since 1999, to meet the
+  needs of the university's campus network operators.  The Norwegian national
+  research network, <a href="http://www.uninett.no/index.en.html">Uninett</a>,
+  became involved in 2001, and has been leading the development of NAV since
+  2006, on behalf of all universities and university colleges in Norway.
+</p>
+
+<p>
+  NAV is free, available under the <em>GNU GPLv3</em> license.
+</p>
+
+<h3>More information</h3>
+
+<p>For more information about NAV, go to the following addresses:</p>
+
+<ul>
+        <li><a href="https://nav.uninett.no/">NAV</a>
+        &mdash; Homepage with wiki and online documentation</li>
+        <li><a href="https://github.com/Uninett/nav">NAV on GitHub</a>
+          &mdash; our GitHub project site where you among other things
+          can register issues.</li>
+</ul>
+
+<h3>Show us your appreciation!</h3>
+
+<p>NAV is free - no strings attached - apart from these two;</p>
+
+<ol>
+        <li>If you are using NAV please add yourself to <a
+        href="https://nav.uninett.no/wiki/navusers">this list</a>.</li>
+
+        <li>
+          <p>If NAV makes you happy - make us happy! Send us a postcard,
+             preferably with a picture from your location / city. No
+             electronic postcards - use snail mail - send the postcard to:</p>
+
+          <p class="infobox">
+            Uninett AS<br />
+            Att: The NAV project team / Morten Brekkevold / Vidar Faltinsen<br />
+            Abels gate 5 - Teknobyen<br />
+            NO-7465 Trondheim<br />
+            Norway<br />
+          </p>
+
+	  <p>...and we will decorate our wall :)</p>
+        </li>
+</ol>
+
+<h3>Contributors</h3>
+<p>
+    We wish to thank the following people who have contributed to NAV in some
+    form over the years:
+</p>
+
+<ul>
+    <li>Vidar Faltinsen</li>
+    <li>Morten Brekkevold</li>
+    <li>Hanne Moa</li>
+    <li>John-Magne Bredal</li>
+    <li>Sigmund Augdal</li>
+    <li>Philipp Petermann</li>
+    <li>Ruben Andreassen</li>
+    <li>Bård Schjander Flugon</li>
+    <li>Emil Henry Flakk</li>
+    <li>Pär Stolpe</li>
+    <li>Christian Strand Young</li>
+    <li>Christine Anne Sætre</li>
+    <li>Morten Werner Forsbring</li>
+    <li>Roy Sindre Norangshol</li>
+    <li>Eivind Lysne</li>
+    <li>Trond Kandal</li>
+    <li>Ole Martin Bjørndalen</li>
+    <li>Kai Arne Bjørnenak</li>
+    <li>Magnus Motzfeldt Eide</li>
+    <li>Marius Halden</li>
+    <li>Matej Gregr</li>
+    <li>Fredrik Skolmli</li>
+    <li>Thomas Adamcik</li>
+    <li>Jørgen Abrahamsen</li>
+    <li>Kristian Klette</li>
+    <li>Øystein Skartsæterhagen</li>
+    <li>Roger Kristiansen
+    <li>Stein Magnus Jodal</li>
+    <li>Erlend Midttun</li>
+    <li>Jostein Gogstad</li>
+    <li>Kristian Eide</li>
+    <li>Gro-Anita Vindheim</li>
+    <li>Magnar Sveen</li>
+    <li>Hans Jørgen Hoel</li>
+    <li>Arne Øslebø</li>
+    <li>Andreas Åkre Solberg</li>
+    <li>Stian Søiland</li>
+    <li>Magnus Thanem Nordseth</li>
+    <li>Sigurd Gartmann</li>
+    <li>Arve Vanvik</li>
+    <li>Erlend Mjåvatten</li>
+    <li>Bjørn Ove Grøtan</li>
+    <li>Daniel Sandvold</li>
+    <li>Erik Gorset</li>
+    <li>Knut-Helge Vindheim</li>
+    <li>Trygve Lunheim</li>
+    <li>Stig Venås</li>
+    <li>Eric Sandnes</li>
+    <li>Tor-Arne Kvaløy</li>
+</ul>
+
+{% load silent_include %}
+<h3>Latest changes</h3>
+<dl>
+  <dt><a href="https://github.com/Uninett/nav">NAV</a></dt>
+  <dd><pre style="font-size: 0.7em;">{% try_to_include "nav.latest_changes" %}</pre></dd>
+  <dt><a href="https://github.com/alexanderfefelov/nav-add-ons">nav-add-ons</a></dt>
+  <dd><pre style="font-size: 0.7em;">{% try_to_include "nav-add-ons.latest_changes" %}</pre></dd>
+</dl>
+
+{% endblock %}
