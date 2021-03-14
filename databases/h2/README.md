@@ -1,5 +1,7 @@
 # backpack-h2
 
+![H2](../../doc/assets/logos/h2.png)
+
 Hostname `h2.backpack.test`
 
 ## Services
