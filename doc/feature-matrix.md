@@ -25,7 +25,7 @@
 | [Graphite/StatsD: Graphite-Web](../graphite-statsd) | Django | [Django](https://graphite.readthedocs.io/en/stable/config-database-setup.html) | MySQL | ? | ? | ? | ?
 | [Guacamole backend](../guacamole/backend) | ? | ? | ? | ? | ? | ? | ?
 | [Guacamole frontend](../guacamole/frontend) | ? | [MariaDB, MySQL, PostgreSQL, SQL Server](https://guacamole.apache.org/doc/gug/jdbc-auth.html) | MySQL | ? | ? | ? | ?
-| [H2](../databases/h2) | Java | ? | ? | ? | ? | ? | ?
+| [H2](../databases/h2) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
 | [InfluxData Chronograf](../influxdata/v1/chronograf) | ? | ? | ? | ? | ? | ? | ?
 | [InfluxData InfluxDB](../influxdata/v1/influxdb) | ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData InfluxDB 2](../influxdata/influxdb-2) | ? | ? | ? | ? | ? | ? | ?
