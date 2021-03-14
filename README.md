@@ -23,6 +23,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [KkmServer](commerce/kkmserver)
 - [Databases](databases)
     - [ClickHouse](databases/clickhouse)
+    - [H2](databases/h2)
     - [MongoDB](databases/mongodb)
         - [Main instance](databases/mongodb/main)
         - [Test instance](databases/mongodb/test)

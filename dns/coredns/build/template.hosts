@@ -40,6 +40,7 @@ $IP_ADDRESS kkmserver.backpack.test
 # Databases
 #
 $IP_ADDRESS clickhouse.backpack.test
+$IP_ADDRESS h2.backpack.test
 $IP_ADDRESS mongodb-main.backpack.test
 $IP_ADDRESS mongodb-test.backpack.test
 $IP_ADDRESS mysql-main-backup.backpack.test

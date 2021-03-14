@@ -37,6 +37,7 @@ backpack-kkmserver
 # Databases
 #
 backpack-clickhouse
+backpack-h2
 backpack-mongodb-main
 backpack-mongodb-test
 backpack-mysql-main-master

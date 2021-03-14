@@ -49,6 +49,8 @@ Port,Container
 8010,backpack-questdb
 8011,backpack-questdb
 8012,backpack-questdb
+8013,backpack-h2
+8014,backpack-h2
 8065,backpack-mattermost
 8082,backpack-xwiki
 8083,backpack-jenkins

@@ -36,6 +36,7 @@ commerce/kkmserver
 # Databases
 #
 databases/clickhouse
+databases/h2
 databases/mongodb/main
 databases/mongodb/test
 databases/mysql/main
