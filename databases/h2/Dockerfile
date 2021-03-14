@@ -10,11 +10,13 @@ RUN apt-get -qq update \
        netcat `# For health checks` \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  &&  mkdir --parents /h2 /data
+  && curl --silent https://repo1.maven.org/maven2/com/h2database/h2/$VERSION/h2-$VERSION.jar --output /h2/h2.jar \
+  && mkdir --parents /data
 
-ADD http://maven.org/maven2/com/h2database/h2/$VERSION/h2-$VERSION.jar /h2/h2.jar
-
-CMD ["java", "-classpath", "/h2/h2.jar", "org.h2.tools.Server", \
+CMD ["java", \
+  "-javaagent:/h2/jolokia/jolokia-jvm-1.6.2-agent.jar=config=/h2/jolokia/jolokia.properties", \
+  "-classpath", "/h2/h2.jar", \
+  "org.h2.tools.Server", \
   "-baseDir", "/data", \
   "-tcp", "-tcpAllowOthers", \
   "-web", "-webAllowOthers", "-webAdminPassword", "aixa5iphi3ee" \
