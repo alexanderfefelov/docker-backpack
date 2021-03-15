@@ -7,7 +7,6 @@ grafana
 graphite-statsd
 jenkins
 librespeed
-mattermost
 minecraft
 netbox
 redis
@@ -84,6 +83,10 @@ influxdata/v1/kapacitor
 #
 message-queues/activemq
 message-queues/rabbitmq
+
+# Messengers
+#
+messengers/mattermost
 
 # Network monitoring
 #

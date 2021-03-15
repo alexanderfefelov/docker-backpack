@@ -7,7 +7,6 @@ backpack-grafana
 backpack-graphite-statsd
 backpack-jenkins
 backpack-librespeed
-backpack-mattermost
 backpack-minecraft
 backpack-netbox
 backpack-redis
@@ -89,6 +88,10 @@ backpack-activemq-node-1
 backpack-activemq-node-2
 backpack-activemq-node-3
 backpack-rabbitmq
+
+# Messengers
+#
+backpack-mattermost
 
 # Network monitoring
 #

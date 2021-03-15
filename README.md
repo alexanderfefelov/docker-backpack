@@ -63,10 +63,11 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Telegraf](influxdata/telegraf)
 - [Jenkins](jenkins)
 - [LibreSpeed](librespeed)
-- [Mattermost](mattermost)
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq), cluster
     - [RabbitMQ](message-queues/rabbitmq)
+- [Messengers](messengers)
+    - [Mattermost](messengers/mattermost)
 - [Minecraft](minecraft)
 - [NetBox](netbox)
 - [Netdata](netdata)

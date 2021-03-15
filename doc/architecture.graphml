@@ -930,7 +930,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </graph>
     </node>
     <node id="n23">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/mattermost]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/messengers/mattermost]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="1052.9594625718776" y="651.1876036233987"/>

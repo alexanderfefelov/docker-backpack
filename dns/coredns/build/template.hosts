@@ -11,7 +11,6 @@ $IP_ADDRESS grafana.backpack.test
 $IP_ADDRESS graphite-statsd.backpack.test
 $IP_ADDRESS jenkins.backpack.test
 $IP_ADDRESS librespeed.backpack.test
-$IP_ADDRESS mattermost.backpack.test
 $IP_ADDRESS minecraft.backpack.test
 $IP_ADDRESS netbox.backpack.test
 $IP_ADDRESS redis.backpack.test
@@ -91,6 +90,10 @@ $IP_ADDRESS activemq-node-1.backpack.test
 $IP_ADDRESS activemq-node-2.backpack.test
 $IP_ADDRESS activemq-node-3.backpack.test
 $IP_ADDRESS rabbitmq.backpack.test
+
+# Messengers
+#
+$IP_ADDRESS mattermost.backpack.test
 
 # Network monitoring
 #

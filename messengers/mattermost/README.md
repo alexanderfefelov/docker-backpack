@@ -1,6 +1,6 @@
 # backpack-mattermost
 
-![Mattermost](../doc/assets/logos/mattermost.png)
+![Mattermost](../../doc/assets/logos/mattermost.png)
 
 Hostname `mattermost.backpack.test`
 
