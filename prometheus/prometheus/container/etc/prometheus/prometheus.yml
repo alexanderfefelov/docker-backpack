@@ -35,7 +35,7 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - coredns:9153
+    - coredns.backpack.test:9153
 
 - job_name: dkron-server
   honor_timestamps: true
