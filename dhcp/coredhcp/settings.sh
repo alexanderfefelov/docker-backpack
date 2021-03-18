@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2a7eb168
+readonly DEFAULT_VERSION=00cc600
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=coredhcp
