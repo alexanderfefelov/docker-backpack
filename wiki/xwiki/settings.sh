@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=12.10.4
+readonly DEFAULT_VERSION=13.1.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=xwiki
