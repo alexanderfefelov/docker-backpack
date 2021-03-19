@@ -6,3 +6,5 @@
 . settings.sh
 
 docker volume rm $CONTAINER_NAME-keystore
+docker volume rm $CONTAINER_NAME-log-jasperreports
+docker volume rm $CONTAINER_NAME-log-tomcat

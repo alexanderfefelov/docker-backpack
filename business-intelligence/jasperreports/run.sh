@@ -24,6 +24,8 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-keystore:/etc/jasperserver/keystore \
+    --volume $CONTAINER_NAME-log-jasperreports:/usr/local/tomcat/webapps/jasperserver/WEB-INF/logs \
+    --volume $CONTAINER_NAME-log-tomcat:/usr/local/tomcat/logs \
     --publish 8097:8080 \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
