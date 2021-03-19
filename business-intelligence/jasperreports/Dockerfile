@@ -3,6 +3,9 @@ FROM tomcat:9.0.43
 ARG VERSION
 ARG JASPERREPORTS_STUFF=TIB_js-jrs-cp_${VERSION}_bin.zip
 
+ENV ks=/etc/jasperserver/keystore
+ENV ksp=$ks
+
 WORKDIR /
 
 RUN wget --quiet https://sourceforge.net/projects/jasperserver/files/JasperServer/JasperReports%20Server%20Community%20edition%20$VERSION/$JASPERREPORTS_STUFF \
@@ -11,10 +14,10 @@ RUN wget --quiet https://sourceforge.net/projects/jasperserver/files/JasperServe
 
 COPY container/ /
 
-RUN cd dist/buildomatic \
-  && BUILDOMATIC_ENV=dev ./js-ant deploy-webapp-ce \
-  && cd / \
-  && rm --force $JASPERREPORTS_STUFF \
-  && rm --recursive --force dist
+RUN mkdir --parents $ks $ksp \
+  && cd dist/buildomatic \
+  && echo y | ./js-ant deploy-webapp-ce \
+  && rm --force /$JASPERREPORTS_STUFF \
+  && rm --recursive --force /dist
 
 WORKDIR $CATALINA_HOME
