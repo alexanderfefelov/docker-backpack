@@ -1,0 +1,4 @@
+<h4 class="subheader">Your info</h4>
+
+<p>Add your organization's contact information.</p>
+<p>Your NAV administrator: <a href="mailto:root@localhost">root@localhost</a></p>

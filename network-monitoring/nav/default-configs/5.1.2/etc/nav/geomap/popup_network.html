@@ -1,0 +1,67 @@
+{% load geomap %}
+<div class="network-popup">
+  {% if network.subedges|length_is:"1" %}
+  {% else %}
+  <table class="vertitable">
+    <caption>
+      Combined details of {{ network.subedges|length }} link{{ network.subedges|length|pluralize }}
+    </caption>
+    <tr><th>Capacity</th> <td>{{ network.capacity|floatformat:0 }} Mbps<td></tr>
+    <tr><th>Load in</th> <td>{{ network.load_in|nan2none|format:"%.3f Mbps"|default:"unknown" }}</td></tr>
+    <tr><th>Load out</th> <td>{{ network.load_out|nan2none|format:"%.3f Mbps"|default:"unknown" }}</td></tr>
+  </table>
+
+  <h5>Individual links:</h5>
+  {% endif %}
+
+  {% for sub in network.subedges %}
+
+  <table class="vertitable">
+    <caption>{{ sub.netident }}</caption>
+    <tr>
+        <th>From</th>
+        <td>
+            <a href="{% url 'ipdevinfo-details-by-name' sub.local_sysname %}"
+               target="_blank"
+               title="View device details">{{ sub.local_sysname }}</a>
+            {% if sub.local_interface %}
+            <a href="{% url 'ipdevinfo-interface-details-by-name' sub.local_sysname sub.local_interface %}"
+               target="_blank"
+               title="View interface details">{{ sub.local_interface }}</a>
+            {% else %}
+              N/A
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <th>To</th>
+        <td>
+            <a href="{% url 'ipdevinfo-details-by-name' sub.remote_sysname %}"
+               target="_blank"
+               title="View device details">{{ sub.remote_sysname }}</a>
+            {% if sub.remote_interface %}
+            <a href="{% url 'ipdevinfo-interface-details-by-name' sub.remote_sysname sub.remote_interface %}"
+               target="_blank"
+               title="View interface details">{{ sub.remote_interface }}</a>
+            {% else %}
+              N/A
+            {% endif %}
+        </td>
+    </tr>
+    <tr><th>Capacity</th>     <td>{{ sub.capacity|floatformat:0 }} Mbps</td></tr>
+    <tr><th>Load in</th>      <td>{{ sub.load_in|nan2none|format:"%.3f Mbps"|default:"unknown" }}</td></tr>
+    <tr><th>Load out</th>     <td>{{ sub.load_out|nan2none|format:"%.3f Mbps"|default:"unknown" }}</td></tr>
+    <tr><th>Network type</th> <td>{{ sub.nettype }}</td></tr>
+    <tr><th>Layer</th>        <td>{{ sub.layer }}</td></tr>
+    <tr><th>Vlan</th>         <td>{{ sub.vlan }}</td></tr>
+    {% if debug %}
+      <tr><th colspan="2">Debug</th></tr>
+      <tr><th>Port from</th>    <td>{{ sub.local_portid }}</td></tr>
+      <tr><th>Port to</th>      <td>{{ sub.remote_portid }}</td></tr>
+      <tr><th>RRD file</th>     <td>{{ sub.local_rrdfile }}</td></tr>
+    {% endif %}
+  </table>
+
+  {% endfor %}
+
+</div>
