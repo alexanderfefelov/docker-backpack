@@ -6,6 +6,7 @@
 . settings.sh
 
 docker volume rm $CONTAINER_NAME-conf
+docker volume rm $CONTAINER_NAME-crontab
 docker volume rm $CONTAINER_NAME-data
 docker volume rm $CONTAINER_NAME-log-apache2
 docker volume rm $CONTAINER_NAME-log-cron
