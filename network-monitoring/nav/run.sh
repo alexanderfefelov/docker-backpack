@@ -21,9 +21,11 @@ run() {
     --volume $CONTAINER_NAME-data:/var/lib/nav \
     --volume $CONTAINER_NAME-log-apache2:/var/log/apache2 \
     --volume $CONTAINER_NAME-log-cron:/var/log/cron \
+    --volume $CONTAINER_NAME-log-exim4:/var/log/exim4 \
     --volume $CONTAINER_NAME-log-nav:/var/log/nav \
     --volume $CONTAINER_NAME-log-rsyslog:/var/log/rsyslog \
     --volume $CONTAINER_NAME-log-supervisor:/var/log/supervisor \
+    --volume $CONTAINER_NAME-mail:/var/spool/mail \
     --publish 83:80 \
     --publish 162:162/udp \
     --publish 9001:9001 \

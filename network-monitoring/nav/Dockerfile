@@ -54,6 +54,7 @@ RUN apt-get -qq update \
        cron \
        curl `# For health checks` \
        dhcping \
+       exim4 \
        libapache2-mod-wsgi-py3 \
        libjpeg62-turbo \
        libopenjp2-7 \
