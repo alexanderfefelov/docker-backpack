@@ -3,7 +3,7 @@ export VERSION=${VERSION:-$DEFAULT_VERSION}
 readonly DEFAULT_ADD_ONS_VERSION=6915e2e
 export ADD_ONS_VERSION=${ADD_ONS_VERSION:-$DEFAULT_ADD_ONS_VERSION}
 
-readonly MONIKER=nav
+readonly MONIKER=nav-manager
 readonly BASE_NAME=backpack-$MONIKER
 readonly IMAGE_NAME=alexanderfefelov/$BASE_NAME
 readonly CONTAINER_NAME=$BASE_NAME
@@ -18,5 +18,5 @@ readonly DB_ROOT_PASSWORD=undestrokend
 readonly DB_USERNAME=nav_smarigarybol
 readonly DB_PASSWORD=tateicenstop
 
-. ../../lib/settings/health.sh
-. ../../lib/settings/log.sh
+. ../../../lib/settings/health.sh
+. ../../../lib/settings/log.sh

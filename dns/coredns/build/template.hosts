@@ -98,7 +98,7 @@ $IP_ADDRESS mattermost.backpack.test
 # Network monitoring
 #
 $IP_ADDRESS fastnetmon.backpack.test
-$IP_ADDRESS nav.backpack.test
+$IP_ADDRESS nav-manager.backpack.test
 $IP_ADDRESS nfdump.backpack.test
 $IP_ADDRESS snmpcollector.backpack.test
 $IP_ADDRESS the-dude.backpack.test

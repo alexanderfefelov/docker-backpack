@@ -4,7 +4,7 @@ Port,Container
 53,backpack-coredns
 81,backpack-graphite-statsd
 82,backpack-graphite-statsd
-83,backpack-nav
+83,backpack-nav-manager
 139,backpack-samba
 445,backpack-samba
 1883,backpack-activemq-node-1
@@ -96,7 +96,7 @@ Port,Container
 8914,backpack-dkron-agent-3
 8989,backpack-librespeed
 9000,backpack-portainer
-9001,backpack-nav
+9001,backpack-nav-manager
 9002,backpack-clickhouse
 9092,backpack-kapacitor
 9090,backpack-prometheus

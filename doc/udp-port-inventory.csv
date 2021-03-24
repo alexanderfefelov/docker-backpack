@@ -3,7 +3,7 @@ Port,Container
 53,backpack-dnsmasq
 67,backpack-coredhcp
 69,backpack-atftpd
-162,backpack-nav
+162,backpack-nav-manager
 2003,backpack-graphite-statsd
 2055,backpack-fastnetmon
 5514,backpack-logstash

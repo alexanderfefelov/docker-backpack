@@ -96,7 +96,7 @@ backpack-mattermost
 # Network monitoring
 #
 backpack-fastnetmon
-backpack-nav
+backpack-nav-manager
 backpack-nfdump
 backpack-snmpcollector
 backpack-the-dude
