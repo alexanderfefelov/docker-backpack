@@ -39,8 +39,7 @@ run_server() {
         --tag host=$HOST_NAME \
         --data-dir /var/lib/dkron/data \
         --statsd-addr graphite-statsd.backpack.test:8125 \
-        --enable-prometheus \
-        --ui=false
+        --enable-prometheus
 }
 
 initialize_dkron() {
