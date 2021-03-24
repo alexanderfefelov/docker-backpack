@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.1.5
+readonly DEFAULT_VERSION=3.1.6
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=dkron-agent
