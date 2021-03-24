@@ -1,0 +1,2 @@
+## info: Monitors your Graphite metrics for exceeded thresholds
+*/5 * * * * thresholdmon >> /var/log/cron/thresholdmon.log 2>&1

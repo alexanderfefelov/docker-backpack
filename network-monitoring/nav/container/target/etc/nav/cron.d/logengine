@@ -1,0 +1,7 @@
+## info: Regularly check the syslog for network messages and update the logger database
+# Regular run
+* * * * * logengine.py -q >> /var/log/cron/logengine.log 2>&1
+# Delete old messages once a day
+3 3 * * * logengine.py -d >> /var/log/cron/logengine.log 2>&1
+# Delete old ipdevpoll job log entries once every hour
+3 * * * * ipdevpolld --clean >> /var/log/cron/logengine.log 2>&1

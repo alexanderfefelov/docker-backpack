@@ -1,0 +1,4 @@
+## info: Send email reports for device and link availability
+0 5 1 * * emailreports.py month >> /var/log/cron/emailreports.log 2>&1
+0 5 * * mon emailreports.py week >> /var/log/cron/emailreports.log 2>&1
+0 5 * * * emailreports.py day >> /var/log/cron/emailreports.log 2>&1

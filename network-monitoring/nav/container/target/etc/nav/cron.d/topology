@@ -1,0 +1,5 @@
+## info: Detects the topology of your network.
+35 * * * * navtopology --l2 --vlan >> /var/log/cron/topology.log 2>&1
+# If you want to run the old topology detector, uncomment the following lines:
+# 35 * * * * network-discovery topology >> /var/log/cron/topology.log 2>&1
+# 38 * * * * network-discovery vlan >> /var/log/cron/topology.log 2>&1
