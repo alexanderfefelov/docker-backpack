@@ -74,10 +74,12 @@ RUN apt-get -qq update \
        /usr/local/share/nav/www \
        /var/lib/nav/uploads/images/locations \
        /var/lib/nav/uploads/images/rooms \
+       /var/log/cron \
        /var/log/nav \
        /var/run/nav \
   && chown --recursive nav \
        /var/lib/nav \
+       /var/log/cron \
        /var/log/nav \
        /var/run/nav \
   && ln --symbolic /usr/local/lib/python3.7/site-packages/nav/web/static /usr/local/share/nav/www/static \
