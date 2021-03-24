@@ -69,7 +69,7 @@ RUN apt-get -qq update \
   && chmod +s /usr/sbin/dhcping \
   && pip3 --quiet install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group nav \
-  && cat /etc/nav/cron.d/* | crontab -u nav - \
+  && /start-cron-services.py \
   && mkdir --parents \
        /usr/local/share/nav/www \
        /var/lib/nav/uploads/images/locations \
