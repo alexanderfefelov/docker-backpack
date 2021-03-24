@@ -44,7 +44,7 @@
 | [MongoDB test](../databases/mongodb/test) | ? | ? | ? | ? | ? | ? | ?
 | [MySQL main](../databases/mysql/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [MySQL test](../databases/mysql/test) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
-| [NAV](../network-monitoring/nav) | Django | PostgreSQL | PostgreSQL | ? | ? | ? | ?
+| [NAV manager](../network-monitoring/nav/manager) | Django | PostgreSQL | PostgreSQL | ? | ? | ? | ?
 | [NetBox](../netbox) | Django | PostgreSQL | PostgreSQL | Prometheus | Prometheus | Redis | Redis
 | [Netdata](../netdata) | ? | ? | ? | ? | ? | ? | ?
 | [nfdump](../network-monitoring/nfdump) | ? | ? | ? | ? | ? | ? | ?

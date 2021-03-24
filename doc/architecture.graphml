@@ -233,24 +233,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n12">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav/manager]]></data>
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="30.0" width="90.0" x="827.8615398302368" y="450.05946241410953"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="21.9901123046875" x="34.00494384765625" y="5.911895751953125">nav-manager<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n13">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/samba]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -268,7 +250,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n14">
+    <node id="n13">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/proftpd]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -286,7 +268,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n15">
+    <node id="n14">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="734.2762731538942" y="1123.9690911355183"/>
@@ -303,7 +285,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n16" yfiles.foldertype="group">
+    <node id="n15" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -331,8 +313,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n16:">
-        <node id="n16::n0">
+      <graph edgedefault="directed" id="n15:">
+        <node id="n15::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -350,7 +332,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n16::n1">
+        <node id="n15::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -368,7 +350,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n16::n2">
+        <node id="n15::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mysql/main]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -388,7 +370,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n17" yfiles.foldertype="group">
+    <node id="n16" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -416,8 +398,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n17:">
-        <node id="n17::n0">
+      <graph edgedefault="directed" id="n16:">
+        <node id="n16::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/kibana]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -435,7 +417,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n17::n1">
+        <node id="n16::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/elasticsearch]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -453,7 +435,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n17::n2">
+        <node id="n16::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/apm]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -471,7 +453,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n17::n3">
+        <node id="n16::n3">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/elastic/logstash]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -491,7 +473,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n18" yfiles.foldertype="group">
+    <node id="n17" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -519,8 +501,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n18:">
-        <node id="n18::n0">
+      <graph edgedefault="directed" id="n17:">
+        <node id="n17::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/alertmanager]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -538,7 +520,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n18::n1">
+        <node id="n17::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/prometheus]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -556,7 +538,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n18::n2">
+        <node id="n17::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/prometheus/pushgateway]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -576,7 +558,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n19" yfiles.foldertype="group">
+    <node id="n18" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/guacamole]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -604,8 +586,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n19:">
-        <node id="n19::n0">
+      <graph edgedefault="directed" id="n18:">
+        <node id="n18::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/guacamole/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -623,7 +605,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n19::n1">
+        <node id="n18::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/guacamole/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -643,7 +625,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n20" yfiles.foldertype="group">
+    <node id="n19" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -671,8 +653,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n20:">
-        <node id="n20::n0">
+      <graph edgedefault="directed" id="n19:">
+        <node id="n19::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -690,7 +672,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n20::n1">
+        <node id="n19::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -710,7 +692,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n21" yfiles.foldertype="group">
+    <node id="n20" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -738,8 +720,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n21:">
-        <node id="n21::n0">
+      <graph edgedefault="directed" id="n20:">
+        <node id="n20::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/telegraf]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -757,7 +739,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n21::n1" yfiles.foldertype="group">
+        <node id="n20::n1" yfiles.foldertype="group">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1]]></data>
           <data key="d6">
             <y:ProxyAutoBoundsNode>
@@ -785,8 +767,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
               </y:Realizers>
             </y:ProxyAutoBoundsNode>
           </data>
-          <graph edgedefault="directed" id="n21::n1:">
-            <node id="n21::n1::n0">
+          <graph edgedefault="directed" id="n20::n1:">
+            <node id="n20::n1::n0">
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/chronograf]]></data>
               <data key="d6">
                 <y:ShapeNode>
@@ -804,7 +786,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
                 </y:ShapeNode>
               </data>
             </node>
-            <node id="n21::n1::n1">
+            <node id="n20::n1::n1">
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/influxdb]]></data>
               <data key="d6">
                 <y:ShapeNode>
@@ -822,7 +804,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
                 </y:ShapeNode>
               </data>
             </node>
-            <node id="n21::n1::n2">
+            <node id="n20::n1::n2">
               <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/v1/kapacitor]]></data>
               <data key="d6">
                 <y:ShapeNode>
@@ -842,7 +824,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </node>
           </graph>
         </node>
-        <node id="n21::n2">
+        <node id="n20::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/influxdata/influxdb-2]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -862,7 +844,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n22" yfiles.foldertype="group">
+    <node id="n21" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/cubes]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -890,8 +872,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n22:">
-        <node id="n22::n0">
+      <graph edgedefault="directed" id="n21:">
+        <node id="n21::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/cubes/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -909,7 +891,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n22::n1">
+        <node id="n21::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/cubes/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -929,7 +911,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n23">
+    <node id="n22">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/messengers/mattermost]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -947,7 +929,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n24">
+    <node id="n23">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/xwiki]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -965,7 +947,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n25">
+    <node id="n24">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/fastnetmon]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -983,7 +965,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n26">
+    <node id="n25">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mongodb/main]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1001,7 +983,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n27">
+    <node id="n26">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/mongodb/test]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1019,7 +1001,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n28">
+    <node id="n27">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/diun]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1037,7 +1019,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n29">
+    <node id="n28">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/gobgp]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1055,7 +1037,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n30" yfiles.foldertype="group">
+    <node id="n29" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1083,8 +1065,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n30:">
-        <node id="n30::n0">
+      <graph edgedefault="directed" id="n29:">
+        <node id="n29::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1102,7 +1084,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n30::n1">
+        <node id="n29::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1120,7 +1102,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n30::n2">
+        <node id="n29::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1138,7 +1120,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n30::n3">
+        <node id="n29::n3">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1156,7 +1138,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n30::n4">
+        <node id="n29::n4">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/server]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1174,7 +1156,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n30::n5">
+        <node id="n29::n5">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/workload-automation/dkron/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1194,7 +1176,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n31">
+    <node id="n30">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/traefik]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1212,7 +1194,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n32">
+    <node id="n31">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/bug-tracking/youtrack]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1230,7 +1212,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n33" yfiles.foldertype="group">
+    <node id="n32" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1258,8 +1240,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n33:">
-        <node id="n33::n0">
+      <graph edgedefault="directed" id="n32:">
+        <node id="n32::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1277,7 +1259,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n33::n1">
+        <node id="n32::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1295,7 +1277,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n33::n2">
+        <node id="n32::n2">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/activemq]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1315,7 +1297,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n34">
+    <node id="n33">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/librespeed]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1333,7 +1315,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n35" yfiles.foldertype="group">
+    <node id="n34" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/swagger]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1361,8 +1343,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n35:">
-        <node id="n35::n0">
+      <graph edgedefault="directed" id="n34:">
+        <node id="n34::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/swagger/ui]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1380,7 +1362,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n35::n1">
+        <node id="n34::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/message-queues/swagger/editor]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1400,7 +1382,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n36">
+    <node id="n35">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/gitea]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1418,7 +1400,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n37">
+    <node id="n36">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/netbox]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1436,7 +1418,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n38">
+    <node id="n37">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/fleet]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1454,7 +1436,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n39">
+    <node id="n38">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/container-registry]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1472,7 +1454,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n40">
+    <node id="n39">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/the-dude]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1490,7 +1472,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n41">
+    <node id="n40">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nfdump]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1508,7 +1490,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n42">
+    <node id="n41">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/clickhouse]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1526,7 +1508,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n43">
+    <node id="n42">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/kkmserver]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1544,7 +1526,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n44">
+    <node id="n43">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/typesense]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1562,7 +1544,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n45">
+    <node id="n44">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/minecraft]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1580,7 +1562,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n46">
+    <node id="n45">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/snmpcollector]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1598,7 +1580,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n47">
+    <node id="n46">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/riemann]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1616,7 +1598,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n48">
+    <node id="n47">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dns/coredns]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1634,7 +1616,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n49">
+    <node id="n48">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/questdb]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1652,7 +1634,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n50">
+    <node id="n49">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/file-sharing/atftpd]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1670,7 +1652,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n51">
+    <node id="n50">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/bug-tracking/redmine]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1688,7 +1670,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n52">
+    <node id="n51">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/.playground/kala]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1706,7 +1688,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n53">
+    <node id="n52">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dhcp/coredhcp]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1724,7 +1706,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n54" yfiles.foldertype="group">
+    <node id="n53" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/killbill]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1752,8 +1734,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n54:">
-        <node id="n54::n0">
+      <graph edgedefault="directed" id="n53:">
+        <node id="n53::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/killbill/killbill]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1771,7 +1753,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n54::n1">
+        <node id="n53::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/killbill/kaui]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1791,7 +1773,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n55">
+    <node id="n54">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/killbill/killbill]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1809,7 +1791,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n56">
+    <node id="n55">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/metabase]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1827,7 +1809,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n57">
+    <node id="n56">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/business-intelligence/jasperreports]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1845,7 +1827,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n58" yfiles.foldertype="group">
+    <node id="n57" yfiles.foldertype="group">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/bgbilling]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -1873,8 +1855,8 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n58:">
-        <node id="n58::n0">
+      <graph edgedefault="directed" id="n57:">
+        <node id="n57::n0">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/bgbilling/server]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1892,7 +1874,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n58::n1">
+        <node id="n57::n1">
           <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/commerce/bgbilling/scheduler]]></data>
           <data key="d6">
             <y:ShapeNode>
@@ -1912,7 +1894,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </node>
       </graph>
     </node>
-    <node id="n59">
+    <node id="n58">
       <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/h2]]></data>
       <data key="d6">
         <y:ShapeNode>
@@ -1930,7 +1912,75 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
-    <edge id="e0" source="n12" target="n10">
+    <node id="n59" yfiles.foldertype="group">
+      <data key="d4"><![CDATA[b.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav]]></data>
+      <data key="d5"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="78.17620849609375" width="120.0" x="786.7365564104829" y="459.85172779921743"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.0" x="0.0" y="0.0">NAV</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.369140625" x="-8.6845703125" y="0.0">Folder 14</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n59:">
+        <node id="n59::n0">
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav/manager]]></data>
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="90.0" x="801.7365564104829" y="493.0279362953112"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.9769287109375" x="22.01153564453125" y="5.911895751953125">manager<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <edge id="e0" source="n59" target="n10">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="-13.334107383695027" sy="41.17315145697262" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n59" target="n4">
+      <data key="d10">
+        <y:SplineEdge>
+          <y:Path sx="0.0" sy="41.14054226875305" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+        </y:SplineEdge>
+      </data>
+    </edge>
+    <edge id="n19::e0" source="n19::n1" target="n19::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1939,7 +1989,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e1" source="n12" target="n4">
+    <edge id="e2" source="n15::n0" target="n19::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1948,7 +1998,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n20::e0" source="n20::n1" target="n20::n0">
+    <edge id="e3" source="n15::n0" target="n19::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1957,25 +2007,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e2" source="n16::n0" target="n20::n0">
-      <data key="d10">
-        <y:SplineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-        </y:SplineEdge>
-      </data>
-    </edge>
-    <edge id="e3" source="n16::n0" target="n20::n1">
-      <data key="d10">
-        <y:SplineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="none"/>
-        </y:SplineEdge>
-      </data>
-    </edge>
-    <edge id="n18::e0" source="n18::n2" target="n18::n1">
+    <edge id="n17::e0" source="n17::n2" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="-4.566286877298083" tx="0.0" ty="-4.566286877298111"/>
@@ -1992,7 +2024,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e4" source="n22::n1" target="n16::n0">
+    <edge id="e4" source="n21::n1" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2001,7 +2033,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n0" target="n16::n0">
+    <edge id="e5" source="n0" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2010,7 +2042,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n4" target="n16::n0">
+    <edge id="e6" source="n4" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2019,7 +2051,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n56" target="n16::n0">
+    <edge id="e7" source="n55" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2028,7 +2060,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n7" target="n16::n0">
+    <edge id="e8" source="n7" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2037,7 +2069,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n15" target="n17::n3">
+    <edge id="e9" source="n14" target="n16::n3">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2054,7 +2086,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n16::n0" target="n23">
+    <edge id="e10" source="n15::n0" target="n22">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2063,7 +2095,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e11" source="n16::n0" target="n24">
+    <edge id="e11" source="n15::n0" target="n23">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2072,7 +2104,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n25" target="n21::n1::n1">
+    <edge id="e12" source="n24" target="n20::n1::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2089,7 +2121,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n25" target="n17::n3">
+    <edge id="e13" source="n24" target="n16::n3">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2106,7 +2138,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n19::e0" source="n19::n0" target="n19::n1">
+    <edge id="n18::e0" source="n18::n0" target="n18::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2115,7 +2147,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n22::e0" source="n22::n1" target="n22::n0">
+    <edge id="n21::e0" source="n21::n1" target="n21::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2124,7 +2156,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n15" target="n2">
+    <edge id="e14" source="n14" target="n2">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2133,7 +2165,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n15" target="n1">
+    <edge id="e15" source="n14" target="n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2142,7 +2174,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n25" target="n6">
+    <edge id="e16" source="n24" target="n6">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2159,7 +2191,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n17::e0" source="n17::n0" target="n17::n1">
+    <edge id="n16::e0" source="n16::n0" target="n16::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2168,7 +2200,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n17::e1" source="n17::n1" target="n17::n2">
+    <edge id="n16::e1" source="n16::n1" target="n16::n2">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2177,7 +2209,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n17::e2" source="n17::n3" target="n17::n1">
+    <edge id="n16::e2" source="n16::n3" target="n16::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2186,7 +2218,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n16::e0" source="n16::n1" target="n16::n0">
+    <edge id="n15::e0" source="n15::n1" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2195,7 +2227,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n16::e1" source="n16::n2" target="n16::n0">
+    <edge id="n15::e1" source="n15::n2" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2204,7 +2236,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e17" source="n16::n0" target="n19::n1">
+    <edge id="e17" source="n15::n0" target="n18::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2213,7 +2245,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e18" source="n3" target="n15">
+    <edge id="e18" source="n3" target="n14">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2222,7 +2254,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n25" target="n23">
+    <edge id="e19" source="n24" target="n22">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2239,7 +2271,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n25" target="n33::n0">
+    <edge id="e20" source="n24" target="n32::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2256,7 +2288,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e21" source="n25" target="n18::n0">
+    <edge id="e21" source="n24" target="n17::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2273,7 +2305,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e22" source="n16" target="n21::n0">
+    <edge id="e22" source="n15" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2290,7 +2322,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e23" source="n6" target="n21::n0">
+    <edge id="e23" source="n6" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2307,7 +2339,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e24" source="n18::n1" target="n21::n0">
+    <edge id="e24" source="n17::n1" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2324,7 +2356,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e25" source="n10" target="n21::n0">
+    <edge id="e25" source="n10" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2341,7 +2373,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e26" source="n33" target="n21::n0">
+    <edge id="e26" source="n32" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2358,7 +2390,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e27" source="n15" target="n21::n0">
+    <edge id="e27" source="n14" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2375,7 +2407,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e28" source="n9" target="n21::n0">
+    <edge id="e28" source="n9" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2392,7 +2424,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e29" source="n5" target="n21::n0">
+    <edge id="e29" source="n5" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2409,7 +2441,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e30" source="n17::n0" target="n21::n0">
+    <edge id="e30" source="n16::n0" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2426,7 +2458,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e31" source="n17::n1" target="n21::n0">
+    <edge id="e31" source="n16::n1" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2443,7 +2475,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e32" source="n17::n3" target="n21::n0">
+    <edge id="e32" source="n16::n3" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2460,7 +2492,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e33" source="n8" target="n21::n0">
+    <edge id="e33" source="n8" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2477,7 +2509,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e34" source="n25" target="n16::n0">
+    <edge id="e34" source="n24" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2494,7 +2526,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e35" source="n30" target="n4">
+    <edge id="e35" source="n29" target="n4">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2511,7 +2543,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e36" source="n30::n0" target="n18::n1">
+    <edge id="e36" source="n29::n0" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2528,7 +2560,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e37" source="n30::n3" target="n18::n1">
+    <edge id="e37" source="n29::n3" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2545,7 +2577,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e38" source="n16::n0" target="n33">
+    <edge id="e38" source="n15::n0" target="n32">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2554,7 +2586,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e39" source="n34" target="n16::n0">
+    <edge id="e39" source="n33" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2563,7 +2595,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e40" source="n36" target="n16::n0">
+    <edge id="e40" source="n35" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2572,7 +2604,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e41" source="n37" target="n10">
+    <edge id="e41" source="n36" target="n10">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2581,7 +2613,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e42" source="n37" target="n6">
+    <edge id="e42" source="n36" target="n6">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2590,7 +2622,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e43" source="n38" target="n16::n0">
+    <edge id="e43" source="n37" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2599,7 +2631,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e44" source="n38" target="n6">
+    <edge id="e44" source="n37" target="n6">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2608,7 +2640,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e45" source="n30::n4" target="n18::n1">
+    <edge id="e45" source="n29::n4" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2625,7 +2657,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e46" source="n48" target="n15">
+    <edge id="e46" source="n47" target="n14">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2634,7 +2666,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e47" source="n48" target="n18::n1">
+    <edge id="e47" source="n47" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2651,7 +2683,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e48" source="n37" target="n18::n1">
+    <edge id="e48" source="n36" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2668,7 +2700,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n18::e1" source="n18::n1" target="n18::n0">
+    <edge id="n17::e1" source="n17::n1" target="n17::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="5.162738125078249" sy="0.0" tx="5.162738125078249" ty="0.0"/>
@@ -2685,7 +2717,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n18::e2" source="n18::n2" target="n18::n1">
+    <edge id="n17::e2" source="n17::n2" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="4.566286877298097" tx="0.0" ty="4.566286877298097"/>
@@ -2702,7 +2734,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n21::e0" source="n21::n1::n1" target="n21::n0">
+    <edge id="n20::e0" source="n20::n1::n1" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="10.770557225510629" sy="0.0" tx="10.770557225510402" ty="0.0"/>
@@ -2719,7 +2751,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n21::e1" source="n21::n0" target="n21::n1::n1">
+    <edge id="n20::e1" source="n20::n0" target="n20::n1::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="-10.770557225510515" sy="0.0" tx="-10.770557225510402" ty="0.0"/>
@@ -2736,7 +2768,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n21::e2" source="n21::n1::n2" target="n21::n0">
+    <edge id="n20::e2" source="n20::n1::n2" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2753,7 +2785,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n18::e3" source="n18::n0" target="n18::n1">
+    <edge id="n17::e3" source="n17::n0" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="-5.162738125078249" sy="0.0" tx="-5.162738125078249" ty="0.0"/>
@@ -2770,7 +2802,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n18::e4" source="n18::n1" target="n18::n1">
+    <edge id="n17::e4" source="n17::n1" target="n17::n1">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="-22.5" sy="-15.0" tx="-45.0" ty="-7.5">
@@ -2794,7 +2826,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e49" source="n51" target="n16::n0">
+    <edge id="e49" source="n50" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2803,7 +2835,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="n54::e0" source="n54::n1" target="n54::n0">
+    <edge id="n53::e0" source="n53::n1" target="n53::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2812,7 +2844,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e50" source="n54" target="n16::n0">
+    <edge id="e50" source="n53" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2821,7 +2853,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e51" source="n55" target="n16::n0">
+    <edge id="e51" source="n54" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2830,7 +2862,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e52" source="n58" target="n16::n0">
+    <edge id="e52" source="n57" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2839,7 +2871,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e53" source="n57" target="n16::n0">
+    <edge id="e53" source="n56" target="n15::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2848,7 +2880,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e54" source="n58" target="n33">
+    <edge id="e54" source="n57" target="n32">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2857,7 +2889,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e55" source="n58" target="n16::n2">
+    <edge id="e55" source="n57" target="n15::n2">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2866,7 +2898,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e56" source="n58" target="n21::n0">
+    <edge id="e56" source="n57" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2883,7 +2915,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e57" source="n59" target="n21::n0">
+    <edge id="e57" source="n58" target="n20::n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2901,7 +2933,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e58" source="n4" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2910,8 +2941,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e59" source="n17::n1" target="n0">
-      <data key="d9"/>
+    <edge id="e59" source="n16::n1" target="n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2920,8 +2950,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e60" source="n21::n1::n1" target="n0">
-      <data key="d9"/>
+    <edge id="e60" source="n20::n1::n1" target="n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2930,8 +2959,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e61" source="n18::n1" target="n0">
-      <data key="d9"/>
+    <edge id="e61" source="n17::n1" target="n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2941,7 +2969,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e62" source="n6" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2950,8 +2977,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e63" source="n49" target="n0">
-      <data key="d9"/>
+    <edge id="e63" source="n48" target="n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2961,7 +2987,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e64" source="n10" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2971,7 +2996,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e65" source="n9" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2980,8 +3004,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:SplineEdge>
       </data>
     </edge>
-    <edge id="e66" source="n16" target="n0">
-      <data key="d9"/>
+    <edge id="e66" source="n15" target="n0">
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2991,7 +3014,6 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </edge>
     <edge id="e67" source="n8" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:SplineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
