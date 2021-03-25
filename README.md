@@ -74,6 +74,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Network monitoring](network-monitoring)
     - [FastNetMon](network-monitoring/fastnetmon)
     - [NAV](network-monitoring/nav)
+        - [Agent](network-monitoring/nav/agent)
         - [Manager](network-monitoring/nav/manager)
     - [nfdump](network-monitoring/nfdump)
     - [SnmpCollector](network-monitoring/snmpcollector)

@@ -91,6 +91,7 @@ messengers/mattermost
 # Network monitoring
 #
 network-monitoring/fastnetmon
+network-monitoring/nav/agent
 network-monitoring/nav/manager
 network-monitoring/nfdump
 network-monitoring/snmpcollector
