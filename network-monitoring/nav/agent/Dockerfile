@@ -48,5 +48,23 @@ COPY --from=builder /nav-add-ons/web/etc/nav/ /etc/nav/
 ADD container/target/ /
 COPY --from=builder /*.latest_changes /etc/nav/templates/
 
+RUN apt-get -qq update \
+  && apt-get -qq install --no-install-recommends \
+       libpq5 \
+       libsnmp30 \
+       supervisor \
+  && pip3 --quiet install --requirement /requirements.txt --find-links=/.wheels --no-index \
+  && adduser --system --group nav \
+  && mkdir --parents \
+       /var/log/nav \
+  && chown --recursive nav \
+       /var/log/nav \
+  && apt-get -qq clean \
+  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+  && rm --recursive --force \
+       /.wheels \
+       /requirements \
+  && rm --force /requirements.txt
+
 ENTRYPOINT ["tini", "--", "/backpack-entrypoint.sh"]
 CMD ["supervisord", "--nodaemon"]

@@ -1,4 +1,5 @@
 insert into netboxgroup(netboxgroupid, descr) values
+  ('nav-agent', ''),
   ('Development', ''),
   ('Staging', ''),
   ('Production', ''),
