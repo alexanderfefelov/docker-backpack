@@ -98,7 +98,7 @@ Port,Container
 9000,backpack-portainer
 9001,backpack-nav-manager
 9002,backpack-clickhouse
-9003,backpack-nav-agent
+9004,backpack-nav-agent
 9092,backpack-kapacitor
 9090,backpack-prometheus
 9091,backpack-pushgateway

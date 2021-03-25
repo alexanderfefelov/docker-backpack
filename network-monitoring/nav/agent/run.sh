@@ -19,7 +19,7 @@ run() {
     --volume $CONTAINER_NAME-conf:/etc/nav \
     --volume $CONTAINER_NAME-log-nav:/var/log/nav \
     --volume $CONTAINER_NAME-log-supervisor:/var/log/supervisor \
-    --publish 9003:9001 \
+    --publish 9004:9001 \
     --env PGHOST=$DB_HOST \
     --env PGPORT=$DB_PORT \
     --env PGDATABASE=$DB_DATABASE \
