@@ -73,7 +73,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Netdata](netdata)
 - [Network monitoring](network-monitoring)
     - [FastNetMon](network-monitoring/fastnetmon)
-    - [NAV](network-monitoring/nav)
+    - [NAV](network-monitoring/nav), distributed
         - [Agent](network-monitoring/nav/agent)
         - [Manager](network-monitoring/nav/manager)
     - [nfdump](network-monitoring/nfdump)
