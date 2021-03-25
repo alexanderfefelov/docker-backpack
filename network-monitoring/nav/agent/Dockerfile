@@ -57,8 +57,10 @@ RUN apt-get -qq update \
   && adduser --system --group nav \
   && mkdir --parents \
        /var/log/nav \
+       /var/run/nav \
   && chown --recursive nav \
        /var/log/nav \
+       /var/run/nav \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --recursive --force \

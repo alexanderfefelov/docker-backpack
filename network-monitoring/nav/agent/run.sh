@@ -20,9 +20,6 @@ run() {
     --volume $CONTAINER_NAME-log-nav:/var/log/nav \
     --volume $CONTAINER_NAME-log-supervisor:/var/log/supervisor \
     --publish 9004:9001 \
-    --env PGHOST=$DB_HOST \
-    --env PGPORT=$DB_PORT \
-    --env PGDATABASE=$DB_DATABASE \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION
