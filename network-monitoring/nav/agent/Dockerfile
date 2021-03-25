@@ -46,7 +46,6 @@ COPY --from=builder /.build/ /
 COPY --from=builder /nav/python/nav/etc/ /etc/nav/
 COPY --from=builder /nav-add-ons/web/etc/nav/ /etc/nav/
 ADD container/target/ /
-COPY --from=builder /*.latest_changes /etc/nav/templates/
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

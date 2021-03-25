@@ -10,5 +10,5 @@ docker build \
   --build-arg VERSION \
   --build-arg ADD_ONS_VERSION \
   --build-arg IMAGE_NAME \
-  --tag $IMAGE_NAME:$VERSION \
+  --tag $IMAGE_NAME:$VERSION-$ADD_ONS_VERSION \
   .
