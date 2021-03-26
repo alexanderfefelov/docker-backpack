@@ -13,5 +13,5 @@ patch $NAV_HOME/ipdevpoll/plugins/sensors.py    /nav-add-ons/snmp/patches/nav/ip
 patch $NAV_HOME/ipdevpoll/plugins/statsystem.py /nav-add-ons/snmp/patches/nav/ipdevpoll/plugins/statsystem.py-$NAV_VERSION.patch
 patch $NAV_HOME/ipdevpoll/shadows/__init__.py   /nav-add-ons/snmp/patches/nav/ipdevpoll/shadows/__init__.py-$NAV_VERSION.patch
 
-patch $NAV_HOME/models/manage.py                /nav-add-ons/web/patches/nav/models/manage.py-36819df.patch
-patch $NAV_HOME/web/info/searchproviders.py     /nav-add-ons/web/patches/nav/web/info/searchproviders.py-36819df.patch
+patch $NAV_HOME/models/manage.py                /nav-add-ons/web/patches/nav/models/manage.py-$NAV_VERSION.patch
+patch $NAV_HOME/web/info/searchproviders.py     /nav-add-ons/web/patches/nav/web/info/searchproviders.py-$NAV_VERSION.patch
