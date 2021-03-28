@@ -65,6 +65,7 @@ RUN apt-get -qq update \
        netcat `# For health checks` \
        postgresql-client \
        python3-gammu \
+       python3-requests \
        rsyslog \
        supervisor \
   && chmod +s /usr/sbin/dhcping \

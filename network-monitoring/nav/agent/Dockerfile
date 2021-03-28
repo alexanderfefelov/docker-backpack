@@ -51,6 +51,7 @@ RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        libpq5 \
        libsnmp30 \
+       python3-requests \
        supervisor \
   && pip3 --quiet install --requirement /requirements.txt --find-links=/.wheels --no-index \
   && adduser --system --group nav \
