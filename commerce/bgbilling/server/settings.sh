@@ -7,6 +7,7 @@ export COMPONENTS='
   bill
   card
   inet
+  mps
   npay
   reports
   rscm
