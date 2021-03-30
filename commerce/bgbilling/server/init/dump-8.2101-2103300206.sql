@@ -1,6 +1,6 @@
-CREATE DATABASE bgbilling DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE DATABASE bgbilling DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE bgbilling;
-SET collation_connection = utf8_unicode_ci;
+SET collation_connection = utf8mb4_unicode_ci;
 CREATE TABLE `status_log` (
   `from_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `to_date` datetime DEFAULT NULL,
