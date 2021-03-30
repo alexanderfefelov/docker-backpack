@@ -6,13 +6,14 @@
 . settings.sh
 . ../lib/lib.sh
 
-readonly PSQL="PGPASSWORD=$DB_ROOT_PASSWORD psql --host=$DB_HOST --port=$DB_PORT --username=$DB_ROOT_USERNAME"
+export PGPASSWORD=$DB_ROOT_PASSWORD
+readonly PSQL="psql --host=$DB_HOST --port=$DB_PORT --username=$DB_ROOT_USERNAME"
 
 initialize_database() {
   echo Initializing database...
   export DB_DATABASE DB_USERNAME DB_PASSWORD
-  eval $PSQL --dbname=$DB_SYSTEM_DATABASE --command=\"$(envsubst < init/initialize-database-1.sql)\"
-  eval $PSQL --dbname=$DB_SYSTEM_DATABASE --command=\"$(envsubst < init/initialize-database-2.sql)\"
+  $PSQL --dbname=$DB_SYSTEM_DATABASE <<< "$(envsubst < init/initialize-database-1.sql)"
+  $PSQL --dbname=$DB_SYSTEM_DATABASE <<< "$(envsubst < init/initialize-database-2.sql)"
   echo ...database initialized
 }
 
@@ -34,7 +35,7 @@ run() {
     $IMAGE_NAME:$VERSION
 }
 
-eval $PSQL --dbname=$DB_DATABASE --command=''
+$PSQL --dbname=$DB_DATABASE --command=''
 readonly USE_DB_RETCODE=$?
 
 # Exit immediately if a pipeline, which may consist of a single simple command,
