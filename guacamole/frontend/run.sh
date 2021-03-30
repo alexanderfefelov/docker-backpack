@@ -20,6 +20,12 @@ initialize_database() {
   echo ...database initialized
 }
 
+initialize_guacamole() {
+  echo Initializing Guacamole...
+  (cd init && bash initialize-guacamole.sh)
+  echo ...Guacamole initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -54,6 +60,6 @@ fi
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
-  (cd init && bash initialize-guacamole.sh)
+  initialize_guacamole
 fi
 print_container_info $CONTAINER_NAME
