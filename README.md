@@ -30,7 +30,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [MySQL](databases/mysql)
         - [Main instance](databases/mysql/main), with replication
         - [Test instance](databases/mysql/test)
-    - [PostgreSQL](databases/postgresql)
+    - [PostgreSQL](databases/postgresql) with PostGIS
         - [Main instance](databases/postgresql/main)
         - [Test instance](databases/postgresql/test)
     - [QuestDB](databases/questdb)
