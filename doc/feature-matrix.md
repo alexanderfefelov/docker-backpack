@@ -6,6 +6,7 @@
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
 | [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | ? | ? | ActiveMQ | ActiveMQ
+| [chrony](../chrony) | C | N/A | N/A | N/A | N/A | N/A | N/A
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDHCP](../dhcp/coredhcp) | Go | N/A | N/A | N/A | N/A | N/A | N/A
 | [CoreDNS](../dns/coredns) | Go | N/A | N/A | Prometheus | Prometheus | N/A | N/A
