@@ -1,6 +1,7 @@
 backpack-netdata
 backpack-portainer
 
+backpack-chrony
 backpack-fleet
 backpack-gitea
 backpack-grafana

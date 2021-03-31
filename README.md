@@ -15,6 +15,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
       - [Frontend](business-intelligence/cubes/frontend)
     - [JasperReports](business-intelligence/jasperreports)
     - [Metabase](business-intelligence/metabase)
+- [chrony](chrony)
 - [Commerce](commerce)
     - [BGBilling](commerce/bgbilling)
     - [Kill Bill](commerce/killbill)

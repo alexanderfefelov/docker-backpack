@@ -5,6 +5,7 @@ $IP_ADDRESS host.backpack.test
 $IP_ADDRESS netdata.backpack.test
 $IP_ADDRESS portainer.backpack.test
 
+$IP_ADDRESS chrony.backpack.test
 $IP_ADDRESS fleet.backpack.test
 $IP_ADDRESS gitea.backpack.test
 $IP_ADDRESS grafana.backpack.test
