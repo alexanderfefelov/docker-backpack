@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.5-6ubuntu6.2
+readonly DEFAULT_VERSION=4.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=chrony
