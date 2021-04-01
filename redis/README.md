@@ -15,3 +15,4 @@ Hostname `redis.backpack.test`
 | Name | Description
 | :--- | :----------
 | `db14` | [NetBox](../netbox)
+| `db15` | [NetBox](../netbox)
