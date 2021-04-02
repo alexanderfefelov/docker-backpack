@@ -1,5 +1,5 @@
-readonly USERNAME=telegraf_guaduquainti
-readonly PASSWORD=moncentivenv
+readonly USERNAME=jolokia_oobier2it7ee
+readonly PASSWORD=fooch7taequ1
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
 readonly API=http://activemq-node-1.backpack.test:8161/api/jolokia
 

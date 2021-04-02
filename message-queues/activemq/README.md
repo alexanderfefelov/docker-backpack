@@ -17,6 +17,7 @@ Hostnames:
 | [8161](http://activemq-node-1.backpack.test:8161) (node-1), [8162](http://activemq-node-2.backpack.test:8162) (node-2), [8163](http://activemq-node-3.backpack.test:8163) (node-3) | HTTP [API](https://activemq.apache.org/rest) and management console | `admin_sablanibleng` / `ruscathionob`
 | | | `api_manostinerat` / `ombelervolpi`
 | | | `fastnetmon_zahdeegeishu` / `xaocheitohto`
+| | | `jolokia_oobier2it7ee` / `fooch7taequ1`
 | | | `telegraf_guaduquainti` / `moncentivenv`
 | 61614 (node-1), 61617 (node-2), 61620 (node-3) | STOMP | -
 | 61615 (node-1), 61618 (node-2), 61621 (node-3) | WebSocket | -
