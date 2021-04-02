@@ -1,31 +1,16 @@
-FROM ubuntu:20.04 AS builder
+FROM ubuntu:20.04
 
 ARG VERSION
-ARG IMAGE_NAME
+ARG FASTNETMON_STUFF=fastnetmon_${VERSION}_amd64.deb
 
-LABEL $IMAGE_NAME-stage=builder
-
-RUN apt-get -qq update \
-  && apt-get -qq install --no-install-recommends \
-       ca-certificates \
-       git \
-       wget \
-  && git clone https://github.com/pavel-odintsov/fastnetmon.git --branch v${VERSION} --depth 1 \
-  && cd fastnetmon \
-  && echo admin@backpack.test | src/fastnetmon_install.pl \
-  && apt-get -qq clean \
-  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-FROM ubuntu:20.04 AS target
-
-ADD container/target/ /
-COPY --from=builder /opt/ /opt/
+ADD https://community-downloads.fastnetmon.com/releases/$VERSION/ubuntu/20.04/$FASTNETMON_STUFF /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        ca-certificates \
        gettext-base \
        jq \
+       libatomic1 \
        libpcap0.8 \
        mysql-client \
        netcat `# For health checks` \
@@ -34,8 +19,12 @@ RUN apt-get -qq update \
   && pip3 --quiet install \
        httpie \
   && mkdir --parents /fastnetmon/log \
+  && dpkg --install $FASTNETMON_STUFF \
   && apt-get -qq clean \
-  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+  && rm --force $FASTNETMON_STUFF
+
+ADD container/ /
 
 ENTRYPOINT ["/backpack-entrypoint.sh"]
 CMD ["/fastnetmon/bin/fastnetmon.sh"]
