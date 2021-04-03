@@ -2,6 +2,8 @@
 
 ![ActiveMQ](../../doc/assets/logos/activemq.png)
 
+![Hawtio](../../doc/assets/logos/hawtio-small.png)
+
 Hostnames:
  
  - `activemq-node-1.backpack.test`
