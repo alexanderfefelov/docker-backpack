@@ -65,7 +65,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Jenkins](jenkins)
 - [LibreSpeed](librespeed)
 - [Message queues](message-queues)
-    - [ActiveMQ](message-queues/activemq), cluster
+    - [ActiveMQ](message-queues/activemq), cluster, MySQL persistence, Hawtio console
     - [RabbitMQ](message-queues/rabbitmq)
 - [Messengers](messengers)
     - [Mattermost](messengers/mattermost)
