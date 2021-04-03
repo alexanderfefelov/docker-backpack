@@ -6,12 +6,12 @@ ARG ACTIVEMQ_STUFF=apache-activemq-$VERSION-bin.tar.gz
 ARG HAWTIO_VERSION=2.13.2
 ARG HAWTIO_STUFF=hawtio-default-$HAWTIO_VERSION.war
 
-ADD https://archive.apache.org/dist/activemq/$VERSION/$ACTIVEMQ_STUFF /
-ADD https://repo1.maven.org/maven2/io/hawt/hawtio-default/$HAWTIO_VERSION/$HAWTIO_STUFF /
-
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        netcat `# For health checks` \
+  && wget --quiet \
+       https://archive.apache.org/dist/activemq/$VERSION/$ACTIVEMQ_STUFF \
+       https://repo1.maven.org/maven2/io/hawt/hawtio-default/$HAWTIO_VERSION/$HAWTIO_STUFF \
   && tar --extract --gzip --file=$ACTIVEMQ_STUFF \
   && mv /apache-activemq-$VERSION /activemq \
   && unzip -qq $HAWTIO_STUFF -d /activemq/webapps/hawtio \
