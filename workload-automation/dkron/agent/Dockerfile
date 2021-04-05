@@ -61,6 +61,7 @@ RUN apt-get -qq install --no-install-recommends \
 #
 RUN apt-get -qq install --no-install-recommends \
       python3-click \
+      python3-docker \
       python3-elasticsearch \
       python3-fabric \
       python3-graphite2 \
