@@ -38,6 +38,10 @@ backpack-kkmserver
 #
 backpack-clickhouse
 backpack-h2
+backpack-mariadb-main-master
+backpack-mariadb-main-backup
+backpack-mariadb-main-slave
+backpack-mariadb-test
 backpack-mongodb-main
 backpack-mongodb-test
 backpack-mysql-main-master

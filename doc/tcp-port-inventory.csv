@@ -23,6 +23,10 @@ Port,Container
 3307,backpack-mysql-test
 3308,backpack-mysql-main-backup
 3309,backpack-mysql-main-slave
+3310,backpack-mariadb-main-master
+3311,backpack-mariadb-test
+3312,backpack-mariadb-main-backup
+3313,backpack-mariadb-main-slave
 4440,backpack-rundeck
 4822,backpack-guacamole-backend
 5000,backpack-cubes-backend
