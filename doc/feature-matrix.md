@@ -2,7 +2,7 @@
 
 | Component | Technology | Storage available | Storage implemented | Metrics available | Metrics implemented | Other required or available | Other implemented
 | --------- | ---------- | ----------------- | ------------------- | ----------------- | ------------------- | ------------------------ | -------------------
-| [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Web Console | N/A | N/A
+| [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Jolokia | N/A | N/A
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
 | [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | ? | ? | ActiveMQ | ActiveMQ
