@@ -1,5 +1,7 @@
 # backpack-mariadb-main
 
+![MariaDB](../../../doc/assets/logos/mariadb.png)
+
 Hostnames:
 
 - `mariadb-main-backup.backpack.test`

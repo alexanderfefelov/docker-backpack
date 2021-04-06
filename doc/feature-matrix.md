@@ -38,6 +38,7 @@
 | [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?
 | [KkmServer](../commerce/kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
 | [LibreSpeed](../librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
+| [MariaDB main](../databases/mariadb/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [Mattermost](../messengers/mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
 | [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | ? | ? | ? | ?
 | [Minecraft](../minecraft) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
