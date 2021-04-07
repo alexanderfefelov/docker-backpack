@@ -45,13 +45,13 @@ $IP_ADDRESS mariadb-main-backup.backpack.test
 $IP_ADDRESS mariadb-main-master.backpack.test
 $IP_ADDRESS mariadb-main-slave.backpack.test
 $IP_ADDRESS mariadb-test.backpack.test
-$IP_ADDRESS postgresql-main.backpack.test
 $IP_ADDRESS mongodb-main.backpack.test
 $IP_ADDRESS mongodb-test.backpack.test
 $IP_ADDRESS mysql-main-backup.backpack.test
 $IP_ADDRESS mysql-main-master.backpack.test
 $IP_ADDRESS mysql-main-slave.backpack.test
 $IP_ADDRESS mysql-test.backpack.test
+$IP_ADDRESS postgresql-main.backpack.test
 $IP_ADDRESS postgresql-test.backpack.test
 $IP_ADDRESS questdb.backpack.test
 
