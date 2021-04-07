@@ -3,6 +3,7 @@ run_master() {
     --name $1 \
     --hostname $2 \
     --detach \
+    --cap-add=sys_nice \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-conf:/etc/mysql \
     --volume $1-data:/var/lib/mysql \
@@ -28,6 +29,7 @@ run_slave() {
     --name $1 \
     --hostname $2 \
     --detach \
+    --cap-add=sys_nice \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $1-conf:/etc/mysql \
     --volume $1-data:/var/lib/mysql \
