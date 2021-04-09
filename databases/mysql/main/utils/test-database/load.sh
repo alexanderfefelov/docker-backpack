@@ -11,6 +11,7 @@ if [ ! -d $TEST_DB_REPO ]; then
   git clone --quiet $TEST_DB_URL --branch $TEST_DB_VERSION
 fi
 
-cd $TEST_DB_REPO
-time ../cli-master.sh --table < $TEST_DB_RESTORE_SCRIPT
-cd ..
+(
+  cd $TEST_DB_REPO
+  time ../../cli-master.sh --table < $TEST_DB_RESTORE_SCRIPT
+)
