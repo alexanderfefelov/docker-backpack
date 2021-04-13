@@ -16,9 +16,6 @@ COPY container/ /
 
 RUN mkdir --parents $ks $ksp \
   && cd dist/buildomatic \
-  && echo y | ./js-ant deploy-webapp-ce \
-  && echo tbeller.usejndi=false > /usr/local/tomcat/webapps/jasperserver/WEB-INF/classes/resfactory.properties \
-  && rm --force /$JASPERREPORTS_STUFF \
-  && rm --recursive --force /dist
+  && echo y | ./js-ant deploy-webapp-ce
 
 WORKDIR $CATALINA_HOME
