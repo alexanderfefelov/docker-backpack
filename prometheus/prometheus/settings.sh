@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.25.2
+readonly DEFAULT_VERSION=2.26.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=prometheus
