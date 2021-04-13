@@ -1,4 +1,4 @@
-FROM tomcat:9.0.43
+FROM tomcat:9.0.45
 
 ARG VERSION
 ARG JASPERREPORTS_STUFF=TIB_js-jrs-cp_${VERSION}_bin.zip
