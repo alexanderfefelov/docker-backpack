@@ -17,5 +17,5 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=jasperreports_maequeeviegi
 readonly DB_PASSWORD=chahcoothahh
 
-. ../../lib/settings/go.sh
+. ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
