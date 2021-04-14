@@ -32,7 +32,7 @@
 | [InfluxData InfluxDB 2](../influxdata/influxdb-2) | ? | ? | ? | ? | ? | ? | ?
 | [InfluxData Kapacitor](../influxdata/v1/kapacitor)| ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData Telegraf](../influxdata/telegraf) | ? | ? | ? | ? | ? | ? | ?
-| [JasperReports Server](../business-intelligence/jasperreports) | Java | MySQL, PostgreSQL | MySQL | ? | ? | ? | ?
+| [JasperReports Server](../business-intelligence/jasperreports) | Java | MySQL, PostgreSQL | MySQL | JMX | Jolokia | ? | ?
 | [Jenkins](../jenkins) | ? | ? | ? | ? | InfluxDB | ? | ?
 | [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
 | [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?
