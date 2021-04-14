@@ -23,6 +23,7 @@ Hostnames:
 | | | `graphite_comoneigalky` / `strignenecoi` <sup>*</sup>
 | | | `guacamole_peoghonahmoh` / `gechaegiezav` <sup>*</sup>
 | | | `healthcheck_tutedojobu` / `adqafzubjutk`
+| | | `jasperreports_maequeeviegi` / `chahcoothahh` <sup>*</sup>
 | | | `killbill_shiezouceeng` / `aghahticeiri` <sup>*</sup>
 | | | `librespeed_gohsotahleit` / `thuchusohgie` <sup>*</sup>
 | | | `mattermost_fepheedooroh` / `thohrawaenee` <sup>*</sup>
@@ -50,6 +51,7 @@ Hostnames:
 | `grafana` | [Grafana](../../../grafana)
 | `graphite` | [Graphite](../../../graphite-statsd)
 | `guacamole` | [Guacamole](../../../guacamole/frontend)
+| `jasperreports` | [JasperReports](../../../business-intelligence/jasperreports)
 | `killbill` | [Kill Bill](../../../killbill/killbill)
 | `librespeed` | [LibreSpeed](../../../librespeed)
 | `mattermost` | [Mattermost](../../../mattermost)
