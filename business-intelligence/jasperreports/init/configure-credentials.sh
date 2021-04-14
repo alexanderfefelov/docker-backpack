@@ -1,6 +1,6 @@
 readonly USERNAME=jasperadmin
 readonly PASSWORD=jasperadmin
-readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
+readonly HTTP="http --quiet --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
 readonly API=http://jasperreports.backpack.test:8097/jasperserver/rest_v2
 
 execute_put_request() {
