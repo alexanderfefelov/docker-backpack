@@ -10,7 +10,7 @@ ADD https://github.com/mikub/titanoboa/releases/download/$VERSION/$TITANOBOA_STU
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
        unzip \
-  && unzip --qq /$TITANOBOA_STUFF -d $TITANOBOA_HOME \
+  && unzip -qq /$TITANOBOA_STUFF -d $TITANOBOA_HOME \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force /$TITANOBOA_STUFF
