@@ -18,6 +18,7 @@ initialize_database() {
 initialize_jasperreports() {
   echo Initializing JasperReports...
   bash init/initialize-jasperreports.sh $CONTAINER_NAME
+  bash init/configure-credentials.sh
   echo ...JasperReports initialized
 }
 
