@@ -27,6 +27,7 @@ $IP_ADDRESS youtrack.backpack.test
 #
 $IP_ADDRESS cubes-backend.backpack.test
 $IP_ADDRESS cubes-frontend.backpack.test
+$IP_ADDRESS jasperreports.backpack.test
 $IP_ADDRESS metabase.backpack.test
 
 # Commerce
