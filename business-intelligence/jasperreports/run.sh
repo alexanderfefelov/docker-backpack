@@ -15,16 +15,17 @@ initialize_database() {
   echo ...database initialized
 }
 
-initialize_jasperreports() {
-  echo Initializing JasperReports...
+initialize_jasperreports_1() {
+  echo Initializing JasperReports, part 1...
   bash init/initialize-jasperreports.sh $CONTAINER_NAME
-  echo ...JasperReports initialized
+  echo ...JasperReports initialized, part 1
 }
 
-configure_credentials() {
-  echo Configure credentials...
+initialize_jasperreports_2() {
+  echo Initializing JasperReports, part 2...
   bash init/configure-credentials.sh
-  echo ...credentials configured
+  $MYSQL < init/set-default-theme.sql
+  echo ...JasperReports initialized, part 2
 }
 
 run() {
@@ -57,11 +58,11 @@ fi
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
-  initialize_jasperreports
+  initialize_jasperreports_1
 fi
 docker restart $CONTAINER_NAME
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
-  configure_credentials
+  initialize_jasperreports_2
 fi
 print_container_info $CONTAINER_NAME
