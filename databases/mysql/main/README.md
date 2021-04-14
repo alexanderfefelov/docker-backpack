@@ -12,28 +12,30 @@ Hostnames:
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `activemq_feizievoudai` / `axiechiemoht` 
+| 3306 (master), 3308 (backup), 3309 (slave) | MySQL classic protocol | `activemq_feizievoudai` / `axiechiemoht` <sup>*</sup>
 | | | `backup_letocryloite` / `almatramushi`
-| | | `bgbilling_nah0queithei` / `feizudi1xu9h`
-| | | `cubesviewer_server_odogymahouli` / `inceadeavoca`
-| | | `fastnetmon_boeweewoonee` / `uheeghienoej`
-| | | `fleet_fiedabaetivu` / `iengeemiutuw`
-| | | `gitea_vahkamiichae` / `ahphuzahphei`
-| | | `grafana_solenstgalog` / `peritypindol`
-| | | `graphite_comoneigalky` / `strignenecoi`
-| | | `guacamole_peoghonahmoh` / `gechaegiezav`
+| | | `bgbilling_nah0queithei` / `feizudi1xu9h` <sup>*</sup>
+| | | `cubesviewer_server_odogymahouli` / `inceadeavoca` <sup>*</sup>
+| | | `fastnetmon_boeweewoonee` / `uheeghienoej` <sup>*</sup>
+| | | `fleet_fiedabaetivu` / `iengeemiutuw` <sup>*</sup>
+| | | `gitea_vahkamiichae` / `ahphuzahphei` <sup>*</sup>
+| | | `grafana_solenstgalog` / `peritypindol` <sup>*</sup>
+| | | `graphite_comoneigalky` / `strignenecoi` <sup>*</sup>
+| | | `guacamole_peoghonahmoh` / `gechaegiezav` <sup>*</sup>
 | | | `healthcheck_tutedojobu` / `adqafzubjutk`
-| | | `killbill_shiezouceeng` / `aghahticeiri`
-| | | `librespeed_gohsotahleit` / `thuchusohgie`
-| | | `mattermost_fepheedooroh` / `thohrawaenee`
-| | | `metabase_licideophaig` / `msorphorylac`
-| | | `redmine_shaeM8oong9A` / `ucapah7kai1I`
+| | | `killbill_shiezouceeng` / `aghahticeiri` <sup>*</sup>
+| | | `librespeed_gohsotahleit` / `thuchusohgie` <sup>*</sup>
+| | | `mattermost_fepheedooroh` / `thohrawaenee` <sup>*</sup>
+| | | `metabase_licideophaig` / `msorphorylac` <sup>*</sup>
+| | | `redmine_shaeM8oong9A` / `ucapah7kai1I` <sup>*</sup>
 | | | `replicator_avaternetrai` / `ergatecuserb`
 | | | `root` / `camycorymicu`
-| | | `rundeck_bineurvendle` / `nocionersava`
+| | | `rundeck_bineurvendle` / `nocionersava` <sup>*</sup>
 | | | `telegraf_resterfigral` / `mpyrismelort`
-| | | `xwiki_thezoepebood` / `ohphahshielu`
-| | | `zabbix_webarnalastr` / `dentinguarne`
+| | | `xwiki_thezoepebood` / `ohphahshielu` <sup>*</sup>
+| | | `zabbix_webarnalastr` / `dentinguarne` <sup>*</sup>
+
+<sup>*</sup> denotes credentials that will be created by the appropriate containers.
 
 ## Databases
 

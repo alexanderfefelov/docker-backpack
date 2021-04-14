@@ -10,9 +10,11 @@ Hostname `postgresql-main.backpack.test`
 | ---: | :------ | :----------
 | 5432 | PostgreSQL | `postgres_ibleabaldine` / `undestrokend`
 | | | `healthcheck_phocincergeo` / `tanionetedio`
-| | | `nav_smarigarybol` / `tateicenstop`
-| | | `netbox_saengaejoola` / `thiunahbeifo`
+| | | `nav_smarigarybol` / `tateicenstop` <sup>*</sup>
+| | | `netbox_saengaejoola` / `thiunahbeifo` <sup>*</sup>
 | | | `telegraf_viledahloger` / `atiolusethil`
+
+<sup>*</sup> denotes credentials that will be created by the appropriate containers.
 
 ## Databases
 
