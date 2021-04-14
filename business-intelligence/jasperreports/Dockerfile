@@ -10,6 +10,7 @@ WORKDIR /
 
 RUN wget --quiet https://sourceforge.net/projects/jasperserver/files/JasperServer/JasperReports%20Server%20Community%20edition%20$VERSION/$JASPERREPORTS_STUFF \
   && unzip --qq $JASPERREPORTS_STUFF \
+  && rm --force /$JASPERREPORTS_STUFF \
   && mv jasperreports-server-cp-$VERSION-bin dist
 
 COPY container/ /
