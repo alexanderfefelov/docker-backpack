@@ -23,7 +23,7 @@ execute_put_request users/user_iolaeshooth2 <<< '{
     "enabled": true,
     "fullName": "User",
     "roles": [
-        {"name": "ROLE_USER" }
+        {"name": "ROLE_USER"}
     ]
 }'
 
