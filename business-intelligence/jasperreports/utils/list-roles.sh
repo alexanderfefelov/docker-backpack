@@ -2,4 +2,4 @@
 
 . lib.sh
 
-execute_get_request roles
+execute_get_request roles 'Accept: application/json'

@@ -2,4 +2,4 @@
 
 . lib.sh
 
-execute_get_request users
+execute_get_request users 'Accept: application/json'
