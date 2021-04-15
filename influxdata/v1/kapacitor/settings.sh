@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.5.8
+readonly DEFAULT_VERSION=1.5.9
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=kapacitor
