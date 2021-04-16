@@ -1,5 +1,4 @@
 readonly DEFAULT_VERSION=7.8.0
-readonly DDL_VERSION=7.8.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=jasperreports
