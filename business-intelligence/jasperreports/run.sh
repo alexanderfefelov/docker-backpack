@@ -30,7 +30,7 @@ initialize_jasperreports_1() {
 initialize_jasperreports_2() {
   echo Initializing JasperReports, part 2...
   bash init/configure-credentials.sh
-  $MYSQL < init/set-default-theme.sql
+  $MYSQL $DB_DATABASE < init/set-default-theme.sql
   echo ...JasperReports initialized, part 2
 }
 
