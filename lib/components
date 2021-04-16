@@ -46,6 +46,7 @@ databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
 databases/questdb
+databases/sql-server/main
 
 # DHCP
 #

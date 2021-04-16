@@ -55,6 +55,7 @@ $IP_ADDRESS mysql-test.backpack.test
 $IP_ADDRESS postgresql-main.backpack.test
 $IP_ADDRESS postgresql-test.backpack.test
 $IP_ADDRESS questdb.backpack.test
+$IP_ADDRESS sql-server-main.backpack.test
 
 # DHCP
 #
