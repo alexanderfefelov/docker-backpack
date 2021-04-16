@@ -24,6 +24,7 @@ COPY container/ /
 
 RUN mkdir --parents $ks $ksp \
   && cd dist/buildomatic \
-  && echo y | ./js-ant deploy-webapp-ce
+  && echo y | ./js-ant deploy-webapp-ce \
+  && cp /resfactory.properties /usr/local/tomcat/webapps/jasperserver/WEB-INF/classes/
 
 WORKDIR $CATALINA_HOME
