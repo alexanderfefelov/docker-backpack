@@ -65,6 +65,7 @@
 | [Rundeck](../workload-automation/rundeck) | Java | [JDBC](https://docs.rundeck.com/docs/administration/configuration/database/) | MySQL | JMX | ? | ? | ?
 | [Samba](../file-sharing/samba) | ? | ? | ? | ? | ? | ? | ?
 | [SnmpCollector](../network-monitoring/snmpcollector) | Go | MySQL, SQLite | ? | ? | ? | ? | ?
+| [SQL Server main](../databases/sql-server/main) | ? | ? | ? | ? | ? | ? | ?
 | [Swagger Editor](../swagger/editor) | ? | ? | ? | ? | ? | ? | ?
 | [Swagger UI](../swagger/ui) | ? | ? | ? | ? | ? | ? | ?
 | [The Dude](../network-monitoring/the-dude) | Wine | SQLite | SQLite | ? | ? | ? | ?
