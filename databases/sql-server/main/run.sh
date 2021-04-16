@@ -12,6 +12,9 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-data:/var/opt/mssql/data \
+    --volume $CONTAINER_NAME-log:/var/opt/mssql/log \
+    --volume $CONTAINER_NAME-secret:/var/opt/mssql/secrets \
     --publish 1433:1433 \
     --env ACCEPT_EULA=Y \
     --env MSSQL_PID=$PID \
