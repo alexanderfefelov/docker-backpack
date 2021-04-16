@@ -15,6 +15,12 @@ initialize_database() {
   echo ...database initialized
 }
 
+warm_up_webapp() {
+  echo Warming up...
+  http --timeout $WAIT_TIMEOUT $HOST_NAME:8097/jasperserver
+  echo ...warmed up
+}
+
 initialize_jasperreports_1() {
   echo Initializing JasperReports, part 1...
   bash init/initialize-jasperreports.sh $CONTAINER_NAME
@@ -63,6 +69,7 @@ fi
 docker restart $CONTAINER_NAME
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
+  warm_up_webapp
   initialize_jasperreports_2
 fi
 print_container_info $CONTAINER_NAME
