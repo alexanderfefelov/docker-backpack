@@ -30,6 +30,7 @@ readonly PREREQUISITES="
   sleep
   smbpasswd
   smidump
+  sqlcmd
   sysctl
   tac
   toilet
