@@ -15,6 +15,12 @@ initialize_database() {
   echo ...database initialized
 }
 
+initialize_metabase() {
+  echo Initializing Metabase...
+  python3 init/initialize-metabase.py
+  echo ...Metabase initialized
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -41,9 +47,13 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
+  readonly FIRST_RUN=true
   initialize_database
 fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+if [ "$FIRST_RUN" == "true" ]; then
+  initialize_metabase
+fi
 print_container_info $CONTAINER_NAME

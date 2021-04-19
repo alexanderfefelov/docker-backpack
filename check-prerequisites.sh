@@ -25,6 +25,7 @@ readonly PREREQUISITES="
   petname
   psql
   pwgen
+  python3
   redis-cli
   shellcheck
   sleep
