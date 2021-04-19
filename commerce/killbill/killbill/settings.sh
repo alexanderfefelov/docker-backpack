@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=0.22.20
+readonly DEFAULT_VERSION=0.22.21
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=killbill
