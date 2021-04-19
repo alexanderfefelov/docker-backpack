@@ -9,3 +9,4 @@ Hostname `metabase.backpack.test`
 | Port | Service | Credentials
 | ---: | :------ | :----------
 | [3042](http://metabase.backpack.test:3042) | HTTP [API](https://www.metabase.com/docs/latest/api-documentation.html) and management console | `admin_cahcho1esei5@backpack.test` / `shaezece2chi`
+| | | `user_rahhaik2shaa@backpack.test` / `ofohdiej4thu`

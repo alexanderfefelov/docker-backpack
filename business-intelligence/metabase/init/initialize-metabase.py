@@ -14,7 +14,7 @@ request = urllib.request.Request('http://metabase.backpack.test:3042/api/session
 for _ in range(7):
     try:
         print('Querying Metabase installer...', end='', flush=True)
-        response = urllib.request.urlopen(request, timeout=180)
+        response = urllib.request.urlopen(request, timeout=90)
         print('done')
         break
     except urllib.error.HTTPError as e:
@@ -53,6 +53,33 @@ data = {
 data_json = json.dumps(data).encode('utf-8')
 request = urllib.request.Request('http://metabase.backpack.test:3042/api/setup')
 request.add_header('Content-Type', 'application/json; charset=utf-8')
+try:
+    response = urllib.request.urlopen(request, data_json)
+except urllib.error.HTTPError as e:
+    abort('%d %s' % (e.status, e.reason))
+response_body = response.read().decode('utf8')
+try:
+    response_json = json.loads(response_body)
+    session_id = response_json['id']
+except json.decoder.JSONDecodeError:
+    abort('Invalid response received')
+except KeyError:
+    abort('Session ID not found')
+if not setup_token:
+    abort('Empty session ID found')
+
+data = {
+    "email": "user_rahhaik2shaa@backpack.test",
+    "first_name": "user",
+    "last_name": "rahhaik2shaa",
+    "password": "ofohdiej4thu",
+    "group_ids": None,
+    "login_attributes": None
+}
+data_json = json.dumps(data).encode('utf-8')
+request = urllib.request.Request('http://metabase.backpack.test:3042/api/user')
+request.add_header('Content-Type', 'application/json; charset=utf-8')
+request.add_header('X-Metabase-Session', session_id)
 try:
     response = urllib.request.urlopen(request, data_json)
 except urllib.error.HTTPError as e:
