@@ -30,7 +30,7 @@ run() {
     --publish 3042:3000 \
     --env MB_DB_TYPE=mysql \
     --env MB_DB_HOST=$DB_HOST \
-    --env MB_DB_PORT=3306 \
+    --env MB_DB_PORT=$DB_PORT \
     --env MB_DB_DBNAME=$DB_DATABASE \
     --env MB_DB_USER=$DB_USERNAME \
     --env MB_DB_PASS=$DB_PASSWORD \
