@@ -1,2 +1,2 @@
 <h4 class="subheader"><a href="https://github.com/alexanderfefelov/docker-backpack">docker-backpack</a></h4>
-<p>Your NAV administrator: <a href="mailto:admin@backpack.test">admin@backpack.test</a></p>
+<p>Your NAV administrator: <a href="mailto:admin_shephuojuika@backpack.test">admin_shephuojuika@backpack.test</a></p>
