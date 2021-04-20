@@ -28,6 +28,8 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --publish 3042:3000 \
+    --publish 3043:8778 \
+    --env JAVA_OPTS="$JAVA_OPTS" \
     --env MB_DB_TYPE=mysql \
     --env MB_DB_HOST=$DB_HOST \
     --env MB_DB_PORT=$DB_PORT \

@@ -15,6 +15,7 @@ readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=metabase_licideophaig
 readonly DB_PASSWORD=msorphorylac
+readonly JAVA_OPTS="-javaagent:/app/jolokia/jolokia-jvm-1.6.2-agent.jar=config=/app/jolokia/jolokia.properties"
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
