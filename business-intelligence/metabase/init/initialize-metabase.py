@@ -11,10 +11,11 @@ def abort(message):
 
 
 request = urllib.request.Request('http://metabase.backpack.test:3042/api/session/properties')
-for _ in range(7):
+response = None
+for _ in range(42):
     try:
         print('Querying Metabase installer...', end='', flush=True)
-        response = urllib.request.urlopen(request, timeout=90)
+        response = urllib.request.urlopen(request, timeout=42)
         print('done')
         break
     except urllib.error.HTTPError as e:
@@ -25,6 +26,8 @@ for _ in range(7):
     except socket.timeout:
         print('timeout expired')
         continue
+if not response:
+    abort('No response from Metabase')
 response_body = response.read().decode('utf8')
 try:
     response_json = json.loads(response_body)
