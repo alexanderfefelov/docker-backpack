@@ -6,6 +6,7 @@ backpack-fleet
 backpack-gitea
 backpack-grafana
 backpack-graphite-statsd
+backpack-james
 backpack-jenkins
 backpack-librespeed
 backpack-minecraft

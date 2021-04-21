@@ -67,6 +67,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [InfluxDB 2](influxdata/influxdb-2)
     - [Kapacitor](influxdata/v1/kapacitor)
     - [Telegraf](influxdata/telegraf)
+- [James](james)
 - [Jenkins](jenkins)
 - [LibreSpeed](librespeed)
 - [Message queues](message-queues)

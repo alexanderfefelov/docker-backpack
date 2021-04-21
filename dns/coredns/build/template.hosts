@@ -10,6 +10,7 @@ $IP_ADDRESS fleet.backpack.test
 $IP_ADDRESS gitea.backpack.test
 $IP_ADDRESS grafana.backpack.test
 $IP_ADDRESS graphite-statsd.backpack.test
+$IP_ADDRESS james.backpack.test
 $IP_ADDRESS jenkins.backpack.test
 $IP_ADDRESS librespeed.backpack.test
 $IP_ADDRESS minecraft.backpack.test
