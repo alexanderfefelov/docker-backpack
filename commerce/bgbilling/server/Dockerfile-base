@@ -1,4 +1,4 @@
-FROM adoptopenjdk:15-jdk-hotspot
+FROM quay.io/alexanderfefelov/graalvm:21.1.0-java16
 
 ARG RELEASE
 ARG SET
