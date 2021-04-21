@@ -8,4 +8,5 @@ Hostname `james.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
+| [8017](http://james.backpack.test:8017) | Glowroot UI | -
 | [8016](http://james.backpack.test:8016) | [WebAdmin API](https://james.apache.org/server/manage-webadmin.html) | -
