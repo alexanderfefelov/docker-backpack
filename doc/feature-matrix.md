@@ -5,7 +5,7 @@
 | [ActiveMQ](../message-queues/activemq) | Java | [JDBC](https://activemq.apache.org/jdbc-support) | MySQL | JMX, Web Console  | Jolokia | N/A | N/A
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
-| [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | ? | ? | ActiveMQ | ActiveMQ
+| [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | JMX | Jolokia | ActiveMQ | ActiveMQ
 | [chrony](../chrony) | C | N/A | N/A | N/A | N/A | N/A | N/A
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDHCP](../dhcp/coredhcp) | Go | N/A | N/A | N/A | N/A | N/A | N/A
@@ -40,7 +40,7 @@
 | [LibreSpeed](../librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [MariaDB main](../databases/mariadb/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [Mattermost](../messengers/mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
-| [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | ? | Jolokia | ? | ?
+| [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | JMX | Jolokia | ? | ?
 | [Minecraft](../minecraft) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
 | [MongoDB main](../databases/mongodb/main) | ? | ? | ? | ? | ? | ? | ?
 | [MongoDB test](../databases/mongodb/test) | ? | ? | ? | ? | ? | ? | ?
