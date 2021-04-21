@@ -40,7 +40,7 @@
 | [LibreSpeed](../librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [MariaDB main](../databases/mariadb/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [Mattermost](../messengers/mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
-| [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | ? | ? | ? | ?
+| [Metabase](../business-intelligence/metabase) | Clojure | [H2, MariaDB, MySQL, PostgreSQL](https://www.metabase.com/docs/latest/operations-guide/configuring-application-database.html) | MySQL | ? | Jolokia | ? | ?
 | [Minecraft](../minecraft) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
 | [MongoDB main](../databases/mongodb/main) | ? | ? | ? | ? | ? | ? | ?
 | [MongoDB test](../databases/mongodb/test) | ? | ? | ? | ? | ? | ? | ?
