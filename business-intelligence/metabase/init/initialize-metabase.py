@@ -36,9 +36,9 @@ def get_setup_token():
     response = None
     for _ in range(42):
         try:
-            print('Querying Metabase installer...', end='', flush=True)
+            print('Waiting for Metabase...', end='', flush=True)
             response = urllib.request.urlopen(request, timeout=42)
-            print('done')
+            print('ready')
             break
         except urllib.error.HTTPError as e:
             print(e.status, e.reason)
