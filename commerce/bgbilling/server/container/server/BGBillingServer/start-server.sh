@@ -19,11 +19,16 @@ readonly LOG="
 readonly MEMORY="-Xmx500m"
 readonly NETWORK="-Djava.net.preferIPv4Stack=true"
 
+readonly OPENS="
+  --add-opens java.base/jdk.internal.misc=ALL-UNNAMED
+"
+
 readonly JAVA_OPTIONS_APP="
   $AGENT
   $LOG
   $MEMORY
   $NETWORK
+  $OPENS
 "
 readonly JAVA_OPTIONS="
   $JAVA_OPTIONS_APP
