@@ -32,6 +32,7 @@
 | [InfluxData InfluxDB 2](../influxdata/influxdb-2) | ? | ? | ? | ? | ? | ? | ?
 | [InfluxData Kapacitor](../influxdata/v1/kapacitor)| ? | ? | ? | ? | InfluxDB | ? | ?
 | [InfluxData Telegraf](../influxdata/telegraf) | ? | ? | ? | ? | ? | ? | ?
+| [James](../James) | Java | [DB2, Derby, H2, HSQLDB, Informix, MySQL, Oracle, PostgreSQL, SQL Server, Sybase](https://james.apache.org/server/3/config-system.html) | ? | JMX, Glowroot | ? | ? | ?
 | [JasperReports Server](../business-intelligence/jasperreports) | Java | MySQL, PostgreSQL | MySQL | JMX | Jolokia | ? | ?
 | [Jenkins](../jenkins) | ? | ? | ? | ? | InfluxDB | ? | ?
 | [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
