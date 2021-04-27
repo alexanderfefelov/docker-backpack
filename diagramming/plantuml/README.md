@@ -1,5 +1,7 @@
 # backpack-plantuml
 
+![PlantUML](../../doc/assets/logos/plantuml.png)
+
 Hostname `plantuml.backpack.test`
 
 ## Services
