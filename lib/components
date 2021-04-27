@@ -53,6 +53,10 @@ databases/sql-server/main
 #
 dhcp/coredhcp
 
+# Diagramming
+#
+diagramming/plantuml
+
 # DNS
 #
 dns/coredns

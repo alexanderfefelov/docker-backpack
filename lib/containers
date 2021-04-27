@@ -58,6 +58,10 @@ backpack-sql-server-main
 #
 backpack-coredhcp
 
+# Diagramming
+#
+backpack-plantuml
+
 # DNS
 #
 backpack-coredns

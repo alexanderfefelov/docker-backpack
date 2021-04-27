@@ -52,6 +52,7 @@
 | [NetBox](../netbox) | Django | PostgreSQL | PostgreSQL | Prometheus | Prometheus | Redis | Redis
 | [Netdata](../netdata) | ? | ? | ? | ? | ? | ? | ?
 | [nfdump](../network-monitoring/nfdump) | ? | ? | ? | ? | ? | ? | ?
+| [PlantUML](../diagramming/plantuml) | ? | ? | ? | ? | ? | ? | ?
 | [Portainer](../portainer) | ? | ? | ? | N/A | N/A | N/A | N/A
 | [PostgreSQL main](../databases/postgresql/main) | ? | N/A | N/A | PostgreSQL | InfluxDB | ? | ?
 | [PostgreSQL test](../databases/postgresql/test) | ? | N/A | N/A | PostgreSQL | InfluxDB | ? | ?

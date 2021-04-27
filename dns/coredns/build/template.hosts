@@ -62,6 +62,10 @@ $IP_ADDRESS sql-server-main.backpack.test
 #
 $IP_ADDRESS coredhcp.backpack.test
 
+# Diagramming
+#
+$IP_ADDRESS plantuml.backpack.test
+
 # DNS
 #
 $IP_ADDRESS coredns.backpack.test

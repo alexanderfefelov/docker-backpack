@@ -42,6 +42,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
       - [Main instance](databases/sql-server/main)
 - [DHCP](dhcp)
     - [CoreDHCP](dhcp/coredhcp)
+- [Diagramming](diagramming)
+    - [PlantUML](diagramming/plantuml)
 - [DNS](dns)
     - [CoreDNS](dns/coredns)
     - [dnsmasq](dns/dnsmasq)
