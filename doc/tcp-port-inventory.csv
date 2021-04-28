@@ -9,6 +9,7 @@ Port,Container
 110,backpack-james
 139,backpack-samba
 143,backpack-james
+179,backpack-gobgp
 445,backpack-samba
 465,backpack-james
 587,backpack-james
@@ -132,6 +133,7 @@ Port,Container
 27017,backpack-mongodb-main
 27018,backpack-mongodb-test
 50000,backpack-jenkins
+50051,backpack-gobgp
 61614,backpack-activemq-node-1
 61615,backpack-activemq-node-1
 61616,backpack-activemq-node-1

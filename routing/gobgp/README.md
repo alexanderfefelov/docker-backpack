@@ -1,5 +1,7 @@
 # backpack-gobgp
 
+![GoBGP](../../doc/assets/logos/gobgp.png)
+
 Hostname `gobgp.backpack.test`
 
 ## Services

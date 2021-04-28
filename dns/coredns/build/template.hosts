@@ -127,6 +127,7 @@ $IP_ADDRESS pushgateway.backpack.test
 # Routing
 #
 $IP_ADDRESS frr.backpack.test
+$IP_ADDRESS gobgp.backpack.test
 
 # Swagger
 #

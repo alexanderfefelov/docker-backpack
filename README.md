@@ -100,6 +100,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Riemann](riemann)
 - [Routing](routing)
     - [FRR](routing/frr)
+    - [GoBGP](routing/gobgp)
 - [Swagger](swagger)
     - [Editor](swagger/editor)
     - [UI](swagger/ui)

@@ -124,6 +124,7 @@ backpack-pushgateway
 # Routing
 #
 backpack-frr
+backpack-gobgp
 
 # Swagger
 #
