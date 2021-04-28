@@ -121,6 +121,10 @@ backpack-alertmanager
 backpack-prometheus
 backpack-pushgateway
 
+# Routing
+#
+backpack-frr
+
 # Swagger
 #
 backpack-swagger-editor

@@ -21,6 +21,7 @@
 | [Elastic Logstash](../elastic/logstash) | Java | ? | ? | ? | InfluxDB | ? | ?
 | [FastNetMon](../network-monitoring/fastnetmon) | ? | ? | ? | Graphite, InfluxDB | InfluxDB (thru Graphite wire protocol) | ? | ?
 | [Fleet](../fleet) | Go | MySQL | MySQL | ? | ? | Redis | ?
+| [FRR](../routing/frr) | ? | ? | ? | ? | ? | ? | ?
 | [Gitea](../gitea) | ? | [MySQL, PostgreSQL, SQL Server, SQLite](https://docs.gitea.io/en-us/database-prep/) | MySQL | ? | ? | ? | ?
 | [Grafana](../grafana) | ? | [MySQL, PostgreSQL, SQLite](https://grafana.com/docs/grafana/latest/installation/requirements/) | MySQL | ? | ? | ? | ?
 | [Graphite/StatsD: Graphite-Web](../graphite-statsd) | Django | [Django](https://graphite.readthedocs.io/en/stable/config-database-setup.html) | MySQL | ? | ? | ? | ?

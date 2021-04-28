@@ -98,6 +98,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)
 - [Riemann](riemann)
+- [Routing](routing)
+    - [FRR](routing/frr)
 - [Swagger](swagger)
     - [Editor](swagger/editor)
     - [UI](swagger/ui)

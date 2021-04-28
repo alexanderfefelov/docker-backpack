@@ -124,6 +124,10 @@ $IP_ADDRESS alertmanager.backpack.test
 $IP_ADDRESS prometheus.backpack.test
 $IP_ADDRESS pushgateway.backpack.test
 
+# Routing
+#
+$IP_ADDRESS frr.backpack.test
+
 # Swagger
 #
 $IP_ADDRESS swagger-editor.backpack.test
