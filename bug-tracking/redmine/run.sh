@@ -15,6 +15,22 @@ initialize_database() {
   echo ...database initialized
 }
 
+execute_scripts() {
+  echo Executing scripts from $1...
+  for f in $1/*; do
+    echo "$f"
+    case $f in
+      *.sql)
+        $MYSQL $DB_DATABASE <<< "$(envsubst < "$f")"
+        ;;
+      *)
+        echo skipped
+        ;;
+    esac
+  done
+  echo ...scripts from $1 executed
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -37,9 +53,13 @@ readonly USE_DB_RETCODE=$?
 set -e
 
 if [ "$USE_DB_RETCODE" -ne 0 ]; then
+  readonly FIRST_RUN=true
   initialize_database
 fi
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+if [ "$FIRST_RUN" == "true" ]; then
+  execute_scripts init/configure-redmine
+fi
 print_container_info $CONTAINER_NAME
