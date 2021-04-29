@@ -21,7 +21,10 @@ execute_scripts() {
     echo "$f"
     case $f in
       *.sql)
-        $MYSQL $DB_DATABASE <<< "$(envsubst < "$f")"
+        $MYSQL $DB_DATABASE <<< "$(cat "$f")"
+        ;;
+      *.sh)
+        bash <<< "$(cat "$f")"
         ;;
       *)
         echo skipped
@@ -61,5 +64,6 @@ run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 if [ "$FIRST_RUN" == "true" ]; then
   execute_scripts init/configure-redmine
+  execute_scripts init/configure-accounts
 fi
 print_container_info $CONTAINER_NAME
