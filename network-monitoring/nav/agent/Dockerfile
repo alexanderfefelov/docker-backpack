@@ -6,7 +6,7 @@ ARG IMAGE_NAME
 
 LABEL $IMAGE_NAME-stage=builder
 
-ADD container/builder/ /
+ENV NAV_HOME=/.build/usr/local/lib/python3.7/site-packages/nav
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
@@ -26,8 +26,9 @@ RUN apt-get -qq update \
        git checkout $ADD_ONS_VERSION; \
        git log -5 > /nav-add-ons.latest_changes \
      ) \
-  && cp --recursive --no-target-directory /nav-add-ons/snmp/nav /.build/usr/local/lib/python3.7/site-packages/nav \
-  && /apply-patches.sh \
+  && cp --recursive --no-target-directory /nav-add-ons/snmp/nav $NAV_HOME \
+  && /nav-add-ons/snmp/patches/apply-patches.sh \
+  && /nav-add-ons/web/patches/apply-patches.sh \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --recursive --force /.build/usr/local/python
