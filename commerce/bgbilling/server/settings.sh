@@ -11,7 +11,6 @@ export COMPONENTS='
   npay
   reports
   rscm
-  smarthouse
   sorm
   subscription
 
