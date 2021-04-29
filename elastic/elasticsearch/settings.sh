@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.12.0
+readonly DEFAULT_VERSION=7.12.1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=elasticsearch
