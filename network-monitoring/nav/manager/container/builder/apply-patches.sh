@@ -15,3 +15,4 @@ patch $NAV_HOME/ipdevpoll/shadows/__init__.py   /nav-add-ons/snmp/patches/nav/ip
 
 patch $NAV_HOME/models/manage.py                /nav-add-ons/web/patches/nav/models/manage.py-$NAV_VERSION.patch
 patch $NAV_HOME/web/info/searchproviders.py     /nav-add-ons/web/patches/nav/web/info/searchproviders.py-$NAV_VERSION.patch
+patch $NAV_HOME/web/info/room/views.py          /nav-add-ons/web/patches/nav/web/info/room/views.py-$NAV_VERSION.patch
