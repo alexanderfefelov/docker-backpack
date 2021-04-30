@@ -1,5 +1,5 @@
 readonly USERNAME=admin_ohmewae5ahyo
-readonly PASSWORD=usaeva6tie6a
+readonly PASSWORD=admin
 readonly HTTP="http --check-status --auth-type basic --auth $USERNAME:$PASSWORD"
 readonly API=http://redmine.backpack.test:8095
 
