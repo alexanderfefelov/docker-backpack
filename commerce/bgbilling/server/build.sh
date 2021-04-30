@@ -14,19 +14,19 @@ docker build \
   --build-arg SET \
   --build-arg COMPONENTS \
   --tag $IMAGE_NAME-base:$VERSION \
-  --file Dockerfile-base \
+  --file base.Dockerfile \
   .
 
 docker build \
   --build-arg IMAGE_NAME \
   --build-arg VERSION \
   --tag $IMAGE_NAME-scheduler:$VERSION \
-  --file Dockerfile-scheduler \
+  --file scheduler.Dockerfile \
   .
 
 docker build \
   --build-arg IMAGE_NAME \
   --build-arg VERSION \
   --tag $IMAGE_NAME-server:$VERSION \
-  --file Dockerfile-server \
+  --file server.Dockerfile \
   .
