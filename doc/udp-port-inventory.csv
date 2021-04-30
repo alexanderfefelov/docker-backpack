@@ -5,6 +5,8 @@ Port,Container
 69,backpack-atftpd
 123,backpack-chrony
 162,backpack-nav-manager
+1812,backpack-freeradius
+1813,backpack-freeradius
 2003,backpack-graphite-statsd
 2055,backpack-fastnetmon
 5514,backpack-logstash
