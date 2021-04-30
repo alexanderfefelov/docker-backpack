@@ -2154,6 +2154,24 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
         </y:ShapeNode>
       </data>
     </node>
+    <node id="n66">
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/freeradius]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="90.0" x="2204.0" y="2121.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.967041015625" x="13.0164794921875" y="5.911895751953125">freeradius<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
     <edge id="e0" source="n59" target="n10">
       <data key="d10">
         <y:SplineEdge>
