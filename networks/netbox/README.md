@@ -1,6 +1,6 @@
 # backpack-netbox
 
-![NetBox](../doc/assets/logos/netbox.png)
+![NetBox](../../doc/assets/logos/netbox.png)
 
 Hostname `netbox.backpack.test`
 

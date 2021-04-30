@@ -1,6 +1,6 @@
 # backpack-gobgp
 
-![GoBGP](../../doc/assets/logos/gobgp.png)
+![GoBGP](../../../doc/assets/logos/gobgp.png)
 
 Hostname `gobgp.backpack.test`
 

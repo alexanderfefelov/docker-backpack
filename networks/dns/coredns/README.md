@@ -1,6 +1,6 @@
 # backpack-coredns
 
-![CoreDNS](../../doc/assets/logos/coredns.png)
+![CoreDNS](../../../doc/assets/logos/coredns.png)
 
 Hostname `coredns.backpack.test`
 

@@ -35,7 +35,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n1">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dns/dnsmasq]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/dns/dnsmasq]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="296.6913547893985" y="816.5377719992448"/>
@@ -626,7 +626,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </graph>
     </node>
     <node id="n19" yfiles.foldertype="group">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/zabbix]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -655,7 +655,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
       <graph edgedefault="directed" id="n19:">
         <node id="n19::n0">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/frontend]]></data>
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/zabbix/frontend]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="2014.7531031173078" y="1069.9796537538"/>
@@ -673,7 +673,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </data>
         </node>
         <node id="n19::n1">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/zabbix/backend]]></data>
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/zabbix/backend]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="2052.5438398562237" y="1179.3248922123207"/>
@@ -948,7 +948,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n24">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/fastnetmon]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/fastnetmon]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="929.5927470798017" y="1339.8036768889422"/>
@@ -1020,7 +1020,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n28">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/routing/gobgp]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/routing/gobgp]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="1882.0" y="2321.0"/>
@@ -1298,7 +1298,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </graph>
     </node>
     <node id="n33">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/librespeed]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/librespeed]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="1825.9835078826125" y="1406.0576841999473"/>
@@ -1401,7 +1401,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n36">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/netbox]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/netbox]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="583.0237329748112" y="1075.7547749506791"/>
@@ -1455,7 +1455,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n39">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/the-dude]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/the-dude]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="0.0" y="2521.0"/>
@@ -1473,7 +1473,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n40">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nfdump]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/nfdump]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="161.0" y="2521.0"/>
@@ -1563,7 +1563,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n45">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/snmpcollector]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/snmpcollector]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="966.0" y="2521.0"/>
@@ -1599,7 +1599,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n47">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dns/coredns]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/dns/coredns]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="69.32131102802168" y="787.1157834001901"/>
@@ -1689,7 +1689,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n52">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/dhcp/coredhcp]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/dhcp/coredhcp]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="1610.0" y="2521.0"/>
@@ -1913,7 +1913,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n59" yfiles.foldertype="group">
-      <data key="d4"><![CDATA[b.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav]]></data>
+      <data key="d4"><![CDATA[b.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/nav]]></data>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -1942,7 +1942,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
       <graph edgedefault="directed" id="n59:">
         <node id="n59::n0">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav/manager]]></data>
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/nav/manager]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="1151.7892331055555" y="624.2646855275267"/>
@@ -1960,7 +1960,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
           </data>
         </node>
         <node id="n59::n1">
-          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/network-monitoring/nav/agent]]></data>
+          <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/monitoring/nav/agent]]></data>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="30.0" width="90.0" x="1102.342532978831" y="800.9870896228506"/>
@@ -2137,7 +2137,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n65">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/routing/frr]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/networks/routing/frr]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="2254.0" y="2521.0"/>

@@ -1,6 +1,6 @@
 # backpack-zabbix-backend
 
-![Zabbix](../../../doc/assets/logos/zabbix.png)
+![Zabbix](../../../../doc/assets/logos/zabbix.png)
 
 Hostname `zabbix-backend.backpack.test`
 
