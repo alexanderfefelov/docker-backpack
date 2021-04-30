@@ -6,7 +6,7 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-nc -z -w $WAIT_TIMEOUT localhost 9092
+nc -z localhost 9092
 curl --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
   http://localhost:8082/ \
   > /dev/null

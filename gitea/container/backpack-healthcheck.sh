@@ -6,7 +6,7 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-nc -z -w $WAIT_TIMEOUT localhost 22
+nc -z localhost 22
 curl --head --fail --silent --max-time $WAIT_TIMEOUT --user-agent "$(basename "$0")" \
   http://localhost:3001/ \
   > /dev/null

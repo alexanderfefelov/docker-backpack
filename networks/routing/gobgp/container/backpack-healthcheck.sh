@@ -6,5 +6,5 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-nc -z -w $WAIT_TIMEOUT localhost 179
-nc -z -w $WAIT_TIMEOUT localhost 50051
+nc -z localhost 179
+nc -z localhost 50051

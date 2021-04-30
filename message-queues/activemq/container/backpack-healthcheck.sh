@@ -6,9 +6,9 @@ set -e
 
 readonly WAIT_TIMEOUT=2
 
-nc -z -w $WAIT_TIMEOUT localhost 1883
-nc -z -w $WAIT_TIMEOUT localhost 5672
-nc -z -w $WAIT_TIMEOUT localhost 8161
-nc -z -w $WAIT_TIMEOUT localhost 61613
-nc -z -w $WAIT_TIMEOUT localhost 61614
-nc -z -w $WAIT_TIMEOUT localhost 61616
+nc -z localhost 1883
+nc -z localhost 5672
+nc -z localhost 8161
+nc -z localhost 61613
+nc -z localhost 61614
+nc -z localhost 61616
