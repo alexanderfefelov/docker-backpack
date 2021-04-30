@@ -8,9 +8,9 @@ grafana
 graphite-statsd
 jenkins
 james
-librespeed
+networks/monitoring/librespeed
 minecraft
-netbox
+networks/netbox
 redis
 riemann
 typesense
@@ -51,7 +51,7 @@ databases/sql-server/main
 
 # DHCP
 #
-dhcp/coredhcp
+networks/dhcp/coredhcp
 
 # Diagramming
 #
@@ -59,8 +59,8 @@ diagramming/plantuml
 
 # DNS
 #
-dns/coredns
-dns/dnsmasq
+networks/dns/coredns
+networks/dns/dnsmasq
 
 # Elastic stack
 #
@@ -99,14 +99,14 @@ messengers/mattermost
 
 # Network monitoring
 #
-network-monitoring/fastnetmon
-network-monitoring/nav/agent
-network-monitoring/nav/manager
-network-monitoring/nfdump
-network-monitoring/snmpcollector
-network-monitoring/the-dude
-network-monitoring/zabbix/backend
-network-monitoring/zabbix/frontend
+networks/monitoring/fastnetmon
+networks/monitoring/nav/agent
+networks/monitoring/nav/manager
+networks/monitoring/nfdump
+networks/monitoring/snmpcollector
+networks/monitoring/the-dude
+networks/monitoring/zabbix/backend
+networks/monitoring/zabbix/frontend
 
 # Prometheus
 #
@@ -116,8 +116,8 @@ prometheus/pushgateway
 
 # Routing
 #
-routing/frr
-routing/gobgp
+networks/routing/frr
+networks/routing/gobgp
 
 # Swagger
 #
