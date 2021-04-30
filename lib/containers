@@ -3,6 +3,7 @@ backpack-portainer
 
 backpack-chrony
 backpack-fleet
+backpack-freeradius
 backpack-gitea
 backpack-grafana
 backpack-graphite-statsd

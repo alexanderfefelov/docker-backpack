@@ -3,6 +3,7 @@ portainer
 
 chrony
 fleet
+networks/freeradius
 gitea
 grafana
 graphite-statsd

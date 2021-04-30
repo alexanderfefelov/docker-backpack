@@ -79,6 +79,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [DNS](networks/dns)
         - [CoreDNS](networks/dns/coredns)
         - [dnsmasq](networks/dns/dnsmasq)
+    - [FreeRADIUS](networks/freeradius)
     - [Monitoring](networks/monitoring)
         - [FastNetMon](networks/monitoring/fastnetmon)
         - [LibreSpeed](networks/monitoring/librespeed)
