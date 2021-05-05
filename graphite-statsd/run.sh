@@ -21,7 +21,9 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-data:/opt/graphite/storage \
+    --volume $CONTAINER_NAME-graphite-conf:/opt/graphite/conf \
+    --volume $CONTAINER_NAME-graphite-data:/opt/graphite/storage \
+    --volume $CONTAINER_NAME-statsd-conf:/opt/statsd/config \
     --volume $CONTAINER_NAME-log:/var/log \
     --publish 81:8080 \
     --publish 82:80 \
