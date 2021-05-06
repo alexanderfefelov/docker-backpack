@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=0.19.0
+readonly DEFAULT_VERSION=0.20.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=typesense
