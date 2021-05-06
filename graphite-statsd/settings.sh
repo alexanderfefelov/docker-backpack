@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.1.7-8
+readonly DEFAULT_VERSION=1.1.8-1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=graphite-statsd

@@ -5,5 +5,7 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-data
+docker volume rm $CONTAINER_NAME-graphite-conf
+docker volume rm $CONTAINER_NAME-graphite-data
+docker volume rm $CONTAINER_NAME-statsd-conf
 docker volume rm $CONTAINER_NAME-log
