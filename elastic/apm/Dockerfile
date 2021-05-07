@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM docker.elastic.co/apm/apm-server:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

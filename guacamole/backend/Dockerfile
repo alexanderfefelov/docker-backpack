@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM guacamole/guacd:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

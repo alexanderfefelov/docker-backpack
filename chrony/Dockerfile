@@ -24,7 +24,7 @@ ARG VERSION
 
 COPY --from=builder /chrony-$VERSION/chronyd /usr/sbin
 COPY --from=builder /chrony-$VERSION/chronyc /usr/bin
-ADD container/ /
+COPY container/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

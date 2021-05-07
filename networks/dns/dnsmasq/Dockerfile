@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM jpillora/dnsmasq:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 RUN apk add --quiet \
       curl `# For health checks` \

@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM frrouting/frr:v$VERSION
 
-ADD container/ /
+COPY container/ /
 
 RUN rm -f /etc/frr/*.sample* \
   && mkdir --parents /var/log/frr \

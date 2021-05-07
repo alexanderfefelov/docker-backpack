@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM fleetdm/fleet:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

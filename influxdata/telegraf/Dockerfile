@@ -8,6 +8,6 @@ RUN apt-get -qq update \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD container/ /
+COPY container/ /
 
 CMD ["telegraf", "--config-directory", "/etc/telegraf/telegraf.d"]

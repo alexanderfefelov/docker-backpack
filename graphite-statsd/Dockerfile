@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM graphiteapp/graphite-statsd:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 RUN apk add --quiet \
       curl `# For health checks` \

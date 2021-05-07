@@ -5,4 +5,4 @@ FROM quay.io/influxdb/chronograf:$VERSION
 RUN apk add --quiet \
       curl `# For health checks`
 
-ADD container/ /
+COPY container/ /

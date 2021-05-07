@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM quay.io/alexanderfefelov/cubesviewer-server:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

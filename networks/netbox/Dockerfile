@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM netboxcommunity/netbox:v$VERSION
 
-ADD container/ /
+COPY container/ /
 
 RUN apk add --quiet \
       curl `# For health checks`

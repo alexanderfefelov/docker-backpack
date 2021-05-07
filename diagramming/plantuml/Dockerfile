@@ -7,7 +7,7 @@ USER root
 RUN unzip -qq webapps/ROOT.war -d webapps/ROOT \
   && rm --force webapps/ROOT.war
 
-ADD container/ /
+COPY container/ /
 
 RUN chown --recursive jetty:jetty /var/lib/jetty
 

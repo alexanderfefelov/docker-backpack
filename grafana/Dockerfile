@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM grafana/grafana:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

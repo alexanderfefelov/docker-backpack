@@ -3,6 +3,6 @@ ARG VERSION
 
 FROM $IMAGE_NAME-base:$VERSION
 
-ADD container/server/ /
+COPY container/server/ /
 
 CMD ["./start-server.sh"]

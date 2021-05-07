@@ -3,7 +3,7 @@ FROM quay.io/alexanderfefelov/graalvm:21.0.0.2-java8
 ARG VERSION
 ENV MINECRAFT_HOME=/minecraft
 
-ADD container/ /
+COPY container/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM redis:$VERSION-alpine
 
-ADD container/ /
+COPY container/ /
 
 RUN apk add --quiet \
       netcat-openbsd `# For health checks`

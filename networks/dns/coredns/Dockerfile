@@ -15,6 +15,6 @@ RUN apt-get -qq update \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force /$COREDNS_STUFF
 
-ADD container/ /
+COPY container/ /
 
 CMD ["/coredns/coredns", "-conf", "/etc/coredns/Corefile"]

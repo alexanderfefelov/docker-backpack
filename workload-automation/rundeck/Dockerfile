@@ -2,4 +2,4 @@ ARG VERSION
 
 FROM rundeck/rundeck:$VERSION
 
-ADD container/ /
+COPY container/ /

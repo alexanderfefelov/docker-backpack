@@ -19,7 +19,7 @@ ENV COREDHCP_HOME=/coredhcp
 
 COPY --from=builder /go/coredhcp/cmds/coredhcp/coredhcp $COREDHCP_HOME/
 COPY --from=builder /go/coredhcp/cmds/client/client $COREDHCP_HOME/
-ADD container/target/ /
+COPY container/target/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

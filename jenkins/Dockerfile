@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM jenkins/jenkins:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

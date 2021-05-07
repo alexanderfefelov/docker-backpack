@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ADD container/ /
+COPY container/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \
