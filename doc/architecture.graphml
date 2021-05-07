@@ -746,7 +746,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
               <y:Realizers active="0">
                 <y:GroupNode>
                   <y:Geometry height="183.8410027472146" width="324.377020685412" x="149.25627388318935" y="1366.2421086526263"/>
-                  <y:Fill color="#F5F5F5" transparent="false"/>
+                  <y:Fill hasColor="false" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
                   <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Iosevka" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.17620849609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="324.377020685412" x="0.0" y="0.0">v1</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
