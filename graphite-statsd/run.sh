@@ -22,7 +22,11 @@ run() {
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
     --volume $CONTAINER_NAME-graphite-conf:/opt/graphite/conf \
+    --volume $CONTAINER_NAME-graphite-custom-functions:/opt/graphite/webapp/graphite/functions/custom \
     --volume $CONTAINER_NAME-graphite-data:/opt/graphite/storage \
+    --volume $CONTAINER_NAME-logrotate-conf:/etc/logrotate.d \
+    --volume $CONTAINER_NAME-nginx-conf:/etc/nginx \
+    --volume $CONTAINER_NAME-redis-data:/var/lib/redis \
     --volume $CONTAINER_NAME-statsd-conf:/opt/statsd/config \
     --volume $CONTAINER_NAME-log:/var/log \
     --publish 81:8080 \
