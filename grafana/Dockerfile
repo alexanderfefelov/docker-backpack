@@ -2,11 +2,11 @@ ARG VERSION
 
 FROM grafana/grafana:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 
-RUN apk add --quiet \
+RUN apk add --quiet --no-cache \
       curl `# For health checks` \
   && grafana-cli plugins install grafana-clock-panel \
   && grafana-cli plugins install grafana-piechart-panel \

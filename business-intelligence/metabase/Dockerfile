@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM metabase/metabase:v$VERSION
 
-ADD container/ /
+COPY container/ /
 
-RUN apk add --quiet \
+RUN apk add --quiet --no-cache \
       curl `# For health checks`

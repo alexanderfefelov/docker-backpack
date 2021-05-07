@@ -2,11 +2,11 @@ ARG VERSION
 
 FROM fleetdm/fleet:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 
-RUN apk add --quiet \
+RUN apk add --quiet --no-cache \
       curl `# For health checks`
 
 USER fleet

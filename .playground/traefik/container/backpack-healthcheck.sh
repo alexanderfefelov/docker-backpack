@@ -4,7 +4,5 @@
 # a list, or a compound command returns a non-zero status
 set -e
 
-readonly WAIT_TIMEOUT=2
-
 nc -z localhost 80
 nc -z localhost 8080

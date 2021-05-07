@@ -2,9 +2,9 @@ ARG VERSION
 
 FROM jpillora/dnsmasq:$VERSION
 
-ADD container/ /
+COPY container/ /
 
-RUN apk add --quiet \
+RUN apk add --quiet --no-cache \
       curl `# For health checks` \
       netcat-openbsd `# For health checks`
 

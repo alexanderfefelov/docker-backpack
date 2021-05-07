@@ -6,7 +6,7 @@ ARG COMPONENTS
 
 ENV APP_HOME=/BGBillingServer
 
-ADD build/download-bgbilling-component.sh /
+COPY build/download-bgbilling-component.sh /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

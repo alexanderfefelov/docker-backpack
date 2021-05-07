@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM jetbrains/youtrack:$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

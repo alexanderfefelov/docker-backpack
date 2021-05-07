@@ -15,6 +15,6 @@ RUN apt-get -qq update \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force /$GOBGP_STUFF
 
-ADD container/ /
+COPY container/ /
 
 CMD ["/gobgp/gobgpd", "--config-file=/etc/gobgp/gobgp.toml"]

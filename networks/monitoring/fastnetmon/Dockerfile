@@ -24,7 +24,7 @@ RUN apt-get -qq update \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force $FASTNETMON_STUFF
 
-ADD container/ /
+COPY container/ /
 
 ENTRYPOINT ["/backpack-entrypoint.sh"]
 CMD ["/fastnetmon/bin/fastnetmon.sh"]

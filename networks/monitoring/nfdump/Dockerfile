@@ -33,7 +33,7 @@ FROM ubuntu:20.04 AS target
 
 COPY --from=builder /usr/local/bin/ /usr/local/bin/
 
-ADD container/target/ /
+COPY container/target/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

@@ -2,4 +2,4 @@ ARG VERSION
 
 FROM killbill/killbill:$VERSION
 
-ADD container/ /
+COPY container/ /

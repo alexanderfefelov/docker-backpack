@@ -17,7 +17,7 @@ RUN apt-get -qq update \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force /$LIBRESPEED_STUFF
 
-ADD container/ /
+COPY container/ /
 
 WORKDIR $LIBRESPEED_HOME
 CMD ["/librespeed/speedtest-backend", "-c", "/etc/librespeed/librespeed.toml"]

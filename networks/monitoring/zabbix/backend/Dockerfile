@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM zabbix/zabbix-server-mysql:ubuntu-$VERSION
 
-ADD container/ /
+COPY container/ /
 
 USER root
 

@@ -15,7 +15,7 @@ ENV KALA_HOME=/kala
 
 COPY --from=builder /go/kala/kala $KALA_HOME/
 COPY --from=builder /go/kala/webui/ $KALA_HOME/webui/
-ADD container/target/ /
+COPY container/target/ /
 
 RUN apt-get -qq update \
   && apt-get -qq install --no-install-recommends \

@@ -4,8 +4,6 @@
 # a list, or a compound command returns a non-zero status
 set -e
 
-readonly WAIT_TIMEOUT=2
-
 nc -z localhost 5555
 nc -z -u localhost 5555
 nc -z localhost 5556

@@ -20,6 +20,6 @@ RUN apt-get -qq update \
   && rm --force $ACTIVEMQ_STUFF \
   && rm --force $HAWTIO_STUFF
 
-ADD container/ /
+COPY container/ /
 
 CMD ["/activemq/bin/activemq", "console"]

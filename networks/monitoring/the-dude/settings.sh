@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=4.0beta3-1
+readonly DEFAULT_VERSION=4.0beta3-3
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=the-dude

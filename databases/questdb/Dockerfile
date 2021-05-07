@@ -7,9 +7,9 @@ ENV QUESTDB_HOME=/questdb
 ADD https://github.com/questdb/questdb/releases/download/$VERSION/$QUESTDB_STUFF /
 
 RUN mkdir --parents $QUESTDB_HOME \
-  && tar --extract --gzip --file=$QUESTDB_STUFF --directory=$QUESTDB_HOME --strip-components 1 \
+  && tar --extract --gzip --file=$QUESTDB_STUFF --directory=$QUESTDB_HOME --strip-components=1 \
   && rm --force /$QUESTDB_STUFF
 
-ADD container/ /
+COPY container/ /
 
 CMD ["/backpack-entrypoint.sh"]

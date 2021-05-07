@@ -110,7 +110,7 @@ RUN mkdir --parents $DKRON_HOME \
   && mkdir --parents /var/log/dkron \
   && rm --force /$DKRON_STUFF
 
-ADD container/ /
+COPY container/ /
 
 ARG TINI_VERSION=0.19.0
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-amd64 /usr/sbin/tini

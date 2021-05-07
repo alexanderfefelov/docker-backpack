@@ -17,7 +17,7 @@ RUN apt-get -qq update \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && rm --force /$MATTERMOST_STUFF
 
-ADD container/ /
+COPY container/ /
 
 RUN chown --recursive $MATTERMOST_USER:$MATTERMOST_GROUP $MATTERMOST_HOME
 

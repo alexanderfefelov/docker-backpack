@@ -18,6 +18,6 @@ RUN apt-get -qq update \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD container/ /
+COPY container/ /
 
 ENTRYPOINT ["smbd", "--foreground", "--no-process-group"]
