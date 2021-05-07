@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.3.10
+readonly DEFAULT_VERSION=3.4.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=rundeck
