@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.0.4
+readonly DEFAULT_VERSION=2.0.6
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=influxdb-2
