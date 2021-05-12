@@ -1,4 +1,4 @@
-FROM openjdk:15.0.2
+FROM openjdk:11.0.11
 
 ARG VERSION
 ARG QUESTDB_STUFF=questdb-$VERSION-no-jre-bin.tar.gz
