@@ -1,7 +1,7 @@
 readonly DEFAULT_VERSION=2019-CU10-ubuntu-20.04
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
-# Уdition or product key:
+# Edition or product key:
 # - Evaluation
 # - Developer
 # - Express
