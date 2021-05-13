@@ -1,0 +1,30 @@
+<div class="input-group">
+    {% include "django/forms/widgets/input.html" %}
+    <span class="input-group-btn">
+        <button class="btn btn-default reslugify" type="button" title="Regenerate slug">
+            <i class="mdi mdi-refresh"></i>
+        </button>
+    </span>
+</div>
+
+<!-- Fix for https://github.com/alexanderfefelov/docker-backpack/issues/94 -->
+<script>
+function generateUUID() {
+    let t = new Date().getTime();
+    const uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        const r = (t + Math.random() * 16) % 16 | 0;
+        t = Math.floor(t / 16);
+        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+    return uuid;
+}
+
+function fillSlug() {
+    const el = document.getElementById('id_slug');
+    if (!el.value) {
+        el.value = generateUUID();
+    }
+}
+
+fillSlug();
+</script>
