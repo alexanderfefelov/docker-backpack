@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.14.1
+readonly DEFAULT_VERSION=1.14.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=gitea
