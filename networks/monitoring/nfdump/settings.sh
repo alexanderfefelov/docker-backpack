@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.6.22
+readonly DEFAULT_VERSION=1.6.23
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=nfdump
