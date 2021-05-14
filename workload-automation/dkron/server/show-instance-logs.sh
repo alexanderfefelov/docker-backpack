@@ -5,7 +5,7 @@
 
 . settings.sh
 
-INSTANCE_NO=${1?Instance number is not specified}
-CONTAINER_NAME=SERVER_${INSTANCE_NO}_CONTAINER_NAME
+readonly INSTANCE_NO=${1?Instance number is not specified}
+readonly CONTAINER_NAME=SERVER_${INSTANCE_NO}_CONTAINER_NAME
 
 docker logs --follow ${!CONTAINER_NAME}

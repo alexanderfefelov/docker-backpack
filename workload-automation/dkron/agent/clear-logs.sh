@@ -3,6 +3,6 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-./clear-logs-agent-1.sh
-./clear-logs-agent-2.sh
-./clear-logs-agent-3.sh
+./clear-instance-logs.sh 1
+./clear-instance-logs.sh 2
+./clear-instance-logs.sh 3

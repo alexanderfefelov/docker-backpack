@@ -5,7 +5,7 @@
 
 . settings.sh
 
-readonly INSTANCE_NO=${1?Instance number is not specified}
-readonly CONTAINER_NAME=SERVER_${INSTANCE_NO}_CONTAINER_NAME
+INSTANCE_NO=${1?Instance number is not specified}
+CONTAINER_NAME=AGENT_${INSTANCE_NO}_CONTAINER_NAME
 
 > $(docker inspect --format='{{.LogPath}}' ${!CONTAINER_NAME})
