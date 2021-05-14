@@ -41,6 +41,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
   - [SQL Server](databases/sql-server)
       - [Main instance](databases/sql-server/main)
 - [Diagramming](diagramming)
+    - [draw.io (diagrams.net)](diagramming/drawio)
     - [PlantUML](diagramming/plantuml)
 - [Elastic stack](elastic)
     - [APM](elastic/apm)

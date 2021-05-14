@@ -1,0 +1,3 @@
+ARG VERSION
+
+FROM jgraph/drawio:$VERSION

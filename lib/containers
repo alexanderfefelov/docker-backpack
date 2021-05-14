@@ -61,6 +61,7 @@ backpack-coredhcp
 
 # Diagramming
 #
+backpack-drawio
 backpack-plantuml
 
 # DNS

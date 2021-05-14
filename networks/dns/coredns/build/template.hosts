@@ -65,6 +65,7 @@ $IP_ADDRESS coredhcp.backpack.test
 
 # Diagramming
 #
+$IP_ADDRESS drawio.backpack.test
 $IP_ADDRESS plantuml.backpack.test
 
 # DNS
