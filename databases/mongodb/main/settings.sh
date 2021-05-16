@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=4.4.4
+readonly DEFAULT_VERSION=4.4.6
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=mongodb-main
