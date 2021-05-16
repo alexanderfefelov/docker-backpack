@@ -288,10 +288,3 @@ xpack.monitoring.elasticsearch.hosts: ["https://elasticsearch.backpack.test:9200
 #xpack.management.elasticsearch.ssl.verification_mode: certificate
 #xpack.management.elasticsearch.sniffing: false
 #xpack.management.logstash.poll_interval: 5s
-
-# -------------------------------- Monitoring ----------------------------------
-#
-# https://www.elastic.co/guide/en/logstash/current/monitoring-internal-collection-legacy.html
-#
-xpack.monitoring.enabled: true
-xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch.backpack.test:9200" ]
