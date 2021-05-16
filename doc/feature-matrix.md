@@ -6,7 +6,7 @@
 | [Alertmanager](../prometheus/alertmanager) | Go | ? | ? | Prometheus | Prometheus | ? | ?
 | [atftpd](../file-sharing/atftpd) | ? | ? | ? | ? | ? | ? | ?
 | [BGBilling](../commerce/bgbilling) | Java | MySQL | MySQL | JMX | Jolokia | ActiveMQ | ActiveMQ
-| [chrony](../chrony) | C | N/A | N/A | N/A | N/A | N/A | N/A
+| [chrony](../chrony) | C | N/A | N/A | CLI | ? | N/A | N/A
 | [ClickHouse](../databases/clickhouse) | ? | N/A | N/A | [Graphite, Prometheus](https://clickhouse.tech/docs/en/operations/monitoring/) | ? | ? | ?
 | [CoreDHCP](../networks/dhcp/coredhcp) | Go | N/A | N/A | N/A | N/A | N/A | N/A
 | [CoreDNS](../networks/dns/coredns) | Go | N/A | N/A | Prometheus | Prometheus | N/A | N/A
@@ -14,6 +14,7 @@
 | [CubesViewer](../business-intelligence/cubes/frontend) | Django | [MySQL, Oracle, PostgreSQL, SQLite](https://github.com/jjmontesl/cubesviewer/blob/master/doc/guide/cubesviewer-server-installation.md) | MySQL | ? | ? | ? | ?
 | [Dkron agent](../workload-automation/dkron/agent) | Go | ? | ? | StatsD | StatsD | ? | ?
 | [Dkron server](../workload-automation/dkron/server) | Go | ? | ? | Prometheus, StatsD | Prometheus, StatsD | ? | ?
+| [draw.io](../diagramming/drawio) | ? | ? | ? | ? | ? | ? | ?
 | [dnsmasq](../networks/dns/dnsmasq) | ? | ? | ? | ? | ? | ? | ?
 | [Elastic APM](../elastic/apm) | Go | ? | ? | ? | ? | ? | ?
 | [Elastic Elasticsearch](../elastic/elasticsearch) | Java | ? | ? | ? | InfluxDB | ? | ?
