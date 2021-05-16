@@ -14,6 +14,7 @@ $IP_ADDRESS graphite-statsd.backpack.test
 $IP_ADDRESS james.backpack.test
 $IP_ADDRESS jenkins.backpack.test
 $IP_ADDRESS librespeed.backpack.test
+$IP_ADDRESS memcached.backpack.test
 $IP_ADDRESS minecraft.backpack.test
 $IP_ADDRESS netbox.backpack.test
 $IP_ADDRESS redis.backpack.test

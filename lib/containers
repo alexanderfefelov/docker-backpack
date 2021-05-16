@@ -10,6 +10,7 @@ backpack-graphite-statsd
 backpack-james
 backpack-jenkins
 backpack-librespeed
+backpack-memcached
 backpack-minecraft
 backpack-netbox
 backpack-redis

@@ -10,6 +10,7 @@ graphite-statsd
 jenkins
 james
 networks/monitoring/librespeed
+memcached
 minecraft
 networks/netbox
 redis

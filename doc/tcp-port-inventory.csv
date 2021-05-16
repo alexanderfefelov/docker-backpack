@@ -126,6 +126,7 @@ Port,Container
 9300,backpack-elasticsearch
 9600,backpack-logstash
 10051,backpack-zabbix-backend
+11211,backpack-memcached
 15672,backpack-rabbitmq
 15674,backpack-rabbitmq
 15675,backpack-rabbitmq
