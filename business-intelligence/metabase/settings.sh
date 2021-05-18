@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=0.39.1
+readonly DEFAULT_VERSION=0.39.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=metabase
