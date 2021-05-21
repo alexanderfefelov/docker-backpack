@@ -10,7 +10,6 @@ graphite-statsd
 jenkins
 james
 networks/monitoring/librespeed
-memcached
 minecraft
 networks/netbox
 redis
@@ -28,6 +27,10 @@ business-intelligence/cubes/backend
 business-intelligence/cubes/frontend
 business-intelligence/jasperreports
 business-intelligence/metabase
+
+# Caching
+#
+caching/memcached
 
 # Commerce
 #

@@ -15,6 +15,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
         - [Frontend](business-intelligence/cubes/frontend)
     - [JasperReports](business-intelligence/jasperreports)
     - [Metabase](business-intelligence/metabase)
+- [Caching](caching)
+    - [memcached](caching/memcached)
 - [chrony](chrony)
 - [Commerce](commerce)
     - [BGBilling](commerce/bgbilling)
@@ -67,7 +69,6 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Telegraf](influxdata/telegraf)
 - [James](james)
 - [Jenkins](jenkins)
-- [memcached](memcached)
 - [Message queues](message-queues)
     - [ActiveMQ](message-queues/activemq), cluster, MySQL persistence, Hawtio console
     - [RabbitMQ](message-queues/rabbitmq)
