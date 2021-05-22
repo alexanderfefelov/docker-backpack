@@ -1,6 +1,6 @@
 # backpack-memcached
 
-![memcached](../doc/assets/logos/memcached.png)
+![memcached](../../doc/assets/logos/memcached.png)
 
 Hostname `memcached.backpack.test`
 
