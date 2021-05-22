@@ -14,7 +14,6 @@ $IP_ADDRESS graphite-statsd.backpack.test
 $IP_ADDRESS james.backpack.test
 $IP_ADDRESS jenkins.backpack.test
 $IP_ADDRESS librespeed.backpack.test
-$IP_ADDRESS memcached.backpack.test
 $IP_ADDRESS minecraft.backpack.test
 $IP_ADDRESS netbox.backpack.test
 $IP_ADDRESS redis.backpack.test
@@ -32,6 +31,11 @@ $IP_ADDRESS cubes-backend.backpack.test
 $IP_ADDRESS cubes-frontend.backpack.test
 $IP_ADDRESS jasperreports.backpack.test
 $IP_ADDRESS metabase.backpack.test
+
+# Caching
+#
+$IP_ADDRESS memcached.backpack.test
+$IP_ADDRESS varnish.backpack.test
 
 # Commerce
 #

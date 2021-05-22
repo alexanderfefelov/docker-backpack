@@ -10,7 +10,6 @@ backpack-graphite-statsd
 backpack-james
 backpack-jenkins
 backpack-librespeed
-backpack-memcached
 backpack-minecraft
 backpack-netbox
 backpack-redis
@@ -28,6 +27,11 @@ backpack-cubes-backend
 backpack-cubes-frontend
 backpack-jasperreports
 backpack-metabase
+
+# Caching
+#
+backpack-memcached
+backpack-varnish
 
 # Commerce
 #

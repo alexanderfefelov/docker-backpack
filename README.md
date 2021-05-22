@@ -17,6 +17,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Metabase](business-intelligence/metabase)
 - [Caching](caching)
     - [memcached](caching/memcached)
+    - [Varnish Cache](caching/varnish)
 - [chrony](chrony)
 - [Commerce](commerce)
     - [BGBilling](commerce/bgbilling)
