@@ -1,5 +1,7 @@
 # backpack-memcached
 
+![Varnish Cache](../../doc/assets/logos/varnish.png)
+
 Hostname `varnish.backpack.test`
 
 ## Services
