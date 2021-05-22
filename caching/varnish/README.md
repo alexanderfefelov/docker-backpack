@@ -1,4 +1,4 @@
-# backpack-memcached
+# backpack-varnish
 
 ![Varnish Cache](../../doc/assets/logos/varnish.png)
 
