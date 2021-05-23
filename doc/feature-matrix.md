@@ -41,7 +41,7 @@
 | [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
 | [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?
 | [KkmServer](../commerce/kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
-| [Knot Resolver](../networks/dns/knot-resolver) | C | ? | ? | ? | ? | ? | ?
+| [Knot Resolver](../networks/dns/knot-resolver) | C | N/A | N/A | [Graphite, Prometheus](https://knot-resolver.readthedocs.io/en/latest/modules-stats.html#mod-stats) | Prometheus | ? | ?
 | [LibreSpeed](../networks/monitoring/librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [MariaDB main](../databases/mariadb/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [Mattermost](../messengers/mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
