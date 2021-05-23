@@ -9,3 +9,5 @@ net.listen('0.0.0.0', 853, { kind = 'tls' })
 net.listen('0.0.0.0', 8453, { kind = 'webmgmt' })
 
 hints.add_hosts('/etc/knot-resolver/hosts.generated')
+
+policy.add(policy.suffix(policy.PASS, policy.todnames({'backpack.test.'})))

@@ -11,4 +11,4 @@ RUN apt-get -qq update \
 COPY container/ /
 
 ENTRYPOINT ["/usr/sbin/kresd"]
-CMD ["--noninteractive", "--config", "/etc/knot-resolver/kresd.conf"]
+CMD ["--noninteractive", "--config", "/etc/knot-resolver/kresd.conf.lua"]
