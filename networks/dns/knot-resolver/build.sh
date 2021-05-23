@@ -9,8 +9,25 @@ set -e
 
 . settings.sh
 
+generate_config_files() {
+  echo Generating config files...
+
+  local -r IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
+  if [ -z $IP_ADDRESS ]; then
+    echo Failed to detect IP address >&2
+    exit 1
+  fi
+  export IP_ADDRESS
+  envsubst \
+    < build/template.hosts \
+    > container/etc/knot-resolver/hosts.generated
+
+  echo ...config files generated
+}
+
+generate_config_files
 docker build \
   --build-arg VERSION \
   --tag $IMAGE_NAME:$VERSION \
   .
-rm --force container/etc/coredns/hosts.generated
+rm --force container/etc/knot-resolver/hosts.generated

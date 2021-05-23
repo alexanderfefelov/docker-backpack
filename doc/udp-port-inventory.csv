@@ -1,6 +1,7 @@
 Port,Container
 53,backpack-coredns
 53,backpack-dnsmasq
+53,backpack-knot-resolver
 67,backpack-coredhcp
 69,backpack-atftpd
 123,backpack-chrony

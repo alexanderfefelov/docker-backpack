@@ -3,6 +3,7 @@ Port,Container
 21,backpack-proftpd
 25,backpack-james
 53,backpack-coredns
+53,backpack-knot-resolver
 81,backpack-graphite-statsd
 82,backpack-graphite-statsd
 83,backpack-nav-manager
@@ -13,6 +14,7 @@ Port,Container
 445,backpack-samba
 465,backpack-james
 587,backpack-james
+853,backpack-knot-resolver
 993,backpack-james
 1433,backpack-sql-server-main
 1883,backpack-activemq-node-1
@@ -96,6 +98,8 @@ Port,Container
 8162,backpack-activemq-node-2
 8163,backpack-activemq-node-3
 8200,backpack-apm
+8443,backpack-knot-resolver
+8453,backpack-knot-resolver
 8883,backpack-rabbitmq
 8888,backpack-chronograf
 8900,backpack-dkron-server-1
