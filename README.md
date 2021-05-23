@@ -83,6 +83,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [DNS](networks/dns)
         - [CoreDNS](networks/dns/coredns)
         - [dnsmasq](networks/dns/dnsmasq)
+        - [Knot Resolver](networks/dns/knot-resolver)
     - [FreeRADIUS](networks/freeradius)
     - [Monitoring](networks/monitoring)
         - [FastNetMon](networks/monitoring/fastnetmon)

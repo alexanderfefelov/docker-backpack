@@ -73,6 +73,7 @@ backpack-plantuml
 #
 backpack-coredns
 backpack-dnsmasq
+backpack-knot-resolver
 
 # Elastic stack
 #

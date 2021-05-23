@@ -68,6 +68,7 @@ diagramming/plantuml
 #
 networks/dns/coredns
 networks/dns/dnsmasq
+networks/dns/knot-resolver
 
 # Elastic stack
 #
