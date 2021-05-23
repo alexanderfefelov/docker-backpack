@@ -41,6 +41,7 @@
 | [Kaui](../commerce/killbill/kaui) | ? | ? | ? | ? | ? | ? | ?
 | [Kill Bill](../commerce/killbill/killbill) | Java | ? | MySQL | ? | ? | ? | ?
 | [KkmServer](../commerce/kkmserver) | .NET | N/A | N/A | N/A | N/A | N/A | N/A
+| [Knot Resolver](../networks/dns/knot-resolver) | C | ? | ? | ? | ? | ? | ?
 | [LibreSpeed](../networks/monitoring/librespeed) | ? | [Bolt, MySQL, PostgreSQL](https://github.com/librespeed/speedtest-go) | MySQL | ? | ? | ? | ?
 | [MariaDB main](../databases/mariadb/main) | ? | N/A | N/A | MySQL | InfluxDB | ? | ?
 | [Mattermost](../messengers/mattermost) | Go | [MySQL, PostgreSQL](https://docs.mattermost.com/install/requirements.html) | MySQL | N/A | N/A | ? | ?
@@ -76,6 +77,7 @@
 | [Swagger UI](../swagger/ui) | ? | ? | ? | ? | ? | ? | ?
 | [The Dude](../networks/monitoring/the-dude) | Wine | SQLite | SQLite | ? | ? | ? | ?
 | [Typesense](../typesense) | C++ | ? | ? | ? | ? | ? | ?
+| [Varnish Cache](../caching/varnish) | C | ? | ? | ? | ? | ? | ?
 | [Zabbix backend](../networks/monitoring/zabbix/backend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
 | [Zabbix frontend](../networks/monitoring/zabbix/frontend) | ? | [MySQL, Oracle, PostgreSQL, TimescaleDB](https://www.zabbix.com/documentation/current/manual/installation/requirements) | MySQL | ? | ? | ? | ?
 | [XWiki](../wiki/xwiki) | Java | [Hibernate](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport) | MySQL | ? | ? | ? | ?
