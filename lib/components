@@ -116,6 +116,10 @@ networks/monitoring/the-dude
 networks/monitoring/zabbix/backend
 networks/monitoring/zabbix/frontend
 
+# Passwords
+#
+passwords/passbolt
+
 # Prometheus
 #
 prometheus/alertmanager

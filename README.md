@@ -101,6 +101,8 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Routing](networks/routing)
         - [FRR](networks/routing/frr)
         - [GoBGP](networks/routing/gobgp)
+- [Passwords](passwords)
+    - [Passbolt](passwords/passbolt)
 - [Portainer](portainer)
 - [Prometheus](prometheus)
     - [Alertmanager](prometheus/alertmanager)

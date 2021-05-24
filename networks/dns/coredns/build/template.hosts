@@ -127,6 +127,10 @@ $IP_ADDRESS the-dude.backpack.test
 $IP_ADDRESS zabbix-backend.backpack.test
 $IP_ADDRESS zabbix-frontend.backpack.test
 
+# Passwords
+#
+$IP_ADDRESS passbolt.backpack.test
+
 # Prometheus
 #
 $IP_ADDRESS alertmanager.backpack.test

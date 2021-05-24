@@ -28,6 +28,7 @@ Hostnames:
 | | | `librespeed_gohsotahleit` / `thuchusohgie` <sup>*</sup>
 | | | `mattermost_fepheedooroh` / `thohrawaenee` <sup>*</sup>
 | | | `metabase_licideophaig` / `msorphorylac` <sup>*</sup>
+| | | `passbolt_voo6puugeek2` / `go0hi7vofiet` <sup>*</sup>
 | | | `redmine_shaeM8oong9A` / `ucapah7kai1I` <sup>*</sup>
 | | | `replicator_avaternetrai` / `ergatecuserb`
 | | | `root` / `camycorymicu`
@@ -56,6 +57,7 @@ Hostnames:
 | `librespeed` | [LibreSpeed](../../../librespeed)
 | `mattermost` | [Mattermost](../../../mattermost)
 | `metabase` | [Metabase](../../../business-intelligence/metabase)
+| `passbolt` | [Passbolt](../../../passwords/passbolt)
 | `redmine` | [Redmine](../../../bug-tracking/redmine)
 | `rundeck` | [Rundeck](../../../rundeck)
 | `xwiki` | [XWiki](../../../xwiki)

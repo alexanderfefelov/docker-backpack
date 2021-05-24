@@ -123,6 +123,10 @@ backpack-the-dude
 backpack-zabbix-backend
 backpack-zabbix-frontend
 
+# Passwords
+#
+backpack-passbolt
+
 # Prometheus
 #
 backpack-alertmanager

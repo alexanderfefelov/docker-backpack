@@ -91,6 +91,7 @@ Port,Container
 8098,backpack-bgbilling-server
 8099,backpack-bgbilling-server
 8100,backpack-bgbilling-scheduler
+8101,backpack-passbolt
 8108,backpack-typesense
 8123,backpack-clickhouse
 8126,backpack-graphite-statsd
