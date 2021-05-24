@@ -1,5 +1,7 @@
 # backpack-passbolt
 
+![Passbolt](../../doc/assets/logos/passbolt.png)
+
 Hostname `passbolt.backpack.test`
 
 ## Services
