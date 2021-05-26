@@ -73,6 +73,7 @@ if [ "$USE_DB_RETCODE" -ne 0 ]; then
   execute_scripts init/configure-accounts
 fi
 
+check_containers "$REQUIRED_CONTAINERS"
 run
 wait_for_all_container_ports $SERVER_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $SERVER_CONTAINER_NAME

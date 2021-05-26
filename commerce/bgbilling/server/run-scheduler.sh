@@ -24,6 +24,7 @@ run() {
     $IMAGE_NAME-scheduler:$VERSION
 }
 
+check_containers "$REQUIRED_CONTAINERS"
 run
 wait_for_all_container_ports $SCHEDULER_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $SCHEDULER_CONTAINER_NAME
