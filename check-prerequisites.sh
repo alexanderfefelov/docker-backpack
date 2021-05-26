@@ -38,15 +38,15 @@ readonly PREREQUISITES="
   xargs
 "
 
-status=0
+not_found=0
 for x in $PREREQUISITES; do
   echo -n $x...
   if command -v $x > /dev/null; then
     echo -e ${COLOR_FG_GREEN}found${COLOR_RESET}
   else
-    ((status++))
+    ((not_found+=1))
     echo -e ${COLOR_FG_RED}not found${COLOR_RESET}
   fi
 done
 
-exit $status
+exit $not_found
