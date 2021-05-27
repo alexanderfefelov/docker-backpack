@@ -39,6 +39,7 @@ run() {
     $IMAGE_NAME:$VERSION-$ADD_ONS_VERSION
 }
 
+check_containers "$REQUIRED_CONTAINERS"
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME

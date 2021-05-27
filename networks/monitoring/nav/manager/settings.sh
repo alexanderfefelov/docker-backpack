@@ -20,3 +20,8 @@ readonly DB_PASSWORD=tateicenstop
 
 . ../../../../lib/settings/health.sh
 . ../../../../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS="
+  backpack-graphite-statsd
+  backpack-postgresql-main
+"

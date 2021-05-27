@@ -43,6 +43,6 @@ readonly DB_PASSWORD=feizudi1xu9h
 . ../../../lib/settings/log.sh
 
 readonly REQUIRED_CONTAINERS="
-  backpack-mysql-main-master
   backpack-activemq-node-1
+  backpack-mysql-main-master
 "
