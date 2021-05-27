@@ -16,6 +16,8 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/etc/zabbix \
+    --volume $CONTAINER_NAME-data:/var/lib/zabbix \
     --publish 10051:10051 \
     --env DB_SERVER_HOST=$DB_HOST \
     --env DB_SERVER_PORT=$DB_PORT \
