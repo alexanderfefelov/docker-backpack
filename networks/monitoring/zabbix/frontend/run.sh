@@ -29,6 +29,7 @@ run() {
     $IMAGE_NAME:$VERSION
 }
 
+check_containers "$REQUIRED_CONTAINERS"
 run
 wait_for_container_ports $CONTAINER_NAME 8080 $WAIT_TIMEOUT
 print_container_info $CONTAINER_NAME
