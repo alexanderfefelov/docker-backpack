@@ -1,4 +1,4 @@
-FROM quay.io/alexanderfefelov/graalvm:21.1.0-java16
+FROM adoptopenjdk/openjdk15:x86_64-ubuntu-jdk-15.0.2_7
 
 ARG RELEASE
 ARG SET
