@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=21.3.11.5
+readonly DEFAULT_VERSION=21.5.5.12
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=clickhouse
