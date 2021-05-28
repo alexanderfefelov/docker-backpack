@@ -57,6 +57,7 @@
 | [NetBox](../networks/netbox) | Django | PostgreSQL | PostgreSQL | Prometheus | Prometheus | Redis | Redis
 | [Netdata](../netdata) | ? | ? | ? | ? | ? | ? | ?
 | [nfdump](../networks/monitoring/nfdump) | ? | ? | ? | ? | ? | ? | ?
+| [Passbolt](../passwords/passbolt) | CakePHP | MySQL, MariaDB | MySQL | ? | ? | ? | ?
 | [PlantUML](../diagramming/plantuml) | Jetty | N/A | N/A | ? | ? | N/A | N/A
 | [Portainer](../portainer) | ? | ? | ? | N/A | N/A | N/A | N/A
 | [PostgreSQL main](../databases/postgresql/main) | ? | N/A | N/A | PostgreSQL | InfluxDB | ? | ?
