@@ -16,6 +16,7 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
+    --volume $CONTAINER_NAME-conf:/usr/share/logstash \
     --publish 5514:5514 \
     --publish 5514:5514/udp \
     --publish 9600:9600 \
