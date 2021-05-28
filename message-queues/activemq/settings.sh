@@ -48,6 +48,6 @@ readonly DB_PASSWORD=axiechiemoht
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
 
-readonly REQUIRED_CONTAINERS="
+readonly REQUIRED_CONTAINERS='
   backpack-mysql-main-master
-"
+'
