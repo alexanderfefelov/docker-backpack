@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=6.0.1
+readonly DEFAULT_VERSION=6.0.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=questdb
