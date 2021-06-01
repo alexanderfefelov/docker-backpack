@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.0.21
+readonly DEFAULT_VERSION=3.0.22
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=freeradius
