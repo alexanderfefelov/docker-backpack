@@ -111,7 +111,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Swagger](swagger)
     - [Editor](swagger/editor)
     - [UI](swagger/ui)
-- [Time series]()
+- [Time series](time-series)
     - [Graphite/StatsD](time-series/graphite-statsd)
     - [QuestDB](time-series/questdb)
 - [Typesense](typesense)
