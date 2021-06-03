@@ -89,7 +89,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n4">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/graphite-statsd]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/time-series/graphite-statsd]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="150.0" x="1329.3890826319962" y="703.7847587417948"/>
@@ -1617,7 +1617,7 @@ https://github.com/alexanderfefelov/docker-backpack]]></data>
       </data>
     </node>
     <node id="n48">
-      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/databases/questdb]]></data>
+      <data key="d4"><![CDATA[https://github.com/alexanderfefelov/docker-backpack/tree/main/time-series/questdb]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="90.0" x="1393.0137795003561" y="1061.9808025689977"/>

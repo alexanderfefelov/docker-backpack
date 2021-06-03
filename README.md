@@ -40,7 +40,6 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [PostgreSQL](databases/postgresql) with PostGIS
         - [Main instance](databases/postgresql/main)
         - [Test instance](databases/postgresql/test)
-    - [QuestDB](databases/questdb)
   - [SQL Server](databases/sql-server)
       - [Main instance](databases/sql-server/main)
 - [Diagramming](diagramming)
@@ -58,7 +57,6 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Fleet](fleet)
 - [Gitea](gitea)
 - [Grafana](grafana)
-- [Graphite/StatsD](graphite-statsd)
 - [Guacamole](guacamole)
     - [Backend](guacamole/backend)
     - [Frontend](guacamole/frontend)
@@ -113,6 +111,9 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 - [Swagger](swagger)
     - [Editor](swagger/editor)
     - [UI](swagger/ui)
+- [Time series]()
+    - [Graphite/StatsD](time-series/graphite-statsd)
+    - [QuestDB](time-series/questdb)
 - [Typesense](typesense)
 - [Workload automation](workload-automation)
     - [Dkron](workload-automation/dkron), cluster

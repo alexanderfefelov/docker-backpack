@@ -26,7 +26,7 @@
 | [FRR](../networks/routing/frr) | C | ? | ? | ? | ? | ? | ?
 | [Gitea](../gitea) | Go | [MySQL, PostgreSQL, SQL Server, SQLite](https://docs.gitea.io/en-us/database-prep/) | MySQL | ? | ? | ? | ?
 | [Grafana](../grafana) | Go | [MySQL, PostgreSQL, SQLite](https://grafana.com/docs/grafana/latest/installation/requirements/) | MySQL | ? | ? | ? | ?
-| [Graphite/StatsD: Graphite-Web](../graphite-statsd) | Django | [Django](https://graphite.readthedocs.io/en/stable/config-database-setup.html) | MySQL | ? | ? | ? | ?
+| [Graphite/StatsD: Graphite-Web](../time-series/graphite-statsd) | Django | [Django](https://graphite.readthedocs.io/en/stable/config-database-setup.html) | MySQL | ? | ? | ? | ?
 | [Guacamole backend](../guacamole/backend) | C | ? | ? | ? | ? | ? | ?
 | [Guacamole frontend](../guacamole/frontend) | ? | [MariaDB, MySQL, PostgreSQL, SQL Server](https://guacamole.apache.org/doc/gug/jdbc-auth.html) | MySQL | ? | ? | ? | ?
 | [H2](../databases/h2) | Java | N/A | N/A | JMX | Jolokia | N/A | N/A
@@ -65,7 +65,7 @@
 | [ProFTPD](../file-sharing/proftpd) | ? | ? | ? | ? | ? | ? | ?
 | [Prometheus](../prometheus/prometheus) | Go | ? | ? | ? | InfluxDB | ? | ?
 | [Pushgateway](../prometheus/pushgateway) | Go | ? | ? | Prometheus | Prometheus | ? | ?
-| [QuestDB](../databases/questdb) | Java | ? | ? | ? | ? | ? | ?
+| [QuestDB](../time-series/questdb) | Java | ? | ? | ? | ? | ? | ?
 | [RabbitMQ](../message-queues/rabbitmq) | Erlang | ? | ? | ? | ? | ? | ?
 | [Redis](../redis) | ? | ? | ? | Redis | InfluxDB | ? | ?
 | [Redmine](../bug-tracking/redmine) | Ruby on Rails | [MySQL, PostgreSQL, SQL Server, SQLite](https://www.redmine.org/projects/redmine/wiki/RedmineInstall) | MySQL | N/A | N/A | N/A | N/A

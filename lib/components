@@ -6,7 +6,6 @@ fleet
 networks/freeradius
 gitea
 grafana
-graphite-statsd
 jenkins
 james
 networks/monitoring/librespeed
@@ -52,7 +51,6 @@ databases/mysql/main
 databases/mysql/test
 databases/postgresql/main
 databases/postgresql/test
-databases/questdb
 databases/sql-server/main
 
 # DHCP
@@ -135,6 +133,10 @@ networks/routing/gobgp
 #
 swagger/editor
 swagger/ui
+
+# Time series
+time-series/graphite-statsd
+time-series/questdb
 
 # Wiki
 #

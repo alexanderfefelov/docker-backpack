@@ -16,8 +16,8 @@ readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=graphite_comoneigalky
 readonly DB_PASSWORD=strignenecoi
 
-. ../lib/settings/health.sh
-. ../lib/settings/log.sh
+. ../../lib/settings/health.sh
+. ../../lib/settings/log.sh
 
 readonly REQUIRED_CONTAINERS='
   backpack-mysql-main-master
