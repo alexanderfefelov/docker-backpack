@@ -11,7 +11,7 @@
 
     cache 180
 
-    hosts /etc/coredns/hosts.generated {
+    hosts /etc/coredns/hosts.generated backpack.test. {
         fallthrough
     }
 
@@ -24,14 +24,14 @@
         match "(^|[.])(?P<a>10)-(?P<b>[0-9]*)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]internal[.]$"
         match "(^|[.])(?P<a>172)-(?P<b>1[6789]|2[0-9]|3[01])-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]internal[.]$"
         match "(^|[.])(?P<a>192)-(?P<b>168)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]internal[.]$"
-        answer "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+        authority "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
         fallthrough
     }
     template IN PTR in-addr.arpa {
         match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>[0-9]*)[.](?P<a>10)[.]in-addr[.]arpa[.]$"
         match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>1[6789]|2[0-9]|3[01])[.](?P<a>172)[.]in-addr[.]arpa[.]$"
         match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>168)[.](?P<a>192)[.]in-addr[.]arpa[.]$"
-        answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.internal."
+        authority "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.internal."
         fallthrough
     }
 
@@ -40,12 +40,12 @@
     #
     template IN A apipa {
         match "(^|[.])(?P<a>169)-(?P<b>254)-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]apipa[.]$"
-        answer "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+        authority "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
         fallthrough
     }
     template IN PTR in-addr.arpa {
         match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>254)[.](?P<a>169)[.]in-addr[.]arpa[.]$"
-        answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.apipa."
+        authority "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.apipa."
         fallthrough
     }
 
@@ -54,15 +54,14 @@
     #
     template IN A cgn {
         match "(^|[.])(?P<a>100)-(?P<b>6[4-9]|[7-9]\d|1[0-1]\d|12[0-7])-(?P<c>[0-9]*)-(?P<d>[0-9]*)[.]cgn[.]$"
-        answer "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+        authority "{{ .Name }} 60 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
         fallthrough
     }
     template IN PTR in-addr.arpa {
         match "^(?P<d>[0-9]*)[.](?P<c>[0-9]*)[.](?P<b>6[4-9]|[7-9]\d|1[0-1]\d|12[0-7])[.](?P<a>100)[.]in-addr[.]arpa[.]$"
-        answer "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.cgn."
+        authority "{{ .Name }} 60 IN PTR {{ .Group.a }}-{{ .Group.b }}-{{ .Group.c }}-{{ .Group.d }}.cgn."
         fallthrough
     }
 
     prometheus 0.0.0.0:9153
-
 }
