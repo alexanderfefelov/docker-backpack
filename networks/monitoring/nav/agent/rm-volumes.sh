@@ -5,6 +5,7 @@
 
 . settings.sh
 
-docker volume rm $CONTAINER_NAME-conf
+docker volume rm $CONTAINER_NAME-conf-nav
+docker volume rm $CONTAINER_NAME-conf-supervisor
 docker volume rm $CONTAINER_NAME-log-nav
 docker volume rm $CONTAINER_NAME-log-supervisor

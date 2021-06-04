@@ -16,9 +16,10 @@ run() {
     --hostname $HOST_NAME \
     --detach \
     --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-conf:/etc/nav \
+    --volume $CONTAINER_NAME-conf-nav:/etc/nav \
+    --volume $CONTAINER_NAME-conf-supervisor:/etc/supervisor \
     --volume $CONTAINER_NAME-crontab:/var/spool/cron/crontabs \
-    --volume $CONTAINER_NAME-data:/var/lib/nav \
+    --volume $CONTAINER_NAME-data-nav:/var/lib/nav \
     --volume $CONTAINER_NAME-log-apache2:/var/log/apache2 \
     --volume $CONTAINER_NAME-log-cron:/var/log/cron \
     --volume $CONTAINER_NAME-log-exim4:/var/log/exim4 \
