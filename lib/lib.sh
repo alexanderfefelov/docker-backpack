@@ -1,3 +1,5 @@
+. "$(dirname "${BASH_SOURCE[0]}")"/ansi-escape-codes.sh
+
 print_container_info() {
   echo -e "\n$1"
   echo -e "\n\tIP address"
@@ -23,9 +25,9 @@ check_containers() {
     id=$(docker ps --quiet --filter status=running --filter name=$x)
     if [ "$id" = "" ]; then
       ((not_running+=1))
-      echo not running
+      echo -e ${COLOR_FG_RED}not running${COLOR_RESET}
     else
-      echo running
+      echo -e ${COLOR_FG_GREEN}running${COLOR_RESET}
     fi
   done
   return $not_running
