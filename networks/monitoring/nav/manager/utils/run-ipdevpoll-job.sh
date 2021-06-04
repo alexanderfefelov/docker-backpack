@@ -6,4 +6,4 @@
 . lib.sh
 
 $DOCKER_EXEC \
-  ipdevpolld -J topo --netbox $1 --log-stderr
+  ipdevpolld -J $1 --netbox $2 --log-stderr
