@@ -69,7 +69,7 @@
 | [RabbitMQ](../message-queues/rabbitmq) | Erlang | ? | ? | ? | ? | ? | ?
 | [Redis](../redis) | ? | ? | ? | Redis | InfluxDB | ? | ?
 | [Redmine](../bug-tracking/redmine) | Ruby on Rails | [MySQL, PostgreSQL, SQL Server, SQLite](https://www.redmine.org/projects/redmine/wiki/RedmineInstall) | MySQL | N/A | N/A | N/A | N/A
-| [Riemann](../riemann) | Clojure | ? | ? | ? | ? | ? | ?
+| [Riemann](../networks/monitoring/riemann) | Clojure | ? | ? | ? | ? | ? | ?
 | [Rundeck](../workload-automation/rundeck) | Java | [JDBC](https://docs.rundeck.com/docs/administration/configuration/database/) | MySQL | JMX | ? | ? | ?
 | [Samba](../file-sharing/samba) | ? | ? | ? | ? | ? | ? | ?
 | [SnmpCollector](../networks/monitoring/snmpcollector) | Go | MySQL, SQLite | ? | ? | ? | ? | ?

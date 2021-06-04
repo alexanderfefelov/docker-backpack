@@ -12,7 +12,6 @@ networks/monitoring/librespeed
 minecraft
 networks/netbox
 redis
-riemann
 typesense
 
 # Bug tracking
@@ -109,6 +108,7 @@ networks/monitoring/fastnetmon
 networks/monitoring/nav/agent
 networks/monitoring/nav/manager
 networks/monitoring/nfdump
+networks/monitoring/riemann
 networks/monitoring/snmpcollector
 networks/monitoring/the-dude
 networks/monitoring/zabbix/backend
