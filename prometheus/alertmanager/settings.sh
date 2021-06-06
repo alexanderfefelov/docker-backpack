@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=0.22.1
+readonly DEFAULT_VERSION=0.22.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=alertmanager
