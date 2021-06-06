@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=2.278
+readonly DEFAULT_VERSION=2.296
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=jenkins
