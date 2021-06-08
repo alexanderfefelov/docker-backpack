@@ -36,6 +36,8 @@ run() {
     --publish 2023-2024:2023-2024 \
     --publish 8125:8125/udp \
     --publish 8126:8126 \
+    --env GOCARBON=1 \
+    --env GRAPHITE_CARBONLINK_HOSTS=127.0.0.1:7002:a \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION
