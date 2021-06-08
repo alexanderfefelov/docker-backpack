@@ -112,7 +112,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Editor](swagger/editor)
     - [UI](swagger/ui)
 - [Time series](time-series)
-    - [Graphite/StatsD](time-series/graphite-statsd)
+    - [Graphite/StatsD](time-series/graphite-statsd), with go-carbon enabled
     - [QuestDB](time-series/questdb)
 - [Typesense](typesense)
 - [Workload automation](workload-automation)
