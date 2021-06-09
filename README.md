@@ -37,7 +37,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [MySQL](databases/mysql)
         - [Main instance](databases/mysql/main), with replication
         - [Test instance](databases/mysql/test)
-    - [PostgreSQL](databases/postgresql) with PostGIS
+    - [PostgreSQL](databases/postgresql), with PostGIS
         - [Main instance](databases/postgresql/main)
         - [Test instance](databases/postgresql/test)
   - [SQL Server](databases/sql-server)
@@ -124,7 +124,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
 
 ## Documentation
 
-- [Architecture](doc/architecture.graphml)
+- [Architecture](doc/architecture.graphml) (GraphML diagram)
 - [Feature matrix](doc/feature-matrix.md)
 - [TCP port inventory](doc/tcp-port-inventory.csv)
 - [UDP port inventory](doc/udp-port-inventory.csv)
