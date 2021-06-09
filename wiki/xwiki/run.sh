@@ -32,6 +32,8 @@ run() {
     $IMAGE_NAME:$VERSION
 }
 
+check_containers "$REQUIRED_CONTAINERS" || exit 1
+
 $MYSQL --execute="USE $DB_DATABASE;"
 readonly USE_DB_RETCODE=$?
 

@@ -18,3 +18,8 @@ readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=guacamole_peoghonahmoh
 readonly DB_PASSWORD=gechaegiezav
+
+readonly REQUIRED_CONTAINERS='
+  backpack-guacamole-backend
+  backpack-mysql-main-master
+'

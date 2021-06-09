@@ -22,3 +22,7 @@ readonly PRIMARY_SERVER_ID=1b6eeef2-ecca-11ea-adc1-0242ac120002
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS='
+  backpack-mysql-main-master
+'
