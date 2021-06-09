@@ -19,3 +19,7 @@ readonly JAVA_OPTS="-javaagent:/app/jolokia/jolokia-jvm-1.6.2-agent.jar=config=/
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS='
+  backpack-mysql-main-master
+'
