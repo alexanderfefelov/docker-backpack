@@ -38,6 +38,8 @@ run() {
     --publish 8126:8126 \
     --env GOCARBON=1 \
     --env GRAPHITE_CARBONLINK_HOSTS=127.0.0.1:7002:a \
+    --env GRAPHITE_TIME_ZONE=Europe/Moscow \
+    --env GRAPHITE_DATE_FORMAT=%d.%m \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION
