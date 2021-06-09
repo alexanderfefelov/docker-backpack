@@ -19,3 +19,7 @@ readonly DB_PASSWORD=peritypindol
 . ../lib/settings/go.sh
 . ../lib/settings/health.sh
 . ../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS='
+  backpack-mysql-main-master
+'

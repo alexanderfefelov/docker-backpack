@@ -18,3 +18,8 @@ readonly DB_PASSWORD=inceadeavoca
 
 . ../../../lib/settings/health.sh
 . ../../../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS='
+  backpack-cubes-backend
+  backpack-mysql-main-master
+'

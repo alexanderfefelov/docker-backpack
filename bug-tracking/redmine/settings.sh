@@ -18,3 +18,7 @@ readonly DB_PASSWORD=ucapah7kai1I
 
 . ../../lib/settings/health.sh
 . ../../lib/settings/log.sh
+
+readonly REQUIRED_CONTAINERS='
+  backpack-mysql-main-master
+'
