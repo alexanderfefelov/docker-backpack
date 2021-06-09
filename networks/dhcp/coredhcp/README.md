@@ -6,4 +6,4 @@ Hostname `coredhcp.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 67/udp | DHCP server | -
+| 67/udp | DHCP | -

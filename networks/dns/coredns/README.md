@@ -8,5 +8,5 @@ Hostname `coredns.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 53, 53/udp | DNS server | -
+| 53, 53/udp | DNS | -
 | 9153 | Prometheus exporter | -

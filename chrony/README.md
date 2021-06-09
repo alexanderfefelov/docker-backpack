@@ -6,4 +6,4 @@ Hostname `chrony.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 123/udp | NTP server | -
+| 123/udp | NTP | -

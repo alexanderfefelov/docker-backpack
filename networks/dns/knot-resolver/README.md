@@ -8,7 +8,7 @@ Hostname `knot-resolver.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 53, 53/udp | DNS server | -
+| 53, 53/udp | DNS | -
 | 853 | DNS-over-TLS | -
 | 8443 | DNS-over-HTTP | -
 | 8453 | HTTP API and management console | -
