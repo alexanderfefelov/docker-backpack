@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.2021.5
+readonly DEFAULT_VERSION=1.2021.7
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=plantuml
