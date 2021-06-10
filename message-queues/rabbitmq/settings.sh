@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=3.8.16
+readonly DEFAULT_VERSION=3.8.17
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=rabbitmq
