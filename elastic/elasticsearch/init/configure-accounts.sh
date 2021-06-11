@@ -5,12 +5,12 @@ set -e
 readonly CONTAINER_NAME=$1
 
 grep --invert-match --regexp="^#" --regexp="^\s*$" `dirname $0`/configure-accounts.data | \
-while IFS=: read -r username password role; do
-  echo -n Creating account $username with role $role...
+while IFS=: read -r username password roles; do
+  echo -n Creating account $username with roles $roles...
   # https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-put-user.html
   request='{
     "password": "'`echo $password`'",
-    "roles": ["'`echo $role`'"]
+    "roles": '`echo $roles`'
   }'
   http --check-status --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat \
     POST http://elasticsearch.backpack.test:9200/_security/user/`echo $username` <<< "$request" > /dev/null

@@ -1,49 +1,49 @@
 # Special accounts - one per build-in role
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/built-in-roles.html
 #
-apm_system_ardishmergen                  : teonmantinai : apm_system
+apm_system_ardishmergen                  : teonmantinai : ["apm_system"]
 # Deprecated
-apm_user_aereleishahn                    : cheitaecuagu : apm_user
-beats_admin_jeexewaowaik                 : cheevahvaido : beats_admin
-beats_system_leigaojahngu                : xezaipheethu : beats_system
+apm_user_aereleishahn                    : cheitaecuagu : ["apm_user"]
+beats_admin_jeexewaowaik                 : cheevahvaido : ["beats_admin"]
+beats_system_leigaojahngu                : xezaipheethu : ["beats_system"]
 # Deprecated
-data_frame_transforms_admin_nedij5acaes8 : lis7dagha2ae : data_frame_transforms_admin
+data_frame_transforms_admin_nedij5acaes8 : lis7dagha2ae : ["data_frame_transforms_admin"]
 # Deprecated
-data_frame_transforms_user_dooco9ohd7ji  : eiph9phoh2ph : data_frame_transforms_user
-editor_aigh2goog3ea                      : umeiqu3oothe : editor
-enrich_user_iemoakudaizo                 : uiraimeaghum : enrich_user
-ingest_admin_queitiezahso                : oixuengiwail : ingest_admin
-kibana_admin_thihieweiham                : kipeyoshieta : kibana_admin
+data_frame_transforms_user_dooco9ohd7ji  : eiph9phoh2ph : ["data_frame_transforms_user"]
+editor_aigh2goog3ea                      : umeiqu3oothe : ["editor"]
+enrich_user_iemoakudaizo                 : uiraimeaghum : ["enrich_user"]
+ingest_admin_queitiezahso                : oixuengiwail : ["ingest_admin"]
+kibana_admin_thihieweiham                : kipeyoshieta : ["kibana_admin"]
 # Deprecated
-kibana_dashboard_only_user_aiz1ha5aimae  : aejuuthohw1a : kibana_dashboard_only_user
-kibana_system_tabiantegawf               : infemiturfar : kibana_system
+kibana_dashboard_only_user_aiz1ha5aimae  : aejuuthohw1a : ["kibana_dashboard_only_user"]
+kibana_system_tabiantegawf               : infemiturfar : ["kibana_system"]
 # Deprecated
-kibana_user_zeingeengoi4                 : alai4ohc3doh : kibana_user
-logstash_admin_iusheevekoul              : shoghahphier : logstash_admin
-logstash_system_esperonverbo             : donzagonocka : logstash_system
-machine_learning_admin_kiataxukailo      : thiezuizohdi : machine_learning_admin
-machine_learning_user_sikeibahxeex       : foopheegeenu : machine_learning_user
-monitoring_user_rezibohwushe             : kievohixooka : monitoring_user
-remote_monitoring_agent_beisheepaodo     : dahlienibiho : remote_monitoring_agent
-remote_monitoring_collector_dohziateefes : yeitoitheeza : remote_monitoring_collector
-reporting_user_hohghoopogim              : phohzitohcoa : reporting_user
-rollup_admin_zohngeeteevu                : rooghahfange : rollup_admin
-rollup_user_tookoatohgai                 : ichohbioghup : rollup_user
-snapshot_user_boxiengeetap               : ahwukaopacah : snapshot_user
-superuser_brapildehect                   : aytoadowmate : superuser
-transform_admin_toenehahhave             : rohchohphaeb : transform_admin
-transform_user_autahlohbeey              : eneeshivieng : transform_user
-transport_client_theiquieceiz            : lietheihinut : transport_client
-viewer_kooxee7hieth                      : ahwisee1yahs : viewer
-watcher_admin_kikofiuraeju               : phaixohsimai : watcher_admin
-watcher_user_shaequuoraix                : aediebeixain : watcher_user
+kibana_user_zeingeengoi4                 : alai4ohc3doh : ["kibana_user"]
+logstash_admin_iusheevekoul              : shoghahphier : ["logstash_admin"]
+logstash_system_esperonverbo             : donzagonocka : ["logstash_system"]
+machine_learning_admin_kiataxukailo      : thiezuizohdi : ["machine_learning_admin"]
+machine_learning_user_sikeibahxeex       : foopheegeenu : ["machine_learning_user"]
+monitoring_user_rezibohwushe             : kievohixooka : ["monitoring_user"]
+remote_monitoring_agent_beisheepaodo     : dahlienibiho : ["remote_monitoring_agent"]
+remote_monitoring_collector_dohziateefes : yeitoitheeza : ["remote_monitoring_collector"]
+reporting_user_hohghoopogim              : phohzitohcoa : ["reporting_user"]
+rollup_admin_zohngeeteevu                : rooghahfange : ["rollup_admin"]
+rollup_user_tookoatohgai                 : ichohbioghup : ["rollup_user"]
+snapshot_user_boxiengeetap               : ahwukaopacah : ["snapshot_user"]
+superuser_brapildehect                   : aytoadowmate : ["superuser"]
+transform_admin_toenehahhave             : rohchohphaeb : ["transform_admin"]
+transform_user_autahlohbeey              : eneeshivieng : ["transform_user"]
+transport_client_theiquieceiz            : lietheihinut : ["transport_client"]
+viewer_kooxee7hieth                      : ahwisee1yahs : ["viewer"]
+watcher_admin_kikofiuraeju               : phaixohsimai : ["watcher_admin"]
+watcher_user_shaequuoraix                : aediebeixain : ["watcher_user"]
 
 # Ordinary accounts
 #
 # TODO FIXME too much permissions
-apm_shahleichali         : urachaemaebu : superuser
-healthcheck_sheetheekahx : yoongootecie : monitoring_user
+apm_shahleichali         : urachaemaebu : ["superuser"]
+healthcheck_sheetheekahx : yoongootecie : ["monitoring_user"]
 # TODO FIXME too much permissions
-logstash_ucahseevaute    : oohooheexook : superuser
+logstash_ucahseevaute    : oohooheexook : ["superuser"]
 # TODO FIXME too much permissions
-telegraf_eabeongoovee    : cheudoonahro : superuser
+telegraf_eabeongoovee    : cheudoonahro : ["superuser"]
