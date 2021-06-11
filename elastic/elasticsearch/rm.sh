@@ -5,4 +5,6 @@
 
 . settings.sh
 
-docker rm --force --volumes $CONTAINER_NAME
+docker rm --force --volumes $NODE_1_CONTAINER_NAME
+docker rm --force --volumes $NODE_2_CONTAINER_NAME
+docker rm --force --volumes $NODE_3_CONTAINER_NAME

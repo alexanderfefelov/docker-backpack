@@ -3,6 +3,6 @@
 # Elevate privileges
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
-. settings.sh
-
-> $(docker inspect --format='{{.LogPath}}' $CONTAINER_NAME)
+./clear-instance-logs.sh 1
+./clear-instance-logs.sh 2
+./clear-instance-logs.sh 3
