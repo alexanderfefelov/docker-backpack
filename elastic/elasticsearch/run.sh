@@ -41,7 +41,7 @@ run() {
     --volume $CONTAINER_NAME-data:/usr/share/elasticsearch/data \
     --publish 9200:9200 \
     --publish 9300:9300 \
-    $([[ $SSE_SUPPORT != *sse4_2* ]] && echo Machine Learning disabled >&2 && echo --env xpack.ml.enabled=false) \
+    $([[ $SSE_SUPPORT != *sse4_2* ]] && echo --env xpack.ml.enabled=false && echo Machine Learning disabled >&2) \
     $DEFAULT_HEALTH_SETTINGS \
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION

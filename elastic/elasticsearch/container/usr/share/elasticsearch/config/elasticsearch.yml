@@ -113,7 +113,8 @@ xpack.monitoring.collection.enabled: true
 
 # --------------------------------- Security -----------------------------------
 #
-# https://www.elastic.co/guide/en/elasticsearch/reference/current/file-realm.html
+# https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-cluster.html
 #
 xpack.security.enabled: true
-xpack.security.authc.realms.file.file1.order: 0
+xpack.security.authc.realms.native.backpack_native.order: 0
+xpack.security.authc.realms.file.backpack_file.order: 1
