@@ -16,7 +16,10 @@ request='{
   ],
   "indices": [
     {
-      "names": ["logstash-*"],
+      "names": [
+        "logstash*",
+        "%3Clogstash*"
+      ],
       "privileges": [
         "create_index",
         "create",
