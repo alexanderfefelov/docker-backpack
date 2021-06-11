@@ -40,8 +40,7 @@ watcher_user_shaequuoraix                : aediebeixain : ["watcher_user"]
 
 # Ordinary accounts
 #
-# TODO FIXME too much permissions
-apm_shahleichali             : urachaemaebu : ["superuser"]
+apm_shahleichali             : urachaemaebu : ["apm_system"]
 healthcheck_sheetheekahx     : yoongootecie : ["monitoring_user"]
 logstash_writer_ucahseevaute : oohooheexook : ["logstash_writer"]
 telegraf_eabeongoovee        : cheudoonahro : ["telegraph_monitoring_user"]
