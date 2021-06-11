@@ -14,7 +14,7 @@
 #
 # Use a descriptive name for your cluster:
 #
-cluster.name: elasticsearch.backpack.test
+#cluster.name: my-application
 #
 # ------------------------------------ Node ------------------------------------
 #
@@ -52,7 +52,7 @@ cluster.name: elasticsearch.backpack.test
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 0.0.0.0
+#network.host: 192.168.0.1
 #
 # Set a custom port for HTTP:
 #
@@ -86,19 +86,6 @@ network.host: 0.0.0.0
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
-
-# --------------------------------- Discovery ----------------------------------
-#
-# https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-settings.html
-#
-
-# Specifies whether Elasticsearch should form a multiple-node cluster. By default,
-# Elasticsearch discovers other nodes when forming a cluster and allows other nodes
-# to join the cluster later. If discovery.type is set to single-node, Elasticsearch
-# forms a single-node cluster and suppresses the timeouts set by cluster.publish.timeout
-# and cluster.join.timeout.
-#
-discovery.type: single-node
 
 # -------------------------------- Monitoring ----------------------------------
 #

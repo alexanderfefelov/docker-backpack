@@ -18,7 +18,6 @@ request='{
   "indices": [
     {
       "names": [
-        ".monitoring-ls-*",
         "logstash*",
         "%3Clogstash*"
       ],
