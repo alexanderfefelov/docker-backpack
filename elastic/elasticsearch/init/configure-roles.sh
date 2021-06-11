@@ -35,7 +35,14 @@ request='{
   "cluster": [
     "monitor"
   ],
-  "indices": []
+  "indices": [
+    {
+      "names": ["*"],
+      "privileges": [
+        "monitor"
+      ]
+    }
+  ]
 }'
 $HTTP POST http://elasticsearch.backpack.test:9200/_security/role/telegraph_monitoring_user <<< "$request" > /dev/null
 echo done
