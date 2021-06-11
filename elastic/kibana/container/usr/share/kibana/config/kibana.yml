@@ -22,7 +22,7 @@ server.host: 0.0.0.0
 #server.maxPayloadBytes: 1048576
 
 # The Kibana server's name.  This is used for display purposes.
-server.name: backpack
+server.name: kibana.backpack.test
 
 # The URLs of the Elasticsearch instances to use for all your queries.
 elasticsearch.hosts: [ "http://elasticsearch.backpack.test:9200" ]
