@@ -11,12 +11,19 @@ echo -n Creating role logstash_writer...
 request='{
   "cluster": [
     "manage_index_templates",
-    "monitor"
+    "monitor",
+    "manage_ilm"
   ],
   "indices": [
     {
       "names": ["logstash-*"],
-      "privileges": ["write","create","create_index","manage"]
+      "privileges": [
+        "create_index",
+        "create",
+        "manage_ilm",
+        "manage",
+        "write"
+      ]
     }
   ]
 }'
