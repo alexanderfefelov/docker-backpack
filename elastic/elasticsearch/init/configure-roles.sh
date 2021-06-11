@@ -10,13 +10,15 @@ readonly HTTP="http --check-status --auth-type basic --auth installer_uru6oushi7
 echo -n Creating role logstash_writer...
 request='{
   "cluster": [
+    "cluster:admin/xpack/monitoring/bulk"
+    "manage_ilm",
     "manage_index_templates",
     "monitor",
-    "manage_ilm"
   ],
   "indices": [
     {
       "names": [
+        ".monitoring-ls-*",
         "logstash*",
         "%3Clogstash*"
       ],
