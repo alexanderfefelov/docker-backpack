@@ -31,6 +31,14 @@ print_sse_info() {
   fi
 }
 
+initialize_elasticsearch() {
+  if http --check-status GET http://elasticsearch.backpack.test:9200 --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat > /dev/null 2>&1; then
+    echo Initializing Elasticsearch...
+    bash init/configure-accounts.sh $CONTAINER_NAME
+    echo ...Elasticsearch initialized
+  fi
+}
+
 run() {
   docker run \
     --name $CONTAINER_NAME \
@@ -51,4 +59,5 @@ check_vm_max_map_count
 print_sse_info
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT
+initialize_elasticsearch
 print_container_info $CONTAINER_NAME
