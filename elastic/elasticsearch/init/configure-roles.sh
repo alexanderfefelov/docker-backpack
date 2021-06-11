@@ -31,7 +31,7 @@ request='{
     }
   ]
 }'
-$HTTP POST http://elasticsearch.backpack.test:9200/_security/role/logstash_writer <<< "$request" > /dev/null
+$HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/logstash_writer <<< "$request" > /dev/null
 echo done
 
 echo -n Creating role telegraph_monitoring_user...
@@ -48,5 +48,5 @@ request='{
     }
   ]
 }'
-$HTTP POST http://elasticsearch.backpack.test:9200/_security/role/telegraph_monitoring_user <<< "$request" > /dev/null
+$HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/telegraph_monitoring_user <<< "$request" > /dev/null
 echo done

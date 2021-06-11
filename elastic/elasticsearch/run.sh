@@ -32,7 +32,7 @@ print_sse_info() {
 }
 
 initialize_elasticsearch() {
-  if http --check-status GET http://elasticsearch.backpack.test:9200 --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat > /dev/null 2>&1; then
+  if http --check-status GET http://elasticsearch-node-1.backpack.test:9200 --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat > /dev/null 2>&1; then
     echo Initializing Elasticsearch...
     bash init/configure-roles.sh
     bash init/configure-accounts.sh $CONTAINER_NAME

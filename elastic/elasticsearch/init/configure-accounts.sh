@@ -13,7 +13,7 @@ while IFS=: read -r username password roles; do
     "roles": '`echo $roles`'
   }'
   http --check-status --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat \
-    POST http://elasticsearch.backpack.test:9200/_security/user/`echo $username` <<< "$request" > /dev/null
+    POST http://elasticsearch-node-1.backpack.test:9200/_security/user/`echo $username` <<< "$request" > /dev/null
   echo done
 done
 

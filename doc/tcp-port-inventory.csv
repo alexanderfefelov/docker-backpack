@@ -128,8 +128,12 @@ Port,Container
 9091,backpack-pushgateway
 9093,backpack-alertmanager
 9153,backpack-coredns
-9200,backpack-elasticsearch
-9300,backpack-elasticsearch
+9200,backpack-elasticsearch-node-1
+9201,backpack-elasticsearch-node-2
+9202,backpack-elasticsearch-node-3
+9300,backpack-elasticsearch-node-1
+9301,backpack-elasticsearch-node-2
+9302,backpack-elasticsearch-node-3
 9600,backpack-logstash
 10051,backpack-zabbix-backend
 11211,backpack-memcached

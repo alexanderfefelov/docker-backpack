@@ -82,7 +82,9 @@ $IP_ADDRESS knot-resolver.backpack.test
 # Elastic stack
 #
 $IP_ADDRESS apm.backpack.test
-$IP_ADDRESS elasticsearch.backpack.test
+$IP_ADDRESS elasticsearch-node-1.backpack.test
+$IP_ADDRESS elasticsearch-node-2.backpack.test
+$IP_ADDRESS elasticsearch-node-3.backpack.test
 $IP_ADDRESS kibana.backpack.test
 $IP_ADDRESS logstash.backpack.test
 

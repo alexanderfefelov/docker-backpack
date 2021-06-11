@@ -25,7 +25,7 @@ server.host: 0.0.0.0
 server.name: kibana.backpack.test
 
 # The URLs of the Elasticsearch instances to use for all your queries.
-elasticsearch.hosts: [ "http://elasticsearch.backpack.test:9200" ]
+elasticsearch.hosts: [ "http://elasticsearch-node-1.backpack.test:9200" ]
 
 # When this setting's value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host
