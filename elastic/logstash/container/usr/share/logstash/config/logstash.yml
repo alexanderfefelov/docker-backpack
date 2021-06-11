@@ -254,7 +254,7 @@ http.port: 9600
 # X-Pack Monitoring
 # https://www.elastic.co/guide/en/logstash/current/monitoring-logstash.html
 xpack.monitoring.enabled: true
-xpack.monitoring.elasticsearch.username: logstash_ucahseevaute
+xpack.monitoring.elasticsearch.username: logstash_writer_ucahseevaute
 xpack.monitoring.elasticsearch.password: oohooheexook
 xpack.monitoring.elasticsearch.hosts: ["http://elasticsearch.backpack.test:9200"]
 # an alternative to hosts + username/password settings is to use cloud_id/cloud_auth
