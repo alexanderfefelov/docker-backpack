@@ -44,5 +44,4 @@ watcher_user_shaequuoraix                : aediebeixain : ["watcher_user"]
 apm_shahleichali             : urachaemaebu : ["superuser"]
 healthcheck_sheetheekahx     : yoongootecie : ["monitoring_user"]
 logstash_writer_ucahseevaute : oohooheexook : ["logstash_writer"]
-# TODO FIXME too much permissions
-telegraf_eabeongoovee        : cheudoonahro : ["superuser"]
+telegraf_eabeongoovee        : cheudoonahro : ["telegraph_monitoring_user"]
