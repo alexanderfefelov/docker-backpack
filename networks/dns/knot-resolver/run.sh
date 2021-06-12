@@ -9,23 +9,7 @@ set -e
 
 . settings.sh
 . ../../../lib/lib.sh
-
-run() {
-  docker run \
-    --name $CONTAINER_NAME \
-    --hostname $HOST_NAME \
-    --detach \
-    --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $CONTAINER_NAME-conf:/etc/knot-resolver \
-    --publish 53:53 \
-    --publish 53:53/udp \
-    --publish 853:853 \
-    --publish 8443:443 \
-    --publish 8453:8453 \
-    $DEFAULT_HEALTH_SETTINGS \
-    $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME:$VERSION
-}
+. lib.sh
 
 run
 wait_for_all_container_ports $CONTAINER_NAME $WAIT_TIMEOUT

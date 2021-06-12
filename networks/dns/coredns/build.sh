@@ -8,22 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo --preserve-env=VERSION bash "$0" "$@"
 
 . settings.sh
-
-generate_config_files() {
-  echo Generating config files...
-
-  local -r IP_ADDRESS=$(ip route get 1.0.0.0 | awk '{ print $7 }')
-  if [ -z $IP_ADDRESS ]; then
-    echo Failed to detect IP address >&2
-    exit 1
-  fi
-  export IP_ADDRESS
-  envsubst \
-    < build/template.hosts \
-    > container/etc/coredns/hosts.generated
-
-  echo ...config files generated
-}
+. lib.sh
 
 generate_config_files
 docker build \
