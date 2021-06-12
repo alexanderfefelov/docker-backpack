@@ -23,7 +23,7 @@ initialize_elasticsearch() {
   if http --check-status GET http://$NODE_1_HOST_NAME:$NODE_1_HTTP_PORT --auth-type basic --auth installer_uru6oushi7oh:sohsah0oghat > /dev/null 2>&1; then
     echo Initializing Elasticsearch...
     bash init/configure-roles.sh
-    bash init/configure-accounts.sh $CONTAINER_NAME
+    bash init/configure-accounts.sh $NODE_1_CONTAINER_NAME
     echo ...Elasticsearch initialized
   fi
 }
