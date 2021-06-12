@@ -6,8 +6,8 @@ set -e
 
 cd $APP_HOME
 
-. functions.sh
 . settings.sh
+. lib.sh
 
 print_banner
 

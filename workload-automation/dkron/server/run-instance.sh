@@ -18,7 +18,7 @@ readonly BOOTSTRAP=SERVER_${INSTANCE_NO}_BOOTSTRAP
 
 . settings.sh
 . ../../../lib/lib.sh
-. functions.sh
+. lib.sh
 
 run_instance \
   ${!CONTAINER_NAME} \

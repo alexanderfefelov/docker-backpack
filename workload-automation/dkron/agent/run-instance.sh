@@ -16,7 +16,7 @@ readonly GRPC_PORT=AGENT_${INSTANCE_NO}_GRPC_PORT
 
 . settings.sh
 . ../../../lib/lib.sh
-. functions.sh
+. lib.sh
 
 run_instance \
   ${!CONTAINER_NAME} \

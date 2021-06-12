@@ -8,7 +8,7 @@ set -e
 [ $UID -eq 0 ] || exec sudo bash "$0" "$@"
 
 . settings.sh
-. functions.sh
+. lib.sh
 
 trap on_error ERR
 
