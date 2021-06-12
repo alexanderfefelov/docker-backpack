@@ -9,7 +9,7 @@ set -e
 
 . settings.sh
 . ../../../lib/lib.sh
-. functions.sh
+. lib.sh
 
 run_slave $BACKUP_CONTAINER_NAME $BACKUP_HOST_NAME $BACKUP_SERVER_ID $BACKUP_PORT $MASTER_HOST_NAME $MASTER_PORT
 wait_for_container_ports $BACKUP_CONTAINER_NAME 3306 $WAIT_TIMEOUT

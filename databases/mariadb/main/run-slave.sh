@@ -9,7 +9,7 @@ set -e
 
 . settings.sh
 . ../../../lib/lib.sh
-. functions.sh
+. lib.sh
 
 run_slave $SLAVE_CONTAINER_NAME $SLAVE_HOST_NAME $SLAVE_SERVER_ID $SLAVE_PORT $MASTER_HOST_NAME $MASTER_PORT
 wait_for_container_ports $SLAVE_CONTAINER_NAME 3306 $WAIT_TIMEOUT
