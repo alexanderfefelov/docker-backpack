@@ -5,7 +5,7 @@
 
 . settings.sh
 . ../../../lib/lib.sh
-. lib. sh
+. lib.sh
 
 $MYSQL --execute="USE $DB_DATABASE;"
 readonly USE_DB_RETCODE=$?
