@@ -17,7 +17,7 @@ readonly TRANSPORT_PORT=NODE_${INSTANCE_NO}_TRANSPORT_PORT
 
 . settings.sh
 . ../../lib/lib.sh
-. functions.sh
+. lib.sh
 
 check_vm_max_map_count
 print_sse_info
