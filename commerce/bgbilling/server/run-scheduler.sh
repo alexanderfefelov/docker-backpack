@@ -9,22 +9,9 @@ set -e
 
 . settings.sh
 . ../../../lib/lib.sh
-
-run() {
-  docker run \
-    --name $SCHEDULER_CONTAINER_NAME \
-    --hostname $SCHEDULER_HOST_NAME \
-    --detach \
-    --volume /etc/localtime:/etc/localtime:ro --volume /etc/timezone:/etc/timezone:ro \
-    --volume $SCHEDULER_CONTAINER_NAME-data:/BGBillingServer/data \
-    --volume $SCHEDULER_CONTAINER_NAME-log:/BGBillingServer/log \
-    --publish 8100:8778 \
-    $DEFAULT_HEALTH_SETTINGS \
-    $DEFAULT_LOG_SETTINGS \
-    $IMAGE_NAME-scheduler:$VERSION
-}
+. lib.sh
 
 check_containers "$REQUIRED_CONTAINERS"
-run
+run_scheduler
 wait_for_all_container_ports $SCHEDULER_CONTAINER_NAME $WAIT_TIMEOUT
 print_container_info $SCHEDULER_CONTAINER_NAME
