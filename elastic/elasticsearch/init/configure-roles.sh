@@ -34,7 +34,7 @@ request='{
 $HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/logstash_writer <<< "$request" > /dev/null
 echo done
 
-echo -n Creating role telegraph_monitoring_user...
+echo -n Creating role telegraph_monitor...
 request='{
   "cluster": [
     "monitor"
@@ -48,5 +48,20 @@ request='{
     }
   ]
 }'
-$HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/telegraph_monitoring_user <<< "$request" > /dev/null
+$HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/telegraph_monitor <<< "$request" > /dev/null
+echo done
+
+echo -n Creating role grafana_reader...
+request='{
+  "indices": [
+    {
+      "names": ["logstash-*"],
+      "privileges": [
+        "read",
+        "view_index_metadata"
+      ]
+    }
+  ]
+}'
+$HTTP POST http://elasticsearch-node-1.backpack.test:9200/_security/role/grafana_reader <<< "$request" > /dev/null
 echo done
