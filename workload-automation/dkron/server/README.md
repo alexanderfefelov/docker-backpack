@@ -10,7 +10,7 @@ Hostnames:
 
 ## Services
 
-### server-1
+### `dkron-server-1.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
@@ -18,7 +18,7 @@ Hostnames:
 | 8901, 8901/udp | Serf | -
 | 8902 | gRPC | -
 
-### server-2
+### `dkron-server-2.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
@@ -26,7 +26,7 @@ Hostnames:
 | 8904, 8904/udp | Serf | -
 | 8905 | gRPC | -
 
-### server-3
+### `dkron-server-3.backpack.test`
 
 | Port | Service | Credentials
 | ---: | :------ | :----------
