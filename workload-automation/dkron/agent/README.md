@@ -10,7 +10,21 @@ Hostnames:
 
 ## Services
 
+### `dkron-agent-1.backpack.test`
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 8906 (agent-1), 8906/udp (agent-1), 8908 (agent-2), 8908/udp (agent-2) | Serf | -
-| 8907 (agent-1), 8909 (agent-2) | gRPC | -
+| 8909, 8909/udp| Serf | -
+| 8910 | gRPC | -
+
+### `dkron-agent-2.backpack.test`
+| Port | Service | Credentials
+| ---: | :------ | :----------
+| 8911 , 8911/udp | Serf | -
+| 8912 | gRPC | -
+
+### `dkron-agent-3.backpack.test`
+
+| Port | Service | Credentials
+| ---: | :------ | :----------
+| 8913 , 8913/udp | Serf | -
+| 8914 | gRPC | -
