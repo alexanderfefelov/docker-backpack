@@ -12,16 +12,46 @@ Hostnames:
 
 ## Services
 
+### `activemq-node-1.backpack.test`
+
 | Port | Service | Credentials
 | ---: | :------ | :----------
-| 1883 (node-1), 1884 (node-2), 1885 (node-3)| MQTT | -
-| 5670 (node-1), 5671 (node-2), 5672 (node-3)| AMQP | -
-| [8161](http://activemq-node-1.backpack.test:8161) (node-1), [8162](http://activemq-node-2.backpack.test:8162) (node-2), [8163](http://activemq-node-3.backpack.test:8163) (node-3) | HTTP [API](https://activemq.apache.org/rest) and management console | `admin_sablanibleng` / `ruscathionob`
-| | | `api_manostinerat` / `ombelervolpi`
-| | | `fastnetmon_zahdeegeishu` / `xaocheitohto`
-| | | `hawtio_ham1ez4shenu` / `gu8xoob3leil`
-| | | `jolokia_oobier2it7ee` / `fooch7taequ1`
-| | | `telegraf_guaduquainti` / `moncentivenv`
-| 61614 (node-1), 61617 (node-2), 61620 (node-3) | STOMP | -
-| 61615 (node-1), 61618 (node-2), 61621 (node-3) | WebSocket | -
-| 61616 (node-1), 61619 (node-2), 61622 (node-3) | OpenWire | -
+| 1883 | MQTT | -
+| 5670 | AMQP | -
+| [8161](http://activemq-node-1.backpack.test:8161) | HTTP [API](https://activemq.apache.org/rest) and management console | See below
+| 61614 | STOMP | -
+| 61615 | WebSocket | -
+| 61616 | OpenWire | -
+
+### `activemq-node-2.backpack.test`
+
+| Port | Service | Credentials
+| ---: | :------ | :----------
+| 1884 | MQTT | -
+| 5671 | AMQP | -
+| [8162](http://activemq-node-2.backpack.test:8162) | HTTP [API](https://activemq.apache.org/rest) and management console | See below
+| 61617 | STOMP | -
+| 61618 | WebSocket | -
+| 61619 | OpenWire | -
+
+### `activemq-node-3.backpack.test`
+
+| Port | Service | Credentials
+| ---: | :------ | :----------
+| 1885 | MQTT | -
+| 5672 | AMQP | -
+| [8163](http://activemq-node-3.backpack.test:8163) | HTTP [API](https://activemq.apache.org/rest) and management console | See below
+| 61620 | STOMP | -
+| 61621 | WebSocket | -
+| 61622 | OpenWire | -
+
+## Credentials
+
+### HTTP [API](https://activemq.apache.org/rest) and management console
+
+- `admin_sablanibleng` / `ruscathionob`
+- `api_manostinerat` / `ombelervolpi`
+- `fastnetmon_zahdeegeishu` / `xaocheitohto`
+- `hawtio_ham1ez4shenu` / `gu8xoob3leil`
+- `jolokia_oobier2it7ee` / `fooch7taequ1`
+- `telegraf_guaduquainti` / `moncentivenv`
