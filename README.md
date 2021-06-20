@@ -47,7 +47,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [PlantUML](diagramming/plantuml)
 - [Elastic stack](elastic)
     - [APM](elastic/apm)
-    - [Elasticsearch](elastic/elasticsearch)
+    - [Elasticsearch](elastic/elasticsearch), cluster
     - [Kibana](elastic/kibana)
     - [Logstash](elastic/logstash)
 - [File sharing](file-sharing)
