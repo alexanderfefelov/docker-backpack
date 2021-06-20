@@ -45,7 +45,8 @@ docker run \
     --publish $INSTANCE_HTTP_PORT:9200 \
     --publish $INSTANCE_TRANSPORT_PORT:9300 \
     --env network.host=0.0.0.0 \
-    --env discovery.type=single-node \
+    --env discovery.seed_hosts=elasticsearch-node-1.backpack.test:9300,elasticsearch-node-2.backpack.test:9301,elasticsearch-node-3.backpack.test:9302 \
+    --env cluster.initial_master_nodes=node-1 \
     --env cluster.name=elasticsearch.backpack.test \
     --env node.name=$INSTANCE_NODE_NAME \
     $([[ $SSE_SUPPORT != *sse4_2* ]] && echo --env xpack.ml.enabled=false && echo Machine Learning disabled >&2) \
