@@ -23,6 +23,13 @@ readonly AGENT_3_NODE_NAME=agent-3
 readonly AGENT_3_SERF_PORT=8913
 readonly AGENT_3_GRPC_PORT=8914
 
+readonly SERVER_1_HOST_NAME=dkron-server-1.backpack.test
+readonly SERVER_1_SERF_PORT=8901
+readonly SERVER_2_HOST_NAME=dkron-server-2.backpack.test
+readonly SERVER_2_SERF_PORT=8904
+readonly SERVER_3_HOST_NAME=dkron-server-3.backpack.test
+readonly SERVER_3_SERF_PORT=8907
+
 readonly WAIT_TIMEOUT=600
 
 . ../../../lib/settings/go.sh

@@ -17,11 +17,12 @@ run_instance() {
     $DEFAULT_LOG_SETTINGS \
     $IMAGE_NAME:$VERSION \
       agent \
+        --bind-addr "{{ GetPrivateIP }}":$INSTANCE_SERF_PORT \
+        --advertise-addr host.backpack.test:$INSTANCE_SERF_PORT \
         --rpc-port $INSTANCE_GRPC_PORT \
-        --bind-addr $INSTANCE_HOST_NAME:$INSTANCE_SERF_PORT \
-        --retry-join dkron-server-1.backpack.test:8901 \
-        --retry-join dkron-server-2.backpack.test:8904 \
-        --retry-join dkron-server-3.backpack.test:8907 \
+        --retry-join $SERVER_1_HOST_NAME:$SERVER_1_SERF_PORT \
+        --retry-join $SERVER_2_HOST_NAME:$SERVER_2_SERF_PORT \
+        --retry-join $SERVER_3_HOST_NAME:$SERVER_3_SERF_PORT \
         --retry-interval 15s \
         --region test \
         --datacenter backpack \
