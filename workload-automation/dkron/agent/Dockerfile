@@ -20,6 +20,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
       pwgen \
       python3 \
       python3-pip \
+      rsync \
       sshpass \
       subversion \
       telnet \
