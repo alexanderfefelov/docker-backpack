@@ -27,7 +27,9 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - alertmanager.backpack.test:9093
+    - alertmanager-node-1.backpack.test:9093
+    - alertmanager-node-2.backpack.test:9095
+    - alertmanager-node-3.backpack.test:9097
 
 - job_name: coredns
   honor_timestamps: true
