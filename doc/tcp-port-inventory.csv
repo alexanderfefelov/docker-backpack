@@ -126,7 +126,12 @@ Port,Container
 9092,backpack-kapacitor
 9090,backpack-prometheus
 9091,backpack-pushgateway
-9093,backpack-alertmanager
+9093,backpack-alertmanager-node-1
+9094,backpack-alertmanager-node-1
+9095,backpack-alertmanager-node-2
+9096,backpack-alertmanager-node-2
+9097,backpack-alertmanager-node-3
+9098,backpack-alertmanager-node-3
 9153,backpack-coredns
 9200,backpack-elasticsearch-node-1
 9201,backpack-elasticsearch-node-2

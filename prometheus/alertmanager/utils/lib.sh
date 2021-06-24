@@ -1,5 +1,5 @@
 readonly HTTP="http --check-status"
-readonly API=http://alertmanager.backpack.test:9093/api/v2
+readonly API=http://alertmanager-node-1.backpack.test:9093/api/v2
 
 #
 # Arguments:

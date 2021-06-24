@@ -104,7 +104,7 @@ Before you start, run [check-prerequisites.sh](check-prerequisites.sh) to make s
     - [Passbolt](passwords/passbolt)
 - [Portainer](portainer)
 - [Prometheus](prometheus)
-    - [Alertmanager](prometheus/alertmanager)
+    - [Alertmanager](prometheus/alertmanager), cluster
     - [Prometheus](prometheus/prometheus)
     - [Pushgateway](prometheus/pushgateway)
 - [Redis](redis)

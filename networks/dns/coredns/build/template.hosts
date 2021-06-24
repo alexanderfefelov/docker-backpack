@@ -135,7 +135,9 @@ $IP_ADDRESS passbolt.backpack.test
 
 # Prometheus
 #
-$IP_ADDRESS alertmanager.backpack.test
+$IP_ADDRESS alertmanager-node-1.backpack.test
+$IP_ADDRESS alertmanager-node-2.backpack.test
+$IP_ADDRESS alertmanager-node-3.backpack.test
 $IP_ADDRESS prometheus.backpack.test
 $IP_ADDRESS pushgateway.backpack.test
 

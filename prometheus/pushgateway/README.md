@@ -1,6 +1,6 @@
 # backpack-pushgateway
 
-![Prometheus](../../doc/assets/logos/prometheus.png)
+![Pushgateway](../../doc/assets/logos/prometheus.png)
 
 Hostname `pushgateway.backpack.test`
 
