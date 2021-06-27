@@ -7,6 +7,8 @@
 . ../../../lib/lib.sh
 . lib.sh
 
+check_containers "$REQUIRED_CONTAINERS" || exit 1
+
 $MYSQL --execute="USE $DB_DATABASE;"
 readonly USE_DB_RETCODE=$?
 
