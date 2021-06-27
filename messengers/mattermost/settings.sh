@@ -19,3 +19,7 @@ readonly DB_ROOT_USERNAME=root
 readonly DB_ROOT_PASSWORD=camycorymicu
 readonly DB_USERNAME=mattermost_fepheedooroh
 readonly DB_PASSWORD=thohrawaenee
+
+readonly REQUIRED_CONTAINERS='
+  backpack-mysql-main-master
+'
