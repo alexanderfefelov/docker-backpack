@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=7.13.2
+readonly DEFAULT_VERSION=7.13.3
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=logstash
