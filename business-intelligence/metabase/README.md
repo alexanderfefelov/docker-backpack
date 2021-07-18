@@ -1,6 +1,6 @@
 # backpack-metabase
 
-![Meatabase](../../doc/assets/logos/metabase.svg)
+![Metabase](../../doc/assets/logos/metabase.svg)
 
 Hostname `metabase.backpack.test`
 
