@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=1.17
+readonly DEFAULT_VERSION=1.17.1
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=minecraft
