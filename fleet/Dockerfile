@@ -1,6 +1,6 @@
 ARG VERSION
 
-FROM fleetdm/fleet:$VERSION
+FROM fleetdm/fleet:v$VERSION
 
 COPY container/ /
 
