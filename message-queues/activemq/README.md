@@ -5,10 +5,10 @@
 ![Hawtio](../../doc/assets/logos/hawtio-small.png)
 
 Hostnames:
- 
- - `activemq-node-1.backpack.test`
- - `activemq-node-2.backpack.test`
- - `activemq-node-3.backpack.test`
+
+- `activemq-node-1.backpack.test`
+- `activemq-node-2.backpack.test`
+- `activemq-node-3.backpack.test`
 
 ## Services
 
