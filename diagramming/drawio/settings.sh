@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=14.7.7
+readonly DEFAULT_VERSION=14.9.0
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=drawio
