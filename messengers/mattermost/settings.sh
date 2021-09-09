@@ -1,4 +1,4 @@
-readonly DEFAULT_VERSION=5.37.0
+readonly DEFAULT_VERSION=5.38.2
 export VERSION=${VERSION:-$DEFAULT_VERSION}
 
 readonly MONIKER=mattermost
